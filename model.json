@@ -1,1 +1,38 @@
-{"version": "1-build.0.0", "name": "Epilepsy information standard", "description": "<p><br></p>", "component_sets": [{"name": "WRIST-Test/WRIST-core-information-standard", "id": "None"}], "concept": [{"name": "Item", "mro": "M", "description": "", "valueSets": "", "implementationGuidance": "", "informationType": "Record", "type": "item", "minimumMultiplicity": "0", "maximumMultiplicity": "1"}]}
+{
+  "version": "1-build.0.0",
+  "name": "Epilepsy information standard",
+  "description": "<p><br></p>",
+  "component_sets": [
+    {
+      "name": "WRIST-Test/WRIST-core-information-standard",
+      "id": "None"
+    }
+  ],
+  "concept": [
+    {
+      "name": "Item",
+      "mro": "M",
+      "description": "",
+      "valueSets": "",
+      "implementationGuidance": "",
+      "informationType": "Record",
+      "type": "item",
+      "minimumMultiplicity": "0",
+      "maximumMultiplicity": "1"
+    },
+    {
+      "name": "New Item",
+      "mro": "",
+      "description": "",
+      "valueSets": "",
+      "implementationGuidance": "",
+      "informationType": "",
+      "type": "",
+      "minimumMultiplicity": "",
+      "maximumMultiplicity": "",
+      "concept": [],
+      "isComponent": false,
+      "relationshipType": ""
+    }
+  ]
+}
