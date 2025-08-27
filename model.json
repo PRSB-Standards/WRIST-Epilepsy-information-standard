@@ -21924,6 +21924,446 @@
       "relationshipType": "neither",
       "type": "group",
       "valueSets": ""
+    },
+    {
+      "concept": [
+        {
+          "concept": [
+            {
+              "description": "The date on which the plan and requested actions were prepared.",
+              "maximumMultiplicity": "1",
+              "minimumMultiplicity": "0",
+              "mro": "R",
+              "name": "Date",
+              "type": "item",
+              "valueDomain": [
+                {
+                  "property": [
+                    {
+                      "timeStampPrecision": "YMDHM"
+                    }
+                  ],
+                  "type": "datetime"
+                }
+              ],
+              "valueSets": "Date and time",
+              "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Plan and requested actions/Plan and requested actions record entry/Date@2-build.2.1"
+            },
+            {
+              "concept": [
+                {
+                  "description": "The name of the professional.",
+                  "maximumMultiplicity": "1",
+                  "minimumMultiplicity": "0",
+                  "mro": "R",
+                  "name": "Name",
+                  "type": "item",
+                  "valueDomain": [
+                    {
+                      "property": [
+                        {
+                          "maxLength": "70"
+                        }
+                      ],
+                      "type": "string"
+                    }
+                  ],
+                  "valueSets": "Free text.",
+                  "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Plan and requested actions/Plan and requested actions record entry/Performing professional/Name@2-build.2.1"
+                },
+                {
+                  "description": "The role the professional has in relation to the person e.g. GP, physiotherapist, community nurse, social worker etc",
+                  "maximumMultiplicity": "1",
+                  "minimumMultiplicity": "0",
+                  "mro": "R",
+                  "name": "Role",
+                  "type": "item",
+                  "valueSets": "FHIR value set :-  <a class=\"\" href=\"https://simplifier.net/ukcore/codesystem-ukcore-sdsjobrolename\" target=\"\" title=\"\">SDSjobroletype</a> \n                        ",
+                  "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Plan and requested actions/Plan and requested actions record entry/Performing professional/Role@2-build.2.1"
+                },
+                {
+                  "description": "The grade of the professional.",
+                  "maximumMultiplicity": "1",
+                  "minimumMultiplicity": "0",
+                  "mro": "R",
+                  "name": "Grade",
+                  "type": "item",
+                  "valueDomain": [
+                    {
+                      "property": [
+                        {
+                          "maxLength": "150"
+                        }
+                      ],
+                      "type": "text"
+                    }
+                  ],
+                  "valueSets": "Free text",
+                  "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Plan and requested actions/Plan and requested actions record entry/Performing professional/Grade@2-build.2.1"
+                },
+                {
+                  "description": "The specialty of the professional e.g. physiotherapy, oncology, mental health etc",
+                  "maximumMultiplicity": "1",
+                  "minimumMultiplicity": "0",
+                  "mro": "R",
+                  "name": "Speciality",
+                  "type": "item",
+                  "valueDomain": [
+                    {
+                      "property": [
+                        {
+                          "maxLength": "3"
+                        }
+                      ],
+                      "type": "string"
+                    }
+                  ],
+                  "valueSets": "NHS data dictionary -  <a href=\"https://datadictionary.nhs.uk/data_elements/activity_treatment_function_code.html?hl=activity%2Ctreatment%2Cfunction%2Ccode\" target=\"\" title=\"\">Activity treatment function code</a> \n                        ",
+                  "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Plan and requested actions/Plan and requested actions record entry/Performing professional/Speciality@2-build.2.1"
+                },
+                {
+                  "description": "Professional identifier for the professional e.g. GMC number, HCPC number etc or the personal identifier used by the local organisation.",
+                  "maximumMultiplicity": "1",
+                  "minimumMultiplicity": "0",
+                  "mro": "R",
+                  "name": "Professional identifier",
+                  "type": "item",
+                  "valueDomain": [
+                    {
+                      "property": [
+                        {
+                          "maxLength": "32"
+                        }
+                      ],
+                      "type": "string"
+                    }
+                  ],
+                  "valueSets": "NHS data dictionary : -  <a href=\"https://datadictionary.nhs.uk/data_elements/professional_registration_entry_identifier.html\" target=\"\" title=\"\">Professional registration identifier</a> \n                        ",
+                  "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Plan and requested actions/Plan and requested actions record entry/Performing professional/Professional identifier@2-build.2.1"
+                },
+                {
+                  "description": "The name of the organisation the professional works for.",
+                  "maximumMultiplicity": "1",
+                  "minimumMultiplicity": "0",
+                  "mro": "R",
+                  "name": "Organisation",
+                  "type": "group",
+                  "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Plan and requested actions/Plan and requested actions record entry/Performing professional/Organisation@2-build.2.1"
+                },
+                {
+                  "description": "Contact details of the professional",
+                  "maximumMultiplicity": "1",
+                  "minimumMultiplicity": "0",
+                  "mro": "R",
+                  "name": "Contact details",
+                  "type": "item",
+                  "valueDomain": [
+                    {
+                      "property": [
+                        {
+                          "maxLength": "35"
+                        }
+                      ],
+                      "type": "string"
+                    }
+                  ],
+                  "valueSets": "NHS data dictionary -  <a href=\"https://datadictionary.nhs.uk/data_elements/uk_telephone_number.html?hl=number\" target=\"\" title=\"\">UK phone number</a> \n                        ",
+                  "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Plan and requested actions/Plan and requested actions record entry/Performing professional/Contact details@2-build.2.1"
+                }
+              ],
+              "description": "The professional who prepared the plan and requested actions.",
+              "maximumMultiplicity": "1",
+              "minimumMultiplicity": "0",
+              "mro": "R",
+              "name": "Performing professional",
+              "type": "group",
+              "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Plan and requested actions/Plan and requested actions record entry/Performing professional@2-build.2.1"
+            },
+            {
+              "concept": [
+                {
+                  "description": "The coded value for location",
+                  "maximumMultiplicity": "1",
+                  "minimumMultiplicity": "0",
+                  "mro": "R",
+                  "name": "Coded value",
+                  "type": "item",
+                  "valueDomain": [
+                    {
+                      "property": [
+                        {
+                          "maxLength": "5",
+                          "minLength": "3"
+                        }
+                      ],
+                      "type": "string"
+                    }
+                  ],
+                  "valueSets": "NHS data dictionary : -  <a href=\"https://www.datadictionary.nhs.uk/data_dictionary/attributes/o/org/organisation_code_de.asp?shownav=1\" target=\"\" title=\"\">Organisation data service</a> \n                        ",
+                  "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Plan and requested actions/Plan and requested actions record entry/Location/Coded value@2-build.2.1"
+                },
+                {
+                  "description": "Free text field to be used if no code is available",
+                  "maximumMultiplicity": "1",
+                  "minimumMultiplicity": "0",
+                  "mro": "R",
+                  "name": "Free text",
+                  "type": "item",
+                  "valueDomain": [
+                    {
+                      "property": [
+                        {
+                          "maxLength": "150"
+                        }
+                      ],
+                      "type": "text"
+                    }
+                  ],
+                  "valueSets": "Free text",
+                  "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Plan and requested actions/Plan and requested actions record entry/Location/Free text@2-build.2.1"
+                }
+              ],
+              "description": "The location where the plan and requested actions were prepared.",
+              "maximumMultiplicity": "1",
+              "minimumMultiplicity": "0",
+              "mro": "R",
+              "name": "Location",
+              "type": "group",
+              "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Plan and requested actions/Plan and requested actions record entry/Location@2-build.2.1"
+            },
+            {
+              "description": "Including planned investigations, procedures and treatment for a person's identified conditions and priorities. For each action the following should be identified:outcome expectations, including the person\u2019s expectations. A record of the planned and requested actions. May be structured (table), with actions, names, dates, status, location, strategies.",
+              "maximumMultiplicity": "1",
+              "minimumMultiplicity": "0",
+              "mro": "R",
+              "name": "Actions for professionals",
+              "type": "item",
+              "valueDomain": [
+                {
+                  "type": "text"
+                }
+              ],
+              "valueSets": "Free text",
+              "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Plan and requested actions/Plan and requested actions record entry/Actions for professionals@2-build.2.1"
+            },
+            {
+              "description": "For each action the following should be identified:outcome expectations, including person\u2019s expectations. A record of the planned and requested actions. May be structured (table), with actions, names, dates, status, location, strategies.",
+              "maximumMultiplicity": "1",
+              "minimumMultiplicity": "0",
+              "mro": "R",
+              "name": "Actions for person or their carer",
+              "type": "item",
+              "valueDomain": [
+                {
+                  "type": "text"
+                }
+              ],
+              "valueSets": "Free text",
+              "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Plan and requested actions/Plan and requested actions record entry/Actions for person or their carer@2-build.2.1"
+            },
+            {
+              "description": "Indicates whether the person or their legitimate representative has agreed the entire plan or individual aspects of treatment, expected outcomes, risks and alternative treatments. A record of the agreement of the decisions made.",
+              "maximumMultiplicity": "1",
+              "minimumMultiplicity": "0",
+              "mro": "R",
+              "name": "Agreed with the person or their legitimate representative",
+              "type": "item",
+              "valueDomain": [
+                {
+                  "type": "text"
+                }
+              ],
+              "valueSets": "Free text",
+              "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Plan and requested actions/Plan and requested actions record entry/Agreed with the person or their legitimate representative@2-build.2.1"
+            },
+            {
+              "description": "The details of the outcome of the plan and requested actions.",
+              "maximumMultiplicity": "*",
+              "minimumMultiplicity": "0",
+              "mro": "R",
+              "name": "Outcome of plan and requested actions",
+              "type": "item",
+              "valueDomain": [
+                {
+                  "type": "text"
+                }
+              ],
+              "valueSets": "Free text.",
+              "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Plan and requested actions/Plan and requested actions record entry/Outcome of plan and requested actions@2-build.2.1"
+            },
+            {
+              "concept": [
+                {
+                  "description": "The name of the person completing the record.",
+                  "maximumMultiplicity": "1",
+                  "minimumMultiplicity": "0",
+                  "mro": "R",
+                  "name": "Name",
+                  "type": "item",
+                  "valueDomain": [
+                    {
+                      "property": [
+                        {
+                          "maxLength": "70"
+                        }
+                      ],
+                      "type": "string"
+                    }
+                  ],
+                  "valueSets": "Free text.",
+                  "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Plan and requested actions/Plan and requested actions record entry/Person completing record/Name@2-build.2.1"
+                },
+                {
+                  "description": "The organisational role of the person completing record.",
+                  "maximumMultiplicity": "1",
+                  "minimumMultiplicity": "0",
+                  "mro": "R",
+                  "name": "Role",
+                  "type": "item",
+                  "valueSets": "FHIR value set :-  <a href=\"https://simplifier.net/ukcore/codesystem-ukcore-sdsjobrolename\" target=\"\" title=\"\">SDSjobrole</a> \n                        ",
+                  "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Plan and requested actions/Plan and requested actions record entry/Person completing record/Role@2-build.2.1"
+                },
+                {
+                  "description": "The grade of the person completing the record.",
+                  "maximumMultiplicity": "1",
+                  "minimumMultiplicity": "0",
+                  "mro": "R",
+                  "name": "Grade",
+                  "type": "item",
+                  "valueDomain": [
+                    {
+                      "property": [
+                        {
+                          "maxLength": "150"
+                        }
+                      ],
+                      "type": "text"
+                    }
+                  ],
+                  "valueSets": "Free text.",
+                  "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Plan and requested actions/Plan and requested actions record entry/Person completing record/Grade@2-build.2.1"
+                },
+                {
+                  "description": "The main specialty of the person completing the record.",
+                  "maximumMultiplicity": "1",
+                  "minimumMultiplicity": "0",
+                  "mro": "R",
+                  "name": "Specialty",
+                  "type": "item",
+                  "valueDomain": [
+                    {
+                      "property": [
+                        {
+                          "maxLength": "3"
+                        }
+                      ],
+                      "type": "string"
+                    }
+                  ],
+                  "valueSets": "NHS data dictionary :-  <a href=\"https://datadictionary.nhs.uk/data_elements/activity_treatment_function_code.html?hl=activity%2Ctreatment%2Cfunction%2Ccode\" target=\"\" title=\"\">Activity treatment function code</a> \n                        ",
+                  "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Plan and requested actions/Plan and requested actions record entry/Person completing record/Specialty@2-build.2.1"
+                },
+                {
+                  "description": "The organisation the person completing the record works for.",
+                  "maximumMultiplicity": "1",
+                  "minimumMultiplicity": "0",
+                  "mro": "R",
+                  "name": "Organisation",
+                  "type": "group",
+                  "valueSets": "\n                             <span style=\"color: rgb(51, 51, 51); font-family: Arial, Helvetica, Geneva, sans-serif; font-size: 12px;\">NHS data dictionary : - </span> \n                             <a href=\"https://www.datadictionary.nhs.uk/supporting_information/organisation_data_service.html\" target=\"\" title=\"\">Organisation data service</a> \n                        ",
+                  "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Plan and requested actions/Plan and requested actions record entry/Person completing record/Organisation@2-build.2.1"
+                },
+                {
+                  "description": "Professional identifier for the person completing the record e.g. GMC number, HCPC number etc, or the personal identifier used by the local organisation.",
+                  "maximumMultiplicity": "1",
+                  "minimumMultiplicity": "0",
+                  "mro": "R",
+                  "name": "Professional identifier",
+                  "type": "item",
+                  "valueDomain": [
+                    {
+                      "property": [
+                        {
+                          "maxLength": "32"
+                        }
+                      ],
+                      "type": "string"
+                    }
+                  ],
+                  "valueSets": "NHS data dictionary :-  <a href=\"https://datadictionary.nhs.uk/data_elements/professional_registration_entry_identifier.html\" target=\"\" title=\"\">Professional registration identifier</a> \n                        ",
+                  "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Plan and requested actions/Plan and requested actions record entry/Person completing record/Professional identifier@2-build.2.1"
+                },
+                {
+                  "description": "The date and time the record was completed.",
+                  "maximumMultiplicity": "1",
+                  "minimumMultiplicity": "0",
+                  "mro": "R",
+                  "name": "Date completed",
+                  "type": "item",
+                  "valueDomain": [
+                    {
+                      "property": [
+                        {
+                          "timeStampPrecision": "YMDHM"
+                        }
+                      ],
+                      "type": "datetime"
+                    }
+                  ],
+                  "valueSets": "Date and time.",
+                  "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Plan and requested actions/Plan and requested actions record entry/Person completing record/Date completed@2-build.2.1"
+                },
+                {
+                  "description": "Contact details of the person completing the record. <br clear=\"none\"/> \n                        ",
+                  "maximumMultiplicity": "1",
+                  "minimumMultiplicity": "0",
+                  "mro": "R",
+                  "name": "Contact details",
+                  "type": "item",
+                  "valueDomain": [
+                    {
+                      "property": [
+                        {
+                          "maxLength": "35"
+                        }
+                      ],
+                      "type": "string"
+                    }
+                  ],
+                  "valueSets": "NHS data dictionary : -  <a href=\"https://datadictionary.nhs.uk/data_elements/uk_telephone_number.html?hl=number\" target=\"\" title=\"\">UK telephone number</a> \n                        ",
+                  "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Plan and requested actions/Plan and requested actions record entry/Person completing record/Contact details@2-build.2.1"
+                }
+              ],
+              "description": "Details of the person completing the record.",
+              "maximumMultiplicity": "1",
+              "minimumMultiplicity": "0",
+              "mro": "R",
+              "name": "Person completing record",
+              "type": "group",
+              "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Plan and requested actions/Plan and requested actions record entry/Person completing record@2-build.2.1"
+            }
+          ],
+          "description": "This is a plan and requested actions record entry. There may be 0 to many record entries under a section. Each record entry is made up of a number of elements or data items.",
+          "maximumMultiplicity": "*",
+          "minimumMultiplicity": "0",
+          "mro": "R",
+          "name": "Plan and requested actions record entry",
+          "type": "group",
+          "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Plan and requested actions/Plan and requested actions record entry@2-build.2.1"
+        }
+      ],
+      "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Plan and requested actions@2-build.2.1",
+      "description": "<p>The details of planned investigations, procedures and treatment, and whether this plan has been agreed with the person or their legitimate representative.</p>",
+      "implementationGuidance": "<p><br></p>",
+      "informationType": "",
+      "isComponent": true,
+      "maximumMultiplicity": "1",
+      "minimumMultiplicity": "0",
+      "mro": "R",
+      "name": "Plan and requested actions",
+      "relationshipType": "neither",
+      "type": "group",
+      "valueSets": ""
     }
   ]
 }
