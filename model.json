@@ -19786,6 +19786,765 @@
       "relationshipType": "neither",
       "type": "group",
       "valueSets": ""
+    },
+    {
+      "concept": [
+        {
+          "concept": [
+            {
+              "description": "The type of reaction experienced by the person (allergic, adverse, intolerance)",
+              "maximumMultiplicity": "1",
+              "minimumMultiplicity": "0",
+              "mro": "R",
+              "name": "Type of reaction",
+              "type": "item",
+              "valueSets": "FHIR value set :-  <a class=\"\" href=\"https://www.hl7.org/fhir/STU3/valueset-allergy-intolerance-type.html\" target=\"\" title=\"\">Allergy, Intolerance</a> \n                    ",
+              "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Allergies and adverse reactions/Allergies and adverse reactions record entry/Type of reaction@2-build.2.1"
+            },
+            {
+              "concept": [
+                {
+                  "description": "The coded value for causative agent",
+                  "maximumMultiplicity": "1",
+                  "minimumMultiplicity": "0",
+                  "mro": "R",
+                  "name": "Coded value",
+                  "type": "item",
+                  "valueSets": "\n                             <table class=\"detail spaced\" width=\"100%\" style=\"font-family: Arial, Helvetica, Geneva, sans-serif; font-size: 12px; max-width: 100%; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial; color: rgb(51, 51, 51);\">\n                                <tbody>\n                                    <tr>\n                                        <td colspan=\"3\" rowspan=\"1\" style=\"vertical-align: top;\">\n                                            <div class=\"xforms-control xforms-output xforms-mediatype-text-html xforms-mediatype-text\" id=\"xf-895\u2261xf-1239\" style=\"display: inline; zoom: 1;\">\n                                                <div class=\"xforms-output-output\" id=\"xf-895\u2261xf-1239\u2261\u2261c\" style=\"zoom: 1;\">dm+d:- any code from the VTM, VMP, AMP, VMPP, AMPP and ingredient concept classes</div>\n                                            </div>\n                                        </td>\n                                    </tr>\n                                </tbody>\n                            </table> \n                             <div>SNOMED CT : - &lt;105590001 |Substance OR &lt;373873005 |Pharmaceutical / biologic product| OR &lt;&lt;716186003 |No known allergy| OR 196461000000101 |Transfer-degraded drug allergy| OR 196471000000108 |Transfer-degraded non-drug allergy)<br clear=\"none\"/>\n                            </div> \n                        ",
+                  "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Allergies and adverse reactions/Allergies and adverse reactions record entry/Causative agent/Coded value@2-build.2.1"
+                },
+                {
+                  "description": "Free text field to be used if no code is available",
+                  "maximumMultiplicity": "1",
+                  "minimumMultiplicity": "0",
+                  "mro": "R",
+                  "name": "Free text",
+                  "type": "item",
+                  "valueDomain": [
+                    {
+                      "property": [
+                        {
+                          "maxLength": "150"
+                        }
+                      ],
+                      "type": "text"
+                    }
+                  ],
+                  "valueSets": "Free text",
+                  "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Allergies and adverse reactions/Allergies and adverse reactions record entry/Causative agent/Free text@2-build.2.1"
+                }
+              ],
+              "description": "The agent such as food, drug or substances that has caused or may cause an allergy, intolerance or adverse reaction in this person Or \u201cNo known drug allergies or adverse reactions\u201d Or \u201cInformation not available\u201d",
+              "maximumMultiplicity": "1",
+              "minimumMultiplicity": "1",
+              "mro": "M",
+              "name": "Causative agent",
+              "type": "group",
+              "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Allergies and adverse reactions/Allergies and adverse reactions record entry/Causative agent@2-build.2.1"
+            },
+            {
+              "concept": [
+                {
+                  "description": "The date that the reaction was identified.",
+                  "maximumMultiplicity": "1",
+                  "minimumMultiplicity": "0",
+                  "mro": "R",
+                  "name": "Date",
+                  "type": "item",
+                  "valueDomain": [
+                    {
+                      "property": [
+                        {
+                          "timeStampPrecision": "YMDHM"
+                        }
+                      ],
+                      "type": "datetime"
+                    }
+                  ],
+                  "valueSets": "Date and time",
+                  "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Allergies and adverse reactions/Allergies and adverse reactions record entry/Reaction details cluster/Date@2-build.2.1"
+                },
+                {
+                  "concept": [
+                    {
+                      "description": "The coded value for location.",
+                      "maximumMultiplicity": "1",
+                      "minimumMultiplicity": "0",
+                      "mro": "R",
+                      "name": "Coded value",
+                      "type": "item",
+                      "valueDomain": [
+                        {
+                          "property": [
+                            {
+                              "maxLength": "5",
+                              "minLength": "3"
+                            }
+                          ],
+                          "type": "string"
+                        }
+                      ],
+                      "valueSets": "NHS data dictionary : -  <a href=\"https://www.datadictionary.nhs.uk/data_dictionary/attributes/o/org/organisation_code_de.asp?shownav=1\" target=\"\" title=\"\">Organisation data service</a> \n                            ",
+                      "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Allergies and adverse reactions/Allergies and adverse reactions record entry/Reaction details cluster/Location/Coded value@2-build.2.1"
+                    },
+                    {
+                      "description": "Free text field to be used if no code is available",
+                      "maximumMultiplicity": "1",
+                      "minimumMultiplicity": "0",
+                      "mro": "R",
+                      "name": "Free text",
+                      "type": "item",
+                      "valueDomain": [
+                        {
+                          "property": [
+                            {
+                              "maxLength": "150"
+                            }
+                          ],
+                          "type": "text"
+                        }
+                      ],
+                      "valueSets": "Free text",
+                      "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Allergies and adverse reactions/Allergies and adverse reactions record entry/Reaction details cluster/Location/Free text@2-build.2.1"
+                    }
+                  ],
+                  "description": "Details of where the allergy was identified. Linked to the date of the diagnosis by the professional.",
+                  "maximumMultiplicity": "1",
+                  "minimumMultiplicity": "0",
+                  "mro": "R",
+                  "name": "Location",
+                  "type": "group",
+                  "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Allergies and adverse reactions/Allergies and adverse reactions record entry/Reaction details cluster/Location@2-build.2.1"
+                },
+                {
+                  "concept": [
+                    {
+                      "description": "The coded value for substance",
+                      "maximumMultiplicity": "1",
+                      "minimumMultiplicity": "0",
+                      "mro": "R",
+                      "name": "Coded value",
+                      "type": "item",
+                      "valueSets": "SNOMED CT : - &lt;105590001 | Substance (substance) | or &lt;373873005 | Pharmaceutical / biologic product (product) | <br clear=\"none\"/> \n                            ",
+                      "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Allergies and adverse reactions/Allergies and adverse reactions record entry/Reaction details cluster/Substance/Coded value@2-build.2.1"
+                    },
+                    {
+                      "description": "Free text field to be used if no code is available",
+                      "maximumMultiplicity": "1",
+                      "minimumMultiplicity": "0",
+                      "mro": "R",
+                      "name": "Free text",
+                      "type": "item",
+                      "valueDomain": [
+                        {
+                          "property": [
+                            {
+                              "maxLength": "150"
+                            }
+                          ],
+                          "type": "text"
+                        }
+                      ],
+                      "valueSets": "Free text",
+                      "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Allergies and adverse reactions/Allergies and adverse reactions record entry/Reaction details cluster/Substance/Free text@2-build.2.1"
+                    }
+                  ],
+                  "description": "The substance, or a class of substances, that is considered to be responsible for the adverse reaction.",
+                  "maximumMultiplicity": "1",
+                  "minimumMultiplicity": "0",
+                  "mro": "R",
+                  "name": "Substance",
+                  "type": "group",
+                  "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Allergies and adverse reactions/Allergies and adverse reactions record entry/Reaction details cluster/Substance@2-build.2.1"
+                },
+                {
+                  "concept": [
+                    {
+                      "description": "The coded value for description of reaction.",
+                      "maximumMultiplicity": "1",
+                      "minimumMultiplicity": "0",
+                      "mro": "R",
+                      "name": "Coded value",
+                      "type": "item",
+                      "valueSets": "SNOMED CT: - ^1127581000000103 |Health issues simple reference set|",
+                      "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Allergies and adverse reactions/Allergies and adverse reactions record entry/Reaction details cluster/Description of reaction/Coded value@2-build.2.1"
+                    },
+                    {
+                      "description": "Free text field to be used if no code is available",
+                      "maximumMultiplicity": "1",
+                      "minimumMultiplicity": "0",
+                      "mro": "R",
+                      "name": "Free text",
+                      "type": "item",
+                      "valueDomain": [
+                        {
+                          "property": [
+                            {
+                              "maxLength": "150"
+                            }
+                          ],
+                          "type": "text"
+                        }
+                      ],
+                      "valueSets": "Free text",
+                      "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Allergies and adverse reactions/Allergies and adverse reactions record entry/Reaction details cluster/Description of reaction/Free text@2-build.2.1"
+                    }
+                  ],
+                  "description": "A description of the manifestation of the allergic or adverse reaction experienced by the person. For example, skin rash.",
+                  "maximumMultiplicity": "1",
+                  "minimumMultiplicity": "0",
+                  "mro": "R",
+                  "name": "Description of reaction",
+                  "type": "group",
+                  "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Allergies and adverse reactions/Allergies and adverse reactions record entry/Reaction details cluster/Description of reaction@2-build.2.1"
+                },
+                {
+                  "description": "Date and time when manifestations showed e.g could be at home a few days earlier than the contact",
+                  "maximumMultiplicity": "1",
+                  "minimumMultiplicity": "0",
+                  "mro": "R",
+                  "name": "Onset date",
+                  "type": "item",
+                  "valueDomain": [
+                    {
+                      "property": [
+                        {
+                          "timeStampPrecision": "Y"
+                        }
+                      ],
+                      "type": "datetime"
+                    }
+                  ],
+                  "valueSets": "Date and time",
+                  "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Allergies and adverse reactions/Allergies and adverse reactions record entry/Reaction details cluster/Onset date@2-build.2.1"
+                },
+                {
+                  "concept": [
+                    {
+                      "description": "The coded value for severity",
+                      "maximumMultiplicity": "1",
+                      "minimumMultiplicity": "0",
+                      "mro": "R",
+                      "name": "Coded value",
+                      "type": "item",
+                      "valueSets": "FHIR value set : -  <a href=\"https://simplifier.net/packages/hl7.fhir.r4.core/4.0.1/files/80724\" target=\"\" title=\"\">Severity</a> \n                            ",
+                      "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Allergies and adverse reactions/Allergies and adverse reactions record entry/Reaction details cluster/Severity/Coded value@2-build.2.1"
+                    },
+                    {
+                      "description": "Free text field to be used if no code is available",
+                      "maximumMultiplicity": "1",
+                      "minimumMultiplicity": "0",
+                      "mro": "R",
+                      "name": "Free text",
+                      "type": "item",
+                      "valueDomain": [
+                        {
+                          "property": [
+                            {
+                              "maxLength": "150"
+                            }
+                          ],
+                          "type": "text"
+                        }
+                      ],
+                      "valueSets": "Free text",
+                      "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Allergies and adverse reactions/Allergies and adverse reactions record entry/Reaction details cluster/Severity/Free text@2-build.2.1"
+                    }
+                  ],
+                  "description": "A description of the severity of the reaction.",
+                  "maximumMultiplicity": "1",
+                  "minimumMultiplicity": "0",
+                  "mro": "R",
+                  "name": "Severity",
+                  "type": "group",
+                  "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Allergies and adverse reactions/Allergies and adverse reactions record entry/Reaction details cluster/Severity@2-build.2.1"
+                },
+                {
+                  "concept": [
+                    {
+                      "description": "The coded value for certainty.",
+                      "maximumMultiplicity": "1",
+                      "minimumMultiplicity": "0",
+                      "mro": "R",
+                      "name": "Coded value",
+                      "type": "item",
+                      "valueSets": "FHIR value set : -  <a href=\"https://simplifier.net/packages/hl7.fhir.r4.core/4.0.1/files/80047\" target=\"\" title=\"\">Certainty</a> \n                            ",
+                      "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Allergies and adverse reactions/Allergies and adverse reactions record entry/Reaction details cluster/Certainty/Coded value@2-build.2.1"
+                    },
+                    {
+                      "description": "Free text field to be used if no code is available",
+                      "maximumMultiplicity": "1",
+                      "minimumMultiplicity": "0",
+                      "mro": "R",
+                      "name": "Free text",
+                      "type": "item",
+                      "valueDomain": [
+                        {
+                          "property": [
+                            {
+                              "maxLength": "150"
+                            }
+                          ],
+                          "type": "text"
+                        }
+                      ],
+                      "valueSets": "Free text",
+                      "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Allergies and adverse reactions/Allergies and adverse reactions record entry/Reaction details cluster/Certainty/Free text@2-build.2.1"
+                    }
+                  ],
+                  "description": "A description of the certainty that the stated causative agent caused the allergic or adverse reaction.",
+                  "maximumMultiplicity": "1",
+                  "minimumMultiplicity": "0",
+                  "mro": "R",
+                  "name": "Certainty",
+                  "type": "group",
+                  "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Allergies and adverse reactions/Allergies and adverse reactions record entry/Reaction details cluster/Certainty@2-build.2.1"
+                },
+                {
+                  "concept": [
+                    {
+                      "description": "The coded value for route of exposure",
+                      "maximumMultiplicity": "1",
+                      "minimumMultiplicity": "0",
+                      "mro": "R",
+                      "name": "Coded value",
+                      "type": "item",
+                      "valueSets": "SNOMED CT: - ^999000051000001100 |ePrescribing route of administration simple reference set|",
+                      "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Allergies and adverse reactions/Allergies and adverse reactions record entry/Reaction details cluster/Route of exposure/Coded value@2-build.2.1"
+                    },
+                    {
+                      "description": "Free text field to be used if no coded text available",
+                      "maximumMultiplicity": "1",
+                      "minimumMultiplicity": "0",
+                      "mro": "R",
+                      "name": "Free text",
+                      "type": "item",
+                      "valueDomain": [
+                        {
+                          "property": [
+                            {
+                              "maxLength": "150"
+                            }
+                          ],
+                          "type": "text"
+                        }
+                      ],
+                      "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Allergies and adverse reactions/Allergies and adverse reactions record entry/Reaction details cluster/Route of exposure/Free text@2-build.2.1"
+                    }
+                  ],
+                  "description": "The route the person was exposed to the substance",
+                  "maximumMultiplicity": "1",
+                  "minimumMultiplicity": "0",
+                  "mro": "R",
+                  "name": "Route of exposure",
+                  "type": "group",
+                  "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Allergies and adverse reactions/Allergies and adverse reactions record entry/Reaction details cluster/Route of exposure@2-build.2.1"
+                },
+                {
+                  "description": "Any additional comment or clarification about the adverse reaction.",
+                  "maximumMultiplicity": "1",
+                  "minimumMultiplicity": "0",
+                  "name": "Comment",
+                  "type": "item",
+                  "valueDomain": [
+                    {
+                      "property": [
+                        {
+                          "maxLength": "150"
+                        }
+                      ],
+                      "type": "text"
+                    }
+                  ],
+                  "valueSets": "Free text",
+                  "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Allergies and adverse reactions/Allergies and adverse reactions record entry/Reaction details cluster/Comment@2-build.2.1"
+                }
+              ],
+              "description": "Details of the reaction.",
+              "maximumMultiplicity": "*",
+              "minimumMultiplicity": "0",
+              "mro": "R",
+              "name": "Reaction details cluster",
+              "type": "group",
+              "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Allergies and adverse reactions/Allergies and adverse reactions record entry/Reaction details cluster@2-build.2.1"
+            },
+            {
+              "description": "Results of investigations that confirmed the certainty of the diagnosis. Examples might include results of skin prick allergy tests",
+              "maximumMultiplicity": "1",
+              "minimumMultiplicity": "0",
+              "mro": "R",
+              "name": "Evidence",
+              "type": "item",
+              "valueDomain": [
+                {
+                  "property": [
+                    {
+                      "maxLength": "150"
+                    }
+                  ],
+                  "type": "text"
+                }
+              ],
+              "valueSets": "Free text",
+              "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Allergies and adverse reactions/Allergies and adverse reactions record entry/Evidence@2-build.2.1"
+            },
+            {
+              "description": "When the reaction was first experienced i.e this may not be the first this has happened. May be a date or partial date (e.g. year) or text ( <b>e.g. during childhood</b> )",
+              "maximumMultiplicity": "1",
+              "minimumMultiplicity": "0",
+              "mro": "R",
+              "name": "Date first experienced",
+              "type": "item",
+              "valueDomain": [
+                {
+                  "property": [
+                    {
+                      "timeStampPrecision": "Y"
+                    }
+                  ],
+                  "type": "datetime"
+                }
+              ],
+              "valueSets": "Date and time",
+              "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Allergies and adverse reactions/Allergies and adverse reactions record entry/Date first experienced@2-build.2.1"
+            },
+            {
+              "description": "The date the allergy was diagnosed as ended",
+              "maximumMultiplicity": "1",
+              "minimumMultiplicity": "0",
+              "mro": "R",
+              "name": "Allergy end date",
+              "type": "item",
+              "valueDomain": [
+                {
+                  "property": [
+                    {
+                      "timeStampPrecision": "Y"
+                    }
+                  ],
+                  "type": "date"
+                }
+              ],
+              "valueSets": "Date and time\u00a0",
+              "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Allergies and adverse reactions/Allergies and adverse reactions record entry/Allergy end date@2-build.2.1"
+            },
+            {
+              "description": "Any further comments on the person's allergies or adverse reactions.",
+              "maximumMultiplicity": "1",
+              "minimumMultiplicity": "0",
+              "name": "Comment",
+              "type": "item",
+              "valueDomain": [
+                {
+                  "type": "text"
+                }
+              ],
+              "valueSets": "Free text",
+              "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Allergies and adverse reactions/Allergies and adverse reactions record entry/Comment@2-build.2.1"
+            },
+            {
+              "concept": [
+                {
+                  "description": "The name of the professional.",
+                  "maximumMultiplicity": "1",
+                  "minimumMultiplicity": "0",
+                  "mro": "R",
+                  "name": "Name",
+                  "type": "item",
+                  "valueDomain": [
+                    {
+                      "property": [
+                        {
+                          "maxLength": "70"
+                        }
+                      ],
+                      "type": "string"
+                    }
+                  ],
+                  "valueSets": "Free text.",
+                  "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Allergies and adverse reactions/Allergies and adverse reactions record entry/Performing professional/Name@2-build.2.1"
+                },
+                {
+                  "description": "The role the professional has in relation to the person e.g. GP, physiotherapist, community nurse, social worker etc",
+                  "maximumMultiplicity": "1",
+                  "minimumMultiplicity": "0",
+                  "mro": "R",
+                  "name": "Role",
+                  "type": "item",
+                  "valueSets": "FHIR value set :-  <a class=\"\" href=\"https://simplifier.net/ukcore/codesystem-ukcore-sdsjobrolename\" target=\"\" title=\"\">SDSjobroletype</a> \n                        ",
+                  "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Allergies and adverse reactions/Allergies and adverse reactions record entry/Performing professional/Role@2-build.2.1"
+                },
+                {
+                  "description": "The grade of the professional.",
+                  "maximumMultiplicity": "1",
+                  "minimumMultiplicity": "0",
+                  "mro": "R",
+                  "name": "Grade",
+                  "type": "item",
+                  "valueDomain": [
+                    {
+                      "property": [
+                        {
+                          "maxLength": "150"
+                        }
+                      ],
+                      "type": "text"
+                    }
+                  ],
+                  "valueSets": "Free text",
+                  "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Allergies and adverse reactions/Allergies and adverse reactions record entry/Performing professional/Grade@2-build.2.1"
+                },
+                {
+                  "description": "The specialty of the professional e.g. physiotherapy, oncology, mental health etc",
+                  "maximumMultiplicity": "1",
+                  "minimumMultiplicity": "0",
+                  "mro": "R",
+                  "name": "Speciality",
+                  "type": "item",
+                  "valueDomain": [
+                    {
+                      "property": [
+                        {
+                          "maxLength": "3"
+                        }
+                      ],
+                      "type": "string"
+                    }
+                  ],
+                  "valueSets": "NHS data dictionary -  <a href=\"https://datadictionary.nhs.uk/data_elements/activity_treatment_function_code.html?hl=activity%2Ctreatment%2Cfunction%2Ccode\" target=\"\" title=\"\">Activity treatment function code</a> \n                        ",
+                  "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Allergies and adverse reactions/Allergies and adverse reactions record entry/Performing professional/Speciality@2-build.2.1"
+                },
+                {
+                  "description": "Professional identifier for the professional e.g. GMC number, HCPC number etc or the personal identifier used by the local organisation.",
+                  "maximumMultiplicity": "1",
+                  "minimumMultiplicity": "0",
+                  "mro": "R",
+                  "name": "Professional identifier",
+                  "type": "item",
+                  "valueDomain": [
+                    {
+                      "property": [
+                        {
+                          "maxLength": "32"
+                        }
+                      ],
+                      "type": "string"
+                    }
+                  ],
+                  "valueSets": "NHS data dictionary : -  <a href=\"https://datadictionary.nhs.uk/data_elements/professional_registration_entry_identifier.html\" target=\"\" title=\"\">Professional registration identifier</a> \n                        ",
+                  "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Allergies and adverse reactions/Allergies and adverse reactions record entry/Performing professional/Professional identifier@2-build.2.1"
+                },
+                {
+                  "description": "The name of the organisation the professional works for.",
+                  "maximumMultiplicity": "1",
+                  "minimumMultiplicity": "0",
+                  "mro": "R",
+                  "name": "Organisation",
+                  "type": "group",
+                  "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Allergies and adverse reactions/Allergies and adverse reactions record entry/Performing professional/Organisation@2-build.2.1"
+                },
+                {
+                  "description": "Contact details of the professional",
+                  "maximumMultiplicity": "1",
+                  "minimumMultiplicity": "0",
+                  "mro": "R",
+                  "name": "Contact details",
+                  "type": "item",
+                  "valueDomain": [
+                    {
+                      "property": [
+                        {
+                          "maxLength": "35"
+                        }
+                      ],
+                      "type": "string"
+                    }
+                  ],
+                  "valueSets": "NHS data dictionary -  <a href=\"https://datadictionary.nhs.uk/data_elements/uk_telephone_number.html?hl=number\" target=\"\" title=\"\">UK phone number</a> \n                        ",
+                  "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Allergies and adverse reactions/Allergies and adverse reactions record entry/Performing professional/Contact details@2-build.2.1"
+                }
+              ],
+              "description": "The professional who identified the reaction.",
+              "maximumMultiplicity": "1",
+              "minimumMultiplicity": "0",
+              "mro": "R",
+              "name": "Performing professional",
+              "type": "group",
+              "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Allergies and adverse reactions/Allergies and adverse reactions record entry/Performing professional@2-build.2.1"
+            },
+            {
+              "concept": [
+                {
+                  "description": "The name of the person completing the record.",
+                  "maximumMultiplicity": "1",
+                  "minimumMultiplicity": "0",
+                  "mro": "R",
+                  "name": "Name",
+                  "type": "item",
+                  "valueDomain": [
+                    {
+                      "property": [
+                        {
+                          "maxLength": "70"
+                        }
+                      ],
+                      "type": "string"
+                    }
+                  ],
+                  "valueSets": "Free text.",
+                  "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Allergies and adverse reactions/Allergies and adverse reactions record entry/Person completing record/Name@2-build.2.1"
+                },
+                {
+                  "description": "The organisational role of the person completing record.",
+                  "maximumMultiplicity": "1",
+                  "minimumMultiplicity": "0",
+                  "mro": "R",
+                  "name": "Role",
+                  "type": "item",
+                  "valueSets": "FHIR value set :-  <a href=\"https://simplifier.net/ukcore/codesystem-ukcore-sdsjobrolename\" target=\"\" title=\"\">SDSjobrole</a> \n                        ",
+                  "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Allergies and adverse reactions/Allergies and adverse reactions record entry/Person completing record/Role@2-build.2.1"
+                },
+                {
+                  "description": "The grade of the person completing the record.",
+                  "maximumMultiplicity": "1",
+                  "minimumMultiplicity": "0",
+                  "mro": "R",
+                  "name": "Grade",
+                  "type": "item",
+                  "valueDomain": [
+                    {
+                      "property": [
+                        {
+                          "maxLength": "150"
+                        }
+                      ],
+                      "type": "text"
+                    }
+                  ],
+                  "valueSets": "Free text.",
+                  "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Allergies and adverse reactions/Allergies and adverse reactions record entry/Person completing record/Grade@2-build.2.1"
+                },
+                {
+                  "description": "The main specialty of the person completing the record.",
+                  "maximumMultiplicity": "1",
+                  "minimumMultiplicity": "0",
+                  "mro": "R",
+                  "name": "Specialty",
+                  "type": "item",
+                  "valueDomain": [
+                    {
+                      "property": [
+                        {
+                          "maxLength": "3"
+                        }
+                      ],
+                      "type": "string"
+                    }
+                  ],
+                  "valueSets": "NHS data dictionary :-  <a href=\"https://datadictionary.nhs.uk/data_elements/activity_treatment_function_code.html?hl=activity%2Ctreatment%2Cfunction%2Ccode\" target=\"\" title=\"\">Activity treatment function code</a> \n                        ",
+                  "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Allergies and adverse reactions/Allergies and adverse reactions record entry/Person completing record/Specialty@2-build.2.1"
+                },
+                {
+                  "description": "The organisation the person completing the record works for.",
+                  "maximumMultiplicity": "1",
+                  "minimumMultiplicity": "0",
+                  "mro": "R",
+                  "name": "Organisation",
+                  "type": "group",
+                  "valueSets": "\n                             <span style=\"color: rgb(51, 51, 51); font-family: Arial, Helvetica, Geneva, sans-serif; font-size: 12px;\">NHS data dictionary : - </span> \n                             <a href=\"https://www.datadictionary.nhs.uk/supporting_information/organisation_data_service.html\" target=\"\" title=\"\">Organisation data service</a> \n                        ",
+                  "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Allergies and adverse reactions/Allergies and adverse reactions record entry/Person completing record/Organisation@2-build.2.1"
+                },
+                {
+                  "description": "Professional identifier for the person completing the record e.g. GMC number, HCPC number etc, or the personal identifier used by the local organisation.",
+                  "maximumMultiplicity": "1",
+                  "minimumMultiplicity": "0",
+                  "mro": "R",
+                  "name": "Professional identifier",
+                  "type": "item",
+                  "valueDomain": [
+                    {
+                      "property": [
+                        {
+                          "maxLength": "32"
+                        }
+                      ],
+                      "type": "string"
+                    }
+                  ],
+                  "valueSets": "NHS data dictionary :-  <a href=\"https://datadictionary.nhs.uk/data_elements/professional_registration_entry_identifier.html\" target=\"\" title=\"\">Professional registration identifier</a> \n                        ",
+                  "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Allergies and adverse reactions/Allergies and adverse reactions record entry/Person completing record/Professional identifier@2-build.2.1"
+                },
+                {
+                  "description": "The date and time the record was completed.",
+                  "maximumMultiplicity": "1",
+                  "minimumMultiplicity": "0",
+                  "mro": "R",
+                  "name": "Date completed",
+                  "type": "item",
+                  "valueDomain": [
+                    {
+                      "property": [
+                        {
+                          "timeStampPrecision": "YMDHM"
+                        }
+                      ],
+                      "type": "datetime"
+                    }
+                  ],
+                  "valueSets": "Date and time.",
+                  "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Allergies and adverse reactions/Allergies and adverse reactions record entry/Person completing record/Date completed@2-build.2.1"
+                },
+                {
+                  "description": "Contact details of the person completing the record. <br clear=\"none\"/> \n                        ",
+                  "maximumMultiplicity": "1",
+                  "minimumMultiplicity": "0",
+                  "mro": "R",
+                  "name": "Contact details",
+                  "type": "item",
+                  "valueDomain": [
+                    {
+                      "property": [
+                        {
+                          "maxLength": "35"
+                        }
+                      ],
+                      "type": "string"
+                    }
+                  ],
+                  "valueSets": "NHS data dictionary : -  <a href=\"https://datadictionary.nhs.uk/data_elements/uk_telephone_number.html?hl=number\" target=\"\" title=\"\">UK telephone number</a> \n                        ",
+                  "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Allergies and adverse reactions/Allergies and adverse reactions record entry/Person completing record/Contact details@2-build.2.1"
+                }
+              ],
+              "description": "Details of the person completing the record.",
+              "maximumMultiplicity": "1",
+              "minimumMultiplicity": "0",
+              "mro": "R",
+              "name": "Person completing record",
+              "type": "group",
+              "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Allergies and adverse reactions/Allergies and adverse reactions record entry/Person completing record@2-build.2.1"
+            }
+          ],
+          "description": "This is a allergies and adverse reactions record entry. There may be 1 to many record entries under a section.  <br clear=\"none\"/> \n                     <br clear=\"none\"/> Each record entry is made up of a number of elements or data items.",
+          "maximumMultiplicity": "*",
+          "minimumMultiplicity": "0",
+          "mro": "R",
+          "name": "Allergies and adverse reactions record entry",
+          "type": "group",
+          "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Allergies and adverse reactions/Allergies and adverse reactions record entry@2-build.2.1"
+        }
+      ],
+      "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Allergies and adverse reactions@2-build.2.1",
+      "description": "<p>Allergies and adverse reactions</p>",
+      "implementationGuidance": "<p><br></p>",
+      "informationType": "",
+      "isComponent": true,
+      "maximumMultiplicity": "1",
+      "minimumMultiplicity": "0",
+      "mro": "R",
+      "name": "Allergies and adverse reactions",
+      "relationshipType": "neither",
+      "type": "group",
+      "valueSets": ""
     }
   ]
 }
