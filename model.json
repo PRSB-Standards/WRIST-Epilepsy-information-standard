@@ -23432,6 +23432,503 @@
       "relationshipType": "neither",
       "type": "group",
       "valueSets": ""
+    },
+    {
+      "concept": [
+        {
+          "concept": [
+            {
+              "description": "The coded value for the type of care plan",
+              "maximumMultiplicity": "1",
+              "minimumMultiplicity": "0",
+              "mro": "R",
+              "name": "Coded value",
+              "type": "item",
+              "valueSets": "SNOMED CT: -\u00a0999001471000000108 | Care plan type simple reference set (foundation metadata concept) |",
+              "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Additional support plans/Additional support plan name/Coded value@2-build.2.1"
+            },
+            {
+              "description": "Free text if no coded value is available",
+              "maximumMultiplicity": "1",
+              "minimumMultiplicity": "0",
+              "mro": "R",
+              "name": "Free text",
+              "type": "item",
+              "valueDomain": [
+                {
+                  "type": "text"
+                }
+              ],
+              "valueSets": "Free text",
+              "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Additional support plans/Additional support plan name/Free text@2-build.2.1"
+            }
+          ],
+          "description": "The name of the particular additional supporting plan, e.g. dieticians plan, wound management plan, discharge management plan and behaviour support plan.",
+          "maximumMultiplicity": "1",
+          "minimumMultiplicity": "0",
+          "mro": "R",
+          "name": "Additional support plan name",
+          "type": "group",
+          "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Additional support plans/Additional support plan name@2-build.2.1"
+        },
+        {
+          "description": "This is the content of any additional care and support plan which the person and/or care professional consider should be shared with others providing care and support. May be structured in different ways, e.g. tables, diagrams, images. This is the content of any additional care and support plan which the individual and/or care professional consider should be shared with others providing care and support. It should be structured as recommended for the care and support plan and if contains additional detail, it may be referenced here.",
+          "maximumMultiplicity": "1",
+          "minimumMultiplicity": "0",
+          "mro": "R",
+          "name": "Additional support plan content",
+          "type": "item",
+          "valueDomain": [
+            {
+              "type": "text"
+            }
+          ],
+          "valueSets": "Free text",
+          "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Additional support plans/Additional support plan content@2-build.2.1"
+        },
+        {
+          "description": "This is the date/interval when this information will next be reviewed. SNOMED CT tag : -\u00a0425268008 | Review of care plan (procedure) |",
+          "maximumMultiplicity": "1",
+          "minimumMultiplicity": "0",
+          "mro": "R",
+          "name": "Planned review date/interval",
+          "type": "item",
+          "valueDomain": [
+            {
+              "type": "datetime"
+            }
+          ],
+          "valueSets": "Date and time",
+          "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Additional support plans/Planned review date/interval@2-build.2.1"
+        },
+        {
+          "concept": [
+            {
+              "description": "The name of the professional with responsibility for the care of the person.",
+              "maximumMultiplicity": "1",
+              "minimumMultiplicity": "0",
+              "mro": "R",
+              "name": "Name",
+              "type": "item",
+              "valueDomain": [
+                {
+                  "property": [
+                    {
+                      "maxLength": "70"
+                    }
+                  ],
+                  "type": "text"
+                }
+              ],
+              "valueSets": "Free text",
+              "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Additional support plans/Responsibility for review/Name@2-build.2.1"
+            },
+            {
+              "description": "The role the professional has in relation to the person e.g. GP, physiotherapist, community nurse, social worker, key worker, care home manager, care coordinator, LA hospital liaison person, care home contact, hospital clinician, Independent Mental Capacity Advocate (IMCA) etc",
+              "maximumMultiplicity": "1",
+              "minimumMultiplicity": "0",
+              "mro": "R",
+              "name": "Role",
+              "type": "item",
+              "valueSets": "FHIR value set : -  <a href=\"https://simplifier.net/ukcore/codesystem-ukcore-sdsjobrolename\" target=\"\" title=\"\">SDSjobrole</a> \n                    ",
+              "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Additional support plans/Responsibility for review/Role@2-build.2.1"
+            },
+            {
+              "description": "Contact details of the professional (e.g. telephone number, email address etc.).",
+              "maximumMultiplicity": "1",
+              "minimumMultiplicity": "0",
+              "mro": "R",
+              "name": "Contact details",
+              "type": "item",
+              "valueDomain": [
+                {
+                  "property": [
+                    {
+                      "maxLength": "35"
+                    }
+                  ],
+                  "type": "string"
+                }
+              ],
+              "valueSets": "Free text",
+              "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Additional support plans/Responsibility for review/Contact details@2-build.2.1"
+            }
+          ],
+          "description": "This is a record of who has responsibility for arranging review of this information. Should include their name, role and contact details.",
+          "maximumMultiplicity": "1",
+          "minimumMultiplicity": "0",
+          "mro": "R",
+          "name": "Responsibility for review",
+          "type": "group",
+          "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Additional support plans/Responsibility for review@2-build.2.1"
+        },
+        {
+          "description": "This is a record of the date that this information was last updated.",
+          "maximumMultiplicity": "1",
+          "minimumMultiplicity": "0",
+          "mro": "R",
+          "name": "Date this plan was last updated",
+          "type": "item",
+          "valueDomain": [
+            {
+              "property": [
+                {
+                  "timeStampPrecision": "YMDHM"
+                }
+              ],
+              "type": "datetime"
+            }
+          ],
+          "valueSets": "Date and time",
+          "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Additional support plans/Date this plan was last updated@2-build.2.1"
+        },
+        {
+          "concept": [
+            {
+              "description": "The coded value for location",
+              "maximumMultiplicity": "1",
+              "minimumMultiplicity": "0",
+              "mro": "R",
+              "name": "Coded value",
+              "type": "item",
+              "valueDomain": [
+                {
+                  "property": [
+                    {
+                      "maxLength": "5",
+                      "minLength": "3"
+                    }
+                  ],
+                  "type": "string"
+                }
+              ],
+              "valueSets": "NHS data dictionary:-  <a href=\"https://www.datadictionary.nhs.uk/data_dictionary/attributes/o/org/organisation_code_de.asp?shownav=1\" target=\"\" title=\"\">Organisation data service</a> \n                    ",
+              "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Additional support plans/Location/Coded value@2-build.2.1"
+            },
+            {
+              "description": "Free text field to be used if no code is available",
+              "maximumMultiplicity": "1",
+              "minimumMultiplicity": "0",
+              "mro": "R",
+              "name": "Free text",
+              "type": "item",
+              "valueDomain": [
+                {
+                  "property": [
+                    {
+                      "maxLength": "150"
+                    }
+                  ],
+                  "type": "text"
+                }
+              ],
+              "valueSets": "Free text",
+              "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Additional support plans/Location/Free text@2-build.2.1"
+            }
+          ],
+          "description": "The location where the additional support plan was prepared.",
+          "maximumMultiplicity": "1",
+          "minimumMultiplicity": "0",
+          "mro": "R",
+          "name": "Location",
+          "type": "group",
+          "valueSets": "ODS code or free text",
+          "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Additional support plans/Location@2-build.2.1"
+        },
+        {
+          "concept": [
+            {
+              "description": "The name of the professional.",
+              "maximumMultiplicity": "1",
+              "minimumMultiplicity": "0",
+              "mro": "R",
+              "name": "Name",
+              "type": "item",
+              "valueDomain": [
+                {
+                  "property": [
+                    {
+                      "maxLength": "70"
+                    }
+                  ],
+                  "type": "string"
+                }
+              ],
+              "valueSets": "Free text.",
+              "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Additional support plans/Performing professional/Name@2-build.2.1"
+            },
+            {
+              "description": "The role the professional has in relation to the person e.g. GP, physiotherapist, community nurse, social worker etc",
+              "maximumMultiplicity": "1",
+              "minimumMultiplicity": "0",
+              "mro": "R",
+              "name": "Role",
+              "type": "item",
+              "valueSets": "FHIR value set :-  <a class=\"\" href=\"https://simplifier.net/ukcore/codesystem-ukcore-sdsjobrolename\" target=\"\" title=\"\">SDSjobroletype</a> \n                    ",
+              "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Additional support plans/Performing professional/Role@2-build.2.1"
+            },
+            {
+              "description": "The grade of the professional.",
+              "maximumMultiplicity": "1",
+              "minimumMultiplicity": "0",
+              "mro": "R",
+              "name": "Grade",
+              "type": "item",
+              "valueDomain": [
+                {
+                  "property": [
+                    {
+                      "maxLength": "150"
+                    }
+                  ],
+                  "type": "text"
+                }
+              ],
+              "valueSets": "Free text",
+              "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Additional support plans/Performing professional/Grade@2-build.2.1"
+            },
+            {
+              "description": "The specialty of the professional e.g. physiotherapy, oncology, mental health etc",
+              "maximumMultiplicity": "1",
+              "minimumMultiplicity": "0",
+              "mro": "R",
+              "name": "Speciality",
+              "type": "item",
+              "valueDomain": [
+                {
+                  "property": [
+                    {
+                      "maxLength": "3"
+                    }
+                  ],
+                  "type": "string"
+                }
+              ],
+              "valueSets": "NHS data dictionary -  <a href=\"https://datadictionary.nhs.uk/data_elements/activity_treatment_function_code.html?hl=activity%2Ctreatment%2Cfunction%2Ccode\" target=\"\" title=\"\">Activity treatment function code</a> \n                    ",
+              "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Additional support plans/Performing professional/Speciality@2-build.2.1"
+            },
+            {
+              "description": "Professional identifier for the professional e.g. GMC number, HCPC number etc or the personal identifier used by the local organisation.",
+              "maximumMultiplicity": "1",
+              "minimumMultiplicity": "0",
+              "mro": "R",
+              "name": "Professional identifier",
+              "type": "item",
+              "valueDomain": [
+                {
+                  "property": [
+                    {
+                      "maxLength": "32"
+                    }
+                  ],
+                  "type": "string"
+                }
+              ],
+              "valueSets": "NHS data dictionary : -  <a href=\"https://datadictionary.nhs.uk/data_elements/professional_registration_entry_identifier.html\" target=\"\" title=\"\">Professional registration identifier</a> \n                    ",
+              "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Additional support plans/Performing professional/Professional identifier@2-build.2.1"
+            },
+            {
+              "description": "The name of the organisation the professional works for.",
+              "maximumMultiplicity": "1",
+              "minimumMultiplicity": "0",
+              "mro": "R",
+              "name": "Organisation",
+              "type": "group",
+              "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Additional support plans/Performing professional/Organisation@2-build.2.1"
+            },
+            {
+              "description": "Contact details of the professional",
+              "maximumMultiplicity": "1",
+              "minimumMultiplicity": "0",
+              "mro": "R",
+              "name": "Contact details",
+              "type": "item",
+              "valueDomain": [
+                {
+                  "property": [
+                    {
+                      "maxLength": "35"
+                    }
+                  ],
+                  "type": "string"
+                }
+              ],
+              "valueSets": "NHS data dictionary -  <a href=\"https://datadictionary.nhs.uk/data_elements/uk_telephone_number.html?hl=number\" target=\"\" title=\"\">UK phone number</a> \n                    ",
+              "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Additional support plans/Performing professional/Contact details@2-build.2.1"
+            }
+          ],
+          "description": "The professional who prepared the additional support plan.",
+          "maximumMultiplicity": "1",
+          "minimumMultiplicity": "0",
+          "mro": "R",
+          "name": "Performing professional",
+          "type": "group",
+          "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Additional support plans/Performing professional@2-build.2.1"
+        },
+        {
+          "concept": [
+            {
+              "description": "The name of the person completing the record.",
+              "maximumMultiplicity": "1",
+              "minimumMultiplicity": "0",
+              "mro": "R",
+              "name": "Name",
+              "type": "item",
+              "valueDomain": [
+                {
+                  "property": [
+                    {
+                      "maxLength": "70"
+                    }
+                  ],
+                  "type": "string"
+                }
+              ],
+              "valueSets": "Free text.",
+              "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Additional support plans/Person completing record/Name@2-build.2.1"
+            },
+            {
+              "description": "The organisational role of the person completing record.",
+              "maximumMultiplicity": "1",
+              "minimumMultiplicity": "0",
+              "mro": "R",
+              "name": "Role",
+              "type": "item",
+              "valueSets": "FHIR value set :-  <a href=\"https://simplifier.net/ukcore/codesystem-ukcore-sdsjobrolename\" target=\"\" title=\"\">SDSjobrole</a> \n                    ",
+              "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Additional support plans/Person completing record/Role@2-build.2.1"
+            },
+            {
+              "description": "The grade of the person completing the record.",
+              "maximumMultiplicity": "1",
+              "minimumMultiplicity": "0",
+              "mro": "R",
+              "name": "Grade",
+              "type": "item",
+              "valueDomain": [
+                {
+                  "property": [
+                    {
+                      "maxLength": "150"
+                    }
+                  ],
+                  "type": "text"
+                }
+              ],
+              "valueSets": "Free text.",
+              "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Additional support plans/Person completing record/Grade@2-build.2.1"
+            },
+            {
+              "description": "The main specialty of the person completing the record.",
+              "maximumMultiplicity": "1",
+              "minimumMultiplicity": "0",
+              "mro": "R",
+              "name": "Specialty",
+              "type": "item",
+              "valueDomain": [
+                {
+                  "property": [
+                    {
+                      "maxLength": "3"
+                    }
+                  ],
+                  "type": "string"
+                }
+              ],
+              "valueSets": "NHS data dictionary :-  <a href=\"https://datadictionary.nhs.uk/data_elements/activity_treatment_function_code.html?hl=activity%2Ctreatment%2Cfunction%2Ccode\" target=\"\" title=\"\">Activity treatment function code</a> \n                    ",
+              "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Additional support plans/Person completing record/Specialty@2-build.2.1"
+            },
+            {
+              "description": "The organisation the person completing the record works for.",
+              "maximumMultiplicity": "1",
+              "minimumMultiplicity": "0",
+              "mro": "R",
+              "name": "Organisation",
+              "type": "group",
+              "valueSets": "\n                         <span style=\"color: rgb(51, 51, 51); font-family: Arial, Helvetica, Geneva, sans-serif; font-size: 12px;\">NHS data dictionary : - </span> \n                         <a href=\"https://www.datadictionary.nhs.uk/supporting_information/organisation_data_service.html\" target=\"\" title=\"\">Organisation data service</a> \n                    ",
+              "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Additional support plans/Person completing record/Organisation@2-build.2.1"
+            },
+            {
+              "description": "Professional identifier for the person completing the record e.g. GMC number, HCPC number etc, or the personal identifier used by the local organisation.",
+              "maximumMultiplicity": "1",
+              "minimumMultiplicity": "0",
+              "mro": "R",
+              "name": "Professional identifier",
+              "type": "item",
+              "valueDomain": [
+                {
+                  "property": [
+                    {
+                      "maxLength": "32"
+                    }
+                  ],
+                  "type": "string"
+                }
+              ],
+              "valueSets": "NHS data dictionary :-  <a href=\"https://datadictionary.nhs.uk/data_elements/professional_registration_entry_identifier.html\" target=\"\" title=\"\">Professional registration identifier</a> \n                    ",
+              "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Additional support plans/Person completing record/Professional identifier@2-build.2.1"
+            },
+            {
+              "description": "The date and time the record was completed.",
+              "maximumMultiplicity": "1",
+              "minimumMultiplicity": "0",
+              "mro": "R",
+              "name": "Date completed",
+              "type": "item",
+              "valueDomain": [
+                {
+                  "property": [
+                    {
+                      "timeStampPrecision": "YMDHM"
+                    }
+                  ],
+                  "type": "datetime"
+                }
+              ],
+              "valueSets": "Date and time.",
+              "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Additional support plans/Person completing record/Date completed@2-build.2.1"
+            },
+            {
+              "description": "Contact details of the person completing the record. <br clear=\"none\"/> \n                    ",
+              "maximumMultiplicity": "1",
+              "minimumMultiplicity": "0",
+              "mro": "R",
+              "name": "Contact details",
+              "type": "item",
+              "valueDomain": [
+                {
+                  "property": [
+                    {
+                      "maxLength": "35"
+                    }
+                  ],
+                  "type": "string"
+                }
+              ],
+              "valueSets": "NHS data dictionary : -  <a href=\"https://datadictionary.nhs.uk/data_elements/uk_telephone_number.html?hl=number\" target=\"\" title=\"\">UK telephone number</a> \n                    ",
+              "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Additional support plans/Person completing record/Contact details@2-build.2.1"
+            }
+          ],
+          "description": "Details of the person completing the record.",
+          "maximumMultiplicity": "1",
+          "minimumMultiplicity": "0",
+          "mro": "R",
+          "name": "Person completing record",
+          "type": "group",
+          "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Additional support plans/Person completing record@2-build.2.1"
+        }
+      ],
+      "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Additional support plans@2-build.2.1",
+      "description": "<p>Additional support plans</p>",
+      "implementationGuidance": "<p><br></p>",
+      "informationType": "",
+      "isComponent": true,
+      "maximumMultiplicity": "*",
+      "minimumMultiplicity": "0",
+      "mro": "R",
+      "name": "Additional support plans",
+      "relationshipType": "neither",
+      "type": "group",
+      "valueSets": ""
     }
   ]
 }
