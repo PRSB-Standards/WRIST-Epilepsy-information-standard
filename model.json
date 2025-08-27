@@ -23929,6 +23929,2812 @@
       "relationshipType": "neither",
       "type": "group",
       "valueSets": ""
+    },
+    {
+      "concept": [
+        {
+          "concept": [
+            {
+              "description": "The date when the cardio-pulmonary resuscitation decision was made.",
+              "maximumMultiplicity": "1",
+              "minimumMultiplicity": "0",
+              "mro": "R",
+              "name": "Date",
+              "type": "item",
+              "valueDomain": [
+                {
+                  "property": [
+                    {
+                      "timeStampPrecision": "YMDHM"
+                    }
+                  ],
+                  "type": "datetime"
+                }
+              ],
+              "valueSets": "Date and time.",
+              "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/End of life care/Cardio-pulmonary resuscitation (CPR) decision/Date@2-build.2.1"
+            },
+            {
+              "concept": [
+                {
+                  "description": "The coded value for location",
+                  "maximumMultiplicity": "1",
+                  "minimumMultiplicity": "0",
+                  "mro": "R",
+                  "name": "Coded value",
+                  "type": "item",
+                  "valueDomain": [
+                    {
+                      "property": [
+                        {
+                          "maxLength": "5",
+                          "minLength": "3"
+                        }
+                      ],
+                      "type": "string"
+                    }
+                  ],
+                  "valueSets": "NHS data dictionary: -  <a href=\"https://www.datadictionary.nhs.uk/data_dictionary/attributes/o/org/organisation_code_de.asp?shownav=1\" target=\"\" title=\"\">Organisation data service</a> \n                        ",
+                  "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/End of life care/Cardio-pulmonary resuscitation (CPR) decision/Location/Coded value@2-build.2.1"
+                },
+                {
+                  "description": "Free text field to be used if no coded text available",
+                  "maximumMultiplicity": "1",
+                  "minimumMultiplicity": "0",
+                  "mro": "R",
+                  "name": "Free text",
+                  "type": "item",
+                  "valueDomain": [
+                    {
+                      "property": [
+                        {
+                          "maxLength": "150"
+                        }
+                      ],
+                      "type": "text"
+                    }
+                  ],
+                  "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/End of life care/Cardio-pulmonary resuscitation (CPR) decision/Location/Free text@2-build.2.1"
+                }
+              ],
+              "description": "The location where the cardio-pulmonary resuscitation decision was made.",
+              "maximumMultiplicity": "1",
+              "minimumMultiplicity": "0",
+              "mro": "R",
+              "name": "Location",
+              "type": "group",
+              "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/End of life care/Cardio-pulmonary resuscitation (CPR) decision/Location@2-build.2.1"
+            },
+            {
+              "concept": [
+                {
+                  "description": "The coded value for CPR decision or DNACPR",
+                  "maximumMultiplicity": "1",
+                  "minimumMultiplicity": "0",
+                  "mro": "R",
+                  "name": "Coded value",
+                  "type": "item",
+                  "valueSets": "SNOMED CT: - 450475007 | For cardiopulmonary resuscitation (finding) |, 450476008 | Not for cardiopulmonary resuscitation (finding) |",
+                  "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/End of life care/Cardio-pulmonary resuscitation (CPR) decision/Cardio-pulmonary resuscitation (CPR) decision/Coded value@2-build.2.1"
+                },
+                {
+                  "description": "Free text field to be used if no code is available",
+                  "maximumMultiplicity": "1",
+                  "minimumMultiplicity": "0",
+                  "mro": "R",
+                  "name": "Free text",
+                  "type": "item",
+                  "valueDomain": [
+                    {
+                      "property": [
+                        {
+                          "maxLength": "150"
+                        }
+                      ],
+                      "type": "text"
+                    }
+                  ],
+                  "valueSets": "Free text",
+                  "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/End of life care/Cardio-pulmonary resuscitation (CPR) decision/Cardio-pulmonary resuscitation (CPR) decision/Free text@2-build.2.1"
+                }
+              ],
+              "description": "The cardio-pulmonary resuscitation (CPR) decision.",
+              "maximumMultiplicity": "1",
+              "minimumMultiplicity": "0",
+              "mro": "R",
+              "name": "Cardio-pulmonary resuscitation (CPR) decision",
+              "type": "group",
+              "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/End of life care/Cardio-pulmonary resuscitation (CPR) decision/Cardio-pulmonary resuscitation (CPR) decision@2-build.2.1"
+            },
+            {
+              "description": "The date for review of CPR decision.",
+              "maximumMultiplicity": "1",
+              "minimumMultiplicity": "0",
+              "mro": "R",
+              "name": "Date for review",
+              "type": "item",
+              "valueDomain": [
+                {
+                  "property": [
+                    {
+                      "timeStampPrecision": "YMDHM"
+                    }
+                  ],
+                  "type": "datetime"
+                }
+              ],
+              "valueSets": "Date and time",
+              "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/End of life care/Cardio-pulmonary resuscitation (CPR) decision/Date for review@2-build.2.1"
+            },
+            {
+              "description": "The location of the CPR decision document",
+              "maximumMultiplicity": "1",
+              "minimumMultiplicity": "0",
+              "mro": "R",
+              "name": "Location of document",
+              "type": "item",
+              "valueDomain": [
+                {
+                  "type": "text"
+                }
+              ],
+              "valueSets": "Free text or URL",
+              "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/End of life care/Cardio-pulmonary resuscitation (CPR) decision/Location of document@2-build.2.1"
+            },
+            {
+              "concept": [
+                {
+                  "description": "The name of the professional.",
+                  "maximumMultiplicity": "1",
+                  "minimumMultiplicity": "0",
+                  "mro": "R",
+                  "name": "Name",
+                  "type": "item",
+                  "valueDomain": [
+                    {
+                      "property": [
+                        {
+                          "maxLength": "70"
+                        }
+                      ],
+                      "type": "string"
+                    }
+                  ],
+                  "valueSets": "Free text.",
+                  "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/End of life care/Cardio-pulmonary resuscitation (CPR) decision/Performing professional/Name@2-build.2.1"
+                },
+                {
+                  "description": "The role the professional has in relation to the person e.g. GP, physiotherapist, community nurse, social worker etc",
+                  "maximumMultiplicity": "1",
+                  "minimumMultiplicity": "0",
+                  "mro": "R",
+                  "name": "Role",
+                  "type": "item",
+                  "valueSets": "FHIR value set :-  <a class=\"\" href=\"https://simplifier.net/ukcore/codesystem-ukcore-sdsjobrolename\" target=\"\" title=\"\">SDSjobroletype</a> \n                        ",
+                  "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/End of life care/Cardio-pulmonary resuscitation (CPR) decision/Performing professional/Role@2-build.2.1"
+                },
+                {
+                  "description": "The grade of the professional.",
+                  "maximumMultiplicity": "1",
+                  "minimumMultiplicity": "0",
+                  "mro": "R",
+                  "name": "Grade",
+                  "type": "item",
+                  "valueDomain": [
+                    {
+                      "property": [
+                        {
+                          "maxLength": "150"
+                        }
+                      ],
+                      "type": "text"
+                    }
+                  ],
+                  "valueSets": "Free text",
+                  "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/End of life care/Cardio-pulmonary resuscitation (CPR) decision/Performing professional/Grade@2-build.2.1"
+                },
+                {
+                  "description": "The specialty of the professional e.g. physiotherapy, oncology, mental health etc",
+                  "maximumMultiplicity": "1",
+                  "minimumMultiplicity": "0",
+                  "mro": "R",
+                  "name": "Speciality",
+                  "type": "item",
+                  "valueDomain": [
+                    {
+                      "property": [
+                        {
+                          "maxLength": "3"
+                        }
+                      ],
+                      "type": "string"
+                    }
+                  ],
+                  "valueSets": "NHS data dictionary -  <a href=\"https://datadictionary.nhs.uk/data_elements/activity_treatment_function_code.html?hl=activity%2Ctreatment%2Cfunction%2Ccode\" target=\"\" title=\"\">Activity treatment function code</a> \n                        ",
+                  "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/End of life care/Cardio-pulmonary resuscitation (CPR) decision/Performing professional/Speciality@2-build.2.1"
+                },
+                {
+                  "description": "Professional identifier for the professional e.g. GMC number, HCPC number etc or the personal identifier used by the local organisation.",
+                  "maximumMultiplicity": "1",
+                  "minimumMultiplicity": "0",
+                  "mro": "R",
+                  "name": "Professional identifier",
+                  "type": "item",
+                  "valueDomain": [
+                    {
+                      "property": [
+                        {
+                          "maxLength": "32"
+                        }
+                      ],
+                      "type": "string"
+                    }
+                  ],
+                  "valueSets": "NHS data dictionary : -  <a href=\"https://datadictionary.nhs.uk/data_elements/professional_registration_entry_identifier.html\" target=\"\" title=\"\">Professional registration identifier</a> \n                        ",
+                  "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/End of life care/Cardio-pulmonary resuscitation (CPR) decision/Performing professional/Professional identifier@2-build.2.1"
+                },
+                {
+                  "description": "The name of the organisation the professional works for.",
+                  "maximumMultiplicity": "1",
+                  "minimumMultiplicity": "0",
+                  "mro": "R",
+                  "name": "Organisation",
+                  "type": "group",
+                  "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/End of life care/Cardio-pulmonary resuscitation (CPR) decision/Performing professional/Organisation@2-build.2.1"
+                },
+                {
+                  "description": "Contact details of the professional",
+                  "maximumMultiplicity": "1",
+                  "minimumMultiplicity": "0",
+                  "mro": "R",
+                  "name": "Contact details",
+                  "type": "item",
+                  "valueDomain": [
+                    {
+                      "property": [
+                        {
+                          "maxLength": "35"
+                        }
+                      ],
+                      "type": "string"
+                    }
+                  ],
+                  "valueSets": "NHS data dictionary -  <a href=\"https://datadictionary.nhs.uk/data_elements/uk_telephone_number.html?hl=number\" target=\"\" title=\"\">UK phone number</a> \n                        ",
+                  "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/End of life care/Cardio-pulmonary resuscitation (CPR) decision/Performing professional/Contact details@2-build.2.1"
+                }
+              ],
+              "description": "The professional who made the cardio-pulmonary resuscitation decision.",
+              "maximumMultiplicity": "1",
+              "minimumMultiplicity": "0",
+              "mro": "R",
+              "name": "Performing professional",
+              "type": "group",
+              "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/End of life care/Cardio-pulmonary resuscitation (CPR) decision/Performing professional@2-build.2.1"
+            },
+            {
+              "concept": [
+                {
+                  "description": "The name of the person completing the record.",
+                  "maximumMultiplicity": "1",
+                  "minimumMultiplicity": "0",
+                  "mro": "R",
+                  "name": "Name",
+                  "type": "item",
+                  "valueDomain": [
+                    {
+                      "property": [
+                        {
+                          "maxLength": "70"
+                        }
+                      ],
+                      "type": "string"
+                    }
+                  ],
+                  "valueSets": "Free text.",
+                  "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/End of life care/Cardio-pulmonary resuscitation (CPR) decision/Person completing record/Name@2-build.2.1"
+                },
+                {
+                  "description": "The organisational role of the person completing record.",
+                  "maximumMultiplicity": "1",
+                  "minimumMultiplicity": "0",
+                  "mro": "R",
+                  "name": "Role",
+                  "type": "item",
+                  "valueSets": "FHIR value set :-  <a href=\"https://simplifier.net/ukcore/codesystem-ukcore-sdsjobrolename\" target=\"\" title=\"\">SDSjobrole</a> \n                        ",
+                  "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/End of life care/Cardio-pulmonary resuscitation (CPR) decision/Person completing record/Role@2-build.2.1"
+                },
+                {
+                  "description": "The grade of the person completing the record.",
+                  "maximumMultiplicity": "1",
+                  "minimumMultiplicity": "0",
+                  "mro": "R",
+                  "name": "Grade",
+                  "type": "item",
+                  "valueDomain": [
+                    {
+                      "property": [
+                        {
+                          "maxLength": "150"
+                        }
+                      ],
+                      "type": "text"
+                    }
+                  ],
+                  "valueSets": "Free text.",
+                  "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/End of life care/Cardio-pulmonary resuscitation (CPR) decision/Person completing record/Grade@2-build.2.1"
+                },
+                {
+                  "description": "The main specialty of the person completing the record.",
+                  "maximumMultiplicity": "1",
+                  "minimumMultiplicity": "0",
+                  "mro": "R",
+                  "name": "Specialty",
+                  "type": "item",
+                  "valueDomain": [
+                    {
+                      "property": [
+                        {
+                          "maxLength": "3"
+                        }
+                      ],
+                      "type": "string"
+                    }
+                  ],
+                  "valueSets": "NHS data dictionary :-  <a href=\"https://datadictionary.nhs.uk/data_elements/activity_treatment_function_code.html?hl=activity%2Ctreatment%2Cfunction%2Ccode\" target=\"\" title=\"\">Activity treatment function code</a> \n                        ",
+                  "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/End of life care/Cardio-pulmonary resuscitation (CPR) decision/Person completing record/Specialty@2-build.2.1"
+                },
+                {
+                  "description": "The organisation the person completing the record works for.",
+                  "maximumMultiplicity": "1",
+                  "minimumMultiplicity": "0",
+                  "mro": "R",
+                  "name": "Organisation",
+                  "type": "group",
+                  "valueSets": "\n                             <span style=\"color: rgb(51, 51, 51); font-family: Arial, Helvetica, Geneva, sans-serif; font-size: 12px;\">NHS data dictionary : - </span> \n                             <a href=\"https://www.datadictionary.nhs.uk/supporting_information/organisation_data_service.html\" target=\"\" title=\"\">Organisation data service</a> \n                        ",
+                  "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/End of life care/Cardio-pulmonary resuscitation (CPR) decision/Person completing record/Organisation@2-build.2.1"
+                },
+                {
+                  "description": "Professional identifier for the person completing the record e.g. GMC number, HCPC number etc, or the personal identifier used by the local organisation.",
+                  "maximumMultiplicity": "1",
+                  "minimumMultiplicity": "0",
+                  "mro": "R",
+                  "name": "Professional identifier",
+                  "type": "item",
+                  "valueDomain": [
+                    {
+                      "property": [
+                        {
+                          "maxLength": "32"
+                        }
+                      ],
+                      "type": "string"
+                    }
+                  ],
+                  "valueSets": "NHS data dictionary :-  <a href=\"https://datadictionary.nhs.uk/data_elements/professional_registration_entry_identifier.html\" target=\"\" title=\"\">Professional registration identifier</a> \n                        ",
+                  "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/End of life care/Cardio-pulmonary resuscitation (CPR) decision/Person completing record/Professional identifier@2-build.2.1"
+                },
+                {
+                  "description": "The date and time the record was completed.",
+                  "maximumMultiplicity": "1",
+                  "minimumMultiplicity": "0",
+                  "mro": "R",
+                  "name": "Date completed",
+                  "type": "item",
+                  "valueDomain": [
+                    {
+                      "property": [
+                        {
+                          "timeStampPrecision": "YMDHM"
+                        }
+                      ],
+                      "type": "datetime"
+                    }
+                  ],
+                  "valueSets": "Date and time.",
+                  "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/End of life care/Cardio-pulmonary resuscitation (CPR) decision/Person completing record/Date completed@2-build.2.1"
+                },
+                {
+                  "description": "Contact details of the person completing the record. <br clear=\"none\"/> \n                        ",
+                  "maximumMultiplicity": "1",
+                  "minimumMultiplicity": "0",
+                  "mro": "R",
+                  "name": "Contact details",
+                  "type": "item",
+                  "valueDomain": [
+                    {
+                      "property": [
+                        {
+                          "maxLength": "35"
+                        }
+                      ],
+                      "type": "string"
+                    }
+                  ],
+                  "valueSets": "NHS data dictionary : -  <a href=\"https://datadictionary.nhs.uk/data_elements/uk_telephone_number.html?hl=number\" target=\"\" title=\"\">UK telephone number</a> \n                        ",
+                  "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/End of life care/Cardio-pulmonary resuscitation (CPR) decision/Person completing record/Contact details@2-build.2.1"
+                }
+              ],
+              "description": "Details of the person completing the record.",
+              "maximumMultiplicity": "1",
+              "minimumMultiplicity": "0",
+              "mro": "R",
+              "name": "Person completing record",
+              "type": "group",
+              "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/End of life care/Cardio-pulmonary resuscitation (CPR) decision/Person completing record@2-build.2.1"
+            }
+          ],
+          "description": "Whether a decision has been made, the decision, who made the decision, the date of decision, date for review and location of documentation. Where the person or their family member/carer have not been informed of the clinical decision please state the reason why.",
+          "maximumMultiplicity": "1",
+          "minimumMultiplicity": "0",
+          "mro": "R",
+          "name": "Cardio-pulmonary resuscitation (CPR) decision",
+          "type": "group",
+          "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/End of life care/Cardio-pulmonary resuscitation (CPR) decision@2-build.2.1"
+        },
+        {
+          "concept": [
+            {
+              "description": "The date when the estimated prognosis was made.",
+              "maximumMultiplicity": "1",
+              "minimumMultiplicity": "0",
+              "mro": "R",
+              "name": "Date",
+              "type": "item",
+              "valueDomain": [
+                {
+                  "property": [
+                    {
+                      "timeStampPrecision": "YMDHM"
+                    }
+                  ],
+                  "type": "datetime"
+                }
+              ],
+              "valueSets": "Date and time",
+              "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/End of life care/Estimated prognosis/Date@2-build.2.1"
+            },
+            {
+              "concept": [
+                {
+                  "description": "The coded value for location",
+                  "maximumMultiplicity": "1",
+                  "minimumMultiplicity": "0",
+                  "mro": "R",
+                  "name": "Coded value",
+                  "type": "item",
+                  "valueDomain": [
+                    {
+                      "property": [
+                        {
+                          "maxLength": "5",
+                          "minLength": "3"
+                        }
+                      ],
+                      "type": "string"
+                    }
+                  ],
+                  "valueSets": "NHS data dictionary: -  <a>Organisation data service</a> \n                        ",
+                  "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/End of life care/Estimated prognosis/Location/Coded value@2-build.2.1"
+                },
+                {
+                  "description": "Free text field to be used if no coded text available",
+                  "maximumMultiplicity": "1",
+                  "minimumMultiplicity": "0",
+                  "mro": "R",
+                  "name": "Free text",
+                  "type": "item",
+                  "valueDomain": [
+                    {
+                      "property": [
+                        {
+                          "maxLength": "150"
+                        }
+                      ],
+                      "type": "text"
+                    }
+                  ],
+                  "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/End of life care/Estimated prognosis/Location/Free text@2-build.2.1"
+                }
+              ],
+              "description": "The location where the estimated prognosis was made.",
+              "maximumMultiplicity": "1",
+              "minimumMultiplicity": "0",
+              "mro": "R",
+              "name": "Location",
+              "type": "group",
+              "valueSets": "ODS code or free text",
+              "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/End of life care/Estimated prognosis/Location@2-build.2.1"
+            },
+            {
+              "description": "Where a person is terminally ill this is a clinical judgment indicating the anticipated period of time until death e.g. last days, weeks, months or year of life.",
+              "maximumMultiplicity": "1",
+              "minimumMultiplicity": "0",
+              "mro": "R",
+              "name": "Estimated prognosis",
+              "type": "item",
+              "valueDomain": [
+                {
+                  "type": "text"
+                }
+              ],
+              "valueSets": "Free text",
+              "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/End of life care/Estimated prognosis/Estimated prognosis@2-build.2.1"
+            },
+            {
+              "concept": [
+                {
+                  "description": "The name of the professional.",
+                  "maximumMultiplicity": "1",
+                  "minimumMultiplicity": "0",
+                  "mro": "R",
+                  "name": "Name",
+                  "type": "item",
+                  "valueDomain": [
+                    {
+                      "property": [
+                        {
+                          "maxLength": "70"
+                        }
+                      ],
+                      "type": "string"
+                    }
+                  ],
+                  "valueSets": "Free text.",
+                  "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/End of life care/Estimated prognosis/Performing professional/Name@2-build.2.1"
+                },
+                {
+                  "description": "The role the professional has in relation to the person e.g. GP, physiotherapist, community nurse, social worker etc",
+                  "maximumMultiplicity": "1",
+                  "minimumMultiplicity": "0",
+                  "mro": "R",
+                  "name": "Role",
+                  "type": "item",
+                  "valueSets": "FHIR value set :-  <a class=\"\" href=\"https://simplifier.net/ukcore/codesystem-ukcore-sdsjobrolename\" target=\"\" title=\"\">SDSjobroletype</a> \n                        ",
+                  "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/End of life care/Estimated prognosis/Performing professional/Role@2-build.2.1"
+                },
+                {
+                  "description": "The grade of the professional.",
+                  "maximumMultiplicity": "1",
+                  "minimumMultiplicity": "0",
+                  "mro": "R",
+                  "name": "Grade",
+                  "type": "item",
+                  "valueDomain": [
+                    {
+                      "property": [
+                        {
+                          "maxLength": "150"
+                        }
+                      ],
+                      "type": "text"
+                    }
+                  ],
+                  "valueSets": "Free text",
+                  "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/End of life care/Estimated prognosis/Performing professional/Grade@2-build.2.1"
+                },
+                {
+                  "description": "The specialty of the professional e.g. physiotherapy, oncology, mental health etc",
+                  "maximumMultiplicity": "1",
+                  "minimumMultiplicity": "0",
+                  "mro": "R",
+                  "name": "Speciality",
+                  "type": "item",
+                  "valueDomain": [
+                    {
+                      "property": [
+                        {
+                          "maxLength": "3"
+                        }
+                      ],
+                      "type": "string"
+                    }
+                  ],
+                  "valueSets": "NHS data dictionary -  <a href=\"https://datadictionary.nhs.uk/data_elements/activity_treatment_function_code.html?hl=activity%2Ctreatment%2Cfunction%2Ccode\" target=\"\" title=\"\">Activity treatment function code</a> \n                        ",
+                  "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/End of life care/Estimated prognosis/Performing professional/Speciality@2-build.2.1"
+                },
+                {
+                  "description": "Professional identifier for the professional e.g. GMC number, HCPC number etc or the personal identifier used by the local organisation.",
+                  "maximumMultiplicity": "1",
+                  "minimumMultiplicity": "0",
+                  "mro": "R",
+                  "name": "Professional identifier",
+                  "type": "item",
+                  "valueDomain": [
+                    {
+                      "property": [
+                        {
+                          "maxLength": "32"
+                        }
+                      ],
+                      "type": "string"
+                    }
+                  ],
+                  "valueSets": "NHS data dictionary : -  <a href=\"https://datadictionary.nhs.uk/data_elements/professional_registration_entry_identifier.html\" target=\"\" title=\"\">Professional registration identifier</a> \n                        ",
+                  "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/End of life care/Estimated prognosis/Performing professional/Professional identifier@2-build.2.1"
+                },
+                {
+                  "description": "The name of the organisation the professional works for.",
+                  "maximumMultiplicity": "1",
+                  "minimumMultiplicity": "0",
+                  "mro": "R",
+                  "name": "Organisation",
+                  "type": "group",
+                  "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/End of life care/Estimated prognosis/Performing professional/Organisation@2-build.2.1"
+                },
+                {
+                  "description": "Contact details of the professional",
+                  "maximumMultiplicity": "1",
+                  "minimumMultiplicity": "0",
+                  "mro": "R",
+                  "name": "Contact details",
+                  "type": "item",
+                  "valueDomain": [
+                    {
+                      "property": [
+                        {
+                          "maxLength": "35"
+                        }
+                      ],
+                      "type": "string"
+                    }
+                  ],
+                  "valueSets": "NHS data dictionary -  <a href=\"https://datadictionary.nhs.uk/data_elements/uk_telephone_number.html?hl=number\" target=\"\" title=\"\">UK phone number</a> \n                        ",
+                  "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/End of life care/Estimated prognosis/Performing professional/Contact details@2-build.2.1"
+                }
+              ],
+              "description": "The professional who made the estimated prognosis.",
+              "maximumMultiplicity": "1",
+              "minimumMultiplicity": "0",
+              "mro": "R",
+              "name": "Performing professional",
+              "type": "group",
+              "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/End of life care/Estimated prognosis/Performing professional@2-build.2.1"
+            },
+            {
+              "concept": [
+                {
+                  "description": "The name of the person completing the record.",
+                  "maximumMultiplicity": "1",
+                  "minimumMultiplicity": "0",
+                  "mro": "R",
+                  "name": "Name",
+                  "type": "item",
+                  "valueDomain": [
+                    {
+                      "property": [
+                        {
+                          "maxLength": "70"
+                        }
+                      ],
+                      "type": "string"
+                    }
+                  ],
+                  "valueSets": "Free text.",
+                  "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/End of life care/Estimated prognosis/Person completing record/Name@2-build.2.1"
+                },
+                {
+                  "description": "The organisational role of the person completing record.",
+                  "maximumMultiplicity": "1",
+                  "minimumMultiplicity": "0",
+                  "mro": "R",
+                  "name": "Role",
+                  "type": "item",
+                  "valueSets": "FHIR value set :-  <a href=\"https://simplifier.net/ukcore/codesystem-ukcore-sdsjobrolename\" target=\"\" title=\"\">SDSjobrole</a> \n                        ",
+                  "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/End of life care/Estimated prognosis/Person completing record/Role@2-build.2.1"
+                },
+                {
+                  "description": "The grade of the person completing the record.",
+                  "maximumMultiplicity": "1",
+                  "minimumMultiplicity": "0",
+                  "mro": "R",
+                  "name": "Grade",
+                  "type": "item",
+                  "valueDomain": [
+                    {
+                      "property": [
+                        {
+                          "maxLength": "150"
+                        }
+                      ],
+                      "type": "text"
+                    }
+                  ],
+                  "valueSets": "Free text.",
+                  "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/End of life care/Estimated prognosis/Person completing record/Grade@2-build.2.1"
+                },
+                {
+                  "description": "The main specialty of the person completing the record.",
+                  "maximumMultiplicity": "1",
+                  "minimumMultiplicity": "0",
+                  "mro": "R",
+                  "name": "Specialty",
+                  "type": "item",
+                  "valueDomain": [
+                    {
+                      "property": [
+                        {
+                          "maxLength": "3"
+                        }
+                      ],
+                      "type": "string"
+                    }
+                  ],
+                  "valueSets": "NHS data dictionary :-  <a href=\"https://datadictionary.nhs.uk/data_elements/activity_treatment_function_code.html?hl=activity%2Ctreatment%2Cfunction%2Ccode\" target=\"\" title=\"\">Activity treatment function code</a> \n                        ",
+                  "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/End of life care/Estimated prognosis/Person completing record/Specialty@2-build.2.1"
+                },
+                {
+                  "description": "The organisation the person completing the record works for.",
+                  "maximumMultiplicity": "1",
+                  "minimumMultiplicity": "0",
+                  "mro": "R",
+                  "name": "Organisation",
+                  "type": "group",
+                  "valueSets": "\n                             <span style=\"color: rgb(51, 51, 51); font-family: Arial, Helvetica, Geneva, sans-serif; font-size: 12px;\">NHS data dictionary : - </span> \n                             <a href=\"https://www.datadictionary.nhs.uk/supporting_information/organisation_data_service.html\" target=\"\" title=\"\">Organisation data service</a> \n                        ",
+                  "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/End of life care/Estimated prognosis/Person completing record/Organisation@2-build.2.1"
+                },
+                {
+                  "description": "Professional identifier for the person completing the record e.g. GMC number, HCPC number etc, or the personal identifier used by the local organisation.",
+                  "maximumMultiplicity": "1",
+                  "minimumMultiplicity": "0",
+                  "mro": "R",
+                  "name": "Professional identifier",
+                  "type": "item",
+                  "valueDomain": [
+                    {
+                      "property": [
+                        {
+                          "maxLength": "32"
+                        }
+                      ],
+                      "type": "string"
+                    }
+                  ],
+                  "valueSets": "NHS data dictionary :-  <a href=\"https://datadictionary.nhs.uk/data_elements/professional_registration_entry_identifier.html\" target=\"\" title=\"\">Professional registration identifier</a> \n                        ",
+                  "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/End of life care/Estimated prognosis/Person completing record/Professional identifier@2-build.2.1"
+                },
+                {
+                  "description": "The date and time the record was completed.",
+                  "maximumMultiplicity": "1",
+                  "minimumMultiplicity": "0",
+                  "mro": "R",
+                  "name": "Date completed",
+                  "type": "item",
+                  "valueDomain": [
+                    {
+                      "property": [
+                        {
+                          "timeStampPrecision": "YMDHM"
+                        }
+                      ],
+                      "type": "datetime"
+                    }
+                  ],
+                  "valueSets": "Date and time.",
+                  "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/End of life care/Estimated prognosis/Person completing record/Date completed@2-build.2.1"
+                },
+                {
+                  "description": "Contact details of the person completing the record. <br clear=\"none\"/> \n                        ",
+                  "maximumMultiplicity": "1",
+                  "minimumMultiplicity": "0",
+                  "mro": "R",
+                  "name": "Contact details",
+                  "type": "item",
+                  "valueDomain": [
+                    {
+                      "property": [
+                        {
+                          "maxLength": "35"
+                        }
+                      ],
+                      "type": "string"
+                    }
+                  ],
+                  "valueSets": "NHS data dictionary : -  <a href=\"https://datadictionary.nhs.uk/data_elements/uk_telephone_number.html?hl=number\" target=\"\" title=\"\">UK telephone number</a> \n                        ",
+                  "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/End of life care/Estimated prognosis/Person completing record/Contact details@2-build.2.1"
+                }
+              ],
+              "description": "Details of the person completing the record.",
+              "maximumMultiplicity": "1",
+              "minimumMultiplicity": "0",
+              "mro": "R",
+              "name": "Person completing record",
+              "type": "group",
+              "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/End of life care/Estimated prognosis/Person completing record@2-build.2.1"
+            }
+          ],
+          "description": "Details of the persons estimated prognosis",
+          "maximumMultiplicity": "1",
+          "minimumMultiplicity": "0",
+          "mro": "R",
+          "name": "Estimated prognosis",
+          "type": "group",
+          "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/End of life care/Estimated prognosis@2-build.2.1"
+        },
+        {
+          "concept": [
+            {
+              "description": "The date when the assessment of the level of awareness of the prognosis was made.",
+              "maximumMultiplicity": "1",
+              "minimumMultiplicity": "0",
+              "mro": "R",
+              "name": "Date",
+              "type": "item",
+              "valueDomain": [
+                {
+                  "property": [
+                    {
+                      "timeStampPrecision": "YMDHM"
+                    }
+                  ],
+                  "type": "datetime"
+                }
+              ],
+              "valueSets": "Date and time",
+              "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/End of life care/Awareness of prognosis/Date@2-build.2.1"
+            },
+            {
+              "concept": [
+                {
+                  "description": "The coded value for location",
+                  "maximumMultiplicity": "1",
+                  "minimumMultiplicity": "0",
+                  "mro": "R",
+                  "name": "Coded value",
+                  "type": "item",
+                  "valueDomain": [
+                    {
+                      "property": [
+                        {
+                          "maxLength": "5",
+                          "minLength": "3"
+                        }
+                      ],
+                      "type": "string"
+                    }
+                  ],
+                  "valueSets": "NHS data dictionary: -  <a href=\"https://www.datadictionary.nhs.uk/data_dictionary/attributes/o/org/organisation_code_de.asp?shownav=1\" target=\"\" title=\"\">Organisation data service</a> \n                        ",
+                  "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/End of life care/Awareness of prognosis/Location/Coded value@2-build.2.1"
+                },
+                {
+                  "description": "Free text field to be used if no code is available",
+                  "maximumMultiplicity": "1",
+                  "minimumMultiplicity": "0",
+                  "mro": "R",
+                  "name": "Free text",
+                  "type": "item",
+                  "valueDomain": [
+                    {
+                      "property": [
+                        {
+                          "maxLength": "150"
+                        }
+                      ],
+                      "type": "text"
+                    }
+                  ],
+                  "valueSets": "Free text",
+                  "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/End of life care/Awareness of prognosis/Location/Free text@2-build.2.1"
+                }
+              ],
+              "description": "The location where the assessment of the level of awareness of the prognosis was made.",
+              "maximumMultiplicity": "1",
+              "minimumMultiplicity": "0",
+              "mro": "R",
+              "name": "Location",
+              "type": "group",
+              "valueSets": "ODS code and free text",
+              "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/End of life care/Awareness of prognosis/Location@2-build.2.1"
+            },
+            {
+              "description": "Description of the level of awareness the person and or their carer/family has regarding their estimated prognosis.",
+              "maximumMultiplicity": "1",
+              "minimumMultiplicity": "0",
+              "mro": "R",
+              "name": "Awareness of prognosis",
+              "type": "item",
+              "valueDomain": [
+                {
+                  "type": "text"
+                }
+              ],
+              "valueSets": "Free text",
+              "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/End of life care/Awareness of prognosis/Awareness of prognosis@2-build.2.1"
+            },
+            {
+              "concept": [
+                {
+                  "description": "The name of the professional.",
+                  "maximumMultiplicity": "1",
+                  "minimumMultiplicity": "0",
+                  "mro": "R",
+                  "name": "Name",
+                  "type": "item",
+                  "valueDomain": [
+                    {
+                      "property": [
+                        {
+                          "maxLength": "70"
+                        }
+                      ],
+                      "type": "string"
+                    }
+                  ],
+                  "valueSets": "Free text.",
+                  "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/End of life care/Awareness of prognosis/Performing professional/Name@2-build.2.1"
+                },
+                {
+                  "description": "The role the professional has in relation to the person e.g. GP, physiotherapist, community nurse, social worker etc",
+                  "maximumMultiplicity": "1",
+                  "minimumMultiplicity": "0",
+                  "mro": "R",
+                  "name": "Role",
+                  "type": "item",
+                  "valueSets": "FHIR value set :-  <a class=\"\" href=\"https://simplifier.net/ukcore/codesystem-ukcore-sdsjobrolename\" target=\"\" title=\"\">SDSjobroletype</a> \n                        ",
+                  "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/End of life care/Awareness of prognosis/Performing professional/Role@2-build.2.1"
+                },
+                {
+                  "description": "The grade of the professional.",
+                  "maximumMultiplicity": "1",
+                  "minimumMultiplicity": "0",
+                  "mro": "R",
+                  "name": "Grade",
+                  "type": "item",
+                  "valueDomain": [
+                    {
+                      "property": [
+                        {
+                          "maxLength": "150"
+                        }
+                      ],
+                      "type": "text"
+                    }
+                  ],
+                  "valueSets": "Free text",
+                  "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/End of life care/Awareness of prognosis/Performing professional/Grade@2-build.2.1"
+                },
+                {
+                  "description": "The specialty of the professional e.g. physiotherapy, oncology, mental health etc",
+                  "maximumMultiplicity": "1",
+                  "minimumMultiplicity": "0",
+                  "mro": "R",
+                  "name": "Speciality",
+                  "type": "item",
+                  "valueDomain": [
+                    {
+                      "property": [
+                        {
+                          "maxLength": "3"
+                        }
+                      ],
+                      "type": "string"
+                    }
+                  ],
+                  "valueSets": "NHS data dictionary -  <a href=\"https://datadictionary.nhs.uk/data_elements/activity_treatment_function_code.html?hl=activity%2Ctreatment%2Cfunction%2Ccode\" target=\"\" title=\"\">Activity treatment function code</a> \n                        ",
+                  "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/End of life care/Awareness of prognosis/Performing professional/Speciality@2-build.2.1"
+                },
+                {
+                  "description": "Professional identifier for the professional e.g. GMC number, HCPC number etc or the personal identifier used by the local organisation.",
+                  "maximumMultiplicity": "1",
+                  "minimumMultiplicity": "0",
+                  "mro": "R",
+                  "name": "Professional identifier",
+                  "type": "item",
+                  "valueDomain": [
+                    {
+                      "property": [
+                        {
+                          "maxLength": "32"
+                        }
+                      ],
+                      "type": "string"
+                    }
+                  ],
+                  "valueSets": "NHS data dictionary : -  <a href=\"https://datadictionary.nhs.uk/data_elements/professional_registration_entry_identifier.html\" target=\"\" title=\"\">Professional registration identifier</a> \n                        ",
+                  "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/End of life care/Awareness of prognosis/Performing professional/Professional identifier@2-build.2.1"
+                },
+                {
+                  "description": "The name of the organisation the professional works for.",
+                  "maximumMultiplicity": "1",
+                  "minimumMultiplicity": "0",
+                  "mro": "R",
+                  "name": "Organisation",
+                  "type": "group",
+                  "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/End of life care/Awareness of prognosis/Performing professional/Organisation@2-build.2.1"
+                },
+                {
+                  "description": "Contact details of the professional",
+                  "maximumMultiplicity": "1",
+                  "minimumMultiplicity": "0",
+                  "mro": "R",
+                  "name": "Contact details",
+                  "type": "item",
+                  "valueDomain": [
+                    {
+                      "property": [
+                        {
+                          "maxLength": "35"
+                        }
+                      ],
+                      "type": "string"
+                    }
+                  ],
+                  "valueSets": "NHS data dictionary -  <a href=\"https://datadictionary.nhs.uk/data_elements/uk_telephone_number.html?hl=number\" target=\"\" title=\"\">UK phone number</a> \n                        ",
+                  "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/End of life care/Awareness of prognosis/Performing professional/Contact details@2-build.2.1"
+                }
+              ],
+              "description": "The professional who made the assessment of the level of awareness of the prognosis.",
+              "maximumMultiplicity": "1",
+              "minimumMultiplicity": "0",
+              "mro": "R",
+              "name": "Performing professional",
+              "type": "group",
+              "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/End of life care/Awareness of prognosis/Performing professional@2-build.2.1"
+            },
+            {
+              "concept": [
+                {
+                  "description": "The name of the person completing the record.",
+                  "maximumMultiplicity": "1",
+                  "minimumMultiplicity": "0",
+                  "mro": "R",
+                  "name": "Name",
+                  "type": "item",
+                  "valueDomain": [
+                    {
+                      "property": [
+                        {
+                          "maxLength": "70"
+                        }
+                      ],
+                      "type": "string"
+                    }
+                  ],
+                  "valueSets": "Free text.",
+                  "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/End of life care/Awareness of prognosis/Person completing record/Name@2-build.2.1"
+                },
+                {
+                  "description": "The organisational role of the person completing record.",
+                  "maximumMultiplicity": "1",
+                  "minimumMultiplicity": "0",
+                  "mro": "R",
+                  "name": "Role",
+                  "type": "item",
+                  "valueSets": "FHIR value set :-  <a href=\"https://simplifier.net/ukcore/codesystem-ukcore-sdsjobrolename\" target=\"\" title=\"\">SDSjobrole</a> \n                        ",
+                  "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/End of life care/Awareness of prognosis/Person completing record/Role@2-build.2.1"
+                },
+                {
+                  "description": "The grade of the person completing the record.",
+                  "maximumMultiplicity": "1",
+                  "minimumMultiplicity": "0",
+                  "mro": "R",
+                  "name": "Grade",
+                  "type": "item",
+                  "valueDomain": [
+                    {
+                      "property": [
+                        {
+                          "maxLength": "150"
+                        }
+                      ],
+                      "type": "text"
+                    }
+                  ],
+                  "valueSets": "Free text.",
+                  "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/End of life care/Awareness of prognosis/Person completing record/Grade@2-build.2.1"
+                },
+                {
+                  "description": "The main specialty of the person completing the record.",
+                  "maximumMultiplicity": "1",
+                  "minimumMultiplicity": "0",
+                  "mro": "R",
+                  "name": "Specialty",
+                  "type": "item",
+                  "valueDomain": [
+                    {
+                      "property": [
+                        {
+                          "maxLength": "3"
+                        }
+                      ],
+                      "type": "string"
+                    }
+                  ],
+                  "valueSets": "NHS data dictionary :-  <a href=\"https://datadictionary.nhs.uk/data_elements/activity_treatment_function_code.html?hl=activity%2Ctreatment%2Cfunction%2Ccode\" target=\"\" title=\"\">Activity treatment function code</a> \n                        ",
+                  "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/End of life care/Awareness of prognosis/Person completing record/Specialty@2-build.2.1"
+                },
+                {
+                  "description": "The organisation the person completing the record works for.",
+                  "maximumMultiplicity": "1",
+                  "minimumMultiplicity": "0",
+                  "mro": "R",
+                  "name": "Organisation",
+                  "type": "group",
+                  "valueSets": "\n                             <span style=\"color: rgb(51, 51, 51); font-family: Arial, Helvetica, Geneva, sans-serif; font-size: 12px;\">NHS data dictionary : - </span> \n                             <a href=\"https://www.datadictionary.nhs.uk/supporting_information/organisation_data_service.html\" target=\"\" title=\"\">Organisation data service</a> \n                        ",
+                  "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/End of life care/Awareness of prognosis/Person completing record/Organisation@2-build.2.1"
+                },
+                {
+                  "description": "Professional identifier for the person completing the record e.g. GMC number, HCPC number etc, or the personal identifier used by the local organisation.",
+                  "maximumMultiplicity": "1",
+                  "minimumMultiplicity": "0",
+                  "mro": "R",
+                  "name": "Professional identifier",
+                  "type": "item",
+                  "valueDomain": [
+                    {
+                      "property": [
+                        {
+                          "maxLength": "32"
+                        }
+                      ],
+                      "type": "string"
+                    }
+                  ],
+                  "valueSets": "NHS data dictionary :-  <a href=\"https://datadictionary.nhs.uk/data_elements/professional_registration_entry_identifier.html\" target=\"\" title=\"\">Professional registration identifier</a> \n                        ",
+                  "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/End of life care/Awareness of prognosis/Person completing record/Professional identifier@2-build.2.1"
+                },
+                {
+                  "description": "The date and time the record was completed.",
+                  "maximumMultiplicity": "1",
+                  "minimumMultiplicity": "0",
+                  "mro": "R",
+                  "name": "Date completed",
+                  "type": "item",
+                  "valueDomain": [
+                    {
+                      "property": [
+                        {
+                          "timeStampPrecision": "YMDHM"
+                        }
+                      ],
+                      "type": "datetime"
+                    }
+                  ],
+                  "valueSets": "Date and time.",
+                  "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/End of life care/Awareness of prognosis/Person completing record/Date completed@2-build.2.1"
+                },
+                {
+                  "description": "Contact details of the person completing the record. <br clear=\"none\"/> \n                        ",
+                  "maximumMultiplicity": "1",
+                  "minimumMultiplicity": "0",
+                  "mro": "R",
+                  "name": "Contact details",
+                  "type": "item",
+                  "valueDomain": [
+                    {
+                      "property": [
+                        {
+                          "maxLength": "35"
+                        }
+                      ],
+                      "type": "string"
+                    }
+                  ],
+                  "valueSets": "NHS data dictionary : -  <a href=\"https://datadictionary.nhs.uk/data_elements/uk_telephone_number.html?hl=number\" target=\"\" title=\"\">UK telephone number</a> \n                        ",
+                  "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/End of life care/Awareness of prognosis/Person completing record/Contact details@2-build.2.1"
+                }
+              ],
+              "description": "Details of the person completing the record.",
+              "maximumMultiplicity": "1",
+              "minimumMultiplicity": "0",
+              "mro": "R",
+              "name": "Person completing record",
+              "type": "group",
+              "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/End of life care/Awareness of prognosis/Person completing record@2-build.2.1"
+            }
+          ],
+          "description": "Details of the persons awareness of prognosis",
+          "maximumMultiplicity": "1",
+          "minimumMultiplicity": "0",
+          "mro": "R",
+          "name": "Awareness of prognosis",
+          "type": "group",
+          "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/End of life care/Awareness of prognosis@2-build.2.1"
+        },
+        {
+          "description": "The priorities agreed between the person and their health/care team, where the person has capacity: To get better; please consider all treatment to prolong life. To achieve a balance between getting better and ensuring good quality of life; please consider selected treatments. Comfort; please consider all treatments aimed at symptom control.",
+          "maximumMultiplicity": "*",
+          "minimumMultiplicity": "0",
+          "mro": "R",
+          "name": "Priorities of care",
+          "type": "item",
+          "valueDomain": [
+            {
+              "type": "text"
+            }
+          ],
+          "valueSets": "Free text",
+          "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/End of life care/Priorities of care@2-build.2.1"
+        },
+        {
+          "concept": [
+            {
+              "description": "The date when the anticipatory actions were identified.",
+              "maximumMultiplicity": "1",
+              "minimumMultiplicity": "0",
+              "mro": "R",
+              "name": "Date",
+              "type": "item",
+              "valueDomain": [
+                {
+                  "property": [
+                    {
+                      "timeStampPrecision": "YMDHM"
+                    }
+                  ],
+                  "type": "datetime"
+                }
+              ],
+              "valueSets": "Date and time",
+              "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/End of life care/Anticipatory actions/Date@2-build.2.1"
+            },
+            {
+              "concept": [
+                {
+                  "description": "The coded value for location",
+                  "maximumMultiplicity": "1",
+                  "minimumMultiplicity": "0",
+                  "mro": "R",
+                  "name": "Coded value",
+                  "type": "item",
+                  "valueDomain": [
+                    {
+                      "property": [
+                        {
+                          "maxLength": "5",
+                          "minLength": "3"
+                        }
+                      ],
+                      "type": "string"
+                    }
+                  ],
+                  "valueSets": "NHS data dictionary: -  <a href=\"https://www.datadictionary.nhs.uk/data_dictionary/attributes/o/org/organisation_code_de.asp?shownav=1\" target=\"\" title=\"\">Organisation data service</a> \n                        ",
+                  "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/End of life care/Anticipatory actions/Location/Coded value@2-build.2.1"
+                },
+                {
+                  "description": "Free text field to be used if no coded text available",
+                  "maximumMultiplicity": "1",
+                  "minimumMultiplicity": "0",
+                  "mro": "R",
+                  "name": "Free text",
+                  "type": "item",
+                  "valueDomain": [
+                    {
+                      "property": [
+                        {
+                          "maxLength": "150"
+                        }
+                      ],
+                      "type": "text"
+                    }
+                  ],
+                  "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/End of life care/Anticipatory actions/Location/Free text@2-build.2.1"
+                }
+              ],
+              "description": "The location where the anticipatory actions were identified.",
+              "maximumMultiplicity": "1",
+              "minimumMultiplicity": "0",
+              "mro": "R",
+              "name": "Location",
+              "type": "group",
+              "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/End of life care/Anticipatory actions/Location@2-build.2.1"
+            },
+            {
+              "description": "Guidance on specific interventions or actions that may be required or should be avoided in specific situations. A statement of anticipatory actions. Usually expressed as: in the event of X do Y.",
+              "maximumMultiplicity": "1",
+              "minimumMultiplicity": "0",
+              "mro": "R",
+              "name": "Anticipatory actions",
+              "type": "item",
+              "valueDomain": [
+                {
+                  "property": [
+                    {
+                      "maxLength": "5",
+                      "minLength": "3"
+                    }
+                  ],
+                  "type": "string"
+                }
+              ],
+              "valueSets": "Free text",
+              "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/End of life care/Anticipatory actions/Anticipatory actions@2-build.2.1"
+            },
+            {
+              "concept": [
+                {
+                  "description": "The name of the professional.",
+                  "maximumMultiplicity": "1",
+                  "minimumMultiplicity": "0",
+                  "mro": "R",
+                  "name": "Name",
+                  "type": "item",
+                  "valueDomain": [
+                    {
+                      "property": [
+                        {
+                          "maxLength": "70"
+                        }
+                      ],
+                      "type": "string"
+                    }
+                  ],
+                  "valueSets": "Free text.",
+                  "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/End of life care/Anticipatory actions/Performing professional/Name@2-build.2.1"
+                },
+                {
+                  "description": "The role the professional has in relation to the person e.g. GP, physiotherapist, community nurse, social worker etc",
+                  "maximumMultiplicity": "1",
+                  "minimumMultiplicity": "0",
+                  "mro": "R",
+                  "name": "Role",
+                  "type": "item",
+                  "valueSets": "FHIR value set :-  <a class=\"\" href=\"https://simplifier.net/ukcore/codesystem-ukcore-sdsjobrolename\" target=\"\" title=\"\">SDSjobroletype</a> \n                        ",
+                  "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/End of life care/Anticipatory actions/Performing professional/Role@2-build.2.1"
+                },
+                {
+                  "description": "The grade of the professional.",
+                  "maximumMultiplicity": "1",
+                  "minimumMultiplicity": "0",
+                  "mro": "R",
+                  "name": "Grade",
+                  "type": "item",
+                  "valueDomain": [
+                    {
+                      "property": [
+                        {
+                          "maxLength": "150"
+                        }
+                      ],
+                      "type": "text"
+                    }
+                  ],
+                  "valueSets": "Free text",
+                  "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/End of life care/Anticipatory actions/Performing professional/Grade@2-build.2.1"
+                },
+                {
+                  "description": "The specialty of the professional e.g. physiotherapy, oncology, mental health etc",
+                  "maximumMultiplicity": "1",
+                  "minimumMultiplicity": "0",
+                  "mro": "R",
+                  "name": "Speciality",
+                  "type": "item",
+                  "valueDomain": [
+                    {
+                      "property": [
+                        {
+                          "maxLength": "3"
+                        }
+                      ],
+                      "type": "string"
+                    }
+                  ],
+                  "valueSets": "NHS data dictionary -  <a href=\"https://datadictionary.nhs.uk/data_elements/activity_treatment_function_code.html?hl=activity%2Ctreatment%2Cfunction%2Ccode\" target=\"\" title=\"\">Activity treatment function code</a> \n                        ",
+                  "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/End of life care/Anticipatory actions/Performing professional/Speciality@2-build.2.1"
+                },
+                {
+                  "description": "Professional identifier for the professional e.g. GMC number, HCPC number etc or the personal identifier used by the local organisation.",
+                  "maximumMultiplicity": "1",
+                  "minimumMultiplicity": "0",
+                  "mro": "R",
+                  "name": "Professional identifier",
+                  "type": "item",
+                  "valueDomain": [
+                    {
+                      "property": [
+                        {
+                          "maxLength": "32"
+                        }
+                      ],
+                      "type": "string"
+                    }
+                  ],
+                  "valueSets": "NHS data dictionary : -  <a href=\"https://datadictionary.nhs.uk/data_elements/professional_registration_entry_identifier.html\" target=\"\" title=\"\">Professional registration identifier</a> \n                        ",
+                  "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/End of life care/Anticipatory actions/Performing professional/Professional identifier@2-build.2.1"
+                },
+                {
+                  "description": "The name of the organisation the professional works for.",
+                  "maximumMultiplicity": "1",
+                  "minimumMultiplicity": "0",
+                  "mro": "R",
+                  "name": "Organisation",
+                  "type": "group",
+                  "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/End of life care/Anticipatory actions/Performing professional/Organisation@2-build.2.1"
+                },
+                {
+                  "description": "Contact details of the professional",
+                  "maximumMultiplicity": "1",
+                  "minimumMultiplicity": "0",
+                  "mro": "R",
+                  "name": "Contact details",
+                  "type": "item",
+                  "valueDomain": [
+                    {
+                      "property": [
+                        {
+                          "maxLength": "35"
+                        }
+                      ],
+                      "type": "string"
+                    }
+                  ],
+                  "valueSets": "NHS data dictionary -  <a href=\"https://datadictionary.nhs.uk/data_elements/uk_telephone_number.html?hl=number\" target=\"\" title=\"\">UK phone number</a> \n                        ",
+                  "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/End of life care/Anticipatory actions/Performing professional/Contact details@2-build.2.1"
+                }
+              ],
+              "description": "The professional who identified the anticipatory actions.",
+              "maximumMultiplicity": "1",
+              "minimumMultiplicity": "0",
+              "mro": "R",
+              "name": "Performing professional",
+              "type": "group",
+              "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/End of life care/Anticipatory actions/Performing professional@2-build.2.1"
+            },
+            {
+              "concept": [
+                {
+                  "description": "The name of the person completing the record.",
+                  "maximumMultiplicity": "1",
+                  "minimumMultiplicity": "0",
+                  "mro": "R",
+                  "name": "Name",
+                  "type": "item",
+                  "valueDomain": [
+                    {
+                      "property": [
+                        {
+                          "maxLength": "70"
+                        }
+                      ],
+                      "type": "string"
+                    }
+                  ],
+                  "valueSets": "Free text.",
+                  "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/End of life care/Anticipatory actions/Person completing record/Name@2-build.2.1"
+                },
+                {
+                  "description": "The organisational role of the person completing record.",
+                  "maximumMultiplicity": "1",
+                  "minimumMultiplicity": "0",
+                  "mro": "R",
+                  "name": "Role",
+                  "type": "item",
+                  "valueSets": "FHIR value set :-  <a href=\"https://simplifier.net/ukcore/codesystem-ukcore-sdsjobrolename\" target=\"\" title=\"\">SDSjobrole</a> \n                        ",
+                  "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/End of life care/Anticipatory actions/Person completing record/Role@2-build.2.1"
+                },
+                {
+                  "description": "The grade of the person completing the record.",
+                  "maximumMultiplicity": "1",
+                  "minimumMultiplicity": "0",
+                  "mro": "R",
+                  "name": "Grade",
+                  "type": "item",
+                  "valueDomain": [
+                    {
+                      "property": [
+                        {
+                          "maxLength": "150"
+                        }
+                      ],
+                      "type": "text"
+                    }
+                  ],
+                  "valueSets": "Free text.",
+                  "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/End of life care/Anticipatory actions/Person completing record/Grade@2-build.2.1"
+                },
+                {
+                  "description": "The main specialty of the person completing the record.",
+                  "maximumMultiplicity": "1",
+                  "minimumMultiplicity": "0",
+                  "mro": "R",
+                  "name": "Specialty",
+                  "type": "item",
+                  "valueDomain": [
+                    {
+                      "property": [
+                        {
+                          "maxLength": "3"
+                        }
+                      ],
+                      "type": "string"
+                    }
+                  ],
+                  "valueSets": "NHS data dictionary :-  <a href=\"https://datadictionary.nhs.uk/data_elements/activity_treatment_function_code.html?hl=activity%2Ctreatment%2Cfunction%2Ccode\" target=\"\" title=\"\">Activity treatment function code</a> \n                        ",
+                  "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/End of life care/Anticipatory actions/Person completing record/Specialty@2-build.2.1"
+                },
+                {
+                  "description": "The organisation the person completing the record works for.",
+                  "maximumMultiplicity": "1",
+                  "minimumMultiplicity": "0",
+                  "mro": "R",
+                  "name": "Organisation",
+                  "type": "group",
+                  "valueSets": "\n                             <span style=\"color: rgb(51, 51, 51); font-family: Arial, Helvetica, Geneva, sans-serif; font-size: 12px;\">NHS data dictionary : - </span> \n                             <a href=\"https://www.datadictionary.nhs.uk/supporting_information/organisation_data_service.html\" target=\"\" title=\"\">Organisation data service</a> \n                        ",
+                  "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/End of life care/Anticipatory actions/Person completing record/Organisation@2-build.2.1"
+                },
+                {
+                  "description": "Professional identifier for the person completing the record e.g. GMC number, HCPC number etc, or the personal identifier used by the local organisation.",
+                  "maximumMultiplicity": "1",
+                  "minimumMultiplicity": "0",
+                  "mro": "R",
+                  "name": "Professional identifier",
+                  "type": "item",
+                  "valueDomain": [
+                    {
+                      "property": [
+                        {
+                          "maxLength": "32"
+                        }
+                      ],
+                      "type": "string"
+                    }
+                  ],
+                  "valueSets": "NHS data dictionary :-  <a href=\"https://datadictionary.nhs.uk/data_elements/professional_registration_entry_identifier.html\" target=\"\" title=\"\">Professional registration identifier</a> \n                        ",
+                  "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/End of life care/Anticipatory actions/Person completing record/Professional identifier@2-build.2.1"
+                },
+                {
+                  "description": "The date and time the record was completed.",
+                  "maximumMultiplicity": "1",
+                  "minimumMultiplicity": "0",
+                  "mro": "R",
+                  "name": "Date completed",
+                  "type": "item",
+                  "valueDomain": [
+                    {
+                      "property": [
+                        {
+                          "timeStampPrecision": "YMDHM"
+                        }
+                      ],
+                      "type": "datetime"
+                    }
+                  ],
+                  "valueSets": "Date and time.",
+                  "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/End of life care/Anticipatory actions/Person completing record/Date completed@2-build.2.1"
+                },
+                {
+                  "description": "Contact details of the person completing the record. <br clear=\"none\"/> \n                        ",
+                  "maximumMultiplicity": "1",
+                  "minimumMultiplicity": "0",
+                  "mro": "R",
+                  "name": "Contact details",
+                  "type": "item",
+                  "valueDomain": [
+                    {
+                      "property": [
+                        {
+                          "maxLength": "35"
+                        }
+                      ],
+                      "type": "string"
+                    }
+                  ],
+                  "valueSets": "NHS data dictionary : -  <a href=\"https://datadictionary.nhs.uk/data_elements/uk_telephone_number.html?hl=number\" target=\"\" title=\"\">UK telephone number</a> \n                        ",
+                  "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/End of life care/Anticipatory actions/Person completing record/Contact details@2-build.2.1"
+                }
+              ],
+              "description": "Details of the person completing the record.",
+              "maximumMultiplicity": "1",
+              "minimumMultiplicity": "0",
+              "mro": "R",
+              "name": "Person completing record",
+              "type": "group",
+              "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/End of life care/Anticipatory actions/Person completing record@2-build.2.1"
+            }
+          ],
+          "description": "Details of the person's anticipatory actions",
+          "maximumMultiplicity": "*",
+          "minimumMultiplicity": "0",
+          "mro": "R",
+          "name": "Anticipatory actions",
+          "type": "group",
+          "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/End of life care/Anticipatory actions@2-build.2.1"
+        },
+        {
+          "concept": [
+            {
+              "description": "The date when the statement regarding anticipatory medicines/equipment was made.",
+              "maximumMultiplicity": "1",
+              "minimumMultiplicity": "0",
+              "mro": "R",
+              "name": "Date",
+              "type": "item",
+              "valueDomain": [
+                {
+                  "property": [
+                    {
+                      "timeStampPrecision": "YMDHM"
+                    }
+                  ],
+                  "type": "datetime"
+                }
+              ],
+              "valueSets": "Date and time",
+              "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/End of life care/Anticipatory medicines/equipment/Date@2-build.2.1"
+            },
+            {
+              "concept": [
+                {
+                  "description": "The coded value for location",
+                  "maximumMultiplicity": "1",
+                  "minimumMultiplicity": "0",
+                  "mro": "R",
+                  "name": "Coded value",
+                  "type": "item",
+                  "valueDomain": [
+                    {
+                      "property": [
+                        {
+                          "maxLength": "5",
+                          "minLength": "3"
+                        }
+                      ],
+                      "type": "string"
+                    }
+                  ],
+                  "valueSets": "NHS data dictionary: -  <a href=\"https://www.datadictionary.nhs.uk/data_dictionary/attributes/o/org/organisation_code_de.asp?shownav=1\" target=\"\" title=\"\">Organisation data service</a> \n                        ",
+                  "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/End of life care/Anticipatory medicines/equipment/Location/Coded value@2-build.2.1"
+                },
+                {
+                  "description": "Free text field to be used if no coded text available",
+                  "maximumMultiplicity": "1",
+                  "minimumMultiplicity": "0",
+                  "mro": "R",
+                  "name": "Free text",
+                  "type": "item",
+                  "valueDomain": [
+                    {
+                      "property": [
+                        {
+                          "maxLength": "150"
+                        }
+                      ],
+                      "type": "text"
+                    }
+                  ],
+                  "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/End of life care/Anticipatory medicines/equipment/Location/Free text@2-build.2.1"
+                }
+              ],
+              "description": "The location where the statement regarding anticipatory medicines/equipment was made.",
+              "maximumMultiplicity": "1",
+              "minimumMultiplicity": "0",
+              "mro": "R",
+              "name": "Location",
+              "type": "group",
+              "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/End of life care/Anticipatory medicines/equipment/Location@2-build.2.1"
+            },
+            {
+              "description": "A statement regarding the availability or location of the anticipatory medicines/equipment.",
+              "maximumMultiplicity": "1",
+              "minimumMultiplicity": "0",
+              "mro": "R",
+              "name": "Anticipatory medicines/equipment",
+              "type": "item",
+              "valueDomain": [
+                {
+                  "type": "text"
+                }
+              ],
+              "valueSets": "Free text",
+              "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/End of life care/Anticipatory medicines/equipment/Anticipatory medicines/equipment@2-build.2.1"
+            },
+            {
+              "concept": [
+                {
+                  "description": "The name of the professional.",
+                  "maximumMultiplicity": "1",
+                  "minimumMultiplicity": "0",
+                  "mro": "R",
+                  "name": "Name",
+                  "type": "item",
+                  "valueDomain": [
+                    {
+                      "property": [
+                        {
+                          "maxLength": "70"
+                        }
+                      ],
+                      "type": "string"
+                    }
+                  ],
+                  "valueSets": "Free text.",
+                  "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/End of life care/Anticipatory medicines/equipment/Performing professional/Name@2-build.2.1"
+                },
+                {
+                  "description": "The role the professional has in relation to the person e.g. GP, physiotherapist, community nurse, social worker etc",
+                  "maximumMultiplicity": "1",
+                  "minimumMultiplicity": "0",
+                  "mro": "R",
+                  "name": "Role",
+                  "type": "item",
+                  "valueSets": "FHIR value set :-  <a class=\"\" href=\"https://simplifier.net/ukcore/codesystem-ukcore-sdsjobrolename\" target=\"\" title=\"\">SDSjobroletype</a> \n                        ",
+                  "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/End of life care/Anticipatory medicines/equipment/Performing professional/Role@2-build.2.1"
+                },
+                {
+                  "description": "The grade of the professional.",
+                  "maximumMultiplicity": "1",
+                  "minimumMultiplicity": "0",
+                  "mro": "R",
+                  "name": "Grade",
+                  "type": "item",
+                  "valueDomain": [
+                    {
+                      "property": [
+                        {
+                          "maxLength": "150"
+                        }
+                      ],
+                      "type": "text"
+                    }
+                  ],
+                  "valueSets": "Free text",
+                  "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/End of life care/Anticipatory medicines/equipment/Performing professional/Grade@2-build.2.1"
+                },
+                {
+                  "description": "The specialty of the professional e.g. physiotherapy, oncology, mental health etc",
+                  "maximumMultiplicity": "1",
+                  "minimumMultiplicity": "0",
+                  "mro": "R",
+                  "name": "Speciality",
+                  "type": "item",
+                  "valueDomain": [
+                    {
+                      "property": [
+                        {
+                          "maxLength": "3"
+                        }
+                      ],
+                      "type": "string"
+                    }
+                  ],
+                  "valueSets": "NHS data dictionary -  <a href=\"https://datadictionary.nhs.uk/data_elements/activity_treatment_function_code.html?hl=activity%2Ctreatment%2Cfunction%2Ccode\" target=\"\" title=\"\">Activity treatment function code</a> \n                        ",
+                  "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/End of life care/Anticipatory medicines/equipment/Performing professional/Speciality@2-build.2.1"
+                },
+                {
+                  "description": "Professional identifier for the professional e.g. GMC number, HCPC number etc or the personal identifier used by the local organisation.",
+                  "maximumMultiplicity": "1",
+                  "minimumMultiplicity": "0",
+                  "mro": "R",
+                  "name": "Professional identifier",
+                  "type": "item",
+                  "valueDomain": [
+                    {
+                      "property": [
+                        {
+                          "maxLength": "32"
+                        }
+                      ],
+                      "type": "string"
+                    }
+                  ],
+                  "valueSets": "NHS data dictionary : -  <a href=\"https://datadictionary.nhs.uk/data_elements/professional_registration_entry_identifier.html\" target=\"\" title=\"\">Professional registration identifier</a> \n                        ",
+                  "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/End of life care/Anticipatory medicines/equipment/Performing professional/Professional identifier@2-build.2.1"
+                },
+                {
+                  "description": "The name of the organisation the professional works for.",
+                  "maximumMultiplicity": "1",
+                  "minimumMultiplicity": "0",
+                  "mro": "R",
+                  "name": "Organisation",
+                  "type": "group",
+                  "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/End of life care/Anticipatory medicines/equipment/Performing professional/Organisation@2-build.2.1"
+                },
+                {
+                  "description": "Contact details of the professional",
+                  "maximumMultiplicity": "1",
+                  "minimumMultiplicity": "0",
+                  "mro": "R",
+                  "name": "Contact details",
+                  "type": "item",
+                  "valueDomain": [
+                    {
+                      "property": [
+                        {
+                          "maxLength": "35"
+                        }
+                      ],
+                      "type": "string"
+                    }
+                  ],
+                  "valueSets": "NHS data dictionary -  <a href=\"https://datadictionary.nhs.uk/data_elements/uk_telephone_number.html?hl=number\" target=\"\" title=\"\">UK phone number</a> \n                        ",
+                  "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/End of life care/Anticipatory medicines/equipment/Performing professional/Contact details@2-build.2.1"
+                }
+              ],
+              "description": "The professional who made the statement regarding anticipatory medicines/equipment was made.",
+              "maximumMultiplicity": "1",
+              "minimumMultiplicity": "0",
+              "mro": "R",
+              "name": "Performing professional",
+              "type": "group",
+              "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/End of life care/Anticipatory medicines/equipment/Performing professional@2-build.2.1"
+            },
+            {
+              "concept": [
+                {
+                  "description": "The name of the person completing the record.",
+                  "maximumMultiplicity": "1",
+                  "minimumMultiplicity": "0",
+                  "mro": "R",
+                  "name": "Name",
+                  "type": "item",
+                  "valueDomain": [
+                    {
+                      "property": [
+                        {
+                          "maxLength": "70"
+                        }
+                      ],
+                      "type": "string"
+                    }
+                  ],
+                  "valueSets": "Free text.",
+                  "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/End of life care/Anticipatory medicines/equipment/Person completing record/Name@2-build.2.1"
+                },
+                {
+                  "description": "The organisational role of the person completing record.",
+                  "maximumMultiplicity": "1",
+                  "minimumMultiplicity": "0",
+                  "mro": "R",
+                  "name": "Role",
+                  "type": "item",
+                  "valueSets": "FHIR value set :-  <a href=\"https://simplifier.net/ukcore/codesystem-ukcore-sdsjobrolename\" target=\"\" title=\"\">SDSjobrole</a> \n                        ",
+                  "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/End of life care/Anticipatory medicines/equipment/Person completing record/Role@2-build.2.1"
+                },
+                {
+                  "description": "The grade of the person completing the record.",
+                  "maximumMultiplicity": "1",
+                  "minimumMultiplicity": "0",
+                  "mro": "R",
+                  "name": "Grade",
+                  "type": "item",
+                  "valueDomain": [
+                    {
+                      "property": [
+                        {
+                          "maxLength": "150"
+                        }
+                      ],
+                      "type": "text"
+                    }
+                  ],
+                  "valueSets": "Free text.",
+                  "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/End of life care/Anticipatory medicines/equipment/Person completing record/Grade@2-build.2.1"
+                },
+                {
+                  "description": "The main specialty of the person completing the record.",
+                  "maximumMultiplicity": "1",
+                  "minimumMultiplicity": "0",
+                  "mro": "R",
+                  "name": "Specialty",
+                  "type": "item",
+                  "valueDomain": [
+                    {
+                      "property": [
+                        {
+                          "maxLength": "3"
+                        }
+                      ],
+                      "type": "string"
+                    }
+                  ],
+                  "valueSets": "NHS data dictionary :-  <a href=\"https://datadictionary.nhs.uk/data_elements/activity_treatment_function_code.html?hl=activity%2Ctreatment%2Cfunction%2Ccode\" target=\"\" title=\"\">Activity treatment function code</a> \n                        ",
+                  "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/End of life care/Anticipatory medicines/equipment/Person completing record/Specialty@2-build.2.1"
+                },
+                {
+                  "description": "The organisation the person completing the record works for.",
+                  "maximumMultiplicity": "1",
+                  "minimumMultiplicity": "0",
+                  "mro": "R",
+                  "name": "Organisation",
+                  "type": "group",
+                  "valueSets": "\n                             <span style=\"color: rgb(51, 51, 51); font-family: Arial, Helvetica, Geneva, sans-serif; font-size: 12px;\">NHS data dictionary : - </span> \n                             <a href=\"https://www.datadictionary.nhs.uk/supporting_information/organisation_data_service.html\" target=\"\" title=\"\">Organisation data service</a> \n                        ",
+                  "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/End of life care/Anticipatory medicines/equipment/Person completing record/Organisation@2-build.2.1"
+                },
+                {
+                  "description": "Professional identifier for the person completing the record e.g. GMC number, HCPC number etc, or the personal identifier used by the local organisation.",
+                  "maximumMultiplicity": "1",
+                  "minimumMultiplicity": "0",
+                  "mro": "R",
+                  "name": "Professional identifier",
+                  "type": "item",
+                  "valueDomain": [
+                    {
+                      "property": [
+                        {
+                          "maxLength": "32"
+                        }
+                      ],
+                      "type": "string"
+                    }
+                  ],
+                  "valueSets": "NHS data dictionary :-  <a href=\"https://datadictionary.nhs.uk/data_elements/professional_registration_entry_identifier.html\" target=\"\" title=\"\">Professional registration identifier</a> \n                        ",
+                  "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/End of life care/Anticipatory medicines/equipment/Person completing record/Professional identifier@2-build.2.1"
+                },
+                {
+                  "description": "The date and time the record was completed.",
+                  "maximumMultiplicity": "1",
+                  "minimumMultiplicity": "0",
+                  "mro": "R",
+                  "name": "Date completed",
+                  "type": "item",
+                  "valueDomain": [
+                    {
+                      "property": [
+                        {
+                          "timeStampPrecision": "YMDHM"
+                        }
+                      ],
+                      "type": "datetime"
+                    }
+                  ],
+                  "valueSets": "Date and time.",
+                  "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/End of life care/Anticipatory medicines/equipment/Person completing record/Date completed@2-build.2.1"
+                },
+                {
+                  "description": "Contact details of the person completing the record. <br clear=\"none\"/> \n                        ",
+                  "maximumMultiplicity": "1",
+                  "minimumMultiplicity": "0",
+                  "mro": "R",
+                  "name": "Contact details",
+                  "type": "item",
+                  "valueDomain": [
+                    {
+                      "property": [
+                        {
+                          "maxLength": "35"
+                        }
+                      ],
+                      "type": "string"
+                    }
+                  ],
+                  "valueSets": "NHS data dictionary : -  <a href=\"https://datadictionary.nhs.uk/data_elements/uk_telephone_number.html?hl=number\" target=\"\" title=\"\">UK telephone number</a> \n                        ",
+                  "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/End of life care/Anticipatory medicines/equipment/Person completing record/Contact details@2-build.2.1"
+                }
+              ],
+              "description": "Details of the person completing the record.",
+              "maximumMultiplicity": "1",
+              "minimumMultiplicity": "0",
+              "mro": "R",
+              "name": "Person completing record",
+              "type": "group",
+              "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/End of life care/Anticipatory medicines/equipment/Person completing record@2-build.2.1"
+            }
+          ],
+          "description": "Details of the persons availability or location regarding their anticipatory medicines/equipment.",
+          "maximumMultiplicity": "*",
+          "minimumMultiplicity": "0",
+          "mro": "R",
+          "name": "Anticipatory medicines/equipment",
+          "type": "group",
+          "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/End of life care/Anticipatory medicines/equipment@2-build.2.1"
+        },
+        {
+          "concept": [
+            {
+              "description": "The date when the preferred place of death was identified.",
+              "maximumMultiplicity": "1",
+              "minimumMultiplicity": "0",
+              "mro": "R",
+              "name": "Date",
+              "type": "item",
+              "valueDomain": [
+                {
+                  "property": [
+                    {
+                      "timeStampPrecision": "YMDHM"
+                    }
+                  ],
+                  "type": "datetime"
+                }
+              ],
+              "valueSets": "Date and time",
+              "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/End of life care/Preferred place of death/Date@2-build.2.1"
+            },
+            {
+              "concept": [
+                {
+                  "description": "The coded value for location",
+                  "maximumMultiplicity": "1",
+                  "minimumMultiplicity": "0",
+                  "mro": "R",
+                  "name": "Coded value",
+                  "type": "item",
+                  "valueDomain": [
+                    {
+                      "property": [
+                        {
+                          "maxLength": "5",
+                          "minLength": "3"
+                        }
+                      ],
+                      "type": "string"
+                    }
+                  ],
+                  "valueSets": "NHS data dictionary: -  <a href=\"https://www.datadictionary.nhs.uk/data_dictionary/attributes/o/org/organisation_code_de.asp?shownav=1\" target=\"\" title=\"\">Organisation data service</a> \n                        ",
+                  "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/End of life care/Preferred place of death/Location/Coded value@2-build.2.1"
+                },
+                {
+                  "description": "Free text field to be used if no code is available",
+                  "maximumMultiplicity": "1",
+                  "minimumMultiplicity": "0",
+                  "mro": "R",
+                  "name": "Free text",
+                  "type": "item",
+                  "valueDomain": [
+                    {
+                      "property": [
+                        {
+                          "maxLength": "150"
+                        }
+                      ],
+                      "type": "text"
+                    }
+                  ],
+                  "valueSets": "Free text",
+                  "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/End of life care/Preferred place of death/Location/Free text@2-build.2.1"
+                }
+              ],
+              "description": "The location where the preferred place of death was identified.",
+              "maximumMultiplicity": "1",
+              "minimumMultiplicity": "0",
+              "mro": "R",
+              "name": "Location",
+              "type": "group",
+              "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/End of life care/Preferred place of death/Location@2-build.2.1"
+            },
+            {
+              "concept": [
+                {
+                  "description": "The name of the preferred place of death",
+                  "maximumMultiplicity": "1",
+                  "minimumMultiplicity": "0",
+                  "mro": "R",
+                  "name": "Name of the place",
+                  "type": "item",
+                  "valueDomain": [
+                    {
+                      "type": "text"
+                    }
+                  ],
+                  "valueSets": "Free text",
+                  "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/End of life care/Preferred place of death/Preferred place of death 1st/Name of the place@2-build.2.1"
+                },
+                {
+                  "description": "The type of preferred place of death",
+                  "maximumMultiplicity": "1",
+                  "minimumMultiplicity": "0",
+                  "mro": "R",
+                  "name": "Type of place",
+                  "type": "item",
+                  "valueSets": "SCC11580 code : - 10: Hospital (Acute/Community/Other)20: Private residence21: Patient's own home22: Other private residence (eg relatives home, carers home)30: Hospice (inpatient specialist palliative care)40: Care Home50: Other (free text eg secure and detained settings)517111000000103, Preferred place of death: patient unable to express preference 517131000000106, Preferred place of death: discussion not appropriate766391000000108, Preferred place of death: patient declined discussion517161000000101, Preferred place of death: patient undecided",
+                  "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/End of life care/Preferred place of death/Preferred place of death 1st/Type of place@2-build.2.1"
+                }
+              ],
+              "description": "The preferences that a person has identified as their preferred place to die.",
+              "maximumMultiplicity": "1",
+              "minimumMultiplicity": "0",
+              "mro": "R",
+              "name": "Preferred place of death 1st",
+              "type": "group",
+              "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/End of life care/Preferred place of death/Preferred place of death 1st@2-build.2.1"
+            },
+            {
+              "concept": [
+                {
+                  "description": "The name of the preferred place of death",
+                  "maximumMultiplicity": "1",
+                  "minimumMultiplicity": "0",
+                  "mro": "R",
+                  "name": "Name of the place",
+                  "type": "item",
+                  "valueDomain": [
+                    {
+                      "type": "text"
+                    }
+                  ],
+                  "valueSets": "Free text",
+                  "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/End of life care/Preferred place of death/Preferred place of death 2nd/Name of the place@2-build.2.1"
+                },
+                {
+                  "description": "The type of preferred place of death",
+                  "maximumMultiplicity": "1",
+                  "minimumMultiplicity": "0",
+                  "mro": "R",
+                  "name": "Type of place",
+                  "type": "item",
+                  "valueSets": "SCC11580 code : - 10: Hospital (Acute/Community/Other)20: Private residence21: Patient's own home22: Other private residence (eg relatives home, carers home)30: Hospice (inpatient specialist palliative care)40: Care Home50: Other (free text eg secure and detained settings)517111000000103, Preferred place of death: patient unable to express preference 517131000000106, Preferred place of death: discussion not appropriate766391000000108, Preferred place of death: patient declined discussion517161000000101, Preferred place of death: patient undecided",
+                  "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/End of life care/Preferred place of death/Preferred place of death 2nd/Type of place@2-build.2.1"
+                }
+              ],
+              "description": "The preferences that a person has identified as their preferred place to die.",
+              "maximumMultiplicity": "1",
+              "minimumMultiplicity": "0",
+              "mro": "R",
+              "name": "Preferred place of death 2nd",
+              "type": "group",
+              "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/End of life care/Preferred place of death/Preferred place of death 2nd@2-build.2.1"
+            },
+            {
+              "concept": [
+                {
+                  "description": "The name of the professional.",
+                  "maximumMultiplicity": "1",
+                  "minimumMultiplicity": "0",
+                  "mro": "R",
+                  "name": "Name",
+                  "type": "item",
+                  "valueDomain": [
+                    {
+                      "property": [
+                        {
+                          "maxLength": "70"
+                        }
+                      ],
+                      "type": "string"
+                    }
+                  ],
+                  "valueSets": "Free text.",
+                  "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/End of life care/Preferred place of death/Performing professional/Name@2-build.2.1"
+                },
+                {
+                  "description": "The role the professional has in relation to the person e.g. GP, physiotherapist, community nurse, social worker etc",
+                  "maximumMultiplicity": "1",
+                  "minimumMultiplicity": "0",
+                  "mro": "R",
+                  "name": "Role",
+                  "type": "item",
+                  "valueSets": "FHIR value set :-  <a class=\"\" href=\"https://simplifier.net/ukcore/codesystem-ukcore-sdsjobrolename\" target=\"\" title=\"\">SDSjobroletype</a> \n                        ",
+                  "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/End of life care/Preferred place of death/Performing professional/Role@2-build.2.1"
+                },
+                {
+                  "description": "The grade of the professional.",
+                  "maximumMultiplicity": "1",
+                  "minimumMultiplicity": "0",
+                  "mro": "R",
+                  "name": "Grade",
+                  "type": "item",
+                  "valueDomain": [
+                    {
+                      "property": [
+                        {
+                          "maxLength": "150"
+                        }
+                      ],
+                      "type": "text"
+                    }
+                  ],
+                  "valueSets": "Free text",
+                  "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/End of life care/Preferred place of death/Performing professional/Grade@2-build.2.1"
+                },
+                {
+                  "description": "The specialty of the professional e.g. physiotherapy, oncology, mental health etc",
+                  "maximumMultiplicity": "1",
+                  "minimumMultiplicity": "0",
+                  "mro": "R",
+                  "name": "Speciality",
+                  "type": "item",
+                  "valueDomain": [
+                    {
+                      "property": [
+                        {
+                          "maxLength": "3"
+                        }
+                      ],
+                      "type": "string"
+                    }
+                  ],
+                  "valueSets": "NHS data dictionary -  <a href=\"https://datadictionary.nhs.uk/data_elements/activity_treatment_function_code.html?hl=activity%2Ctreatment%2Cfunction%2Ccode\" target=\"\" title=\"\">Activity treatment function code</a> \n                        ",
+                  "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/End of life care/Preferred place of death/Performing professional/Speciality@2-build.2.1"
+                },
+                {
+                  "description": "Professional identifier for the professional e.g. GMC number, HCPC number etc or the personal identifier used by the local organisation.",
+                  "maximumMultiplicity": "1",
+                  "minimumMultiplicity": "0",
+                  "mro": "R",
+                  "name": "Professional identifier",
+                  "type": "item",
+                  "valueDomain": [
+                    {
+                      "property": [
+                        {
+                          "maxLength": "32"
+                        }
+                      ],
+                      "type": "string"
+                    }
+                  ],
+                  "valueSets": "NHS data dictionary : -  <a href=\"https://datadictionary.nhs.uk/data_elements/professional_registration_entry_identifier.html\" target=\"\" title=\"\">Professional registration identifier</a> \n                        ",
+                  "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/End of life care/Preferred place of death/Performing professional/Professional identifier@2-build.2.1"
+                },
+                {
+                  "description": "The name of the organisation the professional works for.",
+                  "maximumMultiplicity": "1",
+                  "minimumMultiplicity": "0",
+                  "mro": "R",
+                  "name": "Organisation",
+                  "type": "group",
+                  "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/End of life care/Preferred place of death/Performing professional/Organisation@2-build.2.1"
+                },
+                {
+                  "description": "Contact details of the professional",
+                  "maximumMultiplicity": "1",
+                  "minimumMultiplicity": "0",
+                  "mro": "R",
+                  "name": "Contact details",
+                  "type": "item",
+                  "valueDomain": [
+                    {
+                      "property": [
+                        {
+                          "maxLength": "35"
+                        }
+                      ],
+                      "type": "string"
+                    }
+                  ],
+                  "valueSets": "NHS data dictionary -  <a href=\"https://datadictionary.nhs.uk/data_elements/uk_telephone_number.html?hl=number\" target=\"\" title=\"\">UK phone number</a> \n                        ",
+                  "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/End of life care/Preferred place of death/Performing professional/Contact details@2-build.2.1"
+                }
+              ],
+              "description": "The professional who identified the preferred place of death.",
+              "maximumMultiplicity": "1",
+              "minimumMultiplicity": "0",
+              "mro": "R",
+              "name": "Performing professional",
+              "type": "group",
+              "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/End of life care/Preferred place of death/Performing professional@2-build.2.1"
+            },
+            {
+              "concept": [
+                {
+                  "description": "The name of the person completing the record.",
+                  "maximumMultiplicity": "1",
+                  "minimumMultiplicity": "0",
+                  "mro": "R",
+                  "name": "Name",
+                  "type": "item",
+                  "valueDomain": [
+                    {
+                      "property": [
+                        {
+                          "maxLength": "70"
+                        }
+                      ],
+                      "type": "string"
+                    }
+                  ],
+                  "valueSets": "Free text.",
+                  "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/End of life care/Preferred place of death/Person completing record/Name@2-build.2.1"
+                },
+                {
+                  "description": "The organisational role of the person completing record.",
+                  "maximumMultiplicity": "1",
+                  "minimumMultiplicity": "0",
+                  "mro": "R",
+                  "name": "Role",
+                  "type": "item",
+                  "valueSets": "FHIR value set :-  <a href=\"https://simplifier.net/ukcore/codesystem-ukcore-sdsjobrolename\" target=\"\" title=\"\">SDSjobrole</a> \n                        ",
+                  "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/End of life care/Preferred place of death/Person completing record/Role@2-build.2.1"
+                },
+                {
+                  "description": "The grade of the person completing the record.",
+                  "maximumMultiplicity": "1",
+                  "minimumMultiplicity": "0",
+                  "mro": "R",
+                  "name": "Grade",
+                  "type": "item",
+                  "valueDomain": [
+                    {
+                      "property": [
+                        {
+                          "maxLength": "150"
+                        }
+                      ],
+                      "type": "text"
+                    }
+                  ],
+                  "valueSets": "Free text.",
+                  "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/End of life care/Preferred place of death/Person completing record/Grade@2-build.2.1"
+                },
+                {
+                  "description": "The main specialty of the person completing the record.",
+                  "maximumMultiplicity": "1",
+                  "minimumMultiplicity": "0",
+                  "mro": "R",
+                  "name": "Specialty",
+                  "type": "item",
+                  "valueDomain": [
+                    {
+                      "property": [
+                        {
+                          "maxLength": "3"
+                        }
+                      ],
+                      "type": "string"
+                    }
+                  ],
+                  "valueSets": "NHS data dictionary :-  <a href=\"https://datadictionary.nhs.uk/data_elements/activity_treatment_function_code.html?hl=activity%2Ctreatment%2Cfunction%2Ccode\" target=\"\" title=\"\">Activity treatment function code</a> \n                        ",
+                  "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/End of life care/Preferred place of death/Person completing record/Specialty@2-build.2.1"
+                },
+                {
+                  "description": "The organisation the person completing the record works for.",
+                  "maximumMultiplicity": "1",
+                  "minimumMultiplicity": "0",
+                  "mro": "R",
+                  "name": "Organisation",
+                  "type": "group",
+                  "valueSets": "\n                             <span style=\"color: rgb(51, 51, 51); font-family: Arial, Helvetica, Geneva, sans-serif; font-size: 12px;\">NHS data dictionary : - </span> \n                             <a href=\"https://www.datadictionary.nhs.uk/supporting_information/organisation_data_service.html\" target=\"\" title=\"\">Organisation data service</a> \n                        ",
+                  "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/End of life care/Preferred place of death/Person completing record/Organisation@2-build.2.1"
+                },
+                {
+                  "description": "Professional identifier for the person completing the record e.g. GMC number, HCPC number etc, or the personal identifier used by the local organisation.",
+                  "maximumMultiplicity": "1",
+                  "minimumMultiplicity": "0",
+                  "mro": "R",
+                  "name": "Professional identifier",
+                  "type": "item",
+                  "valueDomain": [
+                    {
+                      "property": [
+                        {
+                          "maxLength": "32"
+                        }
+                      ],
+                      "type": "string"
+                    }
+                  ],
+                  "valueSets": "NHS data dictionary :-  <a href=\"https://datadictionary.nhs.uk/data_elements/professional_registration_entry_identifier.html\" target=\"\" title=\"\">Professional registration identifier</a> \n                        ",
+                  "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/End of life care/Preferred place of death/Person completing record/Professional identifier@2-build.2.1"
+                },
+                {
+                  "description": "The date and time the record was completed.",
+                  "maximumMultiplicity": "1",
+                  "minimumMultiplicity": "0",
+                  "mro": "R",
+                  "name": "Date completed",
+                  "type": "item",
+                  "valueDomain": [
+                    {
+                      "property": [
+                        {
+                          "timeStampPrecision": "YMDHM"
+                        }
+                      ],
+                      "type": "datetime"
+                    }
+                  ],
+                  "valueSets": "Date and time.",
+                  "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/End of life care/Preferred place of death/Person completing record/Date completed@2-build.2.1"
+                },
+                {
+                  "description": "Contact details of the person completing the record. <br clear=\"none\"/> \n                        ",
+                  "maximumMultiplicity": "1",
+                  "minimumMultiplicity": "0",
+                  "mro": "R",
+                  "name": "Contact details",
+                  "type": "item",
+                  "valueDomain": [
+                    {
+                      "property": [
+                        {
+                          "maxLength": "35"
+                        }
+                      ],
+                      "type": "string"
+                    }
+                  ],
+                  "valueSets": "NHS data dictionary : -  <a href=\"https://datadictionary.nhs.uk/data_elements/uk_telephone_number.html?hl=number\" target=\"\" title=\"\">UK telephone number</a> \n                        ",
+                  "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/End of life care/Preferred place of death/Person completing record/Contact details@2-build.2.1"
+                }
+              ],
+              "description": "Details of the person completing the record.",
+              "maximumMultiplicity": "1",
+              "minimumMultiplicity": "0",
+              "mro": "R",
+              "name": "Person completing record",
+              "type": "group",
+              "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/End of life care/Preferred place of death/Person completing record@2-build.2.1"
+            }
+          ],
+          "description": "Details of the person's preferred place of death",
+          "maximumMultiplicity": "1",
+          "minimumMultiplicity": "0",
+          "mro": "R",
+          "name": "Preferred place of death",
+          "type": "group",
+          "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/End of life care/Preferred place of death@2-build.2.1"
+        },
+        {
+          "concept": [
+            {
+              "description": "The date when the preferred place of care was identified.",
+              "maximumMultiplicity": "1",
+              "minimumMultiplicity": "0",
+              "mro": "R",
+              "name": "Date",
+              "type": "item",
+              "valueDomain": [
+                {
+                  "property": [
+                    {
+                      "timeStampPrecision": "YMDHM"
+                    }
+                  ],
+                  "type": "datetime"
+                }
+              ],
+              "valueSets": "Date and time",
+              "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/End of life care/Preferred place of care/Date@2-build.2.1"
+            },
+            {
+              "concept": [
+                {
+                  "description": "The coded value for location",
+                  "maximumMultiplicity": "1",
+                  "minimumMultiplicity": "0",
+                  "mro": "R",
+                  "name": "Coded value",
+                  "type": "item",
+                  "valueDomain": [
+                    {
+                      "property": [
+                        {
+                          "maxLength": "5",
+                          "minLength": "3"
+                        }
+                      ],
+                      "type": "string"
+                    }
+                  ],
+                  "valueSets": "NHS data dictionary: -  <a href=\"https://www.datadictionary.nhs.uk/data_dictionary/attributes/o/org/organisation_code_de.asp?shownav=1\" target=\"\" title=\"\">Organisation data service</a> \n                        ",
+                  "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/End of life care/Preferred place of care/Location/Coded value@2-build.2.1"
+                },
+                {
+                  "description": "Free text field to be used if no code is available",
+                  "maximumMultiplicity": "1",
+                  "minimumMultiplicity": "0",
+                  "mro": "R",
+                  "name": "Free text",
+                  "type": "item",
+                  "valueDomain": [
+                    {
+                      "property": [
+                        {
+                          "maxLength": "150"
+                        }
+                      ],
+                      "type": "text"
+                    }
+                  ],
+                  "valueSets": "Free text",
+                  "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/End of life care/Preferred place of care/Location/Free text@2-build.2.1"
+                }
+              ],
+              "description": "The location where the preferred place of care was identified.",
+              "maximumMultiplicity": "1",
+              "minimumMultiplicity": "0",
+              "mro": "R",
+              "name": "Location",
+              "type": "group",
+              "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/End of life care/Preferred place of care/Location@2-build.2.1"
+            },
+            {
+              "description": "The preferences that the person has identified as their preferred place to receive care.",
+              "maximumMultiplicity": "1",
+              "minimumMultiplicity": "0",
+              "mro": "R",
+              "name": "Preferred place of care",
+              "type": "item",
+              "valueDomain": [
+                {
+                  "type": "text"
+                }
+              ],
+              "valueSets": "Free text",
+              "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/End of life care/Preferred place of care/Preferred place of care@2-build.2.1"
+            },
+            {
+              "concept": [
+                {
+                  "description": "The name of the professional.",
+                  "maximumMultiplicity": "1",
+                  "minimumMultiplicity": "0",
+                  "mro": "R",
+                  "name": "Name",
+                  "type": "item",
+                  "valueDomain": [
+                    {
+                      "property": [
+                        {
+                          "maxLength": "70"
+                        }
+                      ],
+                      "type": "string"
+                    }
+                  ],
+                  "valueSets": "Free text.",
+                  "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/End of life care/Preferred place of care/Performing professional/Name@2-build.2.1"
+                },
+                {
+                  "description": "The role the professional has in relation to the person e.g. GP, physiotherapist, community nurse, social worker etc",
+                  "maximumMultiplicity": "1",
+                  "minimumMultiplicity": "0",
+                  "mro": "R",
+                  "name": "Role",
+                  "type": "item",
+                  "valueSets": "FHIR value set :-  <a class=\"\" href=\"https://simplifier.net/ukcore/codesystem-ukcore-sdsjobrolename\" target=\"\" title=\"\">SDSjobroletype</a> \n                        ",
+                  "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/End of life care/Preferred place of care/Performing professional/Role@2-build.2.1"
+                },
+                {
+                  "description": "The grade of the professional.",
+                  "maximumMultiplicity": "1",
+                  "minimumMultiplicity": "0",
+                  "mro": "R",
+                  "name": "Grade",
+                  "type": "item",
+                  "valueDomain": [
+                    {
+                      "property": [
+                        {
+                          "maxLength": "150"
+                        }
+                      ],
+                      "type": "text"
+                    }
+                  ],
+                  "valueSets": "Free text",
+                  "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/End of life care/Preferred place of care/Performing professional/Grade@2-build.2.1"
+                },
+                {
+                  "description": "The specialty of the professional e.g. physiotherapy, oncology, mental health etc",
+                  "maximumMultiplicity": "1",
+                  "minimumMultiplicity": "0",
+                  "mro": "R",
+                  "name": "Speciality",
+                  "type": "item",
+                  "valueDomain": [
+                    {
+                      "property": [
+                        {
+                          "maxLength": "3"
+                        }
+                      ],
+                      "type": "string"
+                    }
+                  ],
+                  "valueSets": "NHS data dictionary -  <a href=\"https://datadictionary.nhs.uk/data_elements/activity_treatment_function_code.html?hl=activity%2Ctreatment%2Cfunction%2Ccode\" target=\"\" title=\"\">Activity treatment function code</a> \n                        ",
+                  "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/End of life care/Preferred place of care/Performing professional/Speciality@2-build.2.1"
+                },
+                {
+                  "description": "Professional identifier for the professional e.g. GMC number, HCPC number etc or the personal identifier used by the local organisation.",
+                  "maximumMultiplicity": "1",
+                  "minimumMultiplicity": "0",
+                  "mro": "R",
+                  "name": "Professional identifier",
+                  "type": "item",
+                  "valueDomain": [
+                    {
+                      "property": [
+                        {
+                          "maxLength": "32"
+                        }
+                      ],
+                      "type": "string"
+                    }
+                  ],
+                  "valueSets": "NHS data dictionary : -  <a href=\"https://datadictionary.nhs.uk/data_elements/professional_registration_entry_identifier.html\" target=\"\" title=\"\">Professional registration identifier</a> \n                        ",
+                  "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/End of life care/Preferred place of care/Performing professional/Professional identifier@2-build.2.1"
+                },
+                {
+                  "description": "The name of the organisation the professional works for.",
+                  "maximumMultiplicity": "1",
+                  "minimumMultiplicity": "0",
+                  "mro": "R",
+                  "name": "Organisation",
+                  "type": "group",
+                  "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/End of life care/Preferred place of care/Performing professional/Organisation@2-build.2.1"
+                },
+                {
+                  "description": "Contact details of the professional",
+                  "maximumMultiplicity": "1",
+                  "minimumMultiplicity": "0",
+                  "mro": "R",
+                  "name": "Contact details",
+                  "type": "item",
+                  "valueDomain": [
+                    {
+                      "property": [
+                        {
+                          "maxLength": "35"
+                        }
+                      ],
+                      "type": "string"
+                    }
+                  ],
+                  "valueSets": "NHS data dictionary -  <a href=\"https://datadictionary.nhs.uk/data_elements/uk_telephone_number.html?hl=number\" target=\"\" title=\"\">UK phone number</a> \n                        ",
+                  "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/End of life care/Preferred place of care/Performing professional/Contact details@2-build.2.1"
+                }
+              ],
+              "description": "The professional who identified the preferred place of care.",
+              "maximumMultiplicity": "1",
+              "minimumMultiplicity": "0",
+              "mro": "R",
+              "name": "Performing professional",
+              "type": "group",
+              "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/End of life care/Preferred place of care/Performing professional@2-build.2.1"
+            },
+            {
+              "concept": [
+                {
+                  "description": "The name of the person completing the record.",
+                  "maximumMultiplicity": "1",
+                  "minimumMultiplicity": "0",
+                  "mro": "R",
+                  "name": "Name",
+                  "type": "item",
+                  "valueDomain": [
+                    {
+                      "property": [
+                        {
+                          "maxLength": "70"
+                        }
+                      ],
+                      "type": "string"
+                    }
+                  ],
+                  "valueSets": "Free text.",
+                  "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/End of life care/Preferred place of care/Person completing record/Name@2-build.2.1"
+                },
+                {
+                  "description": "The organisational role of the person completing record.",
+                  "maximumMultiplicity": "1",
+                  "minimumMultiplicity": "0",
+                  "mro": "R",
+                  "name": "Role",
+                  "type": "item",
+                  "valueSets": "FHIR value set :-  <a href=\"https://simplifier.net/ukcore/codesystem-ukcore-sdsjobrolename\" target=\"\" title=\"\">SDSjobrole</a> \n                        ",
+                  "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/End of life care/Preferred place of care/Person completing record/Role@2-build.2.1"
+                },
+                {
+                  "description": "The grade of the person completing the record.",
+                  "maximumMultiplicity": "1",
+                  "minimumMultiplicity": "0",
+                  "mro": "R",
+                  "name": "Grade",
+                  "type": "item",
+                  "valueDomain": [
+                    {
+                      "property": [
+                        {
+                          "maxLength": "150"
+                        }
+                      ],
+                      "type": "text"
+                    }
+                  ],
+                  "valueSets": "Free text.",
+                  "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/End of life care/Preferred place of care/Person completing record/Grade@2-build.2.1"
+                },
+                {
+                  "description": "The main specialty of the person completing the record.",
+                  "maximumMultiplicity": "1",
+                  "minimumMultiplicity": "0",
+                  "mro": "R",
+                  "name": "Specialty",
+                  "type": "item",
+                  "valueDomain": [
+                    {
+                      "property": [
+                        {
+                          "maxLength": "3"
+                        }
+                      ],
+                      "type": "string"
+                    }
+                  ],
+                  "valueSets": "NHS data dictionary :-  <a href=\"https://datadictionary.nhs.uk/data_elements/activity_treatment_function_code.html?hl=activity%2Ctreatment%2Cfunction%2Ccode\" target=\"\" title=\"\">Activity treatment function code</a> \n                        ",
+                  "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/End of life care/Preferred place of care/Person completing record/Specialty@2-build.2.1"
+                },
+                {
+                  "description": "The organisation the person completing the record works for.",
+                  "maximumMultiplicity": "1",
+                  "minimumMultiplicity": "0",
+                  "mro": "R",
+                  "name": "Organisation",
+                  "type": "group",
+                  "valueSets": "\n                             <span style=\"color: rgb(51, 51, 51); font-family: Arial, Helvetica, Geneva, sans-serif; font-size: 12px;\">NHS data dictionary : - </span> \n                             <a href=\"https://www.datadictionary.nhs.uk/supporting_information/organisation_data_service.html\" target=\"\" title=\"\">Organisation data service</a> \n                        ",
+                  "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/End of life care/Preferred place of care/Person completing record/Organisation@2-build.2.1"
+                },
+                {
+                  "description": "Professional identifier for the person completing the record e.g. GMC number, HCPC number etc, or the personal identifier used by the local organisation.",
+                  "maximumMultiplicity": "1",
+                  "minimumMultiplicity": "0",
+                  "mro": "R",
+                  "name": "Professional identifier",
+                  "type": "item",
+                  "valueDomain": [
+                    {
+                      "property": [
+                        {
+                          "maxLength": "32"
+                        }
+                      ],
+                      "type": "string"
+                    }
+                  ],
+                  "valueSets": "NHS data dictionary :-  <a href=\"https://datadictionary.nhs.uk/data_elements/professional_registration_entry_identifier.html\" target=\"\" title=\"\">Professional registration identifier</a> \n                        ",
+                  "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/End of life care/Preferred place of care/Person completing record/Professional identifier@2-build.2.1"
+                },
+                {
+                  "description": "The date and time the record was completed.",
+                  "maximumMultiplicity": "1",
+                  "minimumMultiplicity": "0",
+                  "mro": "R",
+                  "name": "Date completed",
+                  "type": "item",
+                  "valueDomain": [
+                    {
+                      "property": [
+                        {
+                          "timeStampPrecision": "YMDHM"
+                        }
+                      ],
+                      "type": "datetime"
+                    }
+                  ],
+                  "valueSets": "Date and time.",
+                  "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/End of life care/Preferred place of care/Person completing record/Date completed@2-build.2.1"
+                },
+                {
+                  "description": "Contact details of the person completing the record. <br clear=\"none\"/> \n                        ",
+                  "maximumMultiplicity": "1",
+                  "minimumMultiplicity": "0",
+                  "mro": "R",
+                  "name": "Contact details",
+                  "type": "item",
+                  "valueDomain": [
+                    {
+                      "property": [
+                        {
+                          "maxLength": "35"
+                        }
+                      ],
+                      "type": "string"
+                    }
+                  ],
+                  "valueSets": "NHS data dictionary : -  <a href=\"https://datadictionary.nhs.uk/data_elements/uk_telephone_number.html?hl=number\" target=\"\" title=\"\">UK telephone number</a> \n                        ",
+                  "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/End of life care/Preferred place of care/Person completing record/Contact details@2-build.2.1"
+                }
+              ],
+              "description": "Details of the person completing the record.",
+              "maximumMultiplicity": "1",
+              "minimumMultiplicity": "0",
+              "mro": "R",
+              "name": "Person completing record",
+              "type": "group",
+              "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/End of life care/Preferred place of care/Person completing record@2-build.2.1"
+            }
+          ],
+          "description": "Details of the persons preferred place of care",
+          "maximumMultiplicity": "1",
+          "minimumMultiplicity": "0",
+          "mro": "R",
+          "name": "Preferred place of care",
+          "type": "group",
+          "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/End of life care/Preferred place of care@2-build.2.1"
+        }
+      ],
+      "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/End of life care@2-build.2.1",
+      "description": "<p>Information relating to end of life care. </p><p><br></p><p> N.B. This is not an end of life care plan but contains information that would be found in an end of life care plan.</p>",
+      "implementationGuidance": "<p><br></p>",
+      "informationType": "",
+      "isComponent": true,
+      "maximumMultiplicity": "1",
+      "minimumMultiplicity": "0",
+      "mro": "R",
+      "name": "End of life care",
+      "relationshipType": "neither",
+      "type": "group",
+      "valueSets": ""
     }
   ]
 }
