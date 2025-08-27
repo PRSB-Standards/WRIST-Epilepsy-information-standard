@@ -8984,6 +8984,216 @@
       "relationshipType": "neither",
       "type": "group",
       "valueSets": ""
+    },
+    {
+      "concept": [
+        {
+          "concept": [
+            {
+              "description": "Date and time of future appointment.",
+              "maximumMultiplicity": "1",
+              "minimumMultiplicity": "0",
+              "mro": "R",
+              "name": "Date of appointment",
+              "type": "item",
+              "valueDomain": [
+                {
+                  "property": [
+                    {
+                      "timeStampPrecision": "YMD"
+                    }
+                  ],
+                  "type": "datetime"
+                }
+              ],
+              "valueSets": "Date and time",
+              "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Future appointments/Future appointments record entry/Date of appointment@2-build.2.1"
+            },
+            {
+              "description": "The status of the appointment e.g. proposed, booked, confirmed, rejected.",
+              "maximumMultiplicity": "1",
+              "minimumMultiplicity": "0",
+              "mro": "R",
+              "name": "Appointment status",
+              "type": "item",
+              "valueDomain": [
+                {
+                  "property": [
+                    {
+                      "maxLength": "150"
+                    }
+                  ],
+                  "type": "text"
+                }
+              ],
+              "valueSets": "Free text",
+              "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Future appointments/Future appointments record entry/Appointment status@2-build.2.1"
+            },
+            {
+              "description": "Reason this appointment is scheduled e.g. diagnosis, investigation, treatment or assessment",
+              "maximumMultiplicity": "1",
+              "minimumMultiplicity": "0",
+              "mro": "R",
+              "name": "Reason for appointment",
+              "type": "item",
+              "valueDomain": [
+                {
+                  "property": [
+                    {
+                      "maxLength": "150"
+                    }
+                  ],
+                  "type": "text"
+                }
+              ],
+              "valueSets": "Free text",
+              "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Future appointments/Future appointments record entry/Reason for appointment@2-build.2.1"
+            },
+            {
+              "concept": [
+                {
+                  "description": "The coded value for location",
+                  "maximumMultiplicity": "1",
+                  "minimumMultiplicity": "0",
+                  "mro": "R",
+                  "name": "Coded value",
+                  "type": "item",
+                  "valueDomain": [
+                    {
+                      "property": [
+                        {
+                          "maxLength": "5",
+                          "minLength": "3"
+                        }
+                      ],
+                      "type": "string"
+                    }
+                  ],
+                  "valueSets": "NHS data dictionary : -  <a href=\"https://www.datadictionary.nhs.uk/data_dictionary/attributes/o/org/organisation_code_de.asp?shownav=1\" target=\"\" title=\"\">Organisation data service</a> \n                        ",
+                  "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Future appointments/Future appointments record entry/Location of future appointment/Coded value@2-build.2.1"
+                },
+                {
+                  "description": "Free text field to be used if no code is available",
+                  "maximumMultiplicity": "1",
+                  "minimumMultiplicity": "0",
+                  "mro": "R",
+                  "name": "Free text",
+                  "type": "item",
+                  "valueDomain": [
+                    {
+                      "property": [
+                        {
+                          "maxLength": "150"
+                        }
+                      ],
+                      "type": "text"
+                    }
+                  ],
+                  "valueSets": "Free text",
+                  "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Future appointments/Future appointments record entry/Location of future appointment/Free text@2-build.2.1"
+                }
+              ],
+              "description": "The location of the appointment.",
+              "maximumMultiplicity": "1",
+              "minimumMultiplicity": "0",
+              "mro": "R",
+              "name": "Location of future appointment",
+              "type": "group",
+              "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Future appointments/Future appointments record entry/Location of future appointment@2-build.2.1"
+            },
+            {
+              "description": "The specialty e.g. physiotherapy, oncology, mental health etc.",
+              "maximumMultiplicity": "1",
+              "minimumMultiplicity": "0",
+              "mro": "R",
+              "name": "Specialty",
+              "type": "item",
+              "valueDomain": [
+                {
+                  "property": [
+                    {
+                      "maxLength": "3"
+                    }
+                  ],
+                  "type": "string"
+                }
+              ],
+              "valueSets": "\n                         <div>NHS data dictionary :- <a href=\"https://datadictionary.nhs.uk/data_elements/activity_treatment_function_code.html\" target=\"\" title=\"\">Activity treatment function code</a>\n                        </div> \n                    ",
+              "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Future appointments/Future appointments record entry/Specialty@2-build.2.1"
+            },
+            {
+              "description": "The service being provided.",
+              "maximumMultiplicity": "1",
+              "minimumMultiplicity": "0",
+              "mro": "R",
+              "name": "Service",
+              "type": "item",
+              "valueSets": "SNOMED CT: - 1127531000000102 |Services simple reference set (foundation metadata concept)|",
+              "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Future appointments/Future appointments record entry/Service@2-build.2.1"
+            },
+            {
+              "concept": [
+                {
+                  "description": "The name of the professional seeing the person.",
+                  "maximumMultiplicity": "1",
+                  "minimumMultiplicity": "0",
+                  "mro": "R",
+                  "name": "Name",
+                  "type": "item",
+                  "valueDomain": [
+                    {
+                      "property": [
+                        {
+                          "maxLength": "70"
+                        }
+                      ],
+                      "type": "string"
+                    }
+                  ],
+                  "valueSets": "Free text",
+                  "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Future appointments/Future appointments record entry/Professional to see the person/Name@2-build.2.1"
+                },
+                {
+                  "description": "The role of the professional seeing the person.",
+                  "maximumMultiplicity": "1",
+                  "minimumMultiplicity": "0",
+                  "mro": "R",
+                  "name": "Role",
+                  "type": "item",
+                  "valueSets": "FHIR value set : -  <a href=\"https://simplifier.net/ukcore/codesystem-ukcore-sdsjobrolename\" target=\"\" title=\"\">sdsjobrole</a> \n                        ",
+                  "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Future appointments/Future appointments record entry/Professional to see the person/Role@2-build.2.1"
+                }
+              ],
+              "description": "The name and role of the professional e.g. consultant, care worker, nurse consultant.",
+              "maximumMultiplicity": "1",
+              "minimumMultiplicity": "0",
+              "mro": "R",
+              "name": "Professional to see the person",
+              "type": "group",
+              "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Future appointments/Future appointments record entry/Professional to see the person@2-build.2.1"
+            }
+          ],
+          "description": "This is the future appointments record entry. There may be 0 to many record entries under a section. Each record entry is made up of a number of elements or data items.",
+          "maximumMultiplicity": "*",
+          "minimumMultiplicity": "0",
+          "mro": "R",
+          "name": "Future appointments record entry",
+          "type": "group",
+          "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Future appointments/Future appointments record entry@2-build.2.1"
+        }
+      ],
+      "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Future appointments@2-build.2.1",
+      "description": "<p>Details of future appointments.</p>",
+      "implementationGuidance": "<p><br></p>",
+      "informationType": "",
+      "isComponent": true,
+      "maximumMultiplicity": "1",
+      "minimumMultiplicity": "0",
+      "mro": "R",
+      "name": "Future appointments",
+      "relationshipType": "neither",
+      "type": "group",
+      "valueSets": ""
     }
   ]
 }
