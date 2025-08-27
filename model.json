@@ -22364,6 +22364,1074 @@
       "relationshipType": "neither",
       "type": "group",
       "valueSets": ""
+    },
+    {
+      "concept": [
+        {
+          "concept": [
+            {
+              "description": "The coded value associated with the person's strengths.\u00a0 Could be derived from the assessment of the person e.g.\u00a0300738008 |Able to participate in leisure activities (finding)| <br clear=\"none\"/> \n                         <div>\n                            <span style=\"color: rgb(255, 255, 255); font-family: &#34;Segoe UI&#34;, system-ui, &#34;Apple Color Emoji&#34;, &#34;Segoe UI Emoji&#34;, sans-serif; font-size: 14px;\">\n                                <br clear=\"none\"/>\n                            </span>\n                        </div> \n                    ",
+              "maximumMultiplicity": "1",
+              "minimumMultiplicity": "0",
+              "mro": "R",
+              "name": "Coded value ",
+              "type": "item",
+              "valueSets": "SNOMED CT : -\u00a01127601000000107 | Healthcare matters simple reference set (foundation metadata concept) |",
+              "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Care and support plan/Strengths/Coded value @2-build.2.1"
+            },
+            {
+              "description": "Any supplementary or personalised information that relates to the person's strengths.",
+              "maximumMultiplicity": "1",
+              "minimumMultiplicity": "0",
+              "mro": "R",
+              "name": "Free text",
+              "type": "item",
+              "valueDomain": [
+                {
+                  "type": "text"
+                }
+              ],
+              "valueSets": "Free text",
+              "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Care and support plan/Strengths/Free text@2-build.2.1"
+            }
+          ],
+          "description": "Any strengths and assets the person has relating to their goals and hopes about their health and well-being.",
+          "maximumMultiplicity": "*",
+          "minimumMultiplicity": "0",
+          "mro": "R",
+          "name": "Strengths",
+          "type": "group",
+          "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Care and support plan/Strengths@2-build.2.1"
+        },
+        {
+          "concept": [
+            {
+              "description": "The coded value associated with the person's needs, concerns or problems.",
+              "maximumMultiplicity": "1",
+              "minimumMultiplicity": "0",
+              "mro": "R",
+              "name": "Coded value",
+              "type": "item",
+              "valueSets": "SNOMED CT : -\u00a0 <a class=\"\" href=\"https://termbrowser.nhs.uk/?perspective=full&conceptId1=1127581000000103&edition=uk-edition&release=&server=https://termbrowser.nhs.uk/sct-browser-api/snomed&langRefset=999001261000000100,999000691000001104\" target=\"\" title=\"\" style=\"\">^1127581000000103 |Health issues simple reference set|</a> \n                    ",
+              "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Care and support plan/Needs, concerns or problems/Coded value@2-build.2.1"
+            },
+            {
+              "description": "\n                         <table class=\"detail spaced\" width=\"100%\" style=\"font-family: Arial, Helvetica, Geneva, sans-serif; font-size: 12px; max-width: 100%; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial; color: rgb(51, 51, 51);\">\n                            <tbody>\n                                <tr>\n                                    <td colspan=\"3\" rowspan=\"1\" style=\"vertical-align: top;\">\n                                        <div class=\"xforms-control xforms-output xforms-mediatype-text-html xforms-mediatype-text\" id=\"xf-895\u2261xf-1189\" style=\"display: inline; zoom: 1;\">\n                                            <div class=\"xforms-output-output\" id=\"xf-895\u2261xf-1189\u2261\u2261c\" style=\"zoom: 1;\">Any supplementary or personalised information that relates to the person's needs, concerns and problems.</div>\n                                        </div>\n                                    </td>\n                                </tr>\n                            </tbody>\n                        </table> \n                    ",
+              "maximumMultiplicity": "1",
+              "minimumMultiplicity": "0",
+              "mro": "R",
+              "name": "Free text",
+              "type": "item",
+              "valueDomain": [
+                {
+                  "type": "text"
+                }
+              ],
+              "valueSets": "Free text\u00a0",
+              "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Care and support plan/Needs, concerns or problems/Free text@2-build.2.1"
+            },
+            {
+              "concept": [
+                {
+                  "description": "The coded value associated with the person's goals, aim's and hopes. e.g.\u00a0999002111000000103 |Occupational therapy goals simple reference set (foundation metadata concept)|",
+                  "maximumMultiplicity": "1",
+                  "minimumMultiplicity": "0",
+                  "mro": "R",
+                  "name": "Coded value",
+                  "type": "item",
+                  "valueSets": "SNOMED CT : - 413350009|Finding with explicit context|: 246090004|Associated finding|=300798006 |Able to participate in sporting activities (finding)|, 408729009|Finding context|=410518001|Goal|",
+                  "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Care and support plan/Needs, concerns or problems/Goals and hopes/Coded value@2-build.2.1"
+                },
+                {
+                  "description": "Any supplementary and personalised information relating to the person's goals, aims and hopes.",
+                  "maximumMultiplicity": "1",
+                  "minimumMultiplicity": "0",
+                  "mro": "R",
+                  "name": "Free text ",
+                  "type": "item",
+                  "valueDomain": [
+                    {
+                      "type": "text"
+                    }
+                  ],
+                  "valueSets": "Free text",
+                  "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Care and support plan/Needs, concerns or problems/Goals and hopes/Free text @2-build.2.1"
+                },
+                {
+                  "description": "Assessment of the person's motivations to achieve this goal, how important the goal is to the person on a scale of 1-10.",
+                  "maximumMultiplicity": "1",
+                  "minimumMultiplicity": "0",
+                  "mro": "R",
+                  "name": "Goal importance score",
+                  "type": "item",
+                  "valueDomain": [
+                    {
+                      "type": "decimal"
+                    }
+                  ],
+                  "valueSets": "Numeric scale 1 - 10",
+                  "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Care and support plan/Needs, concerns or problems/Goals and hopes/Goal importance score@2-build.2.1"
+                },
+                {
+                  "concept": [
+                    {
+                      "concept": [
+                        {
+                          "description": "The coded value for the action. <table class=\"detail spaced\" width=\"100%\" style=\"font-family: Arial, Helvetica, Geneva, sans-serif; font-size: 12px; max-width: 100%; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial; color: rgb(51, 51, 51);\">\n                                        <tbody>\n                                            <tr>\n                                                <td colspan=\"3\" rowspan=\"1\" style=\"vertical-align: top;\">\n                                                    <div class=\"xforms-control xforms-output xforms-mediatype-text-html xforms-mediatype-text\" id=\"xf-895\u2261xf-1189\" style=\"display: inline; zoom: 1;\">\n                                                        <div class=\"xforms-output-output\" id=\"xf-895\u2261xf-1189\u2261\u2261c\" style=\"zoom: 1;\">\n                                                            <br clear=\"none\"/>\n                                                        </div>\n                                                    </div>\n                                                </td>\n                                            </tr>\n                                        </tbody>\n                                    </table> \n                                ",
+                          "maximumMultiplicity": "1",
+                          "minimumMultiplicity": "0",
+                          "mro": "R",
+                          "name": "Coded value",
+                          "type": "item",
+                          "valueSets": "SNOMED CT : - &lt;&lt; <a class=\"\" href=\"https://termbrowser.nhs.uk/?perspective=full&conceptId1=71388002&edition=uk-edition&release=&server=https://termbrowser.nhs.uk/sct-browser-api/snomed&langRefset=999001261000000100,999000691000001104\" target=\"\" title=\"\">71388002</a> \u00a0|Procedure| OR &lt;&lt; <a class=\"\" href=\"https://termbrowser.nhs.uk/?perspective=full&conceptId1=129125009&edition=uk-edition&release=&server=https://termbrowser.nhs.uk/sct-browser-api/snomed&langRefset=999001261000000100,999000691000001104\" target=\"\" title=\"\">129125009</a> \u00a0|Procedure with explicit context|",
+                          "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Care and support plan/Needs, concerns or problems/Goals and hopes/Actions and activities/What/Coded value@2-build.2.1"
+                        },
+                        {
+                          "description": "Any supplementary and personalised information for the action.",
+                          "maximumMultiplicity": "1",
+                          "minimumMultiplicity": "0",
+                          "mro": "R",
+                          "name": "Free text",
+                          "type": "item",
+                          "valueDomain": [
+                            {
+                              "type": "text"
+                            }
+                          ],
+                          "valueSets": "Free text",
+                          "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Care and support plan/Needs, concerns or problems/Goals and hopes/Actions and activities/What/Free text@2-build.2.1"
+                        }
+                      ],
+                      "description": "What the action is and how it is to be carried out?",
+                      "maximumMultiplicity": "1",
+                      "minimumMultiplicity": "0",
+                      "mro": "R",
+                      "name": "What",
+                      "type": "group",
+                      "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Care and support plan/Needs, concerns or problems/Goals and hopes/Actions and activities/What@2-build.2.1"
+                    },
+                    {
+                      "concept": [
+                        {
+                          "description": "The name of the professional or person carrying out the proposed action.",
+                          "maximumMultiplicity": "1",
+                          "minimumMultiplicity": "0",
+                          "mro": "R",
+                          "name": "Name",
+                          "type": "item",
+                          "valueDomain": [
+                            {
+                              "property": [
+                                {
+                                  "maxLength": "70"
+                                }
+                              ],
+                              "type": "text"
+                            }
+                          ],
+                          "valueSets": "Free text",
+                          "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Care and support plan/Needs, concerns or problems/Goals and hopes/Actions and activities/Who/Name@2-build.2.1"
+                        },
+                        {
+                          "description": "The role of the person providing the service.",
+                          "maximumMultiplicity": "1",
+                          "minimumMultiplicity": "0",
+                          "mro": "R",
+                          "name": "Role",
+                          "type": "item",
+                          "valueSets": "FHIR values set : -  <a href=\"https://simplifier.net/ukcore/codesystem-ukcore-sdsjobrolename\" target=\"\" title=\"\">sdsjobrole</a> \n                                ",
+                          "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Care and support plan/Needs, concerns or problems/Goals and hopes/Actions and activities/Who/Role@2-build.2.1"
+                        },
+                        {
+                          "description": "The name of the team.",
+                          "maximumMultiplicity": "1",
+                          "minimumMultiplicity": "0",
+                          "mro": "R",
+                          "name": "Team",
+                          "type": "item",
+                          "valueDomain": [
+                            {
+                              "property": [
+                                {
+                                  "maxLength": "35"
+                                }
+                              ],
+                              "type": "text"
+                            }
+                          ],
+                          "valueSets": "Free text",
+                          "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Care and support plan/Needs, concerns or problems/Goals and hopes/Actions and activities/Who/Team@2-build.2.1"
+                        },
+                        {
+                          "description": "Contact details of the professional (e.g. telephone number, email address etc.).",
+                          "maximumMultiplicity": "1",
+                          "minimumMultiplicity": "0",
+                          "mro": "R",
+                          "name": "Contact details",
+                          "type": "item",
+                          "valueDomain": [
+                            {
+                              "property": [
+                                {
+                                  "maxLength": "35"
+                                }
+                              ],
+                              "type": "string"
+                            }
+                          ],
+                          "valueSets": "Free text",
+                          "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Care and support plan/Needs, concerns or problems/Goals and hopes/Actions and activities/Who/Contact details@2-build.2.1"
+                        }
+                      ],
+                      "description": "Name and role (e.g. person, carer, GP, OT, etc.) of the person, or a team, carrying out the proposed action, and, if relevant where action should take place.",
+                      "maximumMultiplicity": "1",
+                      "minimumMultiplicity": "0",
+                      "mro": "R",
+                      "name": "Who",
+                      "type": "group",
+                      "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Care and support plan/Needs, concerns or problems/Goals and hopes/Actions and activities/Who@2-build.2.1"
+                    },
+                    {
+                      "description": "Planned date, time, or interval, as relevant",
+                      "maximumMultiplicity": "1",
+                      "minimumMultiplicity": "0",
+                      "mro": "R",
+                      "name": "When",
+                      "type": "item",
+                      "valueDomain": [
+                        {
+                          "property": [
+                            {
+                              "timeStampPrecision": "YM"
+                            }
+                          ],
+                          "type": "datetime"
+                        }
+                      ],
+                      "valueSets": "Date and time",
+                      "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Care and support plan/Needs, concerns or problems/Goals and hopes/Actions and activities/When@2-build.2.1"
+                    },
+                    {
+                      "description": "Suggested strategies for potential problems.",
+                      "maximumMultiplicity": "*",
+                      "minimumMultiplicity": "0",
+                      "mro": "R",
+                      "name": "Suggested strategies",
+                      "type": "item",
+                      "valueDomain": [
+                        {
+                          "type": "text"
+                        }
+                      ],
+                      "valueSets": "Free text.",
+                      "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Care and support plan/Needs, concerns or problems/Goals and hopes/Actions and activities/Suggested strategies@2-build.2.1"
+                    },
+                    {
+                      "concept": [
+                        {
+                          "description": "The coded value for the person's activity status",
+                          "maximumMultiplicity": "1",
+                          "minimumMultiplicity": "0",
+                          "mro": "R",
+                          "name": "Coded value",
+                          "type": "item",
+                          "valueSets": "SNOMED CT : - ^999000081000000105 | Care planning action context values simple reference set (foundation metadata concept) |",
+                          "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Care and support plan/Needs, concerns or problems/Goals and hopes/Actions and activities/Status/Coded value@2-build.2.1"
+                        },
+                        {
+                          "description": "Any supplementary or personalised information for the person's activity status",
+                          "maximumMultiplicity": "1",
+                          "minimumMultiplicity": "0",
+                          "mro": "R",
+                          "name": "Free text",
+                          "type": "item",
+                          "valueDomain": [
+                            {
+                              "type": "text"
+                            }
+                          ],
+                          "valueSets": "Free text",
+                          "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Care and support plan/Needs, concerns or problems/Goals and hopes/Actions and activities/Status/Free text@2-build.2.1"
+                        }
+                      ],
+                      "description": "The status of the action or activity e.g. in progress, done, refused",
+                      "maximumMultiplicity": "1",
+                      "minimumMultiplicity": "0",
+                      "mro": "R",
+                      "name": "Status",
+                      "type": "group",
+                      "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Care and support plan/Needs, concerns or problems/Goals and hopes/Actions and activities/Status@2-build.2.1"
+                    },
+                    {
+                      "description": "How confident the person feels to carry out the action associated to the goal.",
+                      "maximumMultiplicity": "1",
+                      "minimumMultiplicity": "0",
+                      "mro": "R",
+                      "name": "Confidence",
+                      "type": "item",
+                      "valueDomain": [
+                        {
+                          "type": "decimal"
+                        }
+                      ],
+                      "valueSets": "Numeric score 1 - 10",
+                      "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Care and support plan/Needs, concerns or problems/Goals and hopes/Actions and activities/Confidence@2-build.2.1"
+                    },
+                    {
+                      "description": "Date when action/activity record was last updated",
+                      "maximumMultiplicity": "1",
+                      "minimumMultiplicity": "0",
+                      "mro": "R",
+                      "name": "Date last updated",
+                      "type": "item",
+                      "valueDomain": [
+                        {
+                          "property": [
+                            {
+                              "timeStampPrecision": "YMDHM"
+                            }
+                          ],
+                          "type": "datetime"
+                        }
+                      ],
+                      "valueSets": "Date and time",
+                      "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Care and support plan/Needs, concerns or problems/Goals and hopes/Actions and activities/Date last updated@2-build.2.1"
+                    },
+                    {
+                      "description": "When the action evaluation needs to be reviewed. SNOMED CT tag : -\u00a0425268008 | Review of care plan (procedure) |",
+                      "maximumMultiplicity": "1",
+                      "minimumMultiplicity": "0",
+                      "mro": "R",
+                      "name": "Review date",
+                      "type": "item",
+                      "valueDomain": [
+                        {
+                          "property": [
+                            {
+                              "timeStampPrecision": "YM"
+                            }
+                          ],
+                          "type": "datetime"
+                        }
+                      ],
+                      "valueSets": "Date and time.",
+                      "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Care and support plan/Needs, concerns or problems/Goals and hopes/Actions and activities/Review date@2-build.2.1"
+                    },
+                    {
+                      "concept": [
+                        {
+                          "concept": [
+                            {
+                              "description": "The coded expression associated with the person's stage goal.",
+                              "maximumMultiplicity": "1",
+                              "minimumMultiplicity": "0",
+                              "mro": "R",
+                              "name": "Coded value",
+                              "type": "item",
+                              "valueSets": "SNOMED CT : - 413350009|Finding with explicit context|: 246090004|Associated finding|=300798006 |Able to participate in sporting activities (finding)|, 408729009|Finding context|=410518001|Goal|",
+                              "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Care and support plan/Needs, concerns or problems/Goals and hopes/Actions and activities/Stage goal/Stage goal/Coded value@2-build.2.1"
+                            },
+                            {
+                              "description": "Any supplementary or personalised information regarding the person's stage goal.",
+                              "maximumMultiplicity": "1",
+                              "minimumMultiplicity": "0",
+                              "mro": "R",
+                              "name": "Free text",
+                              "type": "item",
+                              "valueDomain": [
+                                {
+                                  "type": "text"
+                                }
+                              ],
+                              "valueSets": "Free text",
+                              "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Care and support plan/Needs, concerns or problems/Goals and hopes/Actions and activities/Stage goal/Stage goal/Free text@2-build.2.1"
+                            }
+                          ],
+                          "description": "A specific sub-goal that is related to the overall goal as agreed by the person in collaboration with a professional.",
+                          "maximumMultiplicity": "*",
+                          "minimumMultiplicity": "0",
+                          "mro": "R",
+                          "name": "Stage goal",
+                          "type": "group",
+                          "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Care and support plan/Needs, concerns or problems/Goals and hopes/Actions and activities/Stage goal/Stage goal@2-build.2.1"
+                        },
+                        {
+                          "concept": [
+                            {
+                              "description": "The coded value for the person's stage goal outcome.",
+                              "maximumMultiplicity": "1",
+                              "minimumMultiplicity": "0",
+                              "mro": "R",
+                              "name": "Coded value ",
+                              "type": "item",
+                              "valueSets": "SNOMED CT: - ^1127601000000107 |Healthcare matters simple reference set (foundation metadata concept)|\u00a0",
+                              "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Care and support plan/Needs, concerns or problems/Goals and hopes/Actions and activities/Stage goal/Outcome/Coded value @2-build.2.1"
+                            },
+                            {
+                              "description": "Any supplementary and personalised information relating to the person's outcome.",
+                              "maximumMultiplicity": "1",
+                              "minimumMultiplicity": "0",
+                              "mro": "R",
+                              "name": "Free text",
+                              "type": "item",
+                              "valueDomain": [
+                                {
+                                  "type": "text"
+                                }
+                              ],
+                              "valueSets": "Free text",
+                              "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Care and support plan/Needs, concerns or problems/Goals and hopes/Actions and activities/Stage goal/Outcome/Free text@2-build.2.1"
+                            }
+                          ],
+                          "description": "The outcome of the stage goal",
+                          "maximumMultiplicity": "1",
+                          "minimumMultiplicity": "0",
+                          "mro": "R",
+                          "name": "Outcome",
+                          "type": "group",
+                          "valueSets": "\n                                     <br clear=\"none\"/> \n                                     <div>\n                                        <span style=\"color: rgb(255, 255, 255); font-family: &#34;Helvetica Neue&#34;, Helvetica, Arial, sans-serif; font-size: 12px;\">\n                                            <br clear=\"none\"/>\n                                        </span>\n                                    </div> \n                                ",
+                          "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Care and support plan/Needs, concerns or problems/Goals and hopes/Actions and activities/Stage goal/Outcome@2-build.2.1"
+                        },
+                        {
+                          "description": "The status associated with the person's stage goal",
+                          "maximumMultiplicity": "1",
+                          "minimumMultiplicity": "0",
+                          "mro": "R",
+                          "name": "Goal status",
+                          "type": "item",
+                          "valueSets": "SNOMED CT: - ^999000091000000107 | Care planning goal context values simple reference set (foundation metadata concept) |",
+                          "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Care and support plan/Needs, concerns or problems/Goals and hopes/Actions and activities/Stage goal/Goal status@2-build.2.1"
+                        }
+                      ],
+                      "description": "Details of the person's stage goals",
+                      "maximumMultiplicity": "1",
+                      "minimumMultiplicity": "0",
+                      "mro": "R",
+                      "name": "Stage goal",
+                      "type": "group",
+                      "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Care and support plan/Needs, concerns or problems/Goals and hopes/Actions and activities/Stage goal@2-build.2.1"
+                    }
+                  ],
+                  "description": "Actions or activities the person or others plan to take to achieve the person's goals and the resources required to do this.  <p/> \n                        ",
+                  "maximumMultiplicity": "*",
+                  "minimumMultiplicity": "0",
+                  "mro": "R",
+                  "name": "Actions and activities",
+                  "type": "group",
+                  "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Care and support plan/Needs, concerns or problems/Goals and hopes/Actions and activities@2-build.2.1"
+                },
+                {
+                  "concept": [
+                    {
+                      "description": "The coded value associated with the person's overall goal outcome",
+                      "maximumMultiplicity": "1",
+                      "minimumMultiplicity": "0",
+                      "mro": "R",
+                      "name": "Coded value",
+                      "type": "item",
+                      "valueSets": "SNOMED CT: -\u00a0 <span style=\"color: rgb(51, 51, 51); font-family: Arial, Helvetica, Geneva, sans-serif; font-size: 12px;\">^1127601000000107 |Healthcare matters simple reference set (foundation metadata concept)|\u00a0</span> \n                            ",
+                      "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Care and support plan/Needs, concerns or problems/Goals and hopes/Outcomes/Coded value@2-build.2.1"
+                    },
+                    {
+                      "description": "\n                                 <span style=\"color: rgb(51, 51, 51); font-family: Arial, Helvetica, Geneva, sans-serif; font-size: 12px;\">Any supplementary and personalised information relating to the person's goal outcome.</span> \n                            ",
+                      "maximumMultiplicity": "1",
+                      "minimumMultiplicity": "0",
+                      "mro": "R",
+                      "name": "Free text",
+                      "type": "item",
+                      "valueDomain": [
+                        {
+                          "type": "text"
+                        }
+                      ],
+                      "valueSets": "Free text",
+                      "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Care and support plan/Needs, concerns or problems/Goals and hopes/Outcomes/Free text@2-build.2.1"
+                    }
+                  ],
+                  "description": "Outcomes of each of the person\u2019s goals, aims and targets. Includes comments recorded by the person, date and status.",
+                  "maximumMultiplicity": "*",
+                  "minimumMultiplicity": "0",
+                  "mro": "R",
+                  "name": "Outcomes",
+                  "type": "group",
+                  "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Care and support plan/Needs, concerns or problems/Goals and hopes/Outcomes@2-build.2.1"
+                },
+                {
+                  "description": "The status associated with the person's overall goal.",
+                  "maximumMultiplicity": "1",
+                  "minimumMultiplicity": "0",
+                  "mro": "R",
+                  "name": "Goal status",
+                  "type": "item",
+                  "valueSets": "SNOMED CT: - ^999000091000000107 | Care planning goal context values simple reference set (foundation metadata concept) |",
+                  "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Care and support plan/Needs, concerns or problems/Goals and hopes/Goal status@2-build.2.1"
+                }
+              ],
+              "description": "\n                         <table class=\"detail spaced\" width=\"100%\" style=\"font-family: Arial, Helvetica, Geneva, sans-serif; font-size: 12px; max-width: 100%; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial; color: rgb(51, 51, 51);\">\n                            <tbody>\n                                <tr>\n                                    <td colspan=\"3\" rowspan=\"1\" style=\"vertical-align: top;\">\n                                        <div class=\"xforms-control xforms-output xforms-mediatype-text-html xforms-mediatype-text\" id=\"xf-895\u2261xf-1189\" style=\"display: inline; zoom: 1;\">\n                                            <div class=\"xforms-output-output\" id=\"xf-895\u2261xf-1189\u2261\u2261c\" style=\"zoom: 1;\">The overall goals, hopes, aims or targets that the person has. Including anything that the person wants to achieve that relates to their future health and wellbeing. Each goal may include a description of why it is important to the person. Goals may also be ranked in order of importance or priority to the person.</div>\n                                        </div>\n                                    </td>\n                                </tr>\n                            </tbody>\n                        </table> \n                    ",
+              "maximumMultiplicity": "*",
+              "minimumMultiplicity": "0",
+              "mro": "R",
+              "name": "Goals and hopes",
+              "type": "group",
+              "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Care and support plan/Needs, concerns or problems/Goals and hopes@2-build.2.1"
+            }
+          ],
+          "description": "Details of the person needs, concerns or problems <br clear=\"none\"/> \n                ",
+          "maximumMultiplicity": "*",
+          "minimumMultiplicity": "0",
+          "mro": "R",
+          "name": "Needs, concerns or problems",
+          "type": "group",
+          "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Care and support plan/Needs, concerns or problems@2-build.2.1"
+        },
+        {
+          "concept": [
+            {
+              "description": "Indicates whether the plan was discussed and agreed with the person or legitimate representative",
+              "maximumMultiplicity": "1",
+              "minimumMultiplicity": "0",
+              "mro": "R",
+              "name": "Person or legitimate representative",
+              "type": "item",
+              "valueDomain": [
+                {
+                  "type": "boolean"
+                }
+              ],
+              "valueSets": "Person or legitimate representative\u00a0",
+              "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Care and support plan/Agreed with person or legitimate representative/Person or legitimate representative@2-build.2.1"
+            },
+            {
+              "description": "The full name of the person in text representation.",
+              "maximumMultiplicity": "1",
+              "minimumMultiplicity": "0",
+              "mro": "R",
+              "name": "Person full name",
+              "type": "item",
+              "valueDomain": [
+                {
+                  "property": [
+                    {
+                      "maxLength": "70"
+                    }
+                  ],
+                  "type": "string"
+                }
+              ],
+              "valueSets": "NHS data dictionary :-  <a class=\"\" href=\"https://datadictionary.nhs.uk/data_elements/person_full_name.html?hl=person%2Cname\" target=\"\" title=\"\">Patient full name</a> \n                    ",
+              "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Care and support plan/Agreed with person or legitimate representative/Person full name@2-build.2.1"
+            },
+            {
+              "description": "The role the professional has in relation to the person.",
+              "maximumMultiplicity": "1",
+              "minimumMultiplicity": "0",
+              "mro": "R",
+              "name": "Role",
+              "type": "item",
+              "valueSets": "FHIR value set : -  <a class=\"\" href=\"https://simplifier.net/ukcore/codesystem-ukcore-sdsjobrolename\" target=\"\" title=\"\">sdsjobrole</a> \n                    ",
+              "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Care and support plan/Agreed with person or legitimate representative/Role@2-build.2.1"
+            }
+          ],
+          "description": "Indicates whether the plan was discussed and agreed with the person or legitimate representative.",
+          "maximumMultiplicity": "1",
+          "minimumMultiplicity": "0",
+          "mro": "R",
+          "name": "Agreed with person or legitimate representative",
+          "type": "group",
+          "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Care and support plan/Agreed with person or legitimate representative@2-build.2.1"
+        },
+        {
+          "concept": [
+            {
+              "description": "The organisation code of the care funding source",
+              "maximumMultiplicity": "1",
+              "minimumMultiplicity": "0",
+              "mro": "R",
+              "name": "Coded value",
+              "type": "item",
+              "valueSets": "NHS data dictionary : -  <a href=\"https://www.datadictionary.nhs.uk/attributes/organisation_code.html?hl=organisation%2Cdata%2Cservice\" target=\"\" title=\"\">organisation data service</a> \n                    ",
+              "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Care and support plan/Care funding source/Coded value@2-build.2.1"
+            },
+            {
+              "description": "Any further information for the person's care funding source e.g. self funded",
+              "maximumMultiplicity": "1",
+              "minimumMultiplicity": "0",
+              "mro": "R",
+              "name": "Free text ",
+              "type": "item",
+              "valueDomain": [
+                {
+                  "type": "text"
+                }
+              ],
+              "valueSets": "Free text\u00a0",
+              "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Care and support plan/Care funding source/Free text @2-build.2.1"
+            }
+          ],
+          "description": "A reference to the funding source and any conditions or limitations associated.",
+          "maximumMultiplicity": "1",
+          "minimumMultiplicity": "0",
+          "mro": "R",
+          "name": "Care funding source",
+          "type": "group",
+          "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Care and support plan/Care funding source@2-build.2.1"
+        },
+        {
+          "description": "This is a record of the date that this care and support plan was last updated.",
+          "maximumMultiplicity": "1",
+          "minimumMultiplicity": "0",
+          "mro": "R",
+          "name": "Date this plan was last updated",
+          "type": "item",
+          "valueDomain": [
+            {
+              "property": [
+                {
+                  "timeStampPrecision": "YMDHM"
+                }
+              ],
+              "type": "datetime"
+            }
+          ],
+          "valueSets": "Date and time",
+          "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Care and support plan/Date this plan was last updated@2-build.2.1"
+        },
+        {
+          "description": "Reference other care planning documents, including the type, location and date.  <br clear=\"none\"/> \n                     <br clear=\"none\"/> This may include condition-specific plans, advance care plans, end of life care plan, etc.",
+          "maximumMultiplicity": "*",
+          "minimumMultiplicity": "0",
+          "mro": "R",
+          "name": "Other care planning documents",
+          "type": "item",
+          "valueDomain": [
+            {
+              "type": "text"
+            }
+          ],
+          "valueSets": "Free text.",
+          "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Care and support plan/Other care planning documents@2-build.2.1"
+        },
+        {
+          "description": "This is the date/interval when this information will next be reviewed. SNOMED CT tag : -\u00a0425268008 | Review of care plan (procedure) |",
+          "maximumMultiplicity": "1",
+          "minimumMultiplicity": "0",
+          "mro": "R",
+          "name": "Planned review date/interval",
+          "type": "item",
+          "valueDomain": [
+            {
+              "type": "datetime"
+            }
+          ],
+          "valueSets": "Date and time",
+          "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Care and support plan/Planned review date/interval@2-build.2.1"
+        },
+        {
+          "concept": [
+            {
+              "description": "The name of the professional with responsibility for the care of the person.",
+              "maximumMultiplicity": "1",
+              "minimumMultiplicity": "0",
+              "mro": "R",
+              "name": "Name",
+              "type": "item",
+              "valueDomain": [
+                {
+                  "property": [
+                    {
+                      "maxLength": "70"
+                    }
+                  ],
+                  "type": "text"
+                }
+              ],
+              "valueSets": "Free text",
+              "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Care and support plan/Responsibility for review/Name@2-build.2.1"
+            },
+            {
+              "description": "The role the professional has in relation to the person e.g. GP, physiotherapist, community nurse, social worker, key worker, care home manager, care coordinator, LA hospital liaison person, care home contact, hospital clinician, Independent Mental Capacity Advocate (IMCA) etc",
+              "maximumMultiplicity": "1",
+              "minimumMultiplicity": "0",
+              "mro": "R",
+              "name": "Role",
+              "type": "item",
+              "valueSets": "FHIR value set : -  <a href=\"https://simplifier.net/ukcore/codesystem-ukcore-sdsjobrolename\" target=\"\" title=\"\">SDSjobrole</a> \n                    ",
+              "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Care and support plan/Responsibility for review/Role@2-build.2.1"
+            },
+            {
+              "description": "Contact details of the professional (e.g. telephone number, email address etc.).",
+              "maximumMultiplicity": "1",
+              "minimumMultiplicity": "0",
+              "mro": "R",
+              "name": "Contact details",
+              "type": "item",
+              "valueDomain": [
+                {
+                  "property": [
+                    {
+                      "maxLength": "35"
+                    }
+                  ],
+                  "type": "string"
+                }
+              ],
+              "valueSets": "Free text",
+              "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Care and support plan/Responsibility for review/Contact details@2-build.2.1"
+            }
+          ],
+          "description": "This is a record of who has responsibility for arranging review of this information. <br clear=\"none\"/> \n                ",
+          "maximumMultiplicity": "1",
+          "minimumMultiplicity": "0",
+          "mro": "R",
+          "name": "Responsibility for review",
+          "type": "group",
+          "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Care and support plan/Responsibility for review@2-build.2.1"
+        },
+        {
+          "concept": [
+            {
+              "description": "The coded value for location",
+              "maximumMultiplicity": "1",
+              "minimumMultiplicity": "0",
+              "mro": "R",
+              "name": "Coded value",
+              "type": "item",
+              "valueDomain": [
+                {
+                  "property": [
+                    {
+                      "maxLength": "5",
+                      "minLength": "3"
+                    }
+                  ],
+                  "type": "string"
+                }
+              ],
+              "valueSets": "NHS data dictionary: -  <a href=\"https://www.datadictionary.nhs.uk/data_dictionary/attributes/o/org/organisation_code_de.asp?shownav=1\" target=\"\" title=\"\">Organisation data service</a> \n                    ",
+              "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Care and support plan/Location/Coded value@2-build.2.1"
+            },
+            {
+              "description": "Free text field to be used if no coded text available",
+              "maximumMultiplicity": "1",
+              "minimumMultiplicity": "0",
+              "mro": "R",
+              "name": "Free text",
+              "type": "item",
+              "valueDomain": [
+                {
+                  "property": [
+                    {
+                      "maxLength": "150"
+                    }
+                  ],
+                  "type": "text"
+                }
+              ],
+              "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Care and support plan/Location/Free text@2-build.2.1"
+            }
+          ],
+          "description": "The location where the care and support plan was prepared.",
+          "maximumMultiplicity": "1",
+          "minimumMultiplicity": "0",
+          "mro": "R",
+          "name": "Location",
+          "type": "group",
+          "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Care and support plan/Location@2-build.2.1"
+        },
+        {
+          "concept": [
+            {
+              "description": "The name of the professional.",
+              "maximumMultiplicity": "1",
+              "minimumMultiplicity": "0",
+              "mro": "R",
+              "name": "Name",
+              "type": "item",
+              "valueDomain": [
+                {
+                  "property": [
+                    {
+                      "maxLength": "70"
+                    }
+                  ],
+                  "type": "string"
+                }
+              ],
+              "valueSets": "Free text.",
+              "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Care and support plan/Performing professional/Name@2-build.2.1"
+            },
+            {
+              "description": "The role the professional has in relation to the person e.g. GP, physiotherapist, community nurse, social worker etc",
+              "maximumMultiplicity": "1",
+              "minimumMultiplicity": "0",
+              "mro": "R",
+              "name": "Role",
+              "type": "item",
+              "valueSets": "FHIR value set :-  <a class=\"\" href=\"https://simplifier.net/ukcore/codesystem-ukcore-sdsjobrolename\" target=\"\" title=\"\">SDSjobroletype</a> \n                    ",
+              "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Care and support plan/Performing professional/Role@2-build.2.1"
+            },
+            {
+              "description": "The grade of the professional.",
+              "maximumMultiplicity": "1",
+              "minimumMultiplicity": "0",
+              "mro": "R",
+              "name": "Grade",
+              "type": "item",
+              "valueDomain": [
+                {
+                  "property": [
+                    {
+                      "maxLength": "150"
+                    }
+                  ],
+                  "type": "text"
+                }
+              ],
+              "valueSets": "Free text",
+              "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Care and support plan/Performing professional/Grade@2-build.2.1"
+            },
+            {
+              "description": "The specialty of the professional e.g. physiotherapy, oncology, mental health etc",
+              "maximumMultiplicity": "1",
+              "minimumMultiplicity": "0",
+              "mro": "R",
+              "name": "Speciality",
+              "type": "item",
+              "valueDomain": [
+                {
+                  "property": [
+                    {
+                      "maxLength": "3"
+                    }
+                  ],
+                  "type": "string"
+                }
+              ],
+              "valueSets": "NHS data dictionary -  <a href=\"https://datadictionary.nhs.uk/data_elements/activity_treatment_function_code.html?hl=activity%2Ctreatment%2Cfunction%2Ccode\" target=\"\" title=\"\">Activity treatment function code</a> \n                    ",
+              "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Care and support plan/Performing professional/Speciality@2-build.2.1"
+            },
+            {
+              "description": "Professional identifier for the professional e.g. GMC number, HCPC number etc or the personal identifier used by the local organisation.",
+              "maximumMultiplicity": "1",
+              "minimumMultiplicity": "0",
+              "mro": "R",
+              "name": "Professional identifier",
+              "type": "item",
+              "valueDomain": [
+                {
+                  "property": [
+                    {
+                      "maxLength": "32"
+                    }
+                  ],
+                  "type": "string"
+                }
+              ],
+              "valueSets": "NHS data dictionary : -  <a href=\"https://datadictionary.nhs.uk/data_elements/professional_registration_entry_identifier.html\" target=\"\" title=\"\">Professional registration identifier</a> \n                    ",
+              "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Care and support plan/Performing professional/Professional identifier@2-build.2.1"
+            },
+            {
+              "description": "The name of the organisation the professional works for.",
+              "maximumMultiplicity": "1",
+              "minimumMultiplicity": "0",
+              "mro": "R",
+              "name": "Organisation",
+              "type": "group",
+              "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Care and support plan/Performing professional/Organisation@2-build.2.1"
+            },
+            {
+              "description": "Contact details of the professional",
+              "maximumMultiplicity": "1",
+              "minimumMultiplicity": "0",
+              "mro": "R",
+              "name": "Contact details",
+              "type": "item",
+              "valueDomain": [
+                {
+                  "property": [
+                    {
+                      "maxLength": "35"
+                    }
+                  ],
+                  "type": "string"
+                }
+              ],
+              "valueSets": "NHS data dictionary -  <a href=\"https://datadictionary.nhs.uk/data_elements/uk_telephone_number.html?hl=number\" target=\"\" title=\"\">UK phone number</a> \n                    ",
+              "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Care and support plan/Performing professional/Contact details@2-build.2.1"
+            }
+          ],
+          "description": "The professional who prepared the care and support plan.",
+          "maximumMultiplicity": "1",
+          "minimumMultiplicity": "0",
+          "mro": "R",
+          "name": "Performing professional",
+          "type": "group",
+          "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Care and support plan/Performing professional@2-build.2.1"
+        },
+        {
+          "concept": [
+            {
+              "description": "The name of the person completing the record.",
+              "maximumMultiplicity": "1",
+              "minimumMultiplicity": "0",
+              "mro": "R",
+              "name": "Name",
+              "type": "item",
+              "valueDomain": [
+                {
+                  "property": [
+                    {
+                      "maxLength": "70"
+                    }
+                  ],
+                  "type": "string"
+                }
+              ],
+              "valueSets": "Free text.",
+              "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Care and support plan/Person completing record/Name@2-build.2.1"
+            },
+            {
+              "description": "The organisational role of the person completing record.",
+              "maximumMultiplicity": "1",
+              "minimumMultiplicity": "0",
+              "mro": "R",
+              "name": "Role",
+              "type": "item",
+              "valueSets": "FHIR value set :-  <a href=\"https://simplifier.net/ukcore/codesystem-ukcore-sdsjobrolename\" target=\"\" title=\"\">SDSjobrole</a> \n                    ",
+              "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Care and support plan/Person completing record/Role@2-build.2.1"
+            },
+            {
+              "description": "The grade of the person completing the record.",
+              "maximumMultiplicity": "1",
+              "minimumMultiplicity": "0",
+              "mro": "R",
+              "name": "Grade",
+              "type": "item",
+              "valueDomain": [
+                {
+                  "property": [
+                    {
+                      "maxLength": "150"
+                    }
+                  ],
+                  "type": "text"
+                }
+              ],
+              "valueSets": "Free text.",
+              "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Care and support plan/Person completing record/Grade@2-build.2.1"
+            },
+            {
+              "description": "The main specialty of the person completing the record.",
+              "maximumMultiplicity": "1",
+              "minimumMultiplicity": "0",
+              "mro": "R",
+              "name": "Specialty",
+              "type": "item",
+              "valueDomain": [
+                {
+                  "property": [
+                    {
+                      "maxLength": "3"
+                    }
+                  ],
+                  "type": "string"
+                }
+              ],
+              "valueSets": "NHS data dictionary :-  <a href=\"https://datadictionary.nhs.uk/data_elements/activity_treatment_function_code.html?hl=activity%2Ctreatment%2Cfunction%2Ccode\" target=\"\" title=\"\">Activity treatment function code</a> \n                    ",
+              "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Care and support plan/Person completing record/Specialty@2-build.2.1"
+            },
+            {
+              "description": "The organisation the person completing the record works for.",
+              "maximumMultiplicity": "1",
+              "minimumMultiplicity": "0",
+              "mro": "R",
+              "name": "Organisation",
+              "type": "group",
+              "valueSets": "\n                         <span style=\"color: rgb(51, 51, 51); font-family: Arial, Helvetica, Geneva, sans-serif; font-size: 12px;\">NHS data dictionary : - </span> \n                         <a href=\"https://www.datadictionary.nhs.uk/supporting_information/organisation_data_service.html\" target=\"\" title=\"\">Organisation data service</a> \n                    ",
+              "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Care and support plan/Person completing record/Organisation@2-build.2.1"
+            },
+            {
+              "description": "Professional identifier for the person completing the record e.g. GMC number, HCPC number etc, or the personal identifier used by the local organisation.",
+              "maximumMultiplicity": "1",
+              "minimumMultiplicity": "0",
+              "mro": "R",
+              "name": "Professional identifier",
+              "type": "item",
+              "valueDomain": [
+                {
+                  "property": [
+                    {
+                      "maxLength": "32"
+                    }
+                  ],
+                  "type": "string"
+                }
+              ],
+              "valueSets": "NHS data dictionary :-  <a href=\"https://datadictionary.nhs.uk/data_elements/professional_registration_entry_identifier.html\" target=\"\" title=\"\">Professional registration identifier</a> \n                    ",
+              "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Care and support plan/Person completing record/Professional identifier@2-build.2.1"
+            },
+            {
+              "description": "The date and time the record was completed.",
+              "maximumMultiplicity": "1",
+              "minimumMultiplicity": "0",
+              "mro": "R",
+              "name": "Date completed",
+              "type": "item",
+              "valueDomain": [
+                {
+                  "property": [
+                    {
+                      "timeStampPrecision": "YMDHM"
+                    }
+                  ],
+                  "type": "datetime"
+                }
+              ],
+              "valueSets": "Date and time.",
+              "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Care and support plan/Person completing record/Date completed@2-build.2.1"
+            },
+            {
+              "description": "Contact details of the person completing the record. <br clear=\"none\"/> \n                    ",
+              "maximumMultiplicity": "1",
+              "minimumMultiplicity": "0",
+              "mro": "R",
+              "name": "Contact details",
+              "type": "item",
+              "valueDomain": [
+                {
+                  "property": [
+                    {
+                      "maxLength": "35"
+                    }
+                  ],
+                  "type": "string"
+                }
+              ],
+              "valueSets": "NHS data dictionary : -  <a href=\"https://datadictionary.nhs.uk/data_elements/uk_telephone_number.html?hl=number\" target=\"\" title=\"\">UK telephone number</a> \n                    ",
+              "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Care and support plan/Person completing record/Contact details@2-build.2.1"
+            }
+          ],
+          "description": "Details of the person completing the record.",
+          "maximumMultiplicity": "1",
+          "minimumMultiplicity": "0",
+          "mro": "R",
+          "name": "Person completing record",
+          "type": "group",
+          "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Care and support plan/Person completing record@2-build.2.1"
+        }
+      ],
+      "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Care and support plan@2-build.2.1",
+      "description": "<p>This records the decisions reached during conversation between the individual and health and care professional about future plans and also records progress.</p>",
+      "implementationGuidance": "<p><br></p>",
+      "informationType": "",
+      "isComponent": true,
+      "maximumMultiplicity": "1",
+      "minimumMultiplicity": "0",
+      "mro": "R",
+      "name": "Care and support plan",
+      "relationshipType": "neither",
+      "type": "group",
+      "valueSets": ""
     }
   ]
 }
