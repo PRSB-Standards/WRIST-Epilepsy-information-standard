@@ -21822,6 +21822,108 @@
       "relationshipType": "neither",
       "type": "group",
       "valueSets": ""
+    },
+    {
+      "concept": [
+        {
+          "concept": [
+            {
+              "concept": [
+                {
+                  "description": "The coded value for equipment name",
+                  "maximumMultiplicity": "1",
+                  "minimumMultiplicity": "0",
+                  "name": "Coded value",
+                  "type": "item",
+                  "valueSets": "SNOMED CT",
+                  "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Equipment and adaptations/Equipment record entry/Equipment name/Coded value@2-build.2.1"
+                },
+                {
+                  "description": "Free text field to be used if no code is available",
+                  "maximumMultiplicity": "1",
+                  "minimumMultiplicity": "0",
+                  "name": "Free text",
+                  "type": "item",
+                  "valueDomain": [
+                    {
+                      "property": [
+                        {
+                          "maxLength": "150"
+                        }
+                      ],
+                      "type": "text"
+                    }
+                  ],
+                  "valueSets": "Free text",
+                  "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Equipment and adaptations/Equipment record entry/Equipment name/Free text@2-build.2.1"
+                }
+              ],
+              "description": "The name of the equipment (e.g. 'Keysafe', 'Handrail' 'Lifeline Alarm', etc.)",
+              "maximumMultiplicity": "1",
+              "minimumMultiplicity": "0",
+              "name": "Equipment name",
+              "type": "group",
+              "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Equipment and adaptations/Equipment record entry/Equipment name@2-build.2.1"
+            },
+            {
+              "description": "\n                         <br clear=\"none\"/> The date the equipment was issued.",
+              "maximumMultiplicity": "1",
+              "minimumMultiplicity": "0",
+              "name": "Date",
+              "type": "item",
+              "valueDomain": [
+                {
+                  "property": [
+                    {
+                      "timeStampPrecision": "YMDHM"
+                    }
+                  ],
+                  "type": "datetime"
+                }
+              ],
+              "valueSets": "Date and time",
+              "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Equipment and adaptations/Equipment record entry/Date@2-build.2.1"
+            },
+            {
+              "description": "Any further details about the equipment, e.g. position of handrail(s) within the person's home",
+              "maximumMultiplicity": "1",
+              "minimumMultiplicity": "0",
+              "name": "Comment",
+              "type": "item",
+              "valueDomain": [
+                {
+                  "property": [
+                    {
+                      "maxLength": "150"
+                    }
+                  ],
+                  "type": "text"
+                }
+              ],
+              "valueSets": "Free text",
+              "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Equipment and adaptations/Equipment record entry/Comment@2-build.2.1"
+            }
+          ],
+          "description": "This is a equipment record entry. There may be 1 to many record entries under a section.",
+          "maximumMultiplicity": "*",
+          "minimumMultiplicity": "0",
+          "name": "Equipment record entry",
+          "type": "group",
+          "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Equipment and adaptations/Equipment record entry@2-build.2.1"
+        }
+      ],
+      "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Equipment and adaptations@2-build.2.1",
+      "description": "<p>Details of equipment/asset (or modifications) that the Local Authority has provided to the patient.</p>",
+      "implementationGuidance": "<p><br></p>",
+      "informationType": "",
+      "isComponent": true,
+      "maximumMultiplicity": "1",
+      "minimumMultiplicity": "0",
+      "mro": "",
+      "name": "Equipment and adaptations",
+      "relationshipType": "neither",
+      "type": "group",
+      "valueSets": ""
     }
   ]
 }
