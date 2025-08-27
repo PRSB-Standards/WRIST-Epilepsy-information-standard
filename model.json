@@ -21,20 +21,6 @@
       "maximumMultiplicity": "1"
     },
     {
-      "name": "New Item",
-      "mro": "",
-      "description": "",
-      "valueSets": "",
-      "implementationGuidance": "",
-      "informationType": "",
-      "type": "",
-      "minimumMultiplicity": "",
-      "maximumMultiplicity": "",
-      "concept": [],
-      "isComponent": false,
-      "relationshipType": ""
-    },
-    {
       "concept": [
         {
           "concept": [
