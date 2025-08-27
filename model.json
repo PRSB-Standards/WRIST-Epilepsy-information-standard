@@ -8226,6 +8226,462 @@
       "relationshipType": "neither",
       "type": "group",
       "valueSets": ""
+    },
+    {
+      "concept": [
+        {
+          "concept": [
+            {
+              "description": "Date and time the person was admitted to hospital.",
+              "maximumMultiplicity": "1",
+              "minimumMultiplicity": "0",
+              "mro": "R",
+              "name": "Date of admission",
+              "type": "item",
+              "valueDomain": [
+                {
+                  "property": [
+                    {
+                      "timeStampPrecision": "YMDHM"
+                    }
+                  ],
+                  "type": "datetime"
+                }
+              ],
+              "valueSets": "Date and time",
+              "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Admission details/Admission details record entry/Date of admission@2-build.2.1"
+            },
+            {
+              "concept": [
+                {
+                  "description": "The coded value for admission to",
+                  "maximumMultiplicity": "1",
+                  "minimumMultiplicity": "0",
+                  "mro": "R",
+                  "name": "Coded value",
+                  "type": "item",
+                  "valueDomain": [
+                    {
+                      "property": [
+                        {
+                          "maxLength": "6",
+                          "minLength": "3"
+                        }
+                      ],
+                      "type": "string"
+                    }
+                  ],
+                  "valueSets": "NHS data dictionary : -  <a href=\"https://datadictionary.nhs.uk/data_elements/organisation_code__code_of_provider_.html?hl=organisation%2Ccode%2Ccode%2Cprovider\" target=\"\" title=\"\">Organisations code of provider</a> \n                        ",
+                  "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Admission details/Admission details record entry/Admitted to/Coded value@2-build.2.1"
+                },
+                {
+                  "description": "Free text field to be used if no code is available",
+                  "maximumMultiplicity": "1",
+                  "minimumMultiplicity": "0",
+                  "mro": "R",
+                  "name": "Free text",
+                  "type": "item",
+                  "valueDomain": [
+                    {
+                      "property": [
+                        {
+                          "maxLength": "150"
+                        }
+                      ],
+                      "type": "text"
+                    }
+                  ],
+                  "valueSets": "Free text",
+                  "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Admission details/Admission details record entry/Admitted to/Free text@2-build.2.1"
+                }
+              ],
+              "description": "The hospital the person was admitted to.",
+              "maximumMultiplicity": "1",
+              "minimumMultiplicity": "0",
+              "mro": "R",
+              "name": "Admitted to",
+              "type": "group",
+              "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Admission details/Admission details record entry/Admitted to@2-build.2.1"
+            },
+            {
+              "concept": [
+                {
+                  "description": "The name of the responsible care professional.",
+                  "maximumMultiplicity": "1",
+                  "minimumMultiplicity": "0",
+                  "mro": "R",
+                  "name": "Name",
+                  "type": "item",
+                  "valueDomain": [
+                    {
+                      "property": [
+                        {
+                          "maxLength": "70"
+                        }
+                      ],
+                      "type": "string"
+                    }
+                  ],
+                  "valueSets": "Free text.",
+                  "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Admission details/Admission details record entry/Responsible care professional/Name@2-build.2.1"
+                },
+                {
+                  "description": "The role of the responsible consultant.",
+                  "maximumMultiplicity": "1",
+                  "minimumMultiplicity": "0",
+                  "mro": "R",
+                  "name": "Role",
+                  "type": "item",
+                  "valueSets": "FHIR value set: -  <a href=\"https://simplifier.net/ukcore/codesystem-ukcore-sdsjobrolename\" target=\"\" title=\"\">sdsjobrole</a> \n                        ",
+                  "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Admission details/Admission details record entry/Responsible care professional/Role@2-build.2.1"
+                }
+              ],
+              "description": "The care professional who has overall responsibility for the person (may not actually see the person)",
+              "maximumMultiplicity": "1",
+              "minimumMultiplicity": "0",
+              "mro": "R",
+              "name": "Responsible care professional",
+              "type": "group",
+              "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Admission details/Admission details record entry/Responsible care professional@2-build.2.1"
+            },
+            {
+              "concept": [
+                {
+                  "description": "The coded value for reason for admission",
+                  "maximumMultiplicity": "1",
+                  "minimumMultiplicity": "0",
+                  "mro": "R",
+                  "name": "Coded value",
+                  "type": "item",
+                  "valueSets": "SNOMED CT: - ^1127581000000103 |Health issues simple reference set|",
+                  "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Admission details/Admission details record entry/Reason for admission/Coded value@2-build.2.1"
+                },
+                {
+                  "description": "Free text field to be used if no code is available",
+                  "maximumMultiplicity": "1",
+                  "minimumMultiplicity": "0",
+                  "mro": "R",
+                  "name": "Free text",
+                  "type": "item",
+                  "valueDomain": [
+                    {
+                      "property": [
+                        {
+                          "maxLength": "150"
+                        }
+                      ],
+                      "type": "text"
+                    }
+                  ],
+                  "valueSets": "Free text",
+                  "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Admission details/Admission details record entry/Reason for admission/Free text@2-build.2.1"
+                }
+              ],
+              "description": "The health problems and issues experienced by the person that prompted the decision to admit to hospital e.g. chest pain, mental health crisis, blackout, fall, a specific procedure, intervention, investigation or treatment, non compliance with treatment.",
+              "maximumMultiplicity": "1",
+              "minimumMultiplicity": "0",
+              "mro": "R",
+              "name": "Reason for admission",
+              "type": "group",
+              "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Admission details/Admission details record entry/Reason for admission@2-build.2.1"
+            },
+            {
+              "concept": [
+                {
+                  "description": "The coded value for admission method",
+                  "maximumMultiplicity": "1",
+                  "minimumMultiplicity": "0",
+                  "mro": "R",
+                  "name": "Coded value",
+                  "type": "item",
+                  "valueDomain": [
+                    {
+                      "property": [
+                        {
+                          "maxLength": "2"
+                        }
+                      ],
+                      "type": "string"
+                    }
+                  ],
+                  "valueSets": "NHS data dictionary : -  <a href=\"https://www.datadictionary.nhs.uk/data_dictionary/data_field_notes/a/ad/admission_method_code_(hospital_provider_spell)_de.asp?shownav=1\" target=\"\" title=\"\">Admission method</a> \n                        ",
+                  "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Admission details/Admission details record entry/Admission method/Coded value@2-build.2.1"
+                },
+                {
+                  "description": "Free text field to be used if no code is available",
+                  "maximumMultiplicity": "1",
+                  "minimumMultiplicity": "0",
+                  "mro": "R",
+                  "name": "Free text",
+                  "type": "item",
+                  "valueDomain": [
+                    {
+                      "property": [
+                        {
+                          "maxLength": "150"
+                        }
+                      ],
+                      "type": "text"
+                    }
+                  ],
+                  "valueSets": "Free text",
+                  "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Admission details/Admission details record entry/Admission method/Free text@2-build.2.1"
+                }
+              ],
+              "description": "How the person was admitted to hospital e.g. elective, emergency, maternity, transfer etc.",
+              "maximumMultiplicity": "1",
+              "minimumMultiplicity": "0",
+              "mro": "R",
+              "name": "Admission method",
+              "type": "group",
+              "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Admission details/Admission details record entry/Admission method@2-build.2.1"
+            },
+            {
+              "description": "Whether the person was admitted as informal or formal/detained.",
+              "maximumMultiplicity": "1",
+              "minimumMultiplicity": "0",
+              "mro": "R",
+              "name": "Legal status on admission",
+              "type": "item",
+              "valueDomain": [
+                {
+                  "property": [
+                    {
+                      "maxLength": "2"
+                    }
+                  ],
+                  "type": "string"
+                }
+              ],
+              "valueSets": "NHS data dictionary : -  <a href=\"https://datadictionary.nhs.uk/data_elements/mental_health_act_legal_status_classification_code__on_admission_.html\" target=\"\" title=\"\">Mental health act legal status classification code</a> \n                    ",
+              "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Admission details/Admission details record entry/Legal status on admission@2-build.2.1"
+            },
+            {
+              "concept": [
+                {
+                  "description": "The coded value of source of admission",
+                  "maximumMultiplicity": "1",
+                  "minimumMultiplicity": "0",
+                  "mro": "R",
+                  "name": "Coded value",
+                  "type": "item",
+                  "valueDomain": [
+                    {
+                      "property": [
+                        {
+                          "fixed": "an2",
+                          "maxLength": "2"
+                        }
+                      ],
+                      "type": "string"
+                    }
+                  ],
+                  "valueSets": "NHS data dictionary :-  <a href=\"http://www.datadictionary.nhs.uk/data_dictionary/attributes/s/smo/source_of_admission_de.asp?shownav=1?query=%22source+of+admission%22&rank=100&shownav=1\" target=\"\" title=\"\">Source of admission</a> \n                        ",
+                  "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Admission details/Admission details record entry/Source of admission/Coded value@2-build.2.1"
+                },
+                {
+                  "description": "Free text field to be used if no code is available",
+                  "maximumMultiplicity": "1",
+                  "minimumMultiplicity": "0",
+                  "mro": "R",
+                  "name": "Free text",
+                  "type": "item",
+                  "valueDomain": [
+                    {
+                      "property": [
+                        {
+                          "maxLength": "150"
+                        }
+                      ],
+                      "type": "text"
+                    }
+                  ],
+                  "valueSets": "Free text",
+                  "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Admission details/Admission details record entry/Source of admission/Free text@2-build.2.1"
+                }
+              ],
+              "description": "Where the person was immediately prior to admission, e.g. usual place of residence, temporary place of residence, penal establishment.",
+              "maximumMultiplicity": "1",
+              "minimumMultiplicity": "0",
+              "mro": "R",
+              "name": "Source of admission",
+              "type": "group",
+              "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Admission details/Admission details record entry/Source of admission@2-build.2.1"
+            },
+            {
+              "concept": [
+                {
+                  "description": "Name of individual accompanying person.",
+                  "maximumMultiplicity": "1",
+                  "minimumMultiplicity": "0",
+                  "mro": "R",
+                  "name": "Name",
+                  "type": "item",
+                  "valueDomain": [
+                    {
+                      "property": [
+                        {
+                          "maxLength": "70"
+                        }
+                      ],
+                      "type": "string"
+                    }
+                  ],
+                  "valueSets": "Free text",
+                  "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Admission details/Admission details record entry/Individual accompanying person/Name@2-build.2.1"
+                },
+                {
+                  "description": "Role of the individual accompanying the person.",
+                  "maximumMultiplicity": "1",
+                  "minimumMultiplicity": "0",
+                  "mro": "R",
+                  "name": "Role",
+                  "type": "item",
+                  "valueSets": "NHS data dictionary : -  <a href=\"https://www.datadictionary.nhs.uk/data_dictionary/attributes/c/card/care_professional_type_de.asp?shownav=1\" target=\"\" title=\"\">Care professional</a> \n                        ",
+                  "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Admission details/Admission details record entry/Individual accompanying person/Role@2-build.2.1"
+                },
+                {
+                  "concept": [
+                    {
+                      "description": "The coded value for relationship to person.",
+                      "maximumMultiplicity": "1",
+                      "minimumMultiplicity": "0",
+                      "mro": "R",
+                      "name": "Coded value",
+                      "type": "item",
+                      "valueSets": "FHIR value set: -  <a href=\"https://www.hl7.org/fhir/valueset-relatedperson-relationshiptype.html\" target=\"\" title=\"\"/> \n                                 <a href=\"https://www.hl7.org/fhir/valueset-relatedperson-relationshiptype.html\" target=\"\" title=\"\">Relationship</a>  type",
+                      "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Admission details/Admission details record entry/Individual accompanying person/Relationship/Coded value@2-build.2.1"
+                    },
+                    {
+                      "description": "Free text field to be used if no code is available",
+                      "maximumMultiplicity": "1",
+                      "minimumMultiplicity": "0",
+                      "mro": "R",
+                      "name": "Free text",
+                      "type": "item",
+                      "valueDomain": [
+                        {
+                          "property": [
+                            {
+                              "maxLength": "150"
+                            }
+                          ],
+                          "type": "text"
+                        }
+                      ],
+                      "valueSets": "Free text",
+                      "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Admission details/Admission details record entry/Individual accompanying person/Relationship/Free text@2-build.2.1"
+                    }
+                  ],
+                  "description": "Relationship of individual accompanying the person.",
+                  "maximumMultiplicity": "1",
+                  "minimumMultiplicity": "0",
+                  "mro": "R",
+                  "name": "Relationship",
+                  "type": "group",
+                  "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Admission details/Admission details record entry/Individual accompanying person/Relationship@2-build.2.1"
+                },
+                {
+                  "description": "Information about the extent to which the accompanying individual provided information about the person.",
+                  "maximumMultiplicity": "1",
+                  "minimumMultiplicity": "0",
+                  "name": "Comment",
+                  "type": "item",
+                  "valueDomain": [
+                    {
+                      "property": [
+                        {
+                          "maxLength": "150"
+                        }
+                      ],
+                      "type": "text"
+                    }
+                  ],
+                  "valueSets": "Free text.",
+                  "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Admission details/Admission details record entry/Individual accompanying person/Comment@2-build.2.1"
+                }
+              ],
+              "description": "Details of the accompanying individual and the extent to which they have provided the information about the person.",
+              "maximumMultiplicity": "1",
+              "minimumMultiplicity": "0",
+              "mro": "R",
+              "name": "Individual accompanying person",
+              "type": "group",
+              "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Admission details/Admission details record entry/Individual accompanying person@2-build.2.1"
+            },
+            {
+              "concept": [
+                {
+                  "description": "The coded value for specialty",
+                  "maximumMultiplicity": "1",
+                  "minimumMultiplicity": "0",
+                  "mro": "R",
+                  "name": "Coded value",
+                  "type": "item",
+                  "valueDomain": [
+                    {
+                      "property": [
+                        {
+                          "maxLength": "3"
+                        }
+                      ],
+                      "type": "string"
+                    }
+                  ],
+                  "valueSets": "NHS data dictionary :-  <a href=\"https://datadictionary.nhs.uk/data_elements/activity_treatment_function_code.html\" target=\"\" title=\"\">Activity treatment function code</a> \n                        ",
+                  "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Admission details/Admission details record entry/Specialty/Coded value@2-build.2.1"
+                },
+                {
+                  "description": "Free text field to be used if no code is available",
+                  "maximumMultiplicity": "1",
+                  "minimumMultiplicity": "0",
+                  "mro": "R",
+                  "name": "Free text",
+                  "type": "item",
+                  "valueDomain": [
+                    {
+                      "property": [
+                        {
+                          "maxLength": "150"
+                        }
+                      ],
+                      "type": "text"
+                    }
+                  ],
+                  "valueSets": "Free text",
+                  "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Admission details/Admission details record entry/Specialty/Free text@2-build.2.1"
+                }
+              ],
+              "description": "The specialty e.g. physiotherapy, oncology, mental health etc",
+              "maximumMultiplicity": "1",
+              "minimumMultiplicity": "0",
+              "mro": "R",
+              "name": "Specialty",
+              "type": "group",
+              "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Admission details/Admission details record entry/Specialty@2-build.2.1"
+            }
+          ],
+          "description": "This is the admission details record entry. There may be 0 to many record entries under a section. Each record entry is made up of a number of elements or data items.",
+          "maximumMultiplicity": "*",
+          "minimumMultiplicity": "0",
+          "mro": "R",
+          "name": "Admission details record entry",
+          "type": "group",
+          "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Admission details/Admission details record entry@2-build.2.1"
+        }
+      ],
+      "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Admission details@2-build.2.1",
+      "description": "<p>Admission details</p>",
+      "implementationGuidance": "<p><br></p>",
+      "informationType": "",
+      "isComponent": true,
+      "maximumMultiplicity": "1",
+      "minimumMultiplicity": "0",
+      "mro": "R",
+      "name": "Admission details",
+      "relationshipType": "neither",
+      "type": "group",
+      "valueSets": ""
     }
   ]
 }
