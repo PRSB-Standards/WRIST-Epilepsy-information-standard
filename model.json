@@ -1388,6 +1388,2860 @@
       "relationshipType": "neither",
       "type": "group",
       "valueSets": ""
+    },
+    {
+      "concept": [
+        {
+          "concept": [
+            {
+              "description": "The date when the consent was given",
+              "maximumMultiplicity": "1",
+              "minimumMultiplicity": "0",
+              "mro": "R",
+              "name": "Date",
+              "type": "item",
+              "valueDomain": [
+                {
+                  "property": [
+                    {
+                      "timeStampPrecision": "YMDHM"
+                    }
+                  ],
+                  "type": "datetime"
+                }
+              ],
+              "valueSets": "Date and time",
+              "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Legal information/Consent for information sharing/Date@2-build.2.1"
+            },
+            {
+              "concept": [
+                {
+                  "description": "The coded value for location.",
+                  "maximumMultiplicity": "1",
+                  "minimumMultiplicity": "0",
+                  "mro": "R",
+                  "name": "Coded value",
+                  "type": "item",
+                  "valueDomain": [
+                    {
+                      "property": [
+                        {
+                          "maxLength": "5",
+                          "minLength": "3"
+                        }
+                      ],
+                      "type": "string"
+                    }
+                  ],
+                  "valueSets": "NHS data dictionary : -  <a class=\"\" href=\"https://www.datadictionary.nhs.uk/data_dictionary/nhs_business_definitions/o/organisation_data_service_de.asp?shownav=1\" target=\"\" title=\"\">Organisation data service code</a> \n                        ",
+                  "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Legal information/Consent for information sharing/Location/Coded value@2-build.2.1"
+                },
+                {
+                  "description": "Free text field to be used if no code is available",
+                  "maximumMultiplicity": "1",
+                  "minimumMultiplicity": "0",
+                  "mro": "R",
+                  "name": "Free text",
+                  "type": "item",
+                  "valueDomain": [
+                    {
+                      "property": [
+                        {
+                          "maxLength": "150"
+                        }
+                      ],
+                      "type": "text"
+                    }
+                  ],
+                  "valueSets": "Free text",
+                  "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Legal information/Consent for information sharing/Location/Free text@2-build.2.1"
+                }
+              ],
+              "description": "The location where the consent was taken.",
+              "maximumMultiplicity": "1",
+              "minimumMultiplicity": "0",
+              "mro": "R",
+              "name": "Location",
+              "type": "group",
+              "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Legal information/Consent for information sharing/Location@2-build.2.1"
+            },
+            {
+              "description": "This is a record of consent for information sharing under the common law duty of confidentiality. Where consent has not been obtained or sought, the reason why should be provided. Include best interests decision where person lacks capacity. This is a placeholder until the national guidance is published.",
+              "maximumMultiplicity": "1",
+              "minimumMultiplicity": "0",
+              "mro": "R",
+              "name": "Consent for information sharing",
+              "type": "item",
+              "valueDomain": [
+                {
+                  "property": [
+                    {
+                      "maxLength": "150"
+                    }
+                  ],
+                  "type": "text"
+                }
+              ],
+              "valueSets": "Free text",
+              "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Legal information/Consent for information sharing/Consent for information sharing@2-build.2.1"
+            },
+            {
+              "description": "Reason not given for consent",
+              "maximumMultiplicity": "1",
+              "minimumMultiplicity": "0",
+              "mro": "R",
+              "name": "Reason for consent not given",
+              "type": "item",
+              "valueDomain": [
+                {
+                  "property": [
+                    {
+                      "maxLength": "150"
+                    }
+                  ],
+                  "type": "text"
+                }
+              ],
+              "valueSets": "Free text",
+              "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Legal information/Consent for information sharing/Reason for consent not given@2-build.2.1"
+            },
+            {
+              "concept": [
+                {
+                  "description": "The name of the professional.",
+                  "maximumMultiplicity": "1",
+                  "minimumMultiplicity": "0",
+                  "mro": "R",
+                  "name": "Name",
+                  "type": "item",
+                  "valueDomain": [
+                    {
+                      "property": [
+                        {
+                          "maxLength": "70"
+                        }
+                      ],
+                      "type": "string"
+                    }
+                  ],
+                  "valueSets": "Free text.",
+                  "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Legal information/Consent for information sharing/Performing professional/Name@2-build.2.1"
+                },
+                {
+                  "description": "The role the professional has in relation to the person e.g. GP, physiotherapist, community nurse, social worker etc",
+                  "maximumMultiplicity": "1",
+                  "minimumMultiplicity": "0",
+                  "mro": "R",
+                  "name": "Role",
+                  "type": "item",
+                  "valueSets": "FHIR value set :-  <a class=\"\" href=\"https://simplifier.net/ukcore/codesystem-ukcore-sdsjobrolename\" target=\"\" title=\"\">SDSjobroletype</a> \n                        ",
+                  "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Legal information/Consent for information sharing/Performing professional/Role@2-build.2.1"
+                },
+                {
+                  "description": "The grade of the professional.",
+                  "maximumMultiplicity": "1",
+                  "minimumMultiplicity": "0",
+                  "mro": "R",
+                  "name": "Grade",
+                  "type": "item",
+                  "valueDomain": [
+                    {
+                      "property": [
+                        {
+                          "maxLength": "150"
+                        }
+                      ],
+                      "type": "text"
+                    }
+                  ],
+                  "valueSets": "Free text",
+                  "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Legal information/Consent for information sharing/Performing professional/Grade@2-build.2.1"
+                },
+                {
+                  "description": "The specialty of the professional e.g. physiotherapy, oncology, mental health etc",
+                  "maximumMultiplicity": "1",
+                  "minimumMultiplicity": "0",
+                  "mro": "R",
+                  "name": "Speciality",
+                  "type": "item",
+                  "valueDomain": [
+                    {
+                      "property": [
+                        {
+                          "maxLength": "3"
+                        }
+                      ],
+                      "type": "string"
+                    }
+                  ],
+                  "valueSets": "NHS data dictionary -  <a href=\"https://datadictionary.nhs.uk/data_elements/activity_treatment_function_code.html?hl=activity%2Ctreatment%2Cfunction%2Ccode\" target=\"\" title=\"\">Activity treatment function code</a> \n                        ",
+                  "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Legal information/Consent for information sharing/Performing professional/Speciality@2-build.2.1"
+                },
+                {
+                  "description": "Professional identifier for the professional e.g. GMC number, HCPC number etc or the personal identifier used by the local organisation.",
+                  "maximumMultiplicity": "1",
+                  "minimumMultiplicity": "0",
+                  "mro": "R",
+                  "name": "Professional identifier",
+                  "type": "item",
+                  "valueDomain": [
+                    {
+                      "property": [
+                        {
+                          "maxLength": "32"
+                        }
+                      ],
+                      "type": "string"
+                    }
+                  ],
+                  "valueSets": "NHS data dictionary : -  <a href=\"https://datadictionary.nhs.uk/data_elements/professional_registration_entry_identifier.html\" target=\"\" title=\"\">Professional registration identifier</a> \n                        ",
+                  "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Legal information/Consent for information sharing/Performing professional/Professional identifier@2-build.2.1"
+                },
+                {
+                  "description": "The name of the organisation the professional works for.",
+                  "maximumMultiplicity": "1",
+                  "minimumMultiplicity": "0",
+                  "mro": "R",
+                  "name": "Organisation",
+                  "type": "group",
+                  "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Legal information/Consent for information sharing/Performing professional/Organisation@2-build.2.1"
+                },
+                {
+                  "description": "Contact details of the professional",
+                  "maximumMultiplicity": "1",
+                  "minimumMultiplicity": "0",
+                  "mro": "R",
+                  "name": "Contact details",
+                  "type": "item",
+                  "valueDomain": [
+                    {
+                      "property": [
+                        {
+                          "maxLength": "35"
+                        }
+                      ],
+                      "type": "string"
+                    }
+                  ],
+                  "valueSets": "NHS data dictionary -  <a href=\"https://datadictionary.nhs.uk/data_elements/uk_telephone_number.html?hl=number\" target=\"\" title=\"\">UK phone number</a> \n                        ",
+                  "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Legal information/Consent for information sharing/Performing professional/Contact details@2-build.2.1"
+                }
+              ],
+              "description": "The professional who took the consent for information sharing",
+              "maximumMultiplicity": "1",
+              "minimumMultiplicity": "0",
+              "mro": "R",
+              "name": "Performing professional",
+              "type": "group",
+              "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Legal information/Consent for information sharing/Performing professional@2-build.2.1"
+            },
+            {
+              "concept": [
+                {
+                  "description": "The name of the person completing the record.",
+                  "maximumMultiplicity": "1",
+                  "minimumMultiplicity": "0",
+                  "mro": "R",
+                  "name": "Name",
+                  "type": "item",
+                  "valueDomain": [
+                    {
+                      "property": [
+                        {
+                          "maxLength": "70"
+                        }
+                      ],
+                      "type": "string"
+                    }
+                  ],
+                  "valueSets": "Free text.",
+                  "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Legal information/Consent for information sharing/Person completing record/Name@2-build.2.1"
+                },
+                {
+                  "description": "The organisational role of the person completing record.",
+                  "maximumMultiplicity": "1",
+                  "minimumMultiplicity": "0",
+                  "mro": "R",
+                  "name": "Role",
+                  "type": "item",
+                  "valueSets": "FHIR value set :-  <a href=\"https://simplifier.net/ukcore/codesystem-ukcore-sdsjobrolename\" target=\"\" title=\"\">SDSjobrole</a> \n                        ",
+                  "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Legal information/Consent for information sharing/Person completing record/Role@2-build.2.1"
+                },
+                {
+                  "description": "The grade of the person completing the record.",
+                  "maximumMultiplicity": "1",
+                  "minimumMultiplicity": "0",
+                  "mro": "R",
+                  "name": "Grade",
+                  "type": "item",
+                  "valueDomain": [
+                    {
+                      "property": [
+                        {
+                          "maxLength": "150"
+                        }
+                      ],
+                      "type": "text"
+                    }
+                  ],
+                  "valueSets": "Free text.",
+                  "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Legal information/Consent for information sharing/Person completing record/Grade@2-build.2.1"
+                },
+                {
+                  "description": "The main specialty of the person completing the record.",
+                  "maximumMultiplicity": "1",
+                  "minimumMultiplicity": "0",
+                  "mro": "R",
+                  "name": "Specialty",
+                  "type": "item",
+                  "valueDomain": [
+                    {
+                      "property": [
+                        {
+                          "maxLength": "3"
+                        }
+                      ],
+                      "type": "string"
+                    }
+                  ],
+                  "valueSets": "NHS data dictionary :-  <a href=\"https://datadictionary.nhs.uk/data_elements/activity_treatment_function_code.html?hl=activity%2Ctreatment%2Cfunction%2Ccode\" target=\"\" title=\"\">Activity treatment function code</a> \n                        ",
+                  "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Legal information/Consent for information sharing/Person completing record/Specialty@2-build.2.1"
+                },
+                {
+                  "description": "The organisation the person completing the record works for.",
+                  "maximumMultiplicity": "1",
+                  "minimumMultiplicity": "0",
+                  "mro": "R",
+                  "name": "Organisation",
+                  "type": "group",
+                  "valueSets": "\n                             <span style=\"color: rgb(51, 51, 51); font-family: Arial, Helvetica, Geneva, sans-serif; font-size: 12px;\">NHS data dictionary : - </span> \n                             <a href=\"https://www.datadictionary.nhs.uk/supporting_information/organisation_data_service.html\" target=\"\" title=\"\">Organisation data service</a> \n                        ",
+                  "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Legal information/Consent for information sharing/Person completing record/Organisation@2-build.2.1"
+                },
+                {
+                  "description": "Professional identifier for the person completing the record e.g. GMC number, HCPC number etc, or the personal identifier used by the local organisation.",
+                  "maximumMultiplicity": "1",
+                  "minimumMultiplicity": "0",
+                  "mro": "R",
+                  "name": "Professional identifier",
+                  "type": "item",
+                  "valueDomain": [
+                    {
+                      "property": [
+                        {
+                          "maxLength": "32"
+                        }
+                      ],
+                      "type": "string"
+                    }
+                  ],
+                  "valueSets": "NHS data dictionary :-  <a href=\"https://datadictionary.nhs.uk/data_elements/professional_registration_entry_identifier.html\" target=\"\" title=\"\">Professional registration identifier</a> \n                        ",
+                  "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Legal information/Consent for information sharing/Person completing record/Professional identifier@2-build.2.1"
+                },
+                {
+                  "description": "The date and time the record was completed.",
+                  "maximumMultiplicity": "1",
+                  "minimumMultiplicity": "0",
+                  "mro": "R",
+                  "name": "Date completed",
+                  "type": "item",
+                  "valueDomain": [
+                    {
+                      "property": [
+                        {
+                          "timeStampPrecision": "YMDHM"
+                        }
+                      ],
+                      "type": "datetime"
+                    }
+                  ],
+                  "valueSets": "Date and time.",
+                  "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Legal information/Consent for information sharing/Person completing record/Date completed@2-build.2.1"
+                },
+                {
+                  "description": "Contact details of the person completing the record. <br clear=\"none\"/> \n                        ",
+                  "maximumMultiplicity": "1",
+                  "minimumMultiplicity": "0",
+                  "mro": "R",
+                  "name": "Contact details",
+                  "type": "item",
+                  "valueDomain": [
+                    {
+                      "property": [
+                        {
+                          "maxLength": "35"
+                        }
+                      ],
+                      "type": "string"
+                    }
+                  ],
+                  "valueSets": "NHS data dictionary : -  <a href=\"https://datadictionary.nhs.uk/data_elements/uk_telephone_number.html?hl=number\" target=\"\" title=\"\">UK telephone number</a> \n                        ",
+                  "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Legal information/Consent for information sharing/Person completing record/Contact details@2-build.2.1"
+                }
+              ],
+              "description": "Details of the person completing the record.",
+              "maximumMultiplicity": "1",
+              "minimumMultiplicity": "0",
+              "mro": "R",
+              "name": "Person completing record",
+              "type": "group",
+              "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Legal information/Consent for information sharing/Person completing record@2-build.2.1"
+            }
+          ],
+          "description": "Details of the person's consent for information sharing",
+          "maximumMultiplicity": "1",
+          "minimumMultiplicity": "0",
+          "mro": "R",
+          "name": "Consent for information sharing",
+          "type": "group",
+          "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Legal information/Consent for information sharing@2-build.2.1"
+        },
+        {
+          "concept": [
+            {
+              "description": "The date when the person with responsibility for the child was identified.",
+              "maximumMultiplicity": "1",
+              "minimumMultiplicity": "0",
+              "mro": "R",
+              "name": "Date",
+              "type": "item",
+              "valueDomain": [
+                {
+                  "property": [
+                    {
+                      "timeStampPrecision": "YMDHM"
+                    }
+                  ],
+                  "type": "datetime"
+                }
+              ],
+              "valueSets": "Date and time",
+              "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Legal information/Consent relating to child/Date@2-build.2.1"
+            },
+            {
+              "concept": [
+                {
+                  "description": "The coded value for location",
+                  "maximumMultiplicity": "1",
+                  "minimumMultiplicity": "0",
+                  "mro": "R",
+                  "name": "Coded value",
+                  "type": "item",
+                  "valueDomain": [
+                    {
+                      "property": [
+                        {
+                          "maxLength": "5",
+                          "minLength": "3"
+                        }
+                      ],
+                      "type": "string"
+                    }
+                  ],
+                  "valueSets": "NHS data dictionary : -  <a href=\"https://www.datadictionary.nhs.uk/data_dictionary/attributes/o/org/organisation_code_de.asp?shownav=1\" target=\"\" title=\"\">Organisation data service</a> \n                        ",
+                  "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Legal information/Consent relating to child/Location/Coded value@2-build.2.1"
+                },
+                {
+                  "description": "Free text field to be used if no coded text available",
+                  "maximumMultiplicity": "1",
+                  "minimumMultiplicity": "0",
+                  "mro": "R",
+                  "name": "Free text",
+                  "type": "item",
+                  "valueDomain": [
+                    {
+                      "property": [
+                        {
+                          "maxLength": "150"
+                        }
+                      ],
+                      "type": "text"
+                    }
+                  ],
+                  "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Legal information/Consent relating to child/Location/Free text@2-build.2.1"
+                }
+              ],
+              "description": "The location where the person with responsibility for the child was identified.",
+              "maximumMultiplicity": "1",
+              "minimumMultiplicity": "0",
+              "mro": "R",
+              "name": "Location",
+              "type": "group",
+              "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Legal information/Consent relating to child/Location@2-build.2.1"
+            },
+            {
+              "description": "The person with parental responsibility or appointed guardian where a child lacks competency. Consideration of age and competency, applying Gillick competency or Fraser guidelines.",
+              "maximumMultiplicity": "1",
+              "minimumMultiplicity": "0",
+              "mro": "R",
+              "name": "Consent relating to child",
+              "type": "item",
+              "valueDomain": [
+                {
+                  "property": [
+                    {
+                      "maxLength": "150"
+                    }
+                  ],
+                  "type": "text"
+                }
+              ],
+              "valueSets": "Free text",
+              "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Legal information/Consent relating to child/Consent relating to child@2-build.2.1"
+            },
+            {
+              "concept": [
+                {
+                  "description": "The name of the professional.",
+                  "maximumMultiplicity": "1",
+                  "minimumMultiplicity": "0",
+                  "mro": "R",
+                  "name": "Name",
+                  "type": "item",
+                  "valueDomain": [
+                    {
+                      "property": [
+                        {
+                          "maxLength": "70"
+                        }
+                      ],
+                      "type": "string"
+                    }
+                  ],
+                  "valueSets": "Free text.",
+                  "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Legal information/Consent relating to child/Performing professional/Name@2-build.2.1"
+                },
+                {
+                  "description": "The role the professional has in relation to the person e.g. GP, physiotherapist, community nurse, social worker etc",
+                  "maximumMultiplicity": "1",
+                  "minimumMultiplicity": "0",
+                  "mro": "R",
+                  "name": "Role",
+                  "type": "item",
+                  "valueSets": "FHIR value set :-  <a class=\"\" href=\"https://simplifier.net/ukcore/codesystem-ukcore-sdsjobrolename\" target=\"\" title=\"\">SDSjobroletype</a> \n                        ",
+                  "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Legal information/Consent relating to child/Performing professional/Role@2-build.2.1"
+                },
+                {
+                  "description": "The grade of the professional.",
+                  "maximumMultiplicity": "1",
+                  "minimumMultiplicity": "0",
+                  "mro": "R",
+                  "name": "Grade",
+                  "type": "item",
+                  "valueDomain": [
+                    {
+                      "property": [
+                        {
+                          "maxLength": "150"
+                        }
+                      ],
+                      "type": "text"
+                    }
+                  ],
+                  "valueSets": "Free text",
+                  "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Legal information/Consent relating to child/Performing professional/Grade@2-build.2.1"
+                },
+                {
+                  "description": "The specialty of the professional e.g. physiotherapy, oncology, mental health etc",
+                  "maximumMultiplicity": "1",
+                  "minimumMultiplicity": "0",
+                  "mro": "R",
+                  "name": "Speciality",
+                  "type": "item",
+                  "valueDomain": [
+                    {
+                      "property": [
+                        {
+                          "maxLength": "3"
+                        }
+                      ],
+                      "type": "string"
+                    }
+                  ],
+                  "valueSets": "NHS data dictionary -  <a href=\"https://datadictionary.nhs.uk/data_elements/activity_treatment_function_code.html?hl=activity%2Ctreatment%2Cfunction%2Ccode\" target=\"\" title=\"\">Activity treatment function code</a> \n                        ",
+                  "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Legal information/Consent relating to child/Performing professional/Speciality@2-build.2.1"
+                },
+                {
+                  "description": "Professional identifier for the professional e.g. GMC number, HCPC number etc or the personal identifier used by the local organisation.",
+                  "maximumMultiplicity": "1",
+                  "minimumMultiplicity": "0",
+                  "mro": "R",
+                  "name": "Professional identifier",
+                  "type": "item",
+                  "valueDomain": [
+                    {
+                      "property": [
+                        {
+                          "maxLength": "32"
+                        }
+                      ],
+                      "type": "string"
+                    }
+                  ],
+                  "valueSets": "NHS data dictionary : -  <a href=\"https://datadictionary.nhs.uk/data_elements/professional_registration_entry_identifier.html\" target=\"\" title=\"\">Professional registration identifier</a> \n                        ",
+                  "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Legal information/Consent relating to child/Performing professional/Professional identifier@2-build.2.1"
+                },
+                {
+                  "description": "The name of the organisation the professional works for.",
+                  "maximumMultiplicity": "1",
+                  "minimumMultiplicity": "0",
+                  "mro": "R",
+                  "name": "Organisation",
+                  "type": "group",
+                  "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Legal information/Consent relating to child/Performing professional/Organisation@2-build.2.1"
+                },
+                {
+                  "description": "Contact details of the professional",
+                  "maximumMultiplicity": "1",
+                  "minimumMultiplicity": "0",
+                  "mro": "R",
+                  "name": "Contact details",
+                  "type": "item",
+                  "valueDomain": [
+                    {
+                      "property": [
+                        {
+                          "maxLength": "35"
+                        }
+                      ],
+                      "type": "string"
+                    }
+                  ],
+                  "valueSets": "NHS data dictionary -  <a href=\"https://datadictionary.nhs.uk/data_elements/uk_telephone_number.html?hl=number\" target=\"\" title=\"\">UK phone number</a> \n                        ",
+                  "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Legal information/Consent relating to child/Performing professional/Contact details@2-build.2.1"
+                }
+              ],
+              "description": "The professional who identified the person responsible for the child.",
+              "maximumMultiplicity": "1",
+              "minimumMultiplicity": "0",
+              "mro": "R",
+              "name": "Performing professional",
+              "type": "group",
+              "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Legal information/Consent relating to child/Performing professional@2-build.2.1"
+            },
+            {
+              "concept": [
+                {
+                  "description": "The name of the person completing the record.",
+                  "maximumMultiplicity": "1",
+                  "minimumMultiplicity": "0",
+                  "mro": "R",
+                  "name": "Name",
+                  "type": "item",
+                  "valueDomain": [
+                    {
+                      "property": [
+                        {
+                          "maxLength": "70"
+                        }
+                      ],
+                      "type": "string"
+                    }
+                  ],
+                  "valueSets": "Free text.",
+                  "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Legal information/Consent relating to child/Person completing record/Name@2-build.2.1"
+                },
+                {
+                  "description": "The organisational role of the person completing record.",
+                  "maximumMultiplicity": "1",
+                  "minimumMultiplicity": "0",
+                  "mro": "R",
+                  "name": "Role",
+                  "type": "item",
+                  "valueSets": "FHIR value set :-  <a href=\"https://simplifier.net/ukcore/codesystem-ukcore-sdsjobrolename\" target=\"\" title=\"\">SDSjobrole</a> \n                        ",
+                  "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Legal information/Consent relating to child/Person completing record/Role@2-build.2.1"
+                },
+                {
+                  "description": "The grade of the person completing the record.",
+                  "maximumMultiplicity": "1",
+                  "minimumMultiplicity": "0",
+                  "mro": "R",
+                  "name": "Grade",
+                  "type": "item",
+                  "valueDomain": [
+                    {
+                      "property": [
+                        {
+                          "maxLength": "150"
+                        }
+                      ],
+                      "type": "text"
+                    }
+                  ],
+                  "valueSets": "Free text.",
+                  "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Legal information/Consent relating to child/Person completing record/Grade@2-build.2.1"
+                },
+                {
+                  "description": "The main specialty of the person completing the record.",
+                  "maximumMultiplicity": "1",
+                  "minimumMultiplicity": "0",
+                  "mro": "R",
+                  "name": "Specialty",
+                  "type": "item",
+                  "valueDomain": [
+                    {
+                      "property": [
+                        {
+                          "maxLength": "3"
+                        }
+                      ],
+                      "type": "string"
+                    }
+                  ],
+                  "valueSets": "NHS data dictionary :-  <a href=\"https://datadictionary.nhs.uk/data_elements/activity_treatment_function_code.html?hl=activity%2Ctreatment%2Cfunction%2Ccode\" target=\"\" title=\"\">Activity treatment function code</a> \n                        ",
+                  "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Legal information/Consent relating to child/Person completing record/Specialty@2-build.2.1"
+                },
+                {
+                  "description": "The organisation the person completing the record works for.",
+                  "maximumMultiplicity": "1",
+                  "minimumMultiplicity": "0",
+                  "mro": "R",
+                  "name": "Organisation",
+                  "type": "group",
+                  "valueSets": "\n                             <span style=\"color: rgb(51, 51, 51); font-family: Arial, Helvetica, Geneva, sans-serif; font-size: 12px;\">NHS data dictionary : - </span> \n                             <a href=\"https://www.datadictionary.nhs.uk/supporting_information/organisation_data_service.html\" target=\"\" title=\"\">Organisation data service</a> \n                        ",
+                  "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Legal information/Consent relating to child/Person completing record/Organisation@2-build.2.1"
+                },
+                {
+                  "description": "Professional identifier for the person completing the record e.g. GMC number, HCPC number etc, or the personal identifier used by the local organisation.",
+                  "maximumMultiplicity": "1",
+                  "minimumMultiplicity": "0",
+                  "mro": "R",
+                  "name": "Professional identifier",
+                  "type": "item",
+                  "valueDomain": [
+                    {
+                      "property": [
+                        {
+                          "maxLength": "32"
+                        }
+                      ],
+                      "type": "string"
+                    }
+                  ],
+                  "valueSets": "NHS data dictionary :-  <a href=\"https://datadictionary.nhs.uk/data_elements/professional_registration_entry_identifier.html\" target=\"\" title=\"\">Professional registration identifier</a> \n                        ",
+                  "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Legal information/Consent relating to child/Person completing record/Professional identifier@2-build.2.1"
+                },
+                {
+                  "description": "The date and time the record was completed.",
+                  "maximumMultiplicity": "1",
+                  "minimumMultiplicity": "0",
+                  "mro": "R",
+                  "name": "Date completed",
+                  "type": "item",
+                  "valueDomain": [
+                    {
+                      "property": [
+                        {
+                          "timeStampPrecision": "YMDHM"
+                        }
+                      ],
+                      "type": "datetime"
+                    }
+                  ],
+                  "valueSets": "Date and time.",
+                  "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Legal information/Consent relating to child/Person completing record/Date completed@2-build.2.1"
+                },
+                {
+                  "description": "Contact details of the person completing the record. <br clear=\"none\"/> \n                        ",
+                  "maximumMultiplicity": "1",
+                  "minimumMultiplicity": "0",
+                  "mro": "R",
+                  "name": "Contact details",
+                  "type": "item",
+                  "valueDomain": [
+                    {
+                      "property": [
+                        {
+                          "maxLength": "35"
+                        }
+                      ],
+                      "type": "string"
+                    }
+                  ],
+                  "valueSets": "NHS data dictionary : -  <a href=\"https://datadictionary.nhs.uk/data_elements/uk_telephone_number.html?hl=number\" target=\"\" title=\"\">UK telephone number</a> \n                        ",
+                  "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Legal information/Consent relating to child/Person completing record/Contact details@2-build.2.1"
+                }
+              ],
+              "description": "Details of the person completing the record.",
+              "maximumMultiplicity": "1",
+              "minimumMultiplicity": "0",
+              "mro": "R",
+              "name": "Person completing record",
+              "type": "group",
+              "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Legal information/Consent relating to child/Person completing record@2-build.2.1"
+            }
+          ],
+          "description": "Details of the person's consent relating to child",
+          "maximumMultiplicity": "*",
+          "minimumMultiplicity": "0",
+          "mro": "R",
+          "name": "Consent relating to child",
+          "type": "group",
+          "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Legal information/Consent relating to child@2-build.2.1"
+        },
+        {
+          "concept": [
+            {
+              "description": "The date when the mental capacity assessment was made.",
+              "maximumMultiplicity": "1",
+              "minimumMultiplicity": "0",
+              "mro": "R",
+              "name": "Date",
+              "type": "item",
+              "valueDomain": [
+                {
+                  "property": [
+                    {
+                      "timeStampPrecision": "YMDHM"
+                    }
+                  ],
+                  "type": "datetime"
+                }
+              ],
+              "valueSets": "Date and time",
+              "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Legal information/Mental capacity assessment/Date@2-build.2.1"
+            },
+            {
+              "concept": [
+                {
+                  "description": "The coded value for location",
+                  "maximumMultiplicity": "1",
+                  "minimumMultiplicity": "0",
+                  "mro": "R",
+                  "name": "Coded value",
+                  "type": "item",
+                  "valueDomain": [
+                    {
+                      "property": [
+                        {
+                          "maxLength": "5",
+                          "minLength": "3"
+                        }
+                      ],
+                      "type": "string"
+                    }
+                  ],
+                  "valueSets": "\n                             <div>NHS data dictionary : - <a href=\"https://datadictionary.nhs.uk/attributes/organisation_code.html\" target=\"\" title=\"\">Organisation code</a>\n                                <br clear=\"none\"/>\n                            </div> \n                        ",
+                  "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Legal information/Mental capacity assessment/Location/Coded value@2-build.2.1"
+                },
+                {
+                  "description": "Free text field to be used if no code is available",
+                  "maximumMultiplicity": "1",
+                  "minimumMultiplicity": "0",
+                  "mro": "R",
+                  "name": "Free text",
+                  "type": "item",
+                  "valueDomain": [
+                    {
+                      "property": [
+                        {
+                          "maxLength": "150"
+                        }
+                      ],
+                      "type": "text"
+                    }
+                  ],
+                  "valueSets": "Free text",
+                  "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Legal information/Mental capacity assessment/Location/Free text@2-build.2.1"
+                }
+              ],
+              "description": "The location where the mental capacity assessment was made.",
+              "maximumMultiplicity": "1",
+              "minimumMultiplicity": "0",
+              "mro": "R",
+              "name": "Location",
+              "type": "group",
+              "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Legal information/Mental capacity assessment/Location@2-build.2.1"
+            },
+            {
+              "description": "Whether an assessment of the mental capacity of the (adult) person has been undertaken, if so, what capacity the decision relates to and the outcome of the assessment. Also record best interests decision if person lacks capacity.",
+              "maximumMultiplicity": "1",
+              "minimumMultiplicity": "0",
+              "mro": "R",
+              "name": "Mental capacity assessment",
+              "type": "item",
+              "valueDomain": [
+                {
+                  "property": [
+                    {
+                      "maxLength": "150"
+                    }
+                  ],
+                  "type": "text"
+                }
+              ],
+              "valueSets": "Free text",
+              "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Legal information/Mental capacity assessment/Mental capacity assessment@2-build.2.1"
+            },
+            {
+              "description": "The location of the mental capacity assessment information.",
+              "maximumMultiplicity": "1",
+              "minimumMultiplicity": "0",
+              "mro": "R",
+              "name": "Location of document",
+              "type": "item",
+              "valueDomain": [
+                {
+                  "property": [
+                    {
+                      "maxLength": "150"
+                    }
+                  ],
+                  "type": "text"
+                }
+              ],
+              "valueSets": "Free text or URL",
+              "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Legal information/Mental capacity assessment/Location of document@2-build.2.1"
+            },
+            {
+              "concept": [
+                {
+                  "description": "The name of the professional.",
+                  "maximumMultiplicity": "1",
+                  "minimumMultiplicity": "0",
+                  "mro": "R",
+                  "name": "Name",
+                  "type": "item",
+                  "valueDomain": [
+                    {
+                      "property": [
+                        {
+                          "maxLength": "70"
+                        }
+                      ],
+                      "type": "string"
+                    }
+                  ],
+                  "valueSets": "Free text.",
+                  "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Legal information/Mental capacity assessment/Performing professional/Name@2-build.2.1"
+                },
+                {
+                  "description": "The role the professional has in relation to the person e.g. GP, physiotherapist, community nurse, social worker etc",
+                  "maximumMultiplicity": "1",
+                  "minimumMultiplicity": "0",
+                  "mro": "R",
+                  "name": "Role",
+                  "type": "item",
+                  "valueSets": "FHIR value set :-  <a class=\"\" href=\"https://simplifier.net/ukcore/codesystem-ukcore-sdsjobrolename\" target=\"\" title=\"\">SDSjobroletype</a> \n                        ",
+                  "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Legal information/Mental capacity assessment/Performing professional/Role@2-build.2.1"
+                },
+                {
+                  "description": "The grade of the professional.",
+                  "maximumMultiplicity": "1",
+                  "minimumMultiplicity": "0",
+                  "mro": "R",
+                  "name": "Grade",
+                  "type": "item",
+                  "valueDomain": [
+                    {
+                      "property": [
+                        {
+                          "maxLength": "150"
+                        }
+                      ],
+                      "type": "text"
+                    }
+                  ],
+                  "valueSets": "Free text",
+                  "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Legal information/Mental capacity assessment/Performing professional/Grade@2-build.2.1"
+                },
+                {
+                  "description": "The specialty of the professional e.g. physiotherapy, oncology, mental health etc",
+                  "maximumMultiplicity": "1",
+                  "minimumMultiplicity": "0",
+                  "mro": "R",
+                  "name": "Speciality",
+                  "type": "item",
+                  "valueDomain": [
+                    {
+                      "property": [
+                        {
+                          "maxLength": "3"
+                        }
+                      ],
+                      "type": "string"
+                    }
+                  ],
+                  "valueSets": "NHS data dictionary -  <a href=\"https://datadictionary.nhs.uk/data_elements/activity_treatment_function_code.html?hl=activity%2Ctreatment%2Cfunction%2Ccode\" target=\"\" title=\"\">Activity treatment function code</a> \n                        ",
+                  "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Legal information/Mental capacity assessment/Performing professional/Speciality@2-build.2.1"
+                },
+                {
+                  "description": "Professional identifier for the professional e.g. GMC number, HCPC number etc or the personal identifier used by the local organisation.",
+                  "maximumMultiplicity": "1",
+                  "minimumMultiplicity": "0",
+                  "mro": "R",
+                  "name": "Professional identifier",
+                  "type": "item",
+                  "valueDomain": [
+                    {
+                      "property": [
+                        {
+                          "maxLength": "32"
+                        }
+                      ],
+                      "type": "string"
+                    }
+                  ],
+                  "valueSets": "NHS data dictionary : -  <a href=\"https://datadictionary.nhs.uk/data_elements/professional_registration_entry_identifier.html\" target=\"\" title=\"\">Professional registration identifier</a> \n                        ",
+                  "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Legal information/Mental capacity assessment/Performing professional/Professional identifier@2-build.2.1"
+                },
+                {
+                  "concept": [
+                    {
+                      "description": "The coded value for location",
+                      "maximumMultiplicity": "1",
+                      "minimumMultiplicity": "0",
+                      "mro": "R",
+                      "name": "Coded value",
+                      "type": "item",
+                      "valueDomain": [
+                        {
+                          "property": [
+                            {
+                              "maxLength": "7",
+                              "minLength": "3"
+                            }
+                          ],
+                          "type": "string"
+                        }
+                      ],
+                      "valueSets": "NHS data dictionary: -  <a href=\"https://www.datadictionary.nhs.uk/data_dictionary/attributes/o/org/organisation_code_de.asp?shownav=1\" target=\"\" title=\"\">Organisation data service</a> \n                            ",
+                      "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Legal information/Mental capacity assessment/Performing professional/Organisation/Coded value@2-build.2.1"
+                    },
+                    {
+                      "description": "Free text field to be used if no code is available",
+                      "maximumMultiplicity": "1",
+                      "minimumMultiplicity": "0",
+                      "mro": "R",
+                      "name": "Free text",
+                      "type": "item",
+                      "valueDomain": [
+                        {
+                          "property": [
+                            {
+                              "maxLength": "150"
+                            }
+                          ],
+                          "type": "text"
+                        }
+                      ],
+                      "valueSets": "Free text",
+                      "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Legal information/Mental capacity assessment/Performing professional/Organisation/Free text@2-build.2.1"
+                    }
+                  ],
+                  "description": "The name of the organisation the professional works for.",
+                  "maximumMultiplicity": "1",
+                  "minimumMultiplicity": "0",
+                  "mro": "R",
+                  "name": "Organisation",
+                  "type": "group",
+                  "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Legal information/Mental capacity assessment/Performing professional/Organisation@2-build.2.1"
+                },
+                {
+                  "description": "Contact details of the professional",
+                  "maximumMultiplicity": "1",
+                  "minimumMultiplicity": "0",
+                  "mro": "R",
+                  "name": "Contact details",
+                  "type": "item",
+                  "valueDomain": [
+                    {
+                      "property": [
+                        {
+                          "maxLength": "35"
+                        }
+                      ],
+                      "type": "string"
+                    }
+                  ],
+                  "valueSets": "NHS data dictionary -  <a href=\"https://datadictionary.nhs.uk/data_elements/uk_telephone_number.html?hl=number\" target=\"\" title=\"\">UK phone number</a> \n                        ",
+                  "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Legal information/Mental capacity assessment/Performing professional/Contact details@2-build.2.1"
+                }
+              ],
+              "description": "The professional who made the mental capacity assessment.",
+              "maximumMultiplicity": "1",
+              "minimumMultiplicity": "0",
+              "mro": "R",
+              "name": "Performing professional",
+              "type": "group",
+              "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Legal information/Mental capacity assessment/Performing professional@2-build.2.1"
+            },
+            {
+              "concept": [
+                {
+                  "description": "The name of the person completing the record.",
+                  "maximumMultiplicity": "1",
+                  "minimumMultiplicity": "0",
+                  "mro": "R",
+                  "name": "Name",
+                  "type": "item",
+                  "valueDomain": [
+                    {
+                      "property": [
+                        {
+                          "maxLength": "70"
+                        }
+                      ],
+                      "type": "string"
+                    }
+                  ],
+                  "valueSets": "Free text.",
+                  "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Legal information/Mental capacity assessment/Person completing record/Name@2-build.2.1"
+                },
+                {
+                  "description": "The organisational role of the person completing record.",
+                  "maximumMultiplicity": "1",
+                  "minimumMultiplicity": "0",
+                  "mro": "R",
+                  "name": "Role",
+                  "type": "item",
+                  "valueSets": "FHIR value set :-  <a href=\"https://simplifier.net/ukcore/codesystem-ukcore-sdsjobrolename\" target=\"\" title=\"\">SDSjobrole</a> \n                        ",
+                  "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Legal information/Mental capacity assessment/Person completing record/Role@2-build.2.1"
+                },
+                {
+                  "description": "The grade of the person completing the record.",
+                  "maximumMultiplicity": "1",
+                  "minimumMultiplicity": "0",
+                  "mro": "R",
+                  "name": "Grade",
+                  "type": "item",
+                  "valueDomain": [
+                    {
+                      "property": [
+                        {
+                          "maxLength": "150"
+                        }
+                      ],
+                      "type": "text"
+                    }
+                  ],
+                  "valueSets": "Free text.",
+                  "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Legal information/Mental capacity assessment/Person completing record/Grade@2-build.2.1"
+                },
+                {
+                  "description": "The main specialty of the person completing the record.",
+                  "maximumMultiplicity": "1",
+                  "minimumMultiplicity": "0",
+                  "mro": "R",
+                  "name": "Specialty",
+                  "type": "item",
+                  "valueDomain": [
+                    {
+                      "property": [
+                        {
+                          "maxLength": "3"
+                        }
+                      ],
+                      "type": "string"
+                    }
+                  ],
+                  "valueSets": "NHS data dictionary :-  <a href=\"https://datadictionary.nhs.uk/data_elements/activity_treatment_function_code.html?hl=activity%2Ctreatment%2Cfunction%2Ccode\" target=\"\" title=\"\">Activity treatment function code</a> \n                        ",
+                  "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Legal information/Mental capacity assessment/Person completing record/Specialty@2-build.2.1"
+                },
+                {
+                  "concept": [
+                    {
+                      "description": "The coded value for location",
+                      "maximumMultiplicity": "1",
+                      "minimumMultiplicity": "0",
+                      "mro": "R",
+                      "name": "Coded value",
+                      "type": "item",
+                      "valueDomain": [
+                        {
+                          "property": [
+                            {
+                              "maxLength": "7",
+                              "minLength": "3"
+                            }
+                          ],
+                          "type": "string"
+                        }
+                      ],
+                      "valueSets": "NHS data dictionary : -  <a class=\"\" href=\"https://www.datadictionary.nhs.uk/data_dictionary/attributes/o/org/organisation_code_de.asp?shownav=1\" target=\"\" title=\"\">Organisation data service</a> \n                            ",
+                      "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Legal information/Mental capacity assessment/Person completing record/Organisation/Coded value@2-build.2.1"
+                    },
+                    {
+                      "description": "Free text field to be used if no code is available",
+                      "maximumMultiplicity": "1",
+                      "minimumMultiplicity": "0",
+                      "mro": "R",
+                      "name": "Free text",
+                      "type": "item",
+                      "valueDomain": [
+                        {
+                          "property": [
+                            {
+                              "maxLength": "150"
+                            }
+                          ],
+                          "type": "text"
+                        }
+                      ],
+                      "valueSets": "Free text",
+                      "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Legal information/Mental capacity assessment/Person completing record/Organisation/Free text@2-build.2.1"
+                    }
+                  ],
+                  "description": "The organisation the person completing the record works for.",
+                  "maximumMultiplicity": "1",
+                  "minimumMultiplicity": "0",
+                  "mro": "R",
+                  "name": "Organisation",
+                  "type": "group",
+                  "valueSets": "\n                             <span style=\"color: rgb(51, 51, 51); font-family: Arial, Helvetica, Geneva, sans-serif; font-size: 12px;\">NHS data dictionary : - </span> \n                             <a href=\"https://www.datadictionary.nhs.uk/supporting_information/organisation_data_service.html\" target=\"\" title=\"\">Organisation data service</a> \n                        ",
+                  "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Legal information/Mental capacity assessment/Person completing record/Organisation@2-build.2.1"
+                },
+                {
+                  "description": "Professional identifier for the person completing the record e.g. GMC number, HCPC number etc, or the personal identifier used by the local organisation.",
+                  "maximumMultiplicity": "1",
+                  "minimumMultiplicity": "0",
+                  "mro": "R",
+                  "name": "Professional identifier",
+                  "type": "item",
+                  "valueDomain": [
+                    {
+                      "property": [
+                        {
+                          "maxLength": "32"
+                        }
+                      ],
+                      "type": "string"
+                    }
+                  ],
+                  "valueSets": "NHS data dictionary :-  <a href=\"https://datadictionary.nhs.uk/data_elements/professional_registration_entry_identifier.html\" target=\"\" title=\"\">Professional registration identifier</a> \n                        ",
+                  "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Legal information/Mental capacity assessment/Person completing record/Professional identifier@2-build.2.1"
+                },
+                {
+                  "description": "The date and time the record was completed.",
+                  "maximumMultiplicity": "1",
+                  "minimumMultiplicity": "0",
+                  "mro": "R",
+                  "name": "Date completed",
+                  "type": "item",
+                  "valueDomain": [
+                    {
+                      "property": [
+                        {
+                          "timeStampPrecision": "YMDHM"
+                        }
+                      ],
+                      "type": "datetime"
+                    }
+                  ],
+                  "valueSets": "Date and time.",
+                  "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Legal information/Mental capacity assessment/Person completing record/Date completed@2-build.2.1"
+                },
+                {
+                  "description": "Contact details of the person completing the record. <br clear=\"none\"/> \n                        ",
+                  "maximumMultiplicity": "1",
+                  "minimumMultiplicity": "0",
+                  "mro": "R",
+                  "name": "Contact details",
+                  "type": "item",
+                  "valueDomain": [
+                    {
+                      "property": [
+                        {
+                          "maxLength": "35"
+                        }
+                      ],
+                      "type": "string"
+                    }
+                  ],
+                  "valueSets": "NHS data dictionary : -  <a href=\"https://datadictionary.nhs.uk/data_elements/uk_telephone_number.html?hl=number\" target=\"\" title=\"\">UK telephone number</a> \n                        ",
+                  "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Legal information/Mental capacity assessment/Person completing record/Contact details@2-build.2.1"
+                }
+              ],
+              "description": "Details of the person completing the record.",
+              "maximumMultiplicity": "1",
+              "minimumMultiplicity": "0",
+              "mro": "R",
+              "name": "Person completing record",
+              "type": "group",
+              "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Legal information/Mental capacity assessment/Person completing record@2-build.2.1"
+            }
+          ],
+          "description": "Details of the persons mental capacity assessment",
+          "maximumMultiplicity": "*",
+          "minimumMultiplicity": "0",
+          "mro": "R",
+          "name": "Mental capacity assessment",
+          "type": "group",
+          "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Legal information/Mental capacity assessment@2-build.2.1"
+        },
+        {
+          "concept": [
+            {
+              "description": "The date the LPA was recorded",
+              "maximumMultiplicity": "1",
+              "minimumMultiplicity": "0",
+              "mro": "R",
+              "name": "Date",
+              "type": "item",
+              "valueDomain": [
+                {
+                  "property": [
+                    {
+                      "timeStampPrecision": "YMDHM"
+                    }
+                  ],
+                  "type": "datetime"
+                }
+              ],
+              "valueSets": "Date and time",
+              "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Legal information/Lasting power of attorney for health and welfare or court-appointed deputy (or equivalent)/Date@2-build.2.1"
+            },
+            {
+              "concept": [
+                {
+                  "description": "The coded value for location",
+                  "maximumMultiplicity": "1",
+                  "minimumMultiplicity": "0",
+                  "mro": "R",
+                  "name": "Coded value",
+                  "type": "item",
+                  "valueDomain": [
+                    {
+                      "property": [
+                        {
+                          "maxLength": "9",
+                          "minLength": "3"
+                        }
+                      ],
+                      "type": "string"
+                    }
+                  ],
+                  "valueSets": "NHS data dictionary : -  <a href=\"https://datadictionary.nhs.uk/attributes/organisation_code.html\" target=\"\" title=\"\">Organisation code</a> \n                             <br clear=\"none\"/> \n                             <br clear=\"none\"/> \n                        ",
+                  "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Legal information/Lasting power of attorney for health and welfare or court-appointed deputy (or equivalent)/Location/Coded value@2-build.2.1"
+                },
+                {
+                  "description": "Free text field to be used if no code is available",
+                  "maximumMultiplicity": "1",
+                  "minimumMultiplicity": "0",
+                  "mro": "R",
+                  "name": "Free text",
+                  "type": "item",
+                  "valueDomain": [
+                    {
+                      "property": [
+                        {
+                          "maxLength": "150"
+                        }
+                      ],
+                      "type": "text"
+                    }
+                  ],
+                  "valueSets": "Free text",
+                  "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Legal information/Lasting power of attorney for health and welfare or court-appointed deputy (or equivalent)/Location/Free text@2-build.2.1"
+                }
+              ],
+              "description": "The location where the LPA was given",
+              "maximumMultiplicity": "1",
+              "minimumMultiplicity": "0",
+              "mro": "R",
+              "name": "Location",
+              "type": "group",
+              "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Legal information/Lasting power of attorney for health and welfare or court-appointed deputy (or equivalent)/Location@2-build.2.1"
+            },
+            {
+              "concept": [
+                {
+                  "description": "The coded value for the LPA",
+                  "maximumMultiplicity": "1",
+                  "minimumMultiplicity": "0",
+                  "mro": "R",
+                  "name": "Coded value",
+                  "type": "item",
+                  "valueSets": "SNOMED CT: - ^999001951000000107 |Personal welfare lasting power of attorney findings simple reference set (foundation metadata concept)|",
+                  "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Legal information/Lasting power of attorney for health and welfare or court-appointed deputy (or equivalent)/Lasting power of attorney for health and welfare or court appointed deputy (or equivalent)/Coded value@2-build.2.1"
+                },
+                {
+                  "description": "The location of the LPA information",
+                  "maximumMultiplicity": "1",
+                  "minimumMultiplicity": "0",
+                  "mro": "R",
+                  "name": "Location of document",
+                  "type": "item",
+                  "valueDomain": [
+                    {
+                      "property": [
+                        {
+                          "maxLength": "150"
+                        }
+                      ],
+                      "type": "text"
+                    }
+                  ],
+                  "valueSets": "Free text or URL",
+                  "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Legal information/Lasting power of attorney for health and welfare or court-appointed deputy (or equivalent)/Lasting power of attorney for health and welfare or court appointed deputy (or equivalent)/Location of document@2-build.2.1"
+                },
+                {
+                  "description": "The names of any appointed people or deputies",
+                  "maximumMultiplicity": "1",
+                  "minimumMultiplicity": "0",
+                  "mro": "R",
+                  "name": "Name of LPA",
+                  "type": "item",
+                  "valueDomain": [
+                    {
+                      "property": [
+                        {
+                          "maxLength": "150"
+                        }
+                      ],
+                      "type": "text"
+                    }
+                  ],
+                  "valueSets": "Free text",
+                  "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Legal information/Lasting power of attorney for health and welfare or court-appointed deputy (or equivalent)/Lasting power of attorney for health and welfare or court appointed deputy (or equivalent)/Name of LPA@2-build.2.1"
+                },
+                {
+                  "description": "The contact details of the LPA",
+                  "maximumMultiplicity": "1",
+                  "minimumMultiplicity": "0",
+                  "mro": "R",
+                  "name": "Contact details",
+                  "type": "item",
+                  "valueDomain": [
+                    {
+                      "property": [
+                        {
+                          "maxLength": "35"
+                        }
+                      ],
+                      "type": "string"
+                    }
+                  ],
+                  "valueSets": "NHS data dictionary:-  <a href=\"https://datadictionary.nhs.uk/data_elements/uk_telephone_number.html?hl=number\" target=\"\" title=\"\">UK telephone number</a> \n                        ",
+                  "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Legal information/Lasting power of attorney for health and welfare or court-appointed deputy (or equivalent)/Lasting power of attorney for health and welfare or court appointed deputy (or equivalent)/Contact details@2-build.2.1"
+                }
+              ],
+              "description": "Record of one or more people who have been given power (LPA) by the person when they had capacity to make decisions about their health and welfare should they lose capacity to make those decisions. To be valid, an LPA must have been registered with the Court of Protection. If life-sustaining treatment is being considered the LPA document must state specifically that the attorney has been given power to consent to or refuse life-sustaining treatment. Details of any person (deputy) appointed by the court to make decisions about the person\u2019s health and welfare. A deputy does not have the power to refuse life-sustaining treatment.",
+              "maximumMultiplicity": "1",
+              "minimumMultiplicity": "0",
+              "mro": "R",
+              "name": "Lasting power of attorney for health and welfare or court appointed deputy (or equivalent)",
+              "type": "group",
+              "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Legal information/Lasting power of attorney for health and welfare or court-appointed deputy (or equivalent)/Lasting power of attorney for health and welfare or court appointed deputy (or equivalent)@2-build.2.1"
+            },
+            {
+              "concept": [
+                {
+                  "description": "The name of the professional.",
+                  "maximumMultiplicity": "1",
+                  "minimumMultiplicity": "0",
+                  "mro": "R",
+                  "name": "Name",
+                  "type": "item",
+                  "valueDomain": [
+                    {
+                      "property": [
+                        {
+                          "maxLength": "70"
+                        }
+                      ],
+                      "type": "string"
+                    }
+                  ],
+                  "valueSets": "Free text.",
+                  "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Legal information/Lasting power of attorney for health and welfare or court-appointed deputy (or equivalent)/Performing professional/Name@2-build.2.1"
+                },
+                {
+                  "description": "The role the professional has in relation to the person e.g. GP, physiotherapist, community nurse, social worker etc",
+                  "maximumMultiplicity": "1",
+                  "minimumMultiplicity": "0",
+                  "mro": "R",
+                  "name": "Role",
+                  "type": "item",
+                  "valueSets": "FHIR value set :-  <a class=\"\" href=\"https://simplifier.net/ukcore/codesystem-ukcore-sdsjobrolename\" target=\"\" title=\"\">SDSjobroletype</a> \n                        ",
+                  "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Legal information/Lasting power of attorney for health and welfare or court-appointed deputy (or equivalent)/Performing professional/Role@2-build.2.1"
+                },
+                {
+                  "description": "The grade of the professional.",
+                  "maximumMultiplicity": "1",
+                  "minimumMultiplicity": "0",
+                  "mro": "R",
+                  "name": "Grade",
+                  "type": "item",
+                  "valueDomain": [
+                    {
+                      "property": [
+                        {
+                          "maxLength": "150"
+                        }
+                      ],
+                      "type": "text"
+                    }
+                  ],
+                  "valueSets": "Free text",
+                  "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Legal information/Lasting power of attorney for health and welfare or court-appointed deputy (or equivalent)/Performing professional/Grade@2-build.2.1"
+                },
+                {
+                  "description": "The specialty of the professional e.g. physiotherapy, oncology, mental health etc",
+                  "maximumMultiplicity": "1",
+                  "minimumMultiplicity": "0",
+                  "mro": "R",
+                  "name": "Speciality",
+                  "type": "item",
+                  "valueDomain": [
+                    {
+                      "property": [
+                        {
+                          "maxLength": "3"
+                        }
+                      ],
+                      "type": "string"
+                    }
+                  ],
+                  "valueSets": "NHS data dictionary -  <a href=\"https://datadictionary.nhs.uk/data_elements/activity_treatment_function_code.html?hl=activity%2Ctreatment%2Cfunction%2Ccode\" target=\"\" title=\"\">Activity treatment function code</a> \n                        ",
+                  "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Legal information/Lasting power of attorney for health and welfare or court-appointed deputy (or equivalent)/Performing professional/Speciality@2-build.2.1"
+                },
+                {
+                  "description": "Professional identifier for the professional e.g. GMC number, HCPC number etc or the personal identifier used by the local organisation.",
+                  "maximumMultiplicity": "1",
+                  "minimumMultiplicity": "0",
+                  "mro": "R",
+                  "name": "Professional identifier",
+                  "type": "item",
+                  "valueDomain": [
+                    {
+                      "property": [
+                        {
+                          "maxLength": "32"
+                        }
+                      ],
+                      "type": "string"
+                    }
+                  ],
+                  "valueSets": "NHS data dictionary : -  <a href=\"https://datadictionary.nhs.uk/data_elements/professional_registration_entry_identifier.html\" target=\"\" title=\"\">Professional registration identifier</a> \n                        ",
+                  "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Legal information/Lasting power of attorney for health and welfare or court-appointed deputy (or equivalent)/Performing professional/Professional identifier@2-build.2.1"
+                },
+                {
+                  "description": "The name of the organisation the professional works for.",
+                  "maximumMultiplicity": "1",
+                  "minimumMultiplicity": "0",
+                  "mro": "R",
+                  "name": "Organisation",
+                  "type": "group",
+                  "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Legal information/Lasting power of attorney for health and welfare or court-appointed deputy (or equivalent)/Performing professional/Organisation@2-build.2.1"
+                },
+                {
+                  "description": "Contact details of the professional",
+                  "maximumMultiplicity": "1",
+                  "minimumMultiplicity": "0",
+                  "mro": "R",
+                  "name": "Contact details",
+                  "type": "item",
+                  "valueDomain": [
+                    {
+                      "property": [
+                        {
+                          "maxLength": "35"
+                        }
+                      ],
+                      "type": "string"
+                    }
+                  ],
+                  "valueSets": "NHS data dictionary -  <a href=\"https://datadictionary.nhs.uk/data_elements/uk_telephone_number.html?hl=number\" target=\"\" title=\"\">UK phone number</a> \n                        ",
+                  "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Legal information/Lasting power of attorney for health and welfare or court-appointed deputy (or equivalent)/Performing professional/Contact details@2-build.2.1"
+                }
+              ],
+              "description": "The professional who took the details of the LPA or equivalent",
+              "maximumMultiplicity": "1",
+              "minimumMultiplicity": "0",
+              "mro": "R",
+              "name": "Performing professional",
+              "type": "group",
+              "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Legal information/Lasting power of attorney for health and welfare or court-appointed deputy (or equivalent)/Performing professional@2-build.2.1"
+            },
+            {
+              "concept": [
+                {
+                  "description": "The name of the person completing the record.",
+                  "maximumMultiplicity": "1",
+                  "minimumMultiplicity": "0",
+                  "mro": "R",
+                  "name": "Name",
+                  "type": "item",
+                  "valueDomain": [
+                    {
+                      "property": [
+                        {
+                          "maxLength": "70"
+                        }
+                      ],
+                      "type": "string"
+                    }
+                  ],
+                  "valueSets": "Free text.",
+                  "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Legal information/Lasting power of attorney for health and welfare or court-appointed deputy (or equivalent)/Person completing record/Name@2-build.2.1"
+                },
+                {
+                  "description": "The organisational role of the person completing record.",
+                  "maximumMultiplicity": "1",
+                  "minimumMultiplicity": "0",
+                  "mro": "R",
+                  "name": "Role",
+                  "type": "item",
+                  "valueSets": "FHIR value set :-  <a href=\"https://simplifier.net/ukcore/codesystem-ukcore-sdsjobrolename\" target=\"\" title=\"\">SDSjobrole</a> \n                        ",
+                  "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Legal information/Lasting power of attorney for health and welfare or court-appointed deputy (or equivalent)/Person completing record/Role@2-build.2.1"
+                },
+                {
+                  "description": "The grade of the person completing the record.",
+                  "maximumMultiplicity": "1",
+                  "minimumMultiplicity": "0",
+                  "mro": "R",
+                  "name": "Grade",
+                  "type": "item",
+                  "valueDomain": [
+                    {
+                      "property": [
+                        {
+                          "maxLength": "150"
+                        }
+                      ],
+                      "type": "text"
+                    }
+                  ],
+                  "valueSets": "Free text.",
+                  "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Legal information/Lasting power of attorney for health and welfare or court-appointed deputy (or equivalent)/Person completing record/Grade@2-build.2.1"
+                },
+                {
+                  "description": "The main specialty of the person completing the record.",
+                  "maximumMultiplicity": "1",
+                  "minimumMultiplicity": "0",
+                  "mro": "R",
+                  "name": "Specialty",
+                  "type": "item",
+                  "valueDomain": [
+                    {
+                      "property": [
+                        {
+                          "maxLength": "3"
+                        }
+                      ],
+                      "type": "string"
+                    }
+                  ],
+                  "valueSets": "NHS data dictionary :-  <a href=\"https://datadictionary.nhs.uk/data_elements/activity_treatment_function_code.html?hl=activity%2Ctreatment%2Cfunction%2Ccode\" target=\"\" title=\"\">Activity treatment function code</a> \n                        ",
+                  "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Legal information/Lasting power of attorney for health and welfare or court-appointed deputy (or equivalent)/Person completing record/Specialty@2-build.2.1"
+                },
+                {
+                  "description": "The organisation the person completing the record works for.",
+                  "maximumMultiplicity": "1",
+                  "minimumMultiplicity": "0",
+                  "mro": "R",
+                  "name": "Organisation",
+                  "type": "group",
+                  "valueSets": "\n                             <span style=\"color: rgb(51, 51, 51); font-family: Arial, Helvetica, Geneva, sans-serif; font-size: 12px;\">NHS data dictionary : - </span> \n                             <a href=\"https://www.datadictionary.nhs.uk/supporting_information/organisation_data_service.html\" target=\"\" title=\"\">Organisation data service</a> \n                        ",
+                  "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Legal information/Lasting power of attorney for health and welfare or court-appointed deputy (or equivalent)/Person completing record/Organisation@2-build.2.1"
+                },
+                {
+                  "description": "Professional identifier for the person completing the record e.g. GMC number, HCPC number etc, or the personal identifier used by the local organisation.",
+                  "maximumMultiplicity": "1",
+                  "minimumMultiplicity": "0",
+                  "mro": "R",
+                  "name": "Professional identifier",
+                  "type": "item",
+                  "valueDomain": [
+                    {
+                      "property": [
+                        {
+                          "maxLength": "32"
+                        }
+                      ],
+                      "type": "string"
+                    }
+                  ],
+                  "valueSets": "NHS data dictionary :-  <a href=\"https://datadictionary.nhs.uk/data_elements/professional_registration_entry_identifier.html\" target=\"\" title=\"\">Professional registration identifier</a> \n                        ",
+                  "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Legal information/Lasting power of attorney for health and welfare or court-appointed deputy (or equivalent)/Person completing record/Professional identifier@2-build.2.1"
+                },
+                {
+                  "description": "The date and time the record was completed.",
+                  "maximumMultiplicity": "1",
+                  "minimumMultiplicity": "0",
+                  "mro": "R",
+                  "name": "Date completed",
+                  "type": "item",
+                  "valueDomain": [
+                    {
+                      "property": [
+                        {
+                          "timeStampPrecision": "YMDHM"
+                        }
+                      ],
+                      "type": "datetime"
+                    }
+                  ],
+                  "valueSets": "Date and time.",
+                  "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Legal information/Lasting power of attorney for health and welfare or court-appointed deputy (or equivalent)/Person completing record/Date completed@2-build.2.1"
+                },
+                {
+                  "description": "Contact details of the person completing the record. <br clear=\"none\"/> \n                        ",
+                  "maximumMultiplicity": "1",
+                  "minimumMultiplicity": "0",
+                  "mro": "R",
+                  "name": "Contact details",
+                  "type": "item",
+                  "valueDomain": [
+                    {
+                      "property": [
+                        {
+                          "maxLength": "35"
+                        }
+                      ],
+                      "type": "string"
+                    }
+                  ],
+                  "valueSets": "NHS data dictionary : -  <a href=\"https://datadictionary.nhs.uk/data_elements/uk_telephone_number.html?hl=number\" target=\"\" title=\"\">UK telephone number</a> \n                        ",
+                  "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Legal information/Lasting power of attorney for health and welfare or court-appointed deputy (or equivalent)/Person completing record/Contact details@2-build.2.1"
+                }
+              ],
+              "description": "Details of the person who took the LPA.",
+              "maximumMultiplicity": "1",
+              "minimumMultiplicity": "0",
+              "mro": "R",
+              "name": "Person completing record",
+              "type": "group",
+              "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Legal information/Lasting power of attorney for health and welfare or court-appointed deputy (or equivalent)/Person completing record@2-build.2.1"
+            }
+          ],
+          "description": "Details of the person's LPA record or equivalent",
+          "maximumMultiplicity": "*",
+          "minimumMultiplicity": "0",
+          "mro": "R",
+          "name": "Lasting power of attorney for health and welfare or court-appointed deputy (or equivalent)",
+          "type": "group",
+          "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Legal information/Lasting power of attorney for health and welfare or court-appointed deputy (or equivalent)@2-build.2.1"
+        },
+        {
+          "concept": [
+            {
+              "description": "The date the application was made",
+              "maximumMultiplicity": "1",
+              "minimumMultiplicity": "0",
+              "mro": "R",
+              "name": "Application date",
+              "type": "item",
+              "valueDomain": [
+                {
+                  "property": [
+                    {
+                      "timeStampPrecision": "YMDHM"
+                    }
+                  ],
+                  "type": "datetime"
+                }
+              ],
+              "valueSets": "Date and time",
+              "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Legal information/Deprivation of Liberty Safeguards or equivalent/Application date@2-build.2.1"
+            },
+            {
+              "description": "The status of the DOLs application.",
+              "maximumMultiplicity": "1",
+              "minimumMultiplicity": "0",
+              "mro": "R",
+              "name": "Application status",
+              "type": "item",
+              "valueDomain": [
+                {
+                  "example": [
+                    {
+                      "#text": "Requested",
+                      "type": "valid"
+                    },
+                    {
+                      "#text": "Authorised",
+                      "type": "valid"
+                    }
+                  ],
+                  "property": [
+                    {
+                      "maxLength": "10"
+                    }
+                  ],
+                  "type": "string"
+                }
+              ],
+              "valueSets": "Free text : - Requested or authorised",
+              "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Legal information/Deprivation of Liberty Safeguards or equivalent/Application status@2-build.2.1"
+            },
+            {
+              "description": "Record of Deprivation of Liberty Safeguards (DoLS) or equivalent, including the reason for this.",
+              "maximumMultiplicity": "1",
+              "minimumMultiplicity": "0",
+              "mro": "R",
+              "name": "Deprivation of liberty safeguards or equivalent",
+              "type": "item",
+              "valueDomain": [
+                {
+                  "property": [
+                    {
+                      "maxLength": "150"
+                    }
+                  ],
+                  "type": "text"
+                }
+              ],
+              "valueSets": "Free text",
+              "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Legal information/Deprivation of Liberty Safeguards or equivalent/Deprivation of liberty safeguards or equivalent@2-build.2.1"
+            },
+            {
+              "description": "The date the DOLs was authorised.",
+              "maximumMultiplicity": "1",
+              "minimumMultiplicity": "0",
+              "mro": "R",
+              "name": "Start date of authorisation",
+              "type": "item",
+              "valueDomain": [
+                {
+                  "property": [
+                    {
+                      "timeStampPrecision": "YMDHM"
+                    }
+                  ],
+                  "type": "datetime"
+                }
+              ],
+              "valueSets": "Data and time",
+              "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Legal information/Deprivation of Liberty Safeguards or equivalent/Start date of authorisation@2-build.2.1"
+            },
+            {
+              "description": "The planned or actual end date of authorisation.",
+              "maximumMultiplicity": "1",
+              "minimumMultiplicity": "0",
+              "mro": "R",
+              "name": "Planned or actual end date of authorisation",
+              "type": "item",
+              "valueDomain": [
+                {
+                  "property": [
+                    {
+                      "timeStampPrecision": "YMDHM"
+                    }
+                  ],
+                  "type": "datetime"
+                }
+              ],
+              "valueSets": "Date and time",
+              "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Legal information/Deprivation of Liberty Safeguards or equivalent/Planned or actual end date of authorisation@2-build.2.1"
+            },
+            {
+              "concept": [
+                {
+                  "description": "The name of the professional.",
+                  "maximumMultiplicity": "1",
+                  "minimumMultiplicity": "0",
+                  "mro": "R",
+                  "name": "Name",
+                  "type": "item",
+                  "valueDomain": [
+                    {
+                      "property": [
+                        {
+                          "maxLength": "70"
+                        }
+                      ],
+                      "type": "string"
+                    }
+                  ],
+                  "valueSets": "Free text.",
+                  "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Legal information/Deprivation of Liberty Safeguards or equivalent/Performing professional/Name@2-build.2.1"
+                },
+                {
+                  "description": "The role the professional has in relation to the person e.g. GP, physiotherapist, community nurse, social worker etc",
+                  "maximumMultiplicity": "1",
+                  "minimumMultiplicity": "0",
+                  "mro": "R",
+                  "name": "Role",
+                  "type": "item",
+                  "valueSets": "FHIR value set :-  <a class=\"\" href=\"https://simplifier.net/ukcore/codesystem-ukcore-sdsjobrolename\" target=\"\" title=\"\">SDSjobroletype</a> \n                        ",
+                  "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Legal information/Deprivation of Liberty Safeguards or equivalent/Performing professional/Role@2-build.2.1"
+                },
+                {
+                  "description": "The grade of the professional.",
+                  "maximumMultiplicity": "1",
+                  "minimumMultiplicity": "0",
+                  "mro": "R",
+                  "name": "Grade",
+                  "type": "item",
+                  "valueDomain": [
+                    {
+                      "property": [
+                        {
+                          "maxLength": "150"
+                        }
+                      ],
+                      "type": "text"
+                    }
+                  ],
+                  "valueSets": "Free text",
+                  "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Legal information/Deprivation of Liberty Safeguards or equivalent/Performing professional/Grade@2-build.2.1"
+                },
+                {
+                  "description": "The specialty of the professional e.g. physiotherapy, oncology, mental health etc",
+                  "maximumMultiplicity": "1",
+                  "minimumMultiplicity": "0",
+                  "mro": "R",
+                  "name": "Speciality",
+                  "type": "item",
+                  "valueDomain": [
+                    {
+                      "property": [
+                        {
+                          "maxLength": "3"
+                        }
+                      ],
+                      "type": "string"
+                    }
+                  ],
+                  "valueSets": "NHS data dictionary -  <a href=\"https://datadictionary.nhs.uk/data_elements/activity_treatment_function_code.html?hl=activity%2Ctreatment%2Cfunction%2Ccode\" target=\"\" title=\"\">Activity treatment function code</a> \n                        ",
+                  "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Legal information/Deprivation of Liberty Safeguards or equivalent/Performing professional/Speciality@2-build.2.1"
+                },
+                {
+                  "description": "Professional identifier for the professional e.g. GMC number, HCPC number etc or the personal identifier used by the local organisation.",
+                  "maximumMultiplicity": "1",
+                  "minimumMultiplicity": "0",
+                  "mro": "R",
+                  "name": "Professional identifier",
+                  "type": "item",
+                  "valueDomain": [
+                    {
+                      "property": [
+                        {
+                          "maxLength": "32"
+                        }
+                      ],
+                      "type": "string"
+                    }
+                  ],
+                  "valueSets": "NHS data dictionary : -  <a href=\"https://datadictionary.nhs.uk/data_elements/professional_registration_entry_identifier.html\" target=\"\" title=\"\">Professional registration identifier</a> \n                        ",
+                  "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Legal information/Deprivation of Liberty Safeguards or equivalent/Performing professional/Professional identifier@2-build.2.1"
+                },
+                {
+                  "description": "The name of the organisation the professional works for.",
+                  "maximumMultiplicity": "1",
+                  "minimumMultiplicity": "0",
+                  "mro": "R",
+                  "name": "Organisation",
+                  "type": "group",
+                  "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Legal information/Deprivation of Liberty Safeguards or equivalent/Performing professional/Organisation@2-build.2.1"
+                },
+                {
+                  "description": "Contact details of the professional",
+                  "maximumMultiplicity": "1",
+                  "minimumMultiplicity": "0",
+                  "mro": "R",
+                  "name": "Contact details",
+                  "type": "item",
+                  "valueDomain": [
+                    {
+                      "property": [
+                        {
+                          "maxLength": "35"
+                        }
+                      ],
+                      "type": "string"
+                    }
+                  ],
+                  "valueSets": "NHS data dictionary -  <a href=\"https://datadictionary.nhs.uk/data_elements/uk_telephone_number.html?hl=number\" target=\"\" title=\"\">UK phone number</a> \n                        ",
+                  "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Legal information/Deprivation of Liberty Safeguards or equivalent/Performing professional/Contact details@2-build.2.1"
+                }
+              ],
+              "description": "The professional who applied for the DOLs.",
+              "maximumMultiplicity": "1",
+              "minimumMultiplicity": "0",
+              "mro": "R",
+              "name": "Performing professional",
+              "type": "group",
+              "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Legal information/Deprivation of Liberty Safeguards or equivalent/Performing professional@2-build.2.1"
+            }
+          ],
+          "description": "Details of the person's Deprivation of Liberty Safeguards (DoLS) or equivalent",
+          "maximumMultiplicity": "*",
+          "minimumMultiplicity": "0",
+          "mro": "R",
+          "name": "Deprivation of Liberty Safeguards or equivalent",
+          "type": "group",
+          "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Legal information/Deprivation of Liberty Safeguards or equivalent@2-build.2.1"
+        },
+        {
+          "concept": [
+            {
+              "description": "The date the person was detained.",
+              "maximumMultiplicity": "1",
+              "minimumMultiplicity": "0",
+              "mro": "R",
+              "name": "Section start date",
+              "type": "item",
+              "valueDomain": [
+                {
+                  "property": [
+                    {
+                      "timeStampPrecision": "YMDHM"
+                    }
+                  ],
+                  "type": "datetime"
+                }
+              ],
+              "valueSets": "Date and time",
+              "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Legal information/Mental health act or equivalent status/Section start date@2-build.2.1"
+            },
+            {
+              "description": "The date the person was no longer detained.",
+              "maximumMultiplicity": "1",
+              "minimumMultiplicity": "0",
+              "mro": "R",
+              "name": "Section end date",
+              "type": "item",
+              "valueDomain": [
+                {
+                  "property": [
+                    {
+                      "timeStampPrecision": "YMDHM"
+                    }
+                  ],
+                  "type": "datetime"
+                }
+              ],
+              "valueSets": "Date and time",
+              "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Legal information/Mental health act or equivalent status/Section end date@2-build.2.1"
+            },
+            {
+              "concept": [
+                {
+                  "description": "The coded value for location",
+                  "maximumMultiplicity": "1",
+                  "minimumMultiplicity": "0",
+                  "mro": "R",
+                  "name": "Coded value",
+                  "type": "item",
+                  "valueDomain": [
+                    {
+                      "property": [
+                        {
+                          "maxLength": "9",
+                          "minLength": "3"
+                        }
+                      ],
+                      "type": "string"
+                    }
+                  ],
+                  "valueSets": "NHS data dictionary : -  <a href=\"https://datadictionary.nhs.uk/attributes/organisation_code.html\" target=\"\" title=\"\">Organisation code</a> \n                             <br clear=\"none\"/> \n                             <br clear=\"none\"/> \n                        ",
+                  "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Legal information/Mental health act or equivalent status/Location/Coded value@2-build.2.1"
+                },
+                {
+                  "description": "Free text field to be used if no code is available",
+                  "maximumMultiplicity": "1",
+                  "minimumMultiplicity": "0",
+                  "mro": "R",
+                  "name": "Free text",
+                  "type": "item",
+                  "valueDomain": [
+                    {
+                      "property": [
+                        {
+                          "maxLength": "150"
+                        }
+                      ],
+                      "type": "text"
+                    }
+                  ],
+                  "valueSets": "Free text",
+                  "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Legal information/Mental health act or equivalent status/Location/Free text@2-build.2.1"
+                }
+              ],
+              "description": "The location where the decision to detain the person was made under the mental health act.",
+              "maximumMultiplicity": "1",
+              "minimumMultiplicity": "0",
+              "mro": "R",
+              "name": "Location",
+              "type": "group",
+              "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Legal information/Mental health act or equivalent status/Location@2-build.2.1"
+            },
+            {
+              "concept": [
+                {
+                  "description": "The coded value for mental health act",
+                  "maximumMultiplicity": "1",
+                  "minimumMultiplicity": "0",
+                  "mro": "R",
+                  "name": "Coded value",
+                  "type": "item",
+                  "valueDomain": [
+                    {
+                      "example": [
+                        {
+                          "#text": "Formally detained under Mental Health Act Section 2",
+                          "type": "valid"
+                        }
+                      ],
+                      "property": [
+                        {
+                          "maxLength": "2"
+                        }
+                      ],
+                      "type": "string"
+                    }
+                  ],
+                  "valueSets": "NHS data dictionary: -  <a href=\"https://datadictionary.nhs.uk/data_elements/mental_health_act_legal_status_classification_code.html\" target=\"\" title=\"\">Mental health act legal status classification code</a> \n                        ",
+                  "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Legal information/Mental health act or equivalent status/Mental health act or equivalent status/Coded value@2-build.2.1"
+                },
+                {
+                  "description": "Free text field to be used if no code is available",
+                  "maximumMultiplicity": "1",
+                  "minimumMultiplicity": "0",
+                  "mro": "R",
+                  "name": "Free text",
+                  "type": "item",
+                  "valueDomain": [
+                    {
+                      "property": [
+                        {
+                          "maxLength": "150"
+                        }
+                      ],
+                      "type": "text"
+                    }
+                  ],
+                  "valueSets": "Free text",
+                  "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Legal information/Mental health act or equivalent status/Mental health act or equivalent status/Free text@2-build.2.1"
+                },
+                {
+                  "description": "If person subject to Community Treatment Order or Conditional Discharge (or equivalent) record here.",
+                  "maximumMultiplicity": "1",
+                  "minimumMultiplicity": "0",
+                  "mro": "R",
+                  "name": "Supporting information",
+                  "type": "item",
+                  "valueDomain": [
+                    {
+                      "property": [
+                        {
+                          "maxLength": "150"
+                        }
+                      ],
+                      "type": "text"
+                    }
+                  ],
+                  "valueSets": "NHS data dictionary : -  <a href=\"https://www.datadictionary.nhs.uk/supporting_information/community_treatment_order.html\" target=\"\" title=\"\">Community treatment order</a> \n                        ",
+                  "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Legal information/Mental health act or equivalent status/Mental health act or equivalent status/Supporting information@2-build.2.1"
+                }
+              ],
+              "description": "Record where a person diagnosed with a mental disorder is formally detained under the Mental health act or equivalent, including the section number. If person subject to Community Treatment Order or Conditional Discharge (or equivalent) record here.",
+              "maximumMultiplicity": "1",
+              "minimumMultiplicity": "0",
+              "mro": "R",
+              "name": "Mental health act or equivalent status",
+              "type": "group",
+              "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Legal information/Mental health act or equivalent status/Mental health act or equivalent status@2-build.2.1"
+            },
+            {
+              "concept": [
+                {
+                  "description": "The name of the professional.",
+                  "maximumMultiplicity": "1",
+                  "minimumMultiplicity": "0",
+                  "mro": "R",
+                  "name": "Name",
+                  "type": "item",
+                  "valueDomain": [
+                    {
+                      "property": [
+                        {
+                          "maxLength": "70"
+                        }
+                      ],
+                      "type": "string"
+                    }
+                  ],
+                  "valueSets": "Free text.",
+                  "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Legal information/Mental health act or equivalent status/Performing professional/Name@2-build.2.1"
+                },
+                {
+                  "description": "The role the professional has in relation to the person e.g. GP, physiotherapist, community nurse, social worker etc",
+                  "maximumMultiplicity": "1",
+                  "minimumMultiplicity": "0",
+                  "mro": "R",
+                  "name": "Role",
+                  "type": "item",
+                  "valueSets": "FHIR value set :-  <a class=\"\" href=\"https://simplifier.net/ukcore/codesystem-ukcore-sdsjobrolename\" target=\"\" title=\"\">SDSjobroletype</a> \n                        ",
+                  "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Legal information/Mental health act or equivalent status/Performing professional/Role@2-build.2.1"
+                },
+                {
+                  "description": "The grade of the professional.",
+                  "maximumMultiplicity": "1",
+                  "minimumMultiplicity": "0",
+                  "mro": "R",
+                  "name": "Grade",
+                  "type": "item",
+                  "valueDomain": [
+                    {
+                      "property": [
+                        {
+                          "maxLength": "150"
+                        }
+                      ],
+                      "type": "text"
+                    }
+                  ],
+                  "valueSets": "Free text",
+                  "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Legal information/Mental health act or equivalent status/Performing professional/Grade@2-build.2.1"
+                },
+                {
+                  "description": "The specialty of the professional e.g. physiotherapy, oncology, mental health etc",
+                  "maximumMultiplicity": "1",
+                  "minimumMultiplicity": "0",
+                  "mro": "R",
+                  "name": "Speciality",
+                  "type": "item",
+                  "valueDomain": [
+                    {
+                      "property": [
+                        {
+                          "maxLength": "3"
+                        }
+                      ],
+                      "type": "string"
+                    }
+                  ],
+                  "valueSets": "NHS data dictionary -  <a href=\"https://datadictionary.nhs.uk/data_elements/activity_treatment_function_code.html?hl=activity%2Ctreatment%2Cfunction%2Ccode\" target=\"\" title=\"\">Activity treatment function code</a> \n                        ",
+                  "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Legal information/Mental health act or equivalent status/Performing professional/Speciality@2-build.2.1"
+                },
+                {
+                  "description": "Professional identifier for the professional e.g. GMC number, HCPC number etc or the personal identifier used by the local organisation.",
+                  "maximumMultiplicity": "1",
+                  "minimumMultiplicity": "0",
+                  "mro": "R",
+                  "name": "Professional identifier",
+                  "type": "item",
+                  "valueDomain": [
+                    {
+                      "property": [
+                        {
+                          "maxLength": "32"
+                        }
+                      ],
+                      "type": "string"
+                    }
+                  ],
+                  "valueSets": "NHS data dictionary : -  <a href=\"https://datadictionary.nhs.uk/data_elements/professional_registration_entry_identifier.html\" target=\"\" title=\"\">Professional registration identifier</a> \n                        ",
+                  "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Legal information/Mental health act or equivalent status/Performing professional/Professional identifier@2-build.2.1"
+                },
+                {
+                  "description": "The name of the organisation the professional works for.",
+                  "maximumMultiplicity": "1",
+                  "minimumMultiplicity": "0",
+                  "mro": "R",
+                  "name": "Organisation",
+                  "type": "group",
+                  "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Legal information/Mental health act or equivalent status/Performing professional/Organisation@2-build.2.1"
+                },
+                {
+                  "description": "Contact details of the professional",
+                  "maximumMultiplicity": "1",
+                  "minimumMultiplicity": "0",
+                  "mro": "R",
+                  "name": "Contact details",
+                  "type": "item",
+                  "valueDomain": [
+                    {
+                      "property": [
+                        {
+                          "maxLength": "35"
+                        }
+                      ],
+                      "type": "string"
+                    }
+                  ],
+                  "valueSets": "NHS data dictionary -  <a href=\"https://datadictionary.nhs.uk/data_elements/uk_telephone_number.html?hl=number\" target=\"\" title=\"\">UK phone number</a> \n                        ",
+                  "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Legal information/Mental health act or equivalent status/Performing professional/Contact details@2-build.2.1"
+                }
+              ],
+              "description": "The professional who made the decision to detain the person under the mental health act.",
+              "maximumMultiplicity": "1",
+              "minimumMultiplicity": "0",
+              "mro": "R",
+              "name": "Performing professional",
+              "type": "group",
+              "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Legal information/Mental health act or equivalent status/Performing professional@2-build.2.1"
+            },
+            {
+              "concept": [
+                {
+                  "description": "The name of the person completing the record.",
+                  "maximumMultiplicity": "1",
+                  "minimumMultiplicity": "0",
+                  "mro": "R",
+                  "name": "Name",
+                  "type": "item",
+                  "valueDomain": [
+                    {
+                      "property": [
+                        {
+                          "maxLength": "70"
+                        }
+                      ],
+                      "type": "string"
+                    }
+                  ],
+                  "valueSets": "Free text.",
+                  "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Legal information/Mental health act or equivalent status/Person completing record/Name@2-build.2.1"
+                },
+                {
+                  "description": "The organisational role of the person completing record.",
+                  "maximumMultiplicity": "1",
+                  "minimumMultiplicity": "0",
+                  "mro": "R",
+                  "name": "Role",
+                  "type": "item",
+                  "valueSets": "FHIR value set :-  <a href=\"https://simplifier.net/ukcore/codesystem-ukcore-sdsjobrolename\" target=\"\" title=\"\">SDSjobrole</a> \n                        ",
+                  "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Legal information/Mental health act or equivalent status/Person completing record/Role@2-build.2.1"
+                },
+                {
+                  "description": "The grade of the person completing the record.",
+                  "maximumMultiplicity": "1",
+                  "minimumMultiplicity": "0",
+                  "mro": "R",
+                  "name": "Grade",
+                  "type": "item",
+                  "valueDomain": [
+                    {
+                      "property": [
+                        {
+                          "maxLength": "150"
+                        }
+                      ],
+                      "type": "text"
+                    }
+                  ],
+                  "valueSets": "Free text.",
+                  "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Legal information/Mental health act or equivalent status/Person completing record/Grade@2-build.2.1"
+                },
+                {
+                  "description": "The main specialty of the person completing the record.",
+                  "maximumMultiplicity": "1",
+                  "minimumMultiplicity": "0",
+                  "mro": "R",
+                  "name": "Specialty",
+                  "type": "item",
+                  "valueDomain": [
+                    {
+                      "property": [
+                        {
+                          "maxLength": "3"
+                        }
+                      ],
+                      "type": "string"
+                    }
+                  ],
+                  "valueSets": "NHS data dictionary :-  <a href=\"https://datadictionary.nhs.uk/data_elements/activity_treatment_function_code.html?hl=activity%2Ctreatment%2Cfunction%2Ccode\" target=\"\" title=\"\">Activity treatment function code</a> \n                        ",
+                  "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Legal information/Mental health act or equivalent status/Person completing record/Specialty@2-build.2.1"
+                },
+                {
+                  "description": "The organisation the person completing the record works for.",
+                  "maximumMultiplicity": "1",
+                  "minimumMultiplicity": "0",
+                  "mro": "R",
+                  "name": "Organisation",
+                  "type": "group",
+                  "valueSets": "\n                             <span style=\"color: rgb(51, 51, 51); font-family: Arial, Helvetica, Geneva, sans-serif; font-size: 12px;\">NHS data dictionary : - </span> \n                             <a href=\"https://www.datadictionary.nhs.uk/supporting_information/organisation_data_service.html\" target=\"\" title=\"\">Organisation data service</a> \n                        ",
+                  "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Legal information/Mental health act or equivalent status/Person completing record/Organisation@2-build.2.1"
+                },
+                {
+                  "description": "Professional identifier for the person completing the record e.g. GMC number, HCPC number etc, or the personal identifier used by the local organisation.",
+                  "maximumMultiplicity": "1",
+                  "minimumMultiplicity": "0",
+                  "mro": "R",
+                  "name": "Professional identifier",
+                  "type": "item",
+                  "valueDomain": [
+                    {
+                      "property": [
+                        {
+                          "maxLength": "32"
+                        }
+                      ],
+                      "type": "string"
+                    }
+                  ],
+                  "valueSets": "NHS data dictionary :-  <a href=\"https://datadictionary.nhs.uk/data_elements/professional_registration_entry_identifier.html\" target=\"\" title=\"\">Professional registration identifier</a> \n                        ",
+                  "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Legal information/Mental health act or equivalent status/Person completing record/Professional identifier@2-build.2.1"
+                },
+                {
+                  "description": "The date and time the record was completed.",
+                  "maximumMultiplicity": "1",
+                  "minimumMultiplicity": "0",
+                  "mro": "R",
+                  "name": "Date completed",
+                  "type": "item",
+                  "valueDomain": [
+                    {
+                      "property": [
+                        {
+                          "timeStampPrecision": "YMDHM"
+                        }
+                      ],
+                      "type": "datetime"
+                    }
+                  ],
+                  "valueSets": "Date and time.",
+                  "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Legal information/Mental health act or equivalent status/Person completing record/Date completed@2-build.2.1"
+                },
+                {
+                  "description": "Contact details of the person completing the record. <br clear=\"none\"/> \n                        ",
+                  "maximumMultiplicity": "1",
+                  "minimumMultiplicity": "0",
+                  "mro": "R",
+                  "name": "Contact details",
+                  "type": "item",
+                  "valueDomain": [
+                    {
+                      "property": [
+                        {
+                          "maxLength": "35"
+                        }
+                      ],
+                      "type": "string"
+                    }
+                  ],
+                  "valueSets": "NHS data dictionary : -  <a href=\"https://datadictionary.nhs.uk/data_elements/uk_telephone_number.html?hl=number\" target=\"\" title=\"\">UK telephone number</a> \n                        ",
+                  "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Legal information/Mental health act or equivalent status/Person completing record/Contact details@2-build.2.1"
+                }
+              ],
+              "description": "Details of the person completing the record.",
+              "maximumMultiplicity": "1",
+              "minimumMultiplicity": "0",
+              "mro": "R",
+              "name": "Person completing record",
+              "type": "group",
+              "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Legal information/Mental health act or equivalent status/Person completing record@2-build.2.1"
+            }
+          ],
+          "description": "Details of the persons mental health act record",
+          "maximumMultiplicity": "*",
+          "minimumMultiplicity": "0",
+          "mro": "R",
+          "name": "Mental health act or equivalent status",
+          "type": "group",
+          "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Legal information/Mental health act or equivalent status@2-build.2.1"
+        },
+        {
+          "concept": [
+            {
+              "description": "The date the ADRT was recorded.",
+              "maximumMultiplicity": "1",
+              "minimumMultiplicity": "0",
+              "mro": "R",
+              "name": "Date",
+              "type": "item",
+              "valueDomain": [
+                {
+                  "property": [
+                    {
+                      "timeStampPrecision": "YMD"
+                    }
+                  ],
+                  "type": "date"
+                }
+              ],
+              "valueSets": "Date",
+              "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Legal information/Advance decision to refuse treatment (ADRT)/Date@2-build.2.1"
+            },
+            {
+              "concept": [
+                {
+                  "description": "The coded value of location",
+                  "maximumMultiplicity": "1",
+                  "minimumMultiplicity": "0",
+                  "mro": "R",
+                  "name": "Coded value",
+                  "type": "item",
+                  "valueDomain": [
+                    {
+                      "property": [
+                        {
+                          "maxLength": "5",
+                          "minLength": "3"
+                        }
+                      ],
+                      "type": "string"
+                    }
+                  ],
+                  "valueSets": "NHS data dictionary : -  <a href=\"https://www.datadictionary.nhs.uk/data_dictionary/attributes/o/org/organisation_code_de.asp?shownav=1\" target=\"\" title=\"\">Organisation data service</a> \n                        ",
+                  "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Legal information/Advance decision to refuse treatment (ADRT)/Location/Coded value@2-build.2.1"
+                },
+                {
+                  "description": "Free text field to be used if no coded text available",
+                  "maximumMultiplicity": "1",
+                  "minimumMultiplicity": "0",
+                  "mro": "R",
+                  "name": "Free text",
+                  "type": "item",
+                  "valueDomain": [
+                    {
+                      "property": [
+                        {
+                          "maxLength": "150"
+                        }
+                      ],
+                      "type": "text"
+                    }
+                  ],
+                  "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Legal information/Advance decision to refuse treatment (ADRT)/Location/Free text@2-build.2.1"
+                }
+              ],
+              "description": "The location where the ADRT was recorded.",
+              "maximumMultiplicity": "1",
+              "minimumMultiplicity": "0",
+              "mro": "R",
+              "name": "Location",
+              "type": "group",
+              "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Legal information/Advance decision to refuse treatment (ADRT)/Location@2-build.2.1"
+            },
+            {
+              "concept": [
+                {
+                  "description": "The coded value for advance decision to refuse treatment.",
+                  "maximumMultiplicity": "1",
+                  "minimumMultiplicity": "0",
+                  "mro": "R",
+                  "name": "Coded value",
+                  "type": "item",
+                  "valueSets": "SNOMED CT:- ^ <a href=\"https://termbrowser.nhs.uk/?perspective=full&conceptId1=999000561000001109&edition=uk-edition&release=&server=https://termbrowser.nhs.uk/sct-browser-api/snomed&langRefset=999001261000000100,999000691000001104\" target=\"\" title=\"\">999002181000000105</a>  |Advance decision to refuse treatment preference findings simple reference set (foundation metadata concept)|",
+                  "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Legal information/Advance decision to refuse treatment (ADRT)/Advance decision to refuse treatment/Coded value@2-build.2.1"
+                },
+                {
+                  "description": "Free text field to be used if no code is available",
+                  "maximumMultiplicity": "1",
+                  "minimumMultiplicity": "0",
+                  "mro": "R",
+                  "name": "Free text",
+                  "type": "item",
+                  "valueDomain": [
+                    {
+                      "property": [
+                        {
+                          "maxLength": "150"
+                        }
+                      ],
+                      "type": "text"
+                    }
+                  ],
+                  "valueSets": "Free text",
+                  "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Legal information/Advance decision to refuse treatment (ADRT)/Advance decision to refuse treatment/Free text@2-build.2.1"
+                }
+              ],
+              "description": "A record of an advance decision to refuse one or more specific types of future treatment, made by a person who had capacity at the time of recording the decision. The decision only applies when the person no longer has the capacity to consent to or refuse the specific treatment being considered. An ADRT must be in writing, signed and witnessed. If the ADRT is refusing life-sustaining treatment it must state specifically that the treatment is refused even if the person\u2019s life is at risk.",
+              "maximumMultiplicity": "1",
+              "minimumMultiplicity": "0",
+              "mro": "R",
+              "name": "Advance decision to refuse treatment",
+              "type": "group",
+              "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Legal information/Advance decision to refuse treatment (ADRT)/Advance decision to refuse treatment@2-build.2.1"
+            },
+            {
+              "concept": [
+                {
+                  "description": "The name of the professional.",
+                  "maximumMultiplicity": "1",
+                  "minimumMultiplicity": "0",
+                  "mro": "R",
+                  "name": "Name",
+                  "type": "item",
+                  "valueDomain": [
+                    {
+                      "property": [
+                        {
+                          "maxLength": "70"
+                        }
+                      ],
+                      "type": "string"
+                    }
+                  ],
+                  "valueSets": "Free text.",
+                  "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Legal information/Advance decision to refuse treatment (ADRT)/Performing professional/Name@2-build.2.1"
+                },
+                {
+                  "description": "The role the professional has in relation to the person e.g. GP, physiotherapist, community nurse, social worker etc",
+                  "maximumMultiplicity": "1",
+                  "minimumMultiplicity": "0",
+                  "mro": "R",
+                  "name": "Role",
+                  "type": "item",
+                  "valueSets": "FHIR value set :-  <a class=\"\" href=\"https://simplifier.net/ukcore/codesystem-ukcore-sdsjobrolename\" target=\"\" title=\"\">SDSjobroletype</a> \n                        ",
+                  "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Legal information/Advance decision to refuse treatment (ADRT)/Performing professional/Role@2-build.2.1"
+                },
+                {
+                  "description": "The grade of the professional.",
+                  "maximumMultiplicity": "1",
+                  "minimumMultiplicity": "0",
+                  "mro": "R",
+                  "name": "Grade",
+                  "type": "item",
+                  "valueDomain": [
+                    {
+                      "property": [
+                        {
+                          "maxLength": "150"
+                        }
+                      ],
+                      "type": "text"
+                    }
+                  ],
+                  "valueSets": "Free text",
+                  "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Legal information/Advance decision to refuse treatment (ADRT)/Performing professional/Grade@2-build.2.1"
+                },
+                {
+                  "description": "The specialty of the professional e.g. physiotherapy, oncology, mental health etc",
+                  "maximumMultiplicity": "1",
+                  "minimumMultiplicity": "0",
+                  "mro": "R",
+                  "name": "Speciality",
+                  "type": "item",
+                  "valueDomain": [
+                    {
+                      "property": [
+                        {
+                          "maxLength": "3"
+                        }
+                      ],
+                      "type": "string"
+                    }
+                  ],
+                  "valueSets": "NHS data dictionary -  <a href=\"https://datadictionary.nhs.uk/data_elements/activity_treatment_function_code.html?hl=activity%2Ctreatment%2Cfunction%2Ccode\" target=\"\" title=\"\">Activity treatment function code</a> \n                        ",
+                  "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Legal information/Advance decision to refuse treatment (ADRT)/Performing professional/Speciality@2-build.2.1"
+                },
+                {
+                  "description": "Professional identifier for the professional e.g. GMC number, HCPC number etc or the personal identifier used by the local organisation.",
+                  "maximumMultiplicity": "1",
+                  "minimumMultiplicity": "0",
+                  "mro": "R",
+                  "name": "Professional identifier",
+                  "type": "item",
+                  "valueDomain": [
+                    {
+                      "property": [
+                        {
+                          "maxLength": "32"
+                        }
+                      ],
+                      "type": "string"
+                    }
+                  ],
+                  "valueSets": "NHS data dictionary : -  <a href=\"https://datadictionary.nhs.uk/data_elements/professional_registration_entry_identifier.html\" target=\"\" title=\"\">Professional registration identifier</a> \n                        ",
+                  "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Legal information/Advance decision to refuse treatment (ADRT)/Performing professional/Professional identifier@2-build.2.1"
+                },
+                {
+                  "description": "The name of the organisation the professional works for.",
+                  "maximumMultiplicity": "1",
+                  "minimumMultiplicity": "0",
+                  "mro": "R",
+                  "name": "Organisation",
+                  "type": "group",
+                  "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Legal information/Advance decision to refuse treatment (ADRT)/Performing professional/Organisation@2-build.2.1"
+                },
+                {
+                  "description": "Contact details of the professional",
+                  "maximumMultiplicity": "1",
+                  "minimumMultiplicity": "0",
+                  "mro": "R",
+                  "name": "Contact details",
+                  "type": "item",
+                  "valueDomain": [
+                    {
+                      "property": [
+                        {
+                          "maxLength": "35"
+                        }
+                      ],
+                      "type": "string"
+                    }
+                  ],
+                  "valueSets": "NHS data dictionary -  <a href=\"https://datadictionary.nhs.uk/data_elements/uk_telephone_number.html?hl=number\" target=\"\" title=\"\">UK phone number</a> \n                        ",
+                  "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Legal information/Advance decision to refuse treatment (ADRT)/Performing professional/Contact details@2-build.2.1"
+                }
+              ],
+              "description": "The professional who recorded the ADRT",
+              "maximumMultiplicity": "1",
+              "minimumMultiplicity": "0",
+              "mro": "R",
+              "name": "Performing professional",
+              "type": "group",
+              "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Legal information/Advance decision to refuse treatment (ADRT)/Performing professional@2-build.2.1"
+            },
+            {
+              "concept": [
+                {
+                  "description": "The name of the person completing the record.",
+                  "maximumMultiplicity": "1",
+                  "minimumMultiplicity": "0",
+                  "mro": "R",
+                  "name": "Name",
+                  "type": "item",
+                  "valueDomain": [
+                    {
+                      "property": [
+                        {
+                          "maxLength": "70"
+                        }
+                      ],
+                      "type": "string"
+                    }
+                  ],
+                  "valueSets": "Free text.",
+                  "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Legal information/Advance decision to refuse treatment (ADRT)/Person completing record/Name@2-build.2.1"
+                },
+                {
+                  "description": "The organisational role of the person completing record.",
+                  "maximumMultiplicity": "1",
+                  "minimumMultiplicity": "0",
+                  "mro": "R",
+                  "name": "Role",
+                  "type": "item",
+                  "valueSets": "FHIR value set :-  <a href=\"https://simplifier.net/ukcore/codesystem-ukcore-sdsjobrolename\" target=\"\" title=\"\">SDSjobrole</a> \n                        ",
+                  "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Legal information/Advance decision to refuse treatment (ADRT)/Person completing record/Role@2-build.2.1"
+                },
+                {
+                  "description": "The grade of the person completing the record.",
+                  "maximumMultiplicity": "1",
+                  "minimumMultiplicity": "0",
+                  "mro": "R",
+                  "name": "Grade",
+                  "type": "item",
+                  "valueDomain": [
+                    {
+                      "property": [
+                        {
+                          "maxLength": "150"
+                        }
+                      ],
+                      "type": "text"
+                    }
+                  ],
+                  "valueSets": "Free text.",
+                  "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Legal information/Advance decision to refuse treatment (ADRT)/Person completing record/Grade@2-build.2.1"
+                },
+                {
+                  "description": "The main specialty of the person completing the record.",
+                  "maximumMultiplicity": "1",
+                  "minimumMultiplicity": "0",
+                  "mro": "R",
+                  "name": "Specialty",
+                  "type": "item",
+                  "valueDomain": [
+                    {
+                      "property": [
+                        {
+                          "maxLength": "3"
+                        }
+                      ],
+                      "type": "string"
+                    }
+                  ],
+                  "valueSets": "NHS data dictionary :-  <a href=\"https://datadictionary.nhs.uk/data_elements/activity_treatment_function_code.html?hl=activity%2Ctreatment%2Cfunction%2Ccode\" target=\"\" title=\"\">Activity treatment function code</a> \n                        ",
+                  "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Legal information/Advance decision to refuse treatment (ADRT)/Person completing record/Specialty@2-build.2.1"
+                },
+                {
+                  "description": "The organisation the person completing the record works for.",
+                  "maximumMultiplicity": "1",
+                  "minimumMultiplicity": "0",
+                  "mro": "R",
+                  "name": "Organisation",
+                  "type": "group",
+                  "valueSets": "\n                             <span style=\"color: rgb(51, 51, 51); font-family: Arial, Helvetica, Geneva, sans-serif; font-size: 12px;\">NHS data dictionary : - </span> \n                             <a href=\"https://www.datadictionary.nhs.uk/supporting_information/organisation_data_service.html\" target=\"\" title=\"\">Organisation data service</a> \n                        ",
+                  "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Legal information/Advance decision to refuse treatment (ADRT)/Person completing record/Organisation@2-build.2.1"
+                },
+                {
+                  "description": "Professional identifier for the person completing the record e.g. GMC number, HCPC number etc, or the personal identifier used by the local organisation.",
+                  "maximumMultiplicity": "1",
+                  "minimumMultiplicity": "0",
+                  "mro": "R",
+                  "name": "Professional identifier",
+                  "type": "item",
+                  "valueDomain": [
+                    {
+                      "property": [
+                        {
+                          "maxLength": "32"
+                        }
+                      ],
+                      "type": "string"
+                    }
+                  ],
+                  "valueSets": "NHS data dictionary :-  <a href=\"https://datadictionary.nhs.uk/data_elements/professional_registration_entry_identifier.html\" target=\"\" title=\"\">Professional registration identifier</a> \n                        ",
+                  "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Legal information/Advance decision to refuse treatment (ADRT)/Person completing record/Professional identifier@2-build.2.1"
+                },
+                {
+                  "description": "The date and time the record was completed.",
+                  "maximumMultiplicity": "1",
+                  "minimumMultiplicity": "0",
+                  "mro": "R",
+                  "name": "Date completed",
+                  "type": "item",
+                  "valueDomain": [
+                    {
+                      "property": [
+                        {
+                          "timeStampPrecision": "YMDHM"
+                        }
+                      ],
+                      "type": "datetime"
+                    }
+                  ],
+                  "valueSets": "Date and time.",
+                  "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Legal information/Advance decision to refuse treatment (ADRT)/Person completing record/Date completed@2-build.2.1"
+                },
+                {
+                  "description": "Contact details of the person completing the record. <br clear=\"none\"/> \n                        ",
+                  "maximumMultiplicity": "1",
+                  "minimumMultiplicity": "0",
+                  "mro": "R",
+                  "name": "Contact details",
+                  "type": "item",
+                  "valueDomain": [
+                    {
+                      "property": [
+                        {
+                          "maxLength": "35"
+                        }
+                      ],
+                      "type": "string"
+                    }
+                  ],
+                  "valueSets": "NHS data dictionary : -  <a href=\"https://datadictionary.nhs.uk/data_elements/uk_telephone_number.html?hl=number\" target=\"\" title=\"\">UK telephone number</a> \n                        ",
+                  "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Legal information/Advance decision to refuse treatment (ADRT)/Person completing record/Contact details@2-build.2.1"
+                }
+              ],
+              "description": "Details of the person who recorded the ADRT.",
+              "maximumMultiplicity": "1",
+              "minimumMultiplicity": "0",
+              "mro": "R",
+              "name": "Person completing record",
+              "type": "group",
+              "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Legal information/Advance decision to refuse treatment (ADRT)/Person completing record@2-build.2.1"
+            }
+          ],
+          "description": "Details of the person's ADRT status.",
+          "maximumMultiplicity": "1",
+          "minimumMultiplicity": "0",
+          "mro": "R",
+          "name": "Advance decision to refuse treatment (ADRT)",
+          "type": "group",
+          "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Legal information/Advance decision to refuse treatment (ADRT)@2-build.2.1"
+        }
+      ],
+      "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Legal information@2-build.2.1",
+      "description": "<p>The legal information relating to the person.</p>",
+      "implementationGuidance": "<p><br></p>",
+      "informationType": "",
+      "isComponent": true,
+      "maximumMultiplicity": "1",
+      "minimumMultiplicity": "0",
+      "mro": "R",
+      "name": "Legal information",
+      "relationshipType": "neither",
+      "type": "group",
+      "valueSets": ""
     }
   ]
 }
