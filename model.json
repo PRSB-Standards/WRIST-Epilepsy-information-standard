@@ -7276,6 +7276,624 @@
       "relationshipType": "neither",
       "type": "group",
       "valueSets": ""
+    },
+    {
+      "concept": [
+        {
+          "concept": [
+            {
+              "description": "The date of referral",
+              "maximumMultiplicity": "1",
+              "minimumMultiplicity": "0",
+              "mro": "R",
+              "name": "Date",
+              "type": "item",
+              "valueDomain": [
+                {
+                  "property": [
+                    {
+                      "timeStampPrecision": "YMDHM"
+                    }
+                  ],
+                  "type": "datetime"
+                }
+              ],
+              "valueSets": "Date and time",
+              "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Referral details/Referral details record entry/Date@2-build.2.1"
+            },
+            {
+              "concept": [
+                {
+                  "description": "The name of the referrer.",
+                  "maximumMultiplicity": "1",
+                  "minimumMultiplicity": "0",
+                  "mro": "R",
+                  "name": "Name",
+                  "type": "item",
+                  "valueDomain": [
+                    {
+                      "property": [
+                        {
+                          "maxLength": "70"
+                        }
+                      ],
+                      "type": "string"
+                    }
+                  ],
+                  "valueSets": "Free text",
+                  "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Referral details/Referral details record entry/Referrer details/Name@2-build.2.1"
+                },
+                {
+                  "description": "Role of the referrer.",
+                  "maximumMultiplicity": "1",
+                  "minimumMultiplicity": "0",
+                  "mro": "R",
+                  "name": "Role",
+                  "type": "item",
+                  "valueSets": "FHIR value set : -  <a href=\"https://simplifier.net/ukcore/codesystem-ukcore-sdsjobrolename\" target=\"\" title=\"\">sdsjobrole</a> \n                        ",
+                  "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Referral details/Referral details record entry/Referrer details/Role@2-build.2.1"
+                },
+                {
+                  "description": "The grade of the referrer.",
+                  "maximumMultiplicity": "1",
+                  "minimumMultiplicity": "0",
+                  "mro": "R",
+                  "name": "Grade",
+                  "type": "item",
+                  "valueDomain": [
+                    {
+                      "property": [
+                        {
+                          "maxLength": "150"
+                        }
+                      ],
+                      "type": "text"
+                    }
+                  ],
+                  "valueSets": "Free text",
+                  "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Referral details/Referral details record entry/Referrer details/Grade@2-build.2.1"
+                },
+                {
+                  "description": "The team or department of the referrer.",
+                  "maximumMultiplicity": "1",
+                  "minimumMultiplicity": "0",
+                  "mro": "R",
+                  "name": "Team",
+                  "type": "item",
+                  "valueDomain": [
+                    {
+                      "property": [
+                        {
+                          "maxLength": "150"
+                        }
+                      ],
+                      "type": "text"
+                    }
+                  ],
+                  "valueSets": "Free text",
+                  "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Referral details/Referral details record entry/Referrer details/Team@2-build.2.1"
+                },
+                {
+                  "description": "The specialty of the referrer.",
+                  "maximumMultiplicity": "1",
+                  "minimumMultiplicity": "0",
+                  "mro": "R",
+                  "name": "Specialty",
+                  "type": "item",
+                  "valueDomain": [
+                    {
+                      "property": [
+                        {
+                          "maxLength": "3"
+                        }
+                      ],
+                      "type": "string"
+                    }
+                  ],
+                  "valueSets": "NHS data dictionary -  <a href=\"https://datadictionary.nhs.uk/data_elements/activity_treatment_function_code.html?hl=activity%2Ctreatment%2Cfunction%2Ccode\" target=\"\" title=\"\">Activity treatment function code</a> \n                        ",
+                  "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Referral details/Referral details record entry/Referrer details/Specialty@2-build.2.1"
+                },
+                {
+                  "concept": [
+                    {
+                      "description": "The coded value for service",
+                      "maximumMultiplicity": "1",
+                      "minimumMultiplicity": "0",
+                      "mro": "R",
+                      "name": "Coded value",
+                      "type": "item",
+                      "valueSets": "SNOMED CT: -\u00a01127531000000102 |Services simple reference set (foundation metadata concept)|",
+                      "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Referral details/Referral details record entry/Referrer details/Service/Coded value@2-build.2.1"
+                    },
+                    {
+                      "description": "Free text field to be used if no code is available",
+                      "maximumMultiplicity": "1",
+                      "minimumMultiplicity": "0",
+                      "mro": "R",
+                      "name": "Free text",
+                      "type": "item",
+                      "valueDomain": [
+                        {
+                          "property": [
+                            {
+                              "maxLength": "150"
+                            }
+                          ],
+                          "type": "text"
+                        }
+                      ],
+                      "valueSets": "Free text",
+                      "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Referral details/Referral details record entry/Referrer details/Service/Free text@2-build.2.1"
+                    }
+                  ],
+                  "description": "The service of the referrer.",
+                  "maximumMultiplicity": "1",
+                  "minimumMultiplicity": "0",
+                  "mro": "R",
+                  "name": "Service",
+                  "type": "group",
+                  "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Referral details/Referral details record entry/Referrer details/Service@2-build.2.1"
+                },
+                {
+                  "concept": [
+                    {
+                      "description": "The coded value for organisation code",
+                      "maximumMultiplicity": "1",
+                      "minimumMultiplicity": "0",
+                      "mro": "R",
+                      "name": "Coded value",
+                      "type": "item",
+                      "valueDomain": [
+                        {
+                          "property": [
+                            {
+                              "maxLength": "5",
+                              "minLength": "3"
+                            }
+                          ],
+                          "type": "string"
+                        }
+                      ],
+                      "valueSets": "NHS data dictionary : -  <a href=\"https://www.datadictionary.nhs.uk/data_dictionary/nhs_business_definitions/o/organisation_data_service_de.asp?shownav=1\" target=\"\" title=\"\">Organisation data service</a> \n                            ",
+                      "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Referral details/Referral details record entry/Referrer details/Organisation/Coded value@2-build.2.1"
+                    },
+                    {
+                      "description": "Free text field to be used if no code is available",
+                      "maximumMultiplicity": "1",
+                      "minimumMultiplicity": "0",
+                      "mro": "R",
+                      "name": "Free text",
+                      "type": "item",
+                      "valueDomain": [
+                        {
+                          "property": [
+                            {
+                              "maxLength": "150"
+                            }
+                          ],
+                          "type": "text"
+                        }
+                      ],
+                      "valueSets": "Free text",
+                      "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Referral details/Referral details record entry/Referrer details/Organisation/Free text@2-build.2.1"
+                    }
+                  ],
+                  "description": "The organisation of the referrer.",
+                  "maximumMultiplicity": "1",
+                  "minimumMultiplicity": "0",
+                  "mro": "R",
+                  "name": "Organisation",
+                  "type": "group",
+                  "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Referral details/Referral details record entry/Referrer details/Organisation@2-build.2.1"
+                },
+                {
+                  "description": "The contact details of the referrer.",
+                  "maximumMultiplicity": "1",
+                  "minimumMultiplicity": "0",
+                  "mro": "R",
+                  "name": "Contact details",
+                  "type": "item",
+                  "valueDomain": [
+                    {
+                      "property": [
+                        {
+                          "maxLength": "70"
+                        }
+                      ],
+                      "type": "string"
+                    }
+                  ],
+                  "valueSets": "Free text",
+                  "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Referral details/Referral details record entry/Referrer details/Contact details@2-build.2.1"
+                }
+              ],
+              "description": "The details of the referrer that is making the referral or the transfer. <br clear=\"none\"/> \n                         <br clear=\"none\"/> This could be the person, GP surgery, department, specialty, sub-specialty, educational institution, mental health team, care home etc.",
+              "maximumMultiplicity": "1",
+              "minimumMultiplicity": "0",
+              "mro": "R",
+              "name": "Referrer details",
+              "type": "group",
+              "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Referral details/Referral details record entry/Referrer details@2-build.2.1"
+            },
+            {
+              "description": "The method in which a referral is sent and received. This may be a letter, email, transcript of a telephone conversation, Choose and Book, in person (self-referral) etc.",
+              "maximumMultiplicity": "1",
+              "minimumMultiplicity": "0",
+              "mro": "R",
+              "name": "Referral method",
+              "type": "item",
+              "valueSets": "Allow National Codes only\n                             <ol>\n                            <li>Fax</li>\n                            <li>Phone</li>\n                            <li>Secure Messaging</li>\n                            <li>Secure Email</li>\n                            <li>Letter</li>\n                            <li>NHS E-Referral Service</li>\n                            <li>Self referral</li>\n                        </ol> \n                    ",
+              "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Referral details/Referral details record entry/Referral method@2-build.2.1"
+            },
+            {
+              "concept": [
+                {
+                  "description": "The coded value for reason for referral",
+                  "maximumMultiplicity": "1",
+                  "minimumMultiplicity": "0",
+                  "mro": "R",
+                  "name": "Coded value",
+                  "type": "item",
+                  "valueSets": "SNOMED CT :- ^1127581000000103 |Health issues simple reference set|",
+                  "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Referral details/Referral details record entry/Reason for referral/Coded value@2-build.2.1"
+                },
+                {
+                  "description": "Free text field to be used if no code is available",
+                  "maximumMultiplicity": "1",
+                  "minimumMultiplicity": "0",
+                  "mro": "R",
+                  "name": "Free text",
+                  "type": "item",
+                  "valueDomain": [
+                    {
+                      "property": [
+                        {
+                          "maxLength": "150"
+                        }
+                      ],
+                      "type": "text"
+                    }
+                  ],
+                  "valueSets": "Free text",
+                  "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Referral details/Referral details record entry/Reason for referral/Free text@2-build.2.1"
+                }
+              ],
+              "description": "The reason for the referral, e.g. diagnosis, treatment, transfer of care due to relocation, investigation, second opinion, management of the patient (e.g. palliative care), or carer's concerns.",
+              "maximumMultiplicity": "1",
+              "minimumMultiplicity": "0",
+              "mro": "R",
+              "name": "Reason for referral",
+              "type": "group",
+              "valueSets": "Free text",
+              "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Referral details/Referral details record entry/Reason for referral@2-build.2.1"
+            },
+            {
+              "concept": [
+                {
+                  "description": "This is the priority of a request for services",
+                  "maximumMultiplicity": "1",
+                  "minimumMultiplicity": "0",
+                  "mro": "R",
+                  "name": "Urgency",
+                  "type": "item",
+                  "valueDomain": [
+                    {
+                      "property": [
+                        {
+                          "maxLength": "1"
+                        }
+                      ],
+                      "type": "string"
+                    }
+                  ],
+                  "valueSets": "NHS data dictionary : -  <a class=\"\" href=\"https://www.datadictionary.nhs.uk/data_dictionary/attributes/p/prio/priority_type_de.asp?shownav=1\" target=\"\" title=\"\">PRIORITY TYPE</a> \n                        ",
+                  "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Referral details/Referral details record entry/Clinical urgency of referral/Urgency@2-build.2.1"
+                },
+                {
+                  "description": "The reason for urgency of referral if not routine.",
+                  "maximumMultiplicity": "1",
+                  "minimumMultiplicity": "0",
+                  "mro": "R",
+                  "name": "Reason for urgency of referral",
+                  "type": "item",
+                  "valueDomain": [
+                    {
+                      "property": [
+                        {
+                          "maxLength": "150"
+                        }
+                      ],
+                      "type": "text"
+                    }
+                  ],
+                  "valueSets": "Free text",
+                  "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Referral details/Referral details record entry/Clinical urgency of referral/Reason for urgency of referral@2-build.2.1"
+                }
+              ],
+              "description": "The details of the clinical urgency of referral",
+              "maximumMultiplicity": "1",
+              "minimumMultiplicity": "0",
+              "mro": "R",
+              "name": "Clinical urgency of referral",
+              "type": "group",
+              "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Referral details/Referral details record entry/Clinical urgency of referral@2-build.2.1"
+            },
+            {
+              "concept": [
+                {
+                  "description": "Name of person the referral is to be sent to.",
+                  "maximumMultiplicity": "1",
+                  "minimumMultiplicity": "0",
+                  "mro": "R",
+                  "name": "Name",
+                  "type": "item",
+                  "valueDomain": [
+                    {
+                      "property": [
+                        {
+                          "maxLength": "70"
+                        }
+                      ],
+                      "type": "string"
+                    }
+                  ],
+                  "valueSets": "Free text",
+                  "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Referral details/Referral details record entry/Referral to/Name@2-build.2.1"
+                },
+                {
+                  "description": "Role of person where the referral is to be sent to.",
+                  "maximumMultiplicity": "1",
+                  "minimumMultiplicity": "0",
+                  "mro": "R",
+                  "name": "Role",
+                  "type": "item",
+                  "valueSets": "FHIR value set : -  <a href=\"https://simplifier.net/ukcore/codesystem-ukcore-sdsjobrolename\" target=\"\" title=\"\">sdsjobrole</a> \n                        ",
+                  "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Referral details/Referral details record entry/Referral to/Role@2-build.2.1"
+                },
+                {
+                  "description": "The grade of the person where the referral is sent to.",
+                  "maximumMultiplicity": "1",
+                  "minimumMultiplicity": "0",
+                  "mro": "R",
+                  "name": "Grade",
+                  "type": "item",
+                  "valueDomain": [
+                    {
+                      "property": [
+                        {
+                          "maxLength": "150"
+                        }
+                      ],
+                      "type": "text"
+                    }
+                  ],
+                  "valueSets": "Free text",
+                  "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Referral details/Referral details record entry/Referral to/Grade@2-build.2.1"
+                },
+                {
+                  "description": "The team or department of the person where the referral is being sent to",
+                  "maximumMultiplicity": "1",
+                  "minimumMultiplicity": "0",
+                  "mro": "R",
+                  "name": "Team",
+                  "type": "item",
+                  "valueDomain": [
+                    {
+                      "property": [
+                        {
+                          "maxLength": "150"
+                        }
+                      ],
+                      "type": "text"
+                    }
+                  ],
+                  "valueSets": "Free text.",
+                  "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Referral details/Referral details record entry/Referral to/Team@2-build.2.1"
+                },
+                {
+                  "description": "The specialty the referral is being sent to e.g. physiotherapy, oncology, mental health etc",
+                  "maximumMultiplicity": "1",
+                  "minimumMultiplicity": "0",
+                  "mro": "R",
+                  "name": "Specialty",
+                  "type": "item",
+                  "valueDomain": [
+                    {
+                      "property": [
+                        {
+                          "maxLength": "3"
+                        }
+                      ],
+                      "type": "string"
+                    }
+                  ],
+                  "valueSets": "NHS data dictionary -  <a>Activity treatment function code</a> \n                        ",
+                  "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Referral details/Referral details record entry/Referral to/Specialty@2-build.2.1"
+                },
+                {
+                  "concept": [
+                    {
+                      "description": "The coded value for service",
+                      "maximumMultiplicity": "1",
+                      "minimumMultiplicity": "0",
+                      "mro": "R",
+                      "name": "Coded value",
+                      "type": "item",
+                      "valueSets": "SNOMED CT: -\u00a01127531000000102 |Services simple reference set (foundation metadata concept)|",
+                      "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Referral details/Referral details record entry/Referral to/Service/Coded value@2-build.2.1"
+                    },
+                    {
+                      "description": "Free text field to be used if no code is available",
+                      "maximumMultiplicity": "1",
+                      "minimumMultiplicity": "0",
+                      "mro": "R",
+                      "name": "Free text",
+                      "type": "item",
+                      "valueDomain": [
+                        {
+                          "property": [
+                            {
+                              "maxLength": "150"
+                            }
+                          ],
+                          "type": "text"
+                        }
+                      ],
+                      "valueSets": "Free text",
+                      "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Referral details/Referral details record entry/Referral to/Service/Free text@2-build.2.1"
+                    }
+                  ],
+                  "description": "The service of where the referral is sent to.",
+                  "maximumMultiplicity": "1",
+                  "minimumMultiplicity": "0",
+                  "mro": "R",
+                  "name": "Service",
+                  "type": "group",
+                  "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Referral details/Referral details record entry/Referral to/Service@2-build.2.1"
+                },
+                {
+                  "concept": [
+                    {
+                      "description": "The coded value for organisation",
+                      "maximumMultiplicity": "1",
+                      "minimumMultiplicity": "0",
+                      "mro": "R",
+                      "name": "Coded value",
+                      "type": "item",
+                      "valueDomain": [
+                        {
+                          "property": [
+                            {
+                              "maxLength": "5",
+                              "minLength": "3"
+                            }
+                          ],
+                          "type": "string"
+                        }
+                      ],
+                      "valueSets": "NHS data dictionary :-  <a href=\"https://www.datadictionary.nhs.uk/data_dictionary/attributes/o/org/organisation_code_de.asp?shownav=1\" target=\"\" title=\"\">Organisation data service</a> \n                            ",
+                      "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Referral details/Referral details record entry/Referral to/Organisation/Coded value@2-build.2.1"
+                    },
+                    {
+                      "description": "Free text field to be used if no code is available",
+                      "maximumMultiplicity": "1",
+                      "minimumMultiplicity": "0",
+                      "mro": "R",
+                      "name": "Free text",
+                      "type": "item",
+                      "valueDomain": [
+                        {
+                          "property": [
+                            {
+                              "maxLength": "150"
+                            }
+                          ],
+                          "type": "text"
+                        }
+                      ],
+                      "valueSets": "Free text",
+                      "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Referral details/Referral details record entry/Referral to/Organisation/Free text@2-build.2.1"
+                    }
+                  ],
+                  "description": "The organisation of where the referral is to be sent.",
+                  "maximumMultiplicity": "1",
+                  "minimumMultiplicity": "0",
+                  "mro": "R",
+                  "name": "Organisation",
+                  "type": "group",
+                  "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Referral details/Referral details record entry/Referral to/Organisation@2-build.2.1"
+                },
+                {
+                  "description": "The contact details of where the referral is to be sent.",
+                  "maximumMultiplicity": "1",
+                  "minimumMultiplicity": "0",
+                  "mro": "R",
+                  "name": "Contact details",
+                  "type": "item",
+                  "valueDomain": [
+                    {
+                      "property": [
+                        {
+                          "maxLength": "70"
+                        }
+                      ],
+                      "type": "string"
+                    }
+                  ],
+                  "valueSets": "Free text.",
+                  "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Referral details/Referral details record entry/Referral to/Contact details@2-build.2.1"
+                }
+              ],
+              "description": "Details of where the referral is to be sent. <br clear=\"none\"/> \n                         <br clear=\"none\"/> If not an individual, this could be a service, e.g. GP surgery, department, specialty, subspecialty, educational institution, mental health etc.",
+              "maximumMultiplicity": "1",
+              "minimumMultiplicity": "0",
+              "mro": "R",
+              "name": "Referral to",
+              "type": "group",
+              "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Referral details/Referral details record entry/Referral to@2-build.2.1"
+            },
+            {
+              "description": "Records whether specific criteria required for referral, to a particular service, have been met (may be nationally or locally determined). This field is used to outline which criteria have been met where a service has indicated specific criteria and to explain the rationale for referral where criteria have not been met.",
+              "maximumMultiplicity": "1",
+              "minimumMultiplicity": "0",
+              "mro": "R",
+              "name": "Referral criteria",
+              "type": "item",
+              "valueDomain": [
+                {
+                  "property": [
+                    {
+                      "maxLength": "150"
+                    }
+                  ],
+                  "type": "text"
+                }
+              ],
+              "valueSets": "Free text",
+              "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Referral details/Referral details record entry/Referral criteria@2-build.2.1"
+            },
+            {
+              "description": "Name of professional to be communicated with, if not the referrer",
+              "maximumMultiplicity": "1",
+              "minimumMultiplicity": "0",
+              "mro": "R",
+              "name": "Return response to",
+              "type": "item",
+              "valueDomain": [
+                {
+                  "property": [
+                    {
+                      "maxLength": "70"
+                    }
+                  ],
+                  "type": "string"
+                }
+              ],
+              "valueSets": "Free text.",
+              "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Referral details/Referral details record entry/Return response to@2-build.2.1"
+            }
+          ],
+          "description": "This is the referral details record entry. There may be 0 to many record entries under a section. Each record entry is made up of a number of elements or data items.",
+          "maximumMultiplicity": "*",
+          "minimumMultiplicity": "0",
+          "mro": "R",
+          "name": "Referral details record entry",
+          "type": "group",
+          "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Referral details/Referral details record entry@2-build.2.1"
+        }
+      ],
+      "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Referral details@2-build.2.1",
+      "description": "<p>The details of the referral.</p>",
+      "implementationGuidance": "<p><br></p>",
+      "informationType": "",
+      "isComponent": true,
+      "maximumMultiplicity": "1",
+      "minimumMultiplicity": "0",
+      "mro": "R",
+      "name": "Referral details",
+      "relationshipType": "neither",
+      "type": "group",
+      "valueSets": ""
     }
   ]
 }
