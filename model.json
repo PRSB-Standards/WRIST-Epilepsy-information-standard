@@ -6942,6 +6942,122 @@
       "relationshipType": "neither",
       "type": "group",
       "valueSets": ""
+    },
+    {
+      "concept": [
+        {
+          "concept": [
+            {
+              "description": "The name of the personal contact.",
+              "maximumMultiplicity": "1",
+              "minimumMultiplicity": "1",
+              "mro": "M",
+              "name": "Name",
+              "type": "item",
+              "valueDomain": [
+                {
+                  "property": [
+                    {
+                      "maxLength": "70"
+                    }
+                  ],
+                  "type": "string"
+                }
+              ],
+              "valueSets": "Free text",
+              "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Personal contacts/Personal contacts record entry/Name@2-build.2.1"
+            },
+            {
+              "description": "The relationship the personal contact has to the person, e.g. father, grandmother, family friend etc.",
+              "maximumMultiplicity": "1",
+              "minimumMultiplicity": "0",
+              "mro": "R",
+              "name": "Relationship",
+              "type": "item",
+              "valueSets": "FHIR value set : -  <a href=\"https://www.hl7.org/fhir/valueset-relatedperson-relationshiptype.html\" target=\"\" title=\"\">Related person</a> \n                    ",
+              "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Personal contacts/Personal contacts record entry/Relationship@2-build.2.1"
+            },
+            {
+              "description": "Additional roles the person performs on behalf of the other (e.g. Carer, Next of Kin, Emergency Contact, Dependent, etc.)",
+              "maximumMultiplicity": "1",
+              "minimumMultiplicity": "0",
+              "mro": "R",
+              "name": "Relationship type",
+              "type": "item",
+              "valueDomain": [
+                {
+                  "property": [
+                    {
+                      "maxLength": "150"
+                    }
+                  ],
+                  "type": "text"
+                }
+              ],
+              "valueSets": "Free text",
+              "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Personal contacts/Personal contacts record entry/Relationship type@2-build.2.1"
+            },
+            {
+              "description": "Contact details of the personal contact (e.g. telephone number, email address etc.)",
+              "maximumMultiplicity": "*",
+              "minimumMultiplicity": "0",
+              "mro": "R",
+              "name": "Contact details",
+              "type": "item",
+              "valueDomain": [
+                {
+                  "property": [
+                    {
+                      "maxLength": "70"
+                    }
+                  ],
+                  "type": "string"
+                }
+              ],
+              "valueSets": "Free Text",
+              "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Personal contacts/Personal contacts record entry/Contact details@2-build.2.1"
+            },
+            {
+              "description": "Notes on the significance of the personal contact to the person.",
+              "maximumMultiplicity": "1",
+              "minimumMultiplicity": "0",
+              "name": "Comments",
+              "type": "item",
+              "valueDomain": [
+                {
+                  "property": [
+                    {
+                      "maxLength": "150"
+                    }
+                  ],
+                  "type": "text"
+                }
+              ],
+              "valueSets": "Free text",
+              "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Personal contacts/Personal contacts record entry/Comments@2-build.2.1"
+            }
+          ],
+          "description": "This is personal contacts record entry. There may be 0 to many record entries under a section. Each record entry is made up of a number of elements or data items.",
+          "maximumMultiplicity": "*",
+          "minimumMultiplicity": "0",
+          "mro": "R",
+          "name": "Personal contacts record entry",
+          "type": "group",
+          "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Personal contacts/Personal contacts record entry@2-build.2.1"
+        }
+      ],
+      "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Personal contacts@2-build.2.1",
+      "description": "<p>The details of the individual's personal contacts.</p>",
+      "implementationGuidance": "<p><br></p>",
+      "informationType": "",
+      "isComponent": true,
+      "maximumMultiplicity": "1",
+      "minimumMultiplicity": "0",
+      "mro": "R",
+      "name": "Personal contacts",
+      "relationshipType": "neither",
+      "type": "group",
+      "valueSets": ""
     }
   ]
 }
