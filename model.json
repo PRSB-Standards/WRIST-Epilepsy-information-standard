@@ -8797,17 +8797,24 @@
               "valueSets": "1127601000000107 |Healthcare matters simple reference set| SNOMED_CT"
             },
             {
-              "name": "",
-              "mro": "",
-              "description": "",
+              "name": "Seizure type",
+              "mro": "R",
+              "description": "<p>The type of seizure experienced by the person.</p>",
               "valueSets": "",
-              "implementationGuidance": "",
+              "implementationGuidance": "<p><br></p>",
               "informationType": "",
-              "minimumMultiplicity": "",
-              "maximumMultiplicity": "",
+              "minimumMultiplicity": "0",
+              "maximumMultiplicity": "1",
               "derivedFrom": "",
               "isComponent": false,
-              "concept": []
+              "concept": [],
+              "type": "",
+              "valueDomain": [
+                {
+                  "type": "PRSB-Standards/WRIST-IPS-Datatypes/Coded Element@1-build.0.1"
+                }
+              ],
+              "relationshipType": "specialisation"
             },
             {
               "concept": [],
