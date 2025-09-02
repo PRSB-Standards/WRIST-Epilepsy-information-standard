@@ -8879,14 +8879,14 @@
             {
               "concept": [],
               "derivedFrom": "PRSB-Standards/WRIST-Problem-list/Problem list/Problem list record entry/Onset date@1-build.0.1",
-              "description": "<p>A date or estimated date that the problem began, recurred or relapsed.<span class=\"ql-cursor\">\ufeff</span></p>",
+              "description": "<p>A date or estimated date that the problem began, recurred or relapsed.\ufeff</p>",
               "implementationGuidance": "<p><br></p>",
               "informationType": "",
               "isComponent": false,
               "maximumMultiplicity": "1",
               "minimumMultiplicity": "0",
               "mro": "R",
-              "name": "Onset date",
+              "name": "Date of first seizure",
               "relationshipType": "specialisation",
               "type": "",
               "valueDomain": [
