@@ -8985,7 +8985,7 @@
               "informationType": "",
               "minimumMultiplicity": "0",
               "maximumMultiplicity": "*",
-              "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Procedures and therapies/Procedure record entry/Comment@2-build.2.1",
+              "derivedFrom": "",
               "isComponent": false,
               "concept": [],
               "type": "",
