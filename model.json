@@ -8977,6 +8977,19 @@
               "valueSets": "SNOMED_CT:\"^999000821000000100 |Laterality simple reference set|\" "
             },
             {
+              "name": "",
+              "mro": "",
+              "description": "",
+              "valueSets": "",
+              "implementationGuidance": "",
+              "informationType": "",
+              "minimumMultiplicity": "",
+              "maximumMultiplicity": "",
+              "derivedFrom": "",
+              "isComponent": false,
+              "concept": []
+            },
+            {
               "concept": [],
               "derivedFrom": "PRSB-Standards/WRIST-Problem-list/Problem list/Problem list record entry/Staging system@1-build.0.1",
               "description": "<p>The staging system or classification.</p>",
