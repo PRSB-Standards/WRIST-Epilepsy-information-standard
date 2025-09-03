@@ -9137,17 +9137,24 @@
               "valueSets": ""
             },
             {
-              "name": "",
-              "mro": "",
-              "description": "",
+              "name": "Associated treatments",
+              "mro": "O",
+              "description": "<p><br></p>",
               "valueSets": "",
-              "implementationGuidance": "",
+              "implementationGuidance": "<p><br></p>",
               "informationType": "",
               "minimumMultiplicity": "",
               "maximumMultiplicity": "",
               "derivedFrom": "",
               "isComponent": false,
-              "concept": []
+              "concept": [],
+              "type": "",
+              "valueDomain": [
+                {
+                  "type": "PRSB-Standards/WRIST-core-information-standard/Medications and medical devices@2-build.2.1"
+                }
+              ],
+              "relationshipType": "specialisation"
             },
             {
               "concept": [],
