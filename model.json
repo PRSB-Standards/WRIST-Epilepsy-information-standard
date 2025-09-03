@@ -25710,5 +25710,20 @@
       "type": "group",
       "valueSets": ""
     }
-  ]
+  ],
+  "ui": {
+    "viewer": {
+      "columnWidths": {
+        "cardinality": 120,
+        "data_type": 140,
+        "derived_from": 220,
+        "description": 343,
+        "implementation_guidance": 472,
+        "information_type": 160,
+        "mro": 80,
+        "name": 220,
+        "value_sets": 200
+      }
+    }
+  }
 }
