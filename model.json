@@ -8977,17 +8977,24 @@
               "valueSets": "SNOMED_CT:\"^999000821000000100 |Laterality simple reference set|\" "
             },
             {
-              "name": "",
-              "mro": "",
-              "description": "",
+              "name": "Findings associated with the problem",
+              "mro": "R",
+              "description": "<p>The information about a person's seizure being associated with any other event/ condition. E.g. Sleep seizure,&nbsp;menstrual cycle association,&nbsp;seizure related injury, incontinence.</p>",
               "valueSets": "",
-              "implementationGuidance": "",
+              "implementationGuidance": "<p><br></p>",
               "informationType": "",
-              "minimumMultiplicity": "",
-              "maximumMultiplicity": "",
-              "derivedFrom": "",
+              "minimumMultiplicity": "0",
+              "maximumMultiplicity": "*",
+              "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Procedures and therapies/Procedure record entry/Comment@2-build.2.1",
               "isComponent": false,
-              "concept": []
+              "concept": [],
+              "type": "",
+              "valueDomain": [
+                {
+                  "type": "PRSB-Standards/WRIST-IPS-Datatypes/Coded Element@1-build.0.1"
+                }
+              ],
+              "relationshipType": "specialisation"
             },
             {
               "concept": [],
