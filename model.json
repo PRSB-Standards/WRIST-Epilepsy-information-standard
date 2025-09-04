@@ -8778,8 +8778,8 @@
           "concept": [
             {
               "name": "Problem",
-              "mro": "",
-              "description": "<p>\t</p><p>A condition that needs addressing and so is important for every professional to know about when seeing the person. Problems may include diagnoses, symptoms, and social or behavioural issues.</p>",
+              "mro": "M",
+              "description": "<p><br></p><p>A condition that needs addressing and so is important for every professional to know about when seeing the person. Problems may include diagnoses, symptoms, and social or behavioural issues.</p>",
               "valueSets": "SNOMED_CT:\"1127601000000107 |Healthcare matters simple reference set|\" ",
               "implementationGuidance": "<p><br></p>",
               "informationType": "",
