@@ -8980,7 +8980,7 @@
               "name": "Findings associated with the problem",
               "mro": "R",
               "description": "<p>The information about a person's seizure being associated with any other event/ condition. E.g. Sleep seizure,&nbsp;menstrual cycle association,&nbsp;seizure related injury, incontinence.</p>",
-              "valueSets": "",
+              "valueSets": "SNOMED_CT:\"1127601000000107 |Healthcare matters simple reference set|\" ",
               "implementationGuidance": "<p><br></p>",
               "informationType": "",
               "minimumMultiplicity": "0",
