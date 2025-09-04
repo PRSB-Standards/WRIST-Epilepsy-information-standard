@@ -8820,7 +8820,7 @@
               "name": "Seizure type",
               "mro": "R",
               "description": "<p>The type of seizure experienced by the person.</p>",
-              "valueSets": "",
+              "valueSets": "SNOMED_CT:\"1208966001|Generalised onset motor epileptic seizure\" ",
               "implementationGuidance": "<p><br></p>",
               "informationType": "",
               "minimumMultiplicity": "0",
