@@ -8797,17 +8797,24 @@
               "valueSets": "SNOMED_CT:\"1127601000000107 |Healthcare matters simple reference set|\" <br>SNOMED_CT:\"724988000|Epilepsy co-occurrent and due to degenerative brain disorder|\" <br>SNOMED_CT:\"724992007|Epilepsy co-occurrent and due to dementia|\" <br>SNOMED_CT:\"724991000| Epilepsy co-occurrent and due to demyelinating disorder|\" <br>SNOMED_CT:\"724989008|Epilepsy co-occurrent and due to mesial temporal sclerosis|\" <br>SNOMED_CT:\"1163529009|Epilepsy due to bacterial endocarditis|\" <br>SNOMED_CT:\"724787004|Epilepsy due to cerebrovascular accident|\" <br>SNOMED_CT:\"1260377005|Epilepsy due to congenital anomaly of brain|\" <br>SNOMED_CT:\"1260374003|Epilepsy due to congenital infectious disease|\" <br>SNOMED_CT:\"1260375002|Epilepsy due to glucose transporter protein type 1 deficiency syndrome|\" <br>SNOMED_CT:\"724990004|Epilepsy due to immune disorder|\" <br>SNOMED_CT:\"724549005|Epilepsy due to infectious disease of central nervous system|\" <br>SNOMED_CT:\"860804005|Epilepsy due to infectious encephalitis|\" <br>SNOMED_CT:\"860806007|Epilepsy due to infectious meningitis|\" <br>SNOMED_CT:\"724789001|Epilepsy due to intracranial tumour|\" <br>SNOMED_CT:\"860815000|Epilepsy due to neonatal central nervous system infection|\" <br>SNOMED_CT:\"1163527006|Epilepsy due to parasitic disease|\" <br>SNOMED_CT:\"724786008|Epilepsy due to perinatal anoxic-ischaemic brain injury|\" <br>SNOMED_CT:\"1260371006|Epilepsy due to perinatal cerebral ischaemia|\" <br>SNOMED_CT:\"1260369006|Epilepsy due to perinatal intraventricular haemorrhage|\" <br>SNOMED_CT:\"1260370007|Epilepsy due to perinatal periventricular haemorrhage|\" <br>SNOMED_CT:\"1260368003|Epilepsy due to Rasmussen syndrome|\" <br>SNOMED_CT:\"10750951000119106|Epilepsy in mother complicating childbirth|\" <br>SNOMED_CT:\"100941000119100|Epilepsy in mother complicating pregnancy|\" <br>SNOMED_CT:\"1179360000|Fetal epilepsy due to perinatal stroke|\" <br>SNOMED_CT:\"1179359005|Maternal epilepsy due to perinatal stroke|\" <br>SNOMED_CT:\"1179547007|Neonatal epilepsy due to perinatal stroke|\" <br>SNOMED_CT:\"698764006|Post infectious grand mal epilepsy|\" <br>SNOMED_CT:\"698767004|Post-cerebrovascular accident epilepsy|\" <br>SNOMED_CT:\"75023009|Post-traumatic epilepsy|\" "
             },
             {
-              "name": "",
-              "mro": "",
-              "description": "",
-              "valueSets": "",
-              "implementationGuidance": "",
+              "name": "Epilepsy syndrome",
+              "mro": "R",
+              "description": "<p>The type of epilepsy syndrome the person has been diagnosed with.</p>",
+              "valueSets": "SNOMED_CT:\"230410004 |Self-limited familial neonatal epilepsy|\" ",
+              "implementationGuidance": "<p><br></p>",
               "informationType": "",
-              "minimumMultiplicity": "",
-              "maximumMultiplicity": "",
+              "minimumMultiplicity": "0",
+              "maximumMultiplicity": "1",
               "derivedFrom": "",
               "isComponent": false,
-              "concept": []
+              "concept": [],
+              "type": "",
+              "valueDomain": [
+                {
+                  "type": ""
+                }
+              ],
+              "relationshipType": "specialisation"
             },
             {
               "name": "Seizure type",
