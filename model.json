@@ -8822,7 +8822,7 @@
               "name": "Epilepsy syndrome",
               "mro": "R",
               "description": "<p>The type of epilepsy syndrome the person has been diagnosed with.</p>",
-              "valueSets": "SNOMED_CT:\"230410004 |Self-limited familial neonatal epilepsy|\" ",
+              "valueSets": "",
               "implementationGuidance": "<p><br></p>",
               "informationType": "",
               "minimumMultiplicity": "0",
@@ -8836,7 +8836,9 @@
                   "type": ""
                 }
               ],
-              "relationshipType": "specialisation"
+              "relationshipType": "specialisation",
+              "vs_label": "SNOMED_CT:\"230410004 |Self-limited familial neonatal epilepsy|\"",
+              "vs_text": ""
             },
             {
               "name": "Seizure type",
