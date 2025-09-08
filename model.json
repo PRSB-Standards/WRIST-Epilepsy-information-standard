@@ -8833,7 +8833,7 @@
               "type": "",
               "valueDomain": [
                 {
-                  "type": ""
+                  "type": "PRSB-Standards/WRIST-IPS-Datatypes/Coded Element@1-build.0.1"
                 }
               ],
               "relationshipType": "specialisation",
