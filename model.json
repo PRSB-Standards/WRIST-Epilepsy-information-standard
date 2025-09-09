@@ -9318,6 +9318,19 @@
               "relationshipType": "specialisation"
             },
             {
+              "name": "",
+              "mro": "",
+              "description": "",
+              "valueSets": "",
+              "implementationGuidance": "",
+              "informationType": "",
+              "minimumMultiplicity": "",
+              "maximumMultiplicity": "",
+              "derivedFrom": "",
+              "isComponent": false,
+              "concept": []
+            },
+            {
               "concept": [],
               "derivedFrom": "PRSB-Standards/WRIST-Problem-list/Problem list/Problem list record entry/Problem verification status@1-build.0.3",
               "description": "<p>Provides an indication of the degree to which a condition has been verified by clinical evidence i.e. confirmed, unconfirmed (including provisional or differential), refuted or entered-in-error.</p>",
