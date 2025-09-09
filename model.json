@@ -8834,9 +8834,9 @@
               "relationshipType": "specialisation"
             },
             {
-              "name": "Epilepsy syndrome",
+              "name": "Epilepsy syndrome type",
               "mro": "",
-              "description": "<p>The type of epilepsy syndrome the person has been diagnosed with.</p><p><br></p>",
+              "description": "<p>The type of epilepsy syndrome the person has been diagnosed with.</p>",
               "valueSets": [
                 {
                   "prefix": "SNOMED_CT",
@@ -8846,7 +8846,7 @@
                   "popUpText": "<p><br></p>"
                 }
               ],
-              "implementationGuidance": "<p><br></p>",
+              "implementationGuidance": "<p>The value sets are outlined should align with the International League Against Epilepsy (ILAE) syndrome types list.</p><p><br></p>",
               "informationType": "",
               "minimumMultiplicity": "0",
               "maximumMultiplicity": "",
