@@ -9290,17 +9290,32 @@
               "relationshipType": "specialisation"
             },
             {
-              "name": "",
+              "name": "Epilepsy syndrome",
               "mro": "",
-              "description": "",
-              "valueSets": "",
-              "implementationGuidance": "",
+              "description": "<p>The type of epilepsy syndrome the person has been diagnosed with.</p><p><br></p>",
+              "valueSets": [
+                {
+                  "prefix": "SNOMED_CT",
+                  "use": "",
+                  "text": "230410004 |Self-limited familial neonatal epilepsy (disorder)|",
+                  "expression": "",
+                  "popUpText": "<p><br></p>"
+                }
+              ],
+              "implementationGuidance": "<p><br></p>",
               "informationType": "",
-              "minimumMultiplicity": "",
+              "minimumMultiplicity": "0",
               "maximumMultiplicity": "",
               "derivedFrom": "",
               "isComponent": false,
-              "concept": []
+              "concept": [],
+              "type": "",
+              "valueDomain": [
+                {
+                  "type": ""
+                }
+              ],
+              "relationshipType": "specialisation"
             },
             {
               "concept": [],
