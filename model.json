@@ -9455,7 +9455,7 @@
               "maximumMultiplicity": "1",
               "minimumMultiplicity": "0",
               "mro": "R",
-              "name": "End date",
+              "name": "Date of last seizure ",
               "relationshipType": "specialisation",
               "type": "",
               "valueDomain": [
