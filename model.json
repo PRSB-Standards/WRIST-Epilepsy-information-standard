@@ -8806,6 +8806,481 @@
               ]
             },
             {
+              "concept": [],
+              "derivedFrom": "PRSB-Standards/WRIST-Problem-list/Problem list/Problem list record entry/Problem verification status@1-build.0.3",
+              "description": "<p>Provides an indication of the degree to which a condition has been verified by clinical evidence i.e. confirmed, unconfirmed (including provisional or differential), refuted or entered-in-error.</p>",
+              "implementationGuidance": "<p><br></p>",
+              "informationType": "",
+              "isComponent": false,
+              "maximumMultiplicity": "1",
+              "minimumMultiplicity": "0",
+              "mro": "R",
+              "name": "Problem verification status",
+              "relationshipType": "specialisation",
+              "type": "",
+              "valueDomain": [
+                {
+                  "type": "PRSB-Standards/WRIST-IPS-Datatypes/Coded Element@1-build.0.1"
+                }
+              ],
+              "valueSets": [
+                {
+                  "expression": "https://hl7.org/fhir/R4/valueset-condition-ver-status.html",
+                  "popUpText": "",
+                  "prefix": "FHIR",
+                  "prefixDisplay": "FHIR",
+                  "text": "https://hl7.org/fhir/R4/valueset-condition-ver-status.html",
+                  "use": ""
+                }
+              ]
+            },
+            {
+              "concept": [],
+              "derivedFrom": "PRSB-Standards/WRIST-Problem-list/Problem list/Problem list record entry/Date diagnosis made@1-build.0.3",
+              "description": "<p>The date a diagnosis was made.</p>",
+              "implementationGuidance": "<p><br></p>",
+              "informationType": "",
+              "isComponent": false,
+              "maximumMultiplicity": "1",
+              "minimumMultiplicity": "0",
+              "mro": "",
+              "name": "Date diagnosis made",
+              "relationshipType": "specialisation",
+              "type": "",
+              "valueDomain": [
+                {
+                  "type": "PRSB-Standards/WRIST-IPS-Datatypes/Date Time@1-build.0.1"
+                }
+              ],
+              "valueSets": [],
+              "vs_label": "",
+              "vs_text": ""
+            },
+            {
+              "concept": [],
+              "derivedFrom": "PRSB-Standards/WRIST-Problem-list/Problem list/Problem list record entry/Problem clinical status@1-build.0.3",
+              "description": "<p>The clinical status of the problem i.e. active (including recurrence or relapse) or inactive (including in remission or resolved).</p>",
+              "implementationGuidance": "<p><br></p>",
+              "informationType": "",
+              "isComponent": false,
+              "maximumMultiplicity": "1",
+              "minimumMultiplicity": "0",
+              "mro": "R",
+              "name": "Problem clinical status",
+              "relationshipType": "specialisation",
+              "type": "",
+              "valueDomain": [
+                {
+                  "type": "PRSB-Standards/WRIST-IPS-Datatypes/Coded Element@1-build.0.1"
+                }
+              ],
+              "valueSets": [
+                {
+                  "expression": "https://hl7.org/fhir/R4/valueset-condition-clinical.html",
+                  "popUpText": "",
+                  "prefix": "FHIR",
+                  "prefixDisplay": "FHIR",
+                  "text": "https://hl7.org/fhir/R4/valueset-condition-clinical.html",
+                  "use": ""
+                }
+              ]
+            },
+            {
+              "concept": [],
+              "derivedFrom": "PRSB-Standards/WRIST-Problem-list/Problem list/Problem list record entry/Onset date@1-build.0.3",
+              "description": "<p>A date or estimated date that the problem began, recurred or relapsed.<span class=\"ql-cursor\">\ufeff</span></p>",
+              "implementationGuidance": "<p><br></p>",
+              "informationType": "",
+              "isComponent": false,
+              "maximumMultiplicity": "1",
+              "minimumMultiplicity": "0",
+              "mro": "R",
+              "name": "Onset date",
+              "relationshipType": "specialisation",
+              "type": "",
+              "valueDomain": [
+                {
+                  "type": "PRSB-Standards/WRIST-IPS-Datatypes/Date Time@1-build.0.1"
+                }
+              ],
+              "valueSets": []
+            },
+            {
+              "concept": [],
+              "derivedFrom": "PRSB-Standards/WRIST-Problem-list/Problem list/Problem list record entry/End date@1-build.0.3",
+              "description": "<p><span style=\"color: rgb(36, 36, 36);\">The date or estimated date the problem was resolved or in remission.</span></p>",
+              "implementationGuidance": "<p><br></p>",
+              "informationType": "",
+              "isComponent": false,
+              "maximumMultiplicity": "1",
+              "minimumMultiplicity": "0",
+              "mro": "R",
+              "name": "End date",
+              "relationshipType": "specialisation",
+              "type": "",
+              "valueDomain": [
+                {
+                  "type": "PRSB-Standards/WRIST-IPS-Datatypes/Date Time@1-build.0.1"
+                }
+              ],
+              "valueSets": []
+            },
+            {
+              "concept": [],
+              "derivedFrom": "PRSB-Standards/WRIST-Problem-list/Problem list/Problem list record entry/Severity@1-build.0.3",
+              "description": "<p>The severity of the problem.&nbsp;</p>",
+              "implementationGuidance": "<p><br></p>",
+              "informationType": "",
+              "isComponent": false,
+              "maximumMultiplicity": "1",
+              "minimumMultiplicity": "0",
+              "mro": "R",
+              "name": "Severity",
+              "relationshipType": "specialisation",
+              "type": "",
+              "valueDomain": [
+                {
+                  "type": "PRSB-Standards/WRIST-IPS-Datatypes/Coded Element@1-build.0.1"
+                }
+              ],
+              "valueSets": [
+                {
+                  "expression": "",
+                  "popUpText": "<p><br></p>",
+                  "prefix": "SNOMED_CT",
+                  "prefixDisplay": "SNOMED CT",
+                  "text": "255604002 |Mild| OR 6736007 |Moderate| OR 24484000 |Severe| OR 764991000000104 |Unknown severity|",
+                  "use": ""
+                }
+              ],
+              "vs_label": "SNOMED_CT:\"764991000000104 |Unknown severity|\"",
+              "vs_text": ""
+            },
+            {
+              "concept": [],
+              "derivedFrom": "PRSB-Standards/WRIST-Problem-list/Problem list/Problem list record entry/Body site@1-build.0.3",
+              "description": "<p><span style=\"color: rgb(36, 36, 36);\">The body site relevant to the problem.</span></p>",
+              "implementationGuidance": "<p><br></p>",
+              "informationType": "",
+              "isComponent": false,
+              "maximumMultiplicity": "1",
+              "minimumMultiplicity": "0",
+              "mro": "R",
+              "name": "Body site",
+              "relationshipType": "specialisation",
+              "type": "",
+              "valueDomain": [
+                {
+                  "type": "PRSB-Standards/WRIST-IPS-Datatypes/Coded Element@1-build.0.1"
+                }
+              ],
+              "valueSets": [
+                {
+                  "expression": "",
+                  "popUpText": "<p><br></p>",
+                  "prefix": "SNOMED_CT",
+                  "prefixDisplay": "SNOMED CT",
+                  "text": "<123037004 |Body structure|",
+                  "use": ""
+                }
+              ]
+            },
+            {
+              "concept": [],
+              "derivedFrom": "PRSB-Standards/WRIST-Problem-list/Problem list/Problem list record entry/Laterality@1-build.0.3",
+              "description": "<p>The laterality of the problem (left or right or bilateral).</p>",
+              "implementationGuidance": "<p><br></p>",
+              "informationType": "",
+              "isComponent": false,
+              "maximumMultiplicity": "1",
+              "minimumMultiplicity": "0",
+              "mro": "R",
+              "name": "Laterality",
+              "relationshipType": "specialisation",
+              "type": "item",
+              "valueDomain": [
+                {
+                  "type": "PRSB-Standards/WRIST-IPS-Datatypes/Coded Element@1-build.0.1"
+                }
+              ],
+              "valueSets": [
+                {
+                  "expression": "",
+                  "popUpText": "<p><br></p>",
+                  "prefix": "SNOMED_CT",
+                  "prefixDisplay": "SNOMED CT",
+                  "text": "^999000821000000100 |Laterality simple reference set|",
+                  "use": ""
+                }
+              ]
+            },
+            {
+              "concept": [],
+              "derivedFrom": "PRSB-Standards/WRIST-Problem-list/Problem list/Problem list record entry/Staging system@1-build.0.3",
+              "description": "<p>The staging system or classification.</p>",
+              "implementationGuidance": "<p><br></p>",
+              "informationType": "",
+              "isComponent": false,
+              "maximumMultiplicity": "1",
+              "minimumMultiplicity": "0",
+              "mro": "R",
+              "name": "Staging system",
+              "relationshipType": "specialisation",
+              "type": "item",
+              "valueDomain": [
+                {
+                  "type": "PRSB-Standards/WRIST-IPS-Datatypes/Coded Element@1-build.0.1"
+                }
+              ],
+              "valueSets": [
+                {
+                  "expression": "",
+                  "popUpText": "<p><br></p>",
+                  "prefix": "SNOMED_CT",
+                  "prefixDisplay": "SNOMED CT",
+                  "text": "<254291000 |Staging and scales|",
+                  "use": ""
+                }
+              ]
+            },
+            {
+              "concept": [],
+              "derivedFrom": "PRSB-Standards/WRIST-Problem-list/Problem list/Problem list record entry/Stage of disease@1-build.0.3",
+              "description": "<p>The stage of the disease where relevant.</p>",
+              "implementationGuidance": "<p>E.g. &lt;64572001 |Disease| that include a stage of disease should be entered as a problem not here. E.g. 733139004 |Acute kidney failure stage 3 (disorder)| or 700378005 |Chronic kidney disease stage 3A (disorder)|</p>",
+              "informationType": "",
+              "isComponent": false,
+              "maximumMultiplicity": "1",
+              "minimumMultiplicity": "0",
+              "mro": "R",
+              "name": "Stage of disease",
+              "relationshipType": "specialisation",
+              "type": "",
+              "valueDomain": [
+                {
+                  "type": "PRSB-Standards/WRIST-IPS-Datatypes/Coded Element@1-build.0.1"
+                }
+              ],
+              "valueSets": [
+                {
+                  "expression": "",
+                  "popUpText": "<p><br></p>",
+                  "prefix": "SNOMED_CT",
+                  "prefixDisplay": "SNOMED CT",
+                  "text": "<261612004 \u2502Stages\u2502",
+                  "use": ""
+                }
+              ]
+            },
+            {
+              "concept": [],
+              "derivedFrom": "PRSB-Standards/WRIST-Problem-list/Problem list/Problem list record entry/Grading system@1-build.0.3",
+              "description": "<p>The grading system or classification.</p>",
+              "implementationGuidance": "<p>E.g. &lt; 371469007 |Histologic grade of neoplasm (observable entity)| + 277457005 |Histological grading systems (staging scale)|</p>",
+              "informationType": "",
+              "isComponent": false,
+              "maximumMultiplicity": "1",
+              "minimumMultiplicity": "0",
+              "mro": "R",
+              "name": "Grading system",
+              "relationshipType": "specialisation",
+              "type": "item",
+              "valueDomain": [
+                {
+                  "type": "PRSB-Standards/WRIST-IPS-Datatypes/Coded Element@1-build.0.1"
+                }
+              ],
+              "valueSets": []
+            },
+            {
+              "concept": [],
+              "derivedFrom": "PRSB-Standards/WRIST-Problem-list/Problem list/Problem list record entry/Grade of disease@1-build.0.3",
+              "description": "<p>The grade of the disease where relevant.</p>",
+              "implementationGuidance": "<p><br></p>",
+              "informationType": "",
+              "isComponent": false,
+              "maximumMultiplicity": "1",
+              "minimumMultiplicity": "0",
+              "mro": "R",
+              "name": "Grade of disease",
+              "relationshipType": "specialisation",
+              "type": "item",
+              "valueDomain": [
+                {
+                  "type": "PRSB-Standards/WRIST-IPS-Datatypes/Coded Element@1-build.0.1"
+                }
+              ],
+              "valueSets": [
+                {
+                  "expression": "",
+                  "popUpText": "<p><br></p>",
+                  "prefix": "SNOMED_CT",
+                  "prefixDisplay": "SNOMED CT",
+                  "text": "<384740007 |Finding of grade|",
+                  "use": ""
+                }
+              ]
+            },
+            {
+              "concept": [],
+              "derivedFrom": "PRSB-Standards/WRIST-Problem-list/Problem list/Problem list record entry/Problem status@1-build.0.3",
+              "description": "<p>The status of the problem. This can be either active or inactive.</p>",
+              "implementationGuidance": "<p><br></p>",
+              "informationType": "",
+              "isComponent": false,
+              "maximumMultiplicity": "1",
+              "minimumMultiplicity": "0",
+              "mro": "O",
+              "name": "Problem status",
+              "relationshipType": "specialisation",
+              "type": "item",
+              "valueDomain": [
+                {
+                  "type": "PRSB-Standards/WRIST-IPS-Datatypes/Coded Element@1-build.0.1"
+                }
+              ],
+              "valueSets": [
+                {
+                  "expression": "",
+                  "popUpText": "<p><br></p>",
+                  "prefix": "SNOMED_CT",
+                  "prefixDisplay": "SNOMED CT",
+                  "text": "<394731006 |Problem statuses|",
+                  "use": ""
+                }
+              ]
+            },
+            {
+              "concept": [],
+              "derivedFrom": "PRSB-Standards/WRIST-Problem-list/Problem list/Problem list record entry/Problem priority@1-build.0.3",
+              "description": "<p>The problem priority level. This can be either significant or minor.&nbsp;</p>",
+              "implementationGuidance": "<p><br></p>",
+              "informationType": "",
+              "isComponent": false,
+              "maximumMultiplicity": "1",
+              "minimumMultiplicity": "0",
+              "mro": "O",
+              "name": "Problem priority",
+              "relationshipType": "specialisation",
+              "type": "",
+              "valueDomain": [
+                {
+                  "type": "PRSB-Standards/WRIST-IPS-Datatypes/Coded Element@1-build.0.1"
+                }
+              ],
+              "valueSets": [
+                {
+                  "expression": "",
+                  "popUpText": "<p><br></p>",
+                  "prefix": "SNOMED_CT",
+                  "prefixDisplay": "SNOMED CT",
+                  "text": "386134007 \u2502Significant\u2502 OR 255606000 \u2502Minor\u2502",
+                  "use": ""
+                }
+              ]
+            },
+            {
+              "concept": [],
+              "derivedFrom": "PRSB-Standards/WRIST-Problem-list/Problem list/Problem list record entry/Awareness of diagnosis@1-build.0.3",
+              "description": "<p>Description of the level of awareness the person and or their carer/family has regarding their diagnosis.</p>",
+              "implementationGuidance": "<p><br></p>",
+              "informationType": "",
+              "isComponent": false,
+              "maximumMultiplicity": "1",
+              "minimumMultiplicity": "0",
+              "mro": "O",
+              "name": "Awareness of diagnosis",
+              "relationshipType": "specialisation",
+              "type": "item",
+              "valueDomain": [
+                {
+                  "type": "PRSB-Standards/WRIST-IPS-Datatypes/Text@1-build.0.1"
+                }
+              ],
+              "valueSets": []
+            },
+            {
+              "concept": [],
+              "derivedFrom": "PRSB-Standards/WRIST-Problem-list/Problem list/Problem list record entry/Comment@1-build.0.3",
+              "description": "<p>Supporting text may be given covering the problem.</p>",
+              "implementationGuidance": "<p><br></p>",
+              "informationType": "",
+              "isComponent": false,
+              "maximumMultiplicity": "1",
+              "minimumMultiplicity": "0",
+              "mro": "O",
+              "name": "Comment",
+              "relationshipType": "specialisation",
+              "type": "item",
+              "valueDomain": [
+                {
+                  "type": "PRSB-Standards/WRIST-IPS-Datatypes/Text@1-build.0.1"
+                }
+              ],
+              "valueSets": []
+            }
+          ],
+          "derivedFrom": "PRSB-Standards/WRIST-Problem-list/Problem list/Problem list record entry@1-build.0.3",
+          "description": "<p>This is a problem list record entry. There may be 0 to many record entries under this section. Each record entry is made up of a number of elements or data items.</p>",
+          "implementationGuidance": "<p><br></p>",
+          "informationType": "Event.Record",
+          "isComponent": false,
+          "maximumMultiplicity": "*",
+          "minimumMultiplicity": "0",
+          "mro": "R",
+          "name": "Problem list record entry",
+          "relationshipType": "specialisation",
+          "type": "item",
+          "valueSets": []
+        }
+      ],
+      "derivedFrom": "PRSB-Standards/WRIST-Problem-list/Problem list@1-build.0.3",
+      "description": "<p>A summary of the problems (including diagnosed conditions) that require investigation or treatment.</p>",
+      "implementationGuidance": "<p><br></p>",
+      "informationType": "Record",
+      "isComponent": true,
+      "maximumMultiplicity": "1",
+      "minimumMultiplicity": "0",
+      "mro": "R",
+      "name": "Problem list",
+      "relationshipType": "neither",
+      "type": "group",
+      "valueSets": []
+    },
+    {
+      "concept": [
+        {
+          "concept": [
+            {
+              "concept": [],
+              "derivedFrom": "PRSB-Standards/WRIST-Problem-list/Problem list/Problem list record entry/Problem@1-build.0.3",
+              "description": "<p>A condition that needs addressing and so is important for every professional to know about when seeing the person.&nbsp;Problems may include diagnoses, symptoms, and social or behavioural issues.</p>",
+              "implementationGuidance": "<p><br></p>",
+              "informationType": "",
+              "isComponent": false,
+              "maximumMultiplicity": "1",
+              "minimumMultiplicity": "1",
+              "mro": "M",
+              "name": "Problem",
+              "relationshipType": "specialisation",
+              "type": "",
+              "valueDomain": [
+                {
+                  "type": "PRSB-Standards/WRIST-IPS-Datatypes/Coded Element@1-build.0.1"
+                }
+              ],
+              "valueSets": [
+                {
+                  "expression": "",
+                  "popUpText": "<p><br></p>",
+                  "prefix": "SNOMED_CT",
+                  "prefixDisplay": "SNOMED CT",
+                  "text": "1127601000000107 |Healthcare matters simple reference set|",
+                  "use": ""
+                }
+              ]
+            },
+            {
               "name": "Cause of epilepsy",
               "mro": "R",
               "description": "<p>The underlying cause or trigger for the development of epilepsy in the person</p>",
