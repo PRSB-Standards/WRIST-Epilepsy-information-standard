@@ -9266,17 +9266,32 @@
           "isComponent": false,
           "concept": [
             {
-              "name": "",
+              "name": "Cause of epilepsy",
               "mro": "",
-              "description": "",
-              "valueSets": "",
-              "implementationGuidance": "",
+              "description": "<p>The underlying cause or trigger for the development of epilepsy in the person. </p>",
+              "valueSets": [
+                {
+                  "prefix": "SNOMED_CT",
+                  "use": "",
+                  "text": "724988000|Epilepsy co-occurrent and due to degenerative brain disorder|",
+                  "expression": "",
+                  "popUpText": "<p><br></p>"
+                }
+              ],
+              "implementationGuidance": "<p><br></p>",
               "informationType": "",
-              "minimumMultiplicity": "",
-              "maximumMultiplicity": "",
+              "minimumMultiplicity": "0",
+              "maximumMultiplicity": "1",
               "derivedFrom": "",
               "isComponent": false,
-              "concept": []
+              "concept": [],
+              "type": "item",
+              "valueDomain": [
+                {
+                  "type": "PRSB-Standards/WRIST-IPS-Datatypes/Coded Element@1-build.0.1"
+                }
+              ],
+              "relationshipType": "specialisation"
             }
           ],
           "type": "group",
