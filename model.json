@@ -10326,7 +10326,7 @@
       "maximumMultiplicity": "1",
       "minimumMultiplicity": "0",
       "mro": "R",
-      "name": "Formulation (Problem list)",
+      "name": "Epilepsy Formulation (Problem list)",
       "relationshipType": "specialisation",
       "type": "group",
       "valueSets": [],
