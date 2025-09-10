@@ -9807,10 +9807,15 @@
           "maximumMultiplicity": "*",
           "minimumMultiplicity": "0",
           "mro": "R",
-          "name": "Problem list record entry",
+          "name": "Seizure record entry",
           "relationshipType": "specialisation",
           "type": "item",
-          "valueSets": []
+          "valueSets": [],
+          "valueDomain": [
+            {
+              "type": ""
+            }
+          ]
         }
       ],
       "derivedFrom": "PRSB-Standards/WRIST-Problem-list/Problem list@1-build.0.3",
