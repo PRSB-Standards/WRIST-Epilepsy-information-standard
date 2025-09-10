@@ -9816,6 +9816,19 @@
               "type": ""
             }
           ]
+        },
+        {
+          "name": "",
+          "mro": "",
+          "description": "",
+          "valueSets": "",
+          "implementationGuidance": "",
+          "informationType": "",
+          "minimumMultiplicity": "",
+          "maximumMultiplicity": "",
+          "derivedFrom": "",
+          "isComponent": false,
+          "concept": []
         }
       ],
       "derivedFrom": "PRSB-Standards/WRIST-Problem-list/Problem list@1-build.0.3",
