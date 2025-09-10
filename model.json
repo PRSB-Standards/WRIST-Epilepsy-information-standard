@@ -9363,34 +9363,6 @@
               ]
             },
             {
-              "name": "Epilepsy syndrome type",
-              "mro": "",
-              "description": "<p>The type of epilepsy syndrome the person has been diagnosed with.</p>",
-              "valueSets": [
-                {
-                  "prefix": "SNOMED_CT",
-                  "use": "",
-                  "text": "230410004 |Self-limited familial neonatal epilepsy (disorder)|",
-                  "expression": "",
-                  "popUpText": "<p><br></p>"
-                }
-              ],
-              "implementationGuidance": "<p>The value sets are outlined should align with the International League Against Epilepsy (ILAE) syndrome types list.</p>",
-              "informationType": "",
-              "minimumMultiplicity": "0",
-              "maximumMultiplicity": "",
-              "derivedFrom": "",
-              "isComponent": true,
-              "concept": [],
-              "type": "",
-              "valueDomain": [
-                {
-                  "type": "PRSB-Standards/WRIST-IPS-Datatypes/Coded Element@1-build.0.1"
-                }
-              ],
-              "relationshipType": "specialisation"
-            },
-            {
               "name": "Seizure type",
               "mro": "R",
               "description": "<p>The type of seizure experienced by the person.</p>",
