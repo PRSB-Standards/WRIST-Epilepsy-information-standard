@@ -9298,7 +9298,7 @@
                       "popUpText": "<p><br></p>"
                     }
                   ],
-                  "implementationGuidance": "<p><br></p>",
+                  "implementationGuidance": "<p>The value sets are outlined should align with the International League Against Epilepsy (ILAE) syndrome types list. </p>",
                   "informationType": "",
                   "minimumMultiplicity": "0",
                   "maximumMultiplicity": "1",
