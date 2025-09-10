@@ -9284,7 +9284,21 @@
               "maximumMultiplicity": "1",
               "derivedFrom": "",
               "isComponent": false,
-              "concept": [],
+              "concept": [
+                {
+                  "name": "",
+                  "mro": "",
+                  "description": "",
+                  "valueSets": "",
+                  "implementationGuidance": "",
+                  "informationType": "",
+                  "minimumMultiplicity": "",
+                  "maximumMultiplicity": "",
+                  "derivedFrom": "",
+                  "isComponent": false,
+                  "concept": []
+                }
+              ],
               "type": "item",
               "valueDomain": [
                 {
