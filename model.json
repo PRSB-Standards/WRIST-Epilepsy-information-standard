@@ -10324,31 +10324,22 @@
                 {
                   "concept": [],
                   "derivedFrom": "PRSB-Standards/WRIST-Problem-list/Problem list/Problem list record entry/Problem@1-build.0.3",
-                  "description": "<p>A condition that needs addressing and so is important for every professional to know about when seeing the person.&nbsp;Problems may include diagnoses, symptoms, and social or behavioural issues.</p>",
+                  "description": "<p>A description of the episode by a layperson, or healthcare worker. </p>",
                   "implementationGuidance": "<p><br></p>",
                   "informationType": "",
                   "isComponent": false,
                   "maximumMultiplicity": "1",
                   "minimumMultiplicity": "1",
                   "mro": "M",
-                  "name": "Problem",
+                  "name": "Episode description",
                   "relationshipType": "specialisation",
                   "type": "",
                   "valueDomain": [
                     {
-                      "type": "PRSB-Standards/WRIST-IPS-Datatypes/Coded Element@1-build.0.1"
+                      "type": "PRSB-Standards/WRIST-IPS-Datatypes/Text@1-build.0.1"
                     }
                   ],
-                  "valueSets": [
-                    {
-                      "expression": "",
-                      "popUpText": "<p><br></p>",
-                      "prefix": "SNOMED_CT",
-                      "prefixDisplay": "SNOMED CT",
-                      "text": "1127601000000107 |Healthcare matters simple reference set|",
-                      "use": ""
-                    }
-                  ]
+                  "valueSets": []
                 },
                 {
                   "concept": [],
