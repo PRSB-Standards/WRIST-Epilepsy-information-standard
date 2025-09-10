@@ -9826,10 +9826,15 @@
       "maximumMultiplicity": "1",
       "minimumMultiplicity": "0",
       "mro": "R",
-      "name": "Problem list",
+      "name": "Formulation (Problem list)",
       "relationshipType": "specialisation",
       "type": "group",
-      "valueSets": []
+      "valueSets": [],
+      "valueDomain": [
+        {
+          "type": ""
+        }
+      ]
     },
     {
       "concept": [
