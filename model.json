@@ -9266,6 +9266,19 @@
           "isComponent": false,
           "concept": [
             {
+              "name": "",
+              "mro": "",
+              "description": "",
+              "valueSets": "",
+              "implementationGuidance": "",
+              "informationType": "",
+              "minimumMultiplicity": "",
+              "maximumMultiplicity": "",
+              "derivedFrom": "",
+              "isComponent": false,
+              "concept": []
+            },
+            {
               "name": "Episode definition",
               "mro": "R",
               "description": "<p>This is a definition of the type of episode, in regards to how many the person has had in the space of 24 hours. </p>",
