@@ -9306,17 +9306,24 @@
               "relationshipType": "specialisation"
             },
             {
-              "name": "",
+              "name": "Source of description ",
               "mro": "",
-              "description": "",
-              "valueSets": "",
-              "implementationGuidance": "",
+              "description": "<p>This is a record of the source providing the description of episode. For example, this could be a school teacher, or a parent. </p>",
+              "valueSets": [],
+              "implementationGuidance": "<p><br></p>",
               "informationType": "",
-              "minimumMultiplicity": "",
-              "maximumMultiplicity": "",
+              "minimumMultiplicity": "0",
+              "maximumMultiplicity": "1",
               "derivedFrom": "",
               "isComponent": false,
-              "concept": []
+              "concept": [],
+              "type": "",
+              "valueDomain": [
+                {
+                  "type": "PRSB-Standards/WRIST-IPS-Datatypes/Person Name@1-build.0.1"
+                }
+              ],
+              "relationshipType": "specialisation"
             }
           ],
           "type": "group",
