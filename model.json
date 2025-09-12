@@ -11520,6 +11520,19 @@
               "relationshipType": "specialisation"
             },
             {
+              "name": "",
+              "mro": "",
+              "description": "",
+              "valueSets": "",
+              "implementationGuidance": "",
+              "informationType": "",
+              "minimumMultiplicity": "",
+              "maximumMultiplicity": "",
+              "derivedFrom": "",
+              "isComponent": false,
+              "concept": []
+            },
+            {
               "name": "Response to treatment ",
               "mro": "R",
               "description": "<p>This is the high level information that reflects the overall seizure control. For example, controlled, partially controlled, refractory) </p>",
