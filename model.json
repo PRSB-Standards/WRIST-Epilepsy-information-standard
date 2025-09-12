@@ -13032,21 +13032,6 @@
                     {
                       "concept": [
                         {
-                          "description": "Indicates whether the plan was discussed and agreed with the person or legitimate representative",
-                          "maximumMultiplicity": "1",
-                          "minimumMultiplicity": "0",
-                          "mro": "R",
-                          "name": "Person or legitimate representative",
-                          "type": "item",
-                          "valueDomain": [
-                            {
-                              "type": "boolean"
-                            }
-                          ],
-                          "valueSets": "Person or legitimate representative\u00a0",
-                          "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Care and support plan/Agreed with person or legitimate representative/Person or legitimate representative@2-build.2.1"
-                        },
-                        {
                           "description": "The full name of the person in text representation.",
                           "maximumMultiplicity": "1",
                           "minimumMultiplicity": "0",
