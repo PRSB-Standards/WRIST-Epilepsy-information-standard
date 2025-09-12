@@ -11687,7 +11687,7 @@
               "mro": "M",
               "description": "<p>This is the categorisation of risk. For example, low, medium, high, or unknown.</p>",
               "valueSets": [],
-              "implementationGuidance": "<p>The value sets must be coded where possible (SNOMED CT) for interoperability.</p><p><br></p><p>The system must support multiple comorbidities and updateable SUDEP risk entries.</p><p><br></p><p>The system must link SUDEP, comorbidity, and epilepsy diagnosis to care plans and seizure episodes.</p><p><br></p><p>The system should date-stamp all assessments and updates for longitudinal tracking.</p><p><br></p><p>The system should allow patient/carer contributions (e.g., comorbidity, SUDEP discussions) with clinician validation.</p><p><br></p><p>The system may generate alerts or reminders if high-risk SUDEP factors or uncontrolled seizures are recorded.</p>",
+              "implementationGuidance": "<p><br></p>",
               "informationType": "",
               "minimumMultiplicity": "0",
               "maximumMultiplicity": "1",
