@@ -12974,23 +12974,7 @@
                 {
                   "concept": [
                     {
-                      "concept": [
-                        {
-                          "description": "Any supplementary or personalised information that relates to the person's strengths.",
-                          "maximumMultiplicity": "1",
-                          "minimumMultiplicity": "0",
-                          "mro": "R",
-                          "name": "Free text",
-                          "type": "item",
-                          "valueDomain": [
-                            {
-                              "type": "text"
-                            }
-                          ],
-                          "valueSets": "Free text",
-                          "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Care and support plan/Strengths/Free text@2-build.2.1"
-                        }
-                      ],
+                      "concept": [],
                       "description": "<p>Any strengths and assets the person has relating to their goals and hopes about their health and well-being. This could be derived from the assessment of the person e.g.&nbsp;300738008 |Able to participate in leisure activities (finding)|</p>",
                       "maximumMultiplicity": "*",
                       "minimumMultiplicity": "0",
