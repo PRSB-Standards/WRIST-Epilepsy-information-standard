@@ -13010,23 +13010,7 @@
                       "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Care and support plan/Strengths@2-build.2.1"
                     },
                     {
-                      "concept": [
-                        {
-                          "description": "\n                         <table class=\"detail spaced\" width=\"100%\" style=\"font-family: Arial, Helvetica, Geneva, sans-serif; font-size: 12px; max-width: 100%; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial; color: rgb(51, 51, 51);\">\n                            <tbody>\n                                <tr>\n                                    <td colspan=\"3\" rowspan=\"1\" style=\"vertical-align: top;\">\n                                        <div class=\"xforms-control xforms-output xforms-mediatype-text-html xforms-mediatype-text\" id=\"xf-895\u2261xf-1189\" style=\"display: inline; zoom: 1;\">\n                                            <div class=\"xforms-output-output\" id=\"xf-895\u2261xf-1189\u2261\u2261c\" style=\"zoom: 1;\">Any supplementary or personalised information that relates to the person's needs, concerns and problems.</div>\n                                        </div>\n                                    </td>\n                                </tr>\n                            </tbody>\n                        </table> \n                    ",
-                          "maximumMultiplicity": "1",
-                          "minimumMultiplicity": "0",
-                          "mro": "R",
-                          "name": "Free text",
-                          "type": "item",
-                          "valueDomain": [
-                            {
-                              "type": "text"
-                            }
-                          ],
-                          "valueSets": "Free text\u00a0",
-                          "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Care and support plan/Needs, concerns or problems/Free text@2-build.2.1"
-                        }
-                      ],
+                      "concept": [],
                       "description": "<p>Details of the person needs, concerns or problems. This can include any supplementary or personalised information that relates to the person's needs, concerns, and problems, </p><p><br></p>",
                       "maximumMultiplicity": "*",
                       "minimumMultiplicity": "0",
