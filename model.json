@@ -11559,26 +11559,6 @@
                 }
               ],
               "relationshipType": "specialisation"
-            },
-            {
-              "name": "Response to treatment ",
-              "mro": "R",
-              "description": "<p>This is the high level information that reflects the overall seizure control. For example, controlled, partially controlled, refractory) </p>",
-              "valueSets": [],
-              "implementationGuidance": "<p><br></p>",
-              "informationType": "",
-              "minimumMultiplicity": "0",
-              "maximumMultiplicity": "1",
-              "derivedFrom": "",
-              "isComponent": false,
-              "concept": [],
-              "type": "item",
-              "valueDomain": [
-                {
-                  "type": "PRSB-Standards/WRIST-IPS-Datatypes/Coded Element@1-build.0.1"
-                }
-              ],
-              "relationshipType": "specialisation"
             }
           ],
           "type": "",
