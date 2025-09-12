@@ -11498,6 +11498,19 @@
                 }
               ],
               "relationshipType": "specialisation"
+            },
+            {
+              "name": "",
+              "mro": "",
+              "description": "",
+              "valueSets": "",
+              "implementationGuidance": "",
+              "informationType": "",
+              "minimumMultiplicity": "",
+              "maximumMultiplicity": "",
+              "derivedFrom": "",
+              "isComponent": false,
+              "concept": []
             }
           ],
           "type": "",
