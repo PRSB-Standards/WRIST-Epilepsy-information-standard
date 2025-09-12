@@ -13032,7 +13032,7 @@
                     {
                       "concept": [
                         {
-                          "description": "The full name of the person in text representation.",
+                          "description": "<p>The full name of the person in text representation.</p>",
                           "maximumMultiplicity": "1",
                           "minimumMultiplicity": "0",
                           "mro": "R",
@@ -13040,16 +13040,23 @@
                           "type": "item",
                           "valueDomain": [
                             {
-                              "property": [
-                                {
-                                  "maxLength": "70"
-                                }
-                              ],
-                              "type": "string"
+                              "type": "PRSB-Standards/WRIST-IPS-Datatypes/Person Name@1-build.0.1"
                             }
                           ],
-                          "valueSets": "NHS data dictionary :-  <a class=\"\" href=\"https://datadictionary.nhs.uk/data_elements/person_full_name.html?hl=person%2Cname\" target=\"\" title=\"\">Patient full name</a> \n                    ",
-                          "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Care and support plan/Agreed with person or legitimate representative/Person full name@2-build.2.1"
+                          "valueSets": [
+                            {
+                              "prefix": "NHS_DD",
+                              "use": "",
+                              "text": "Person full name",
+                              "expression": "https://www.datadictionary.nhs.uk/data_elements/person_full_name.html?hl=person%2Cname",
+                              "popUpText": "<p><br></p>"
+                            }
+                          ],
+                          "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Care and support plan/Agreed with person or legitimate representative/Person full name@2-build.2.1",
+                          "informationType": "",
+                          "relationshipType": "specialisation",
+                          "isComponent": false,
+                          "implementationGuidance": "<p><br></p>"
                         },
                         {
                           "description": "The role the professional has in relation to the person.",
