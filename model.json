@@ -11896,17 +11896,22 @@
             }
           ],
           "derivedFrom": "PRSB-Standards/WRIST-Problem-list/Problem list@1-build.0.4",
-          "description": "<p>A summary of the problems (including diagnosed conditions) that require investigation or treatment.</p>",
-          "implementationGuidance": "<p><br></p>",
+          "description": "<p>A summary of the problems (including diagnosed conditions) that require investigation or treatment.</p><p>This section records medical, psychological, or developmental conditions that co-exist alongside epilepsy. Comorbidities are distinct from seizure episodes or the epilepsy diagnosis itself, but they may significantly influence the presentation, management, prognosis, and outcomes of epilepsy.</p>",
+          "implementationGuidance": "<p>This section should link both the Problem list/ Diagnoses section and the Personalised care and support plan (PCSP), so that comorbidities can be addressed in care coordination.</p><p>The information must be recorded using SNOMED CT codes that align with national terminology guidance.</p><p>This section must support multiple comorbidities per patient, with the ability to record each separately.</p><p>This section should allow linking of comorbidity data to both the epilepsy diagnosis section and the problem list in the patient record.</p><p>This section should enable linkage to structured assessments (e.g., mental health risk assessments, learning disability records).</p>",
           "informationType": "Record",
           "isComponent": true,
-          "maximumMultiplicity": "1",
+          "maximumMultiplicity": "*",
           "minimumMultiplicity": "0",
           "mro": "R",
-          "name": "Problem list",
+          "name": "Comorbidity type",
           "relationshipType": "specialisation",
           "type": "group",
-          "valueSets": []
+          "valueSets": [],
+          "valueDomain": [
+            {
+              "type": ""
+            }
+          ]
         }
       ],
       "derivedFrom": "PRSB-Standards/WRIST-Problem-list/Problem list@1-build.0.3",
