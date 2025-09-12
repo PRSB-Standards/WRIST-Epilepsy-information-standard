@@ -9836,10 +9836,10 @@
             {
               "name": "Emergency care attendance ",
               "mro": "R",
-              "description": "<p>The details of the person's emergency care attendance. </p>",
+              "description": "<p>The details of the person's emergency care attendance.</p>",
               "valueSets": [],
               "implementationGuidance": "<p><br></p>",
-              "informationType": "Event.Record",
+              "informationType": "",
               "minimumMultiplicity": "0",
               "maximumMultiplicity": "1",
               "derivedFrom": "",
