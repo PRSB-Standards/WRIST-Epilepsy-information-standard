@@ -10394,7 +10394,7 @@
         {
           "name": "Epilepsy record entry",
           "mro": "R",
-          "description": "<p>This is a problem list record entry. There may be 0 to many record entries under this section. Each record entry is made up of a number of elements or data items</p>",
+          "description": "<p>This is an epilepsy record entry. There may be 0 to 1 record entry under this section. Each record entry is made up of a number of elements or data items. </p><p>This section captures the information about a confirmed epilepsy diagnosis by a specialist. </p>",
           "valueSets": [],
           "implementationGuidance": "<p><br></p>",
           "informationType": "",
