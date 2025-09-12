@@ -13171,13 +13171,22 @@
                         },
                         {
                           "derivedFrom": "PRSB-Standards/WRIST-Epilepsy-information-standard/Assessments/Assessments record entry/Structured assessment/Assessment score@None",
-                          "description": "The structured assessment score.",
+                          "description": "<p>The structured assessment score.</p>",
                           "maximumMultiplicity": "1",
                           "minimumMultiplicity": "0",
                           "mro": "R",
                           "name": "Assessment score",
                           "type": "item",
-                          "valueSets": "Free text."
+                          "valueSets": [],
+                          "informationType": "",
+                          "valueDomain": [
+                            {
+                              "type": "PRSB-Standards/WRIST-IPS-Datatypes/Text@1-build.0.1"
+                            }
+                          ],
+                          "relationshipType": "specialisation",
+                          "isComponent": false,
+                          "implementationGuidance": "<p><br></p>"
                         },
                         {
                           "derivedFrom": "PRSB-Standards/WRIST-Epilepsy-information-standard/Assessments/Assessments record entry/Structured assessment/Assessment value@None",
