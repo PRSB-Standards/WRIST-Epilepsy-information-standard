@@ -15040,17 +15040,24 @@
                       "relationshipType": "specialisation"
                     },
                     {
-                      "name": "",
-                      "mro": "",
-                      "description": "",
-                      "valueSets": "",
-                      "implementationGuidance": "",
+                      "name": "Contraception complications ",
+                      "mro": "R",
+                      "description": "<p>This captures any complications related to the contraception. Some anti-seizure medications (ASMs) can make hormonal contraception less effective, and other ASMs, like lamotrigine, can be affected by combined hormonal contraception, increasing seizure risk. </p>",
+                      "valueSets": [],
+                      "implementationGuidance": "<p><br></p>",
                       "informationType": "",
-                      "minimumMultiplicity": "",
-                      "maximumMultiplicity": "",
+                      "minimumMultiplicity": "0",
+                      "maximumMultiplicity": "1",
                       "derivedFrom": "",
                       "isComponent": false,
-                      "concept": []
+                      "concept": [],
+                      "type": "",
+                      "valueDomain": [
+                        {
+                          "type": "PRSB-Standards/WRIST-IPS-Datatypes/Text@1-build.0.1"
+                        }
+                      ],
+                      "relationshipType": "specialisation"
                     }
                   ],
                   "type": "",
