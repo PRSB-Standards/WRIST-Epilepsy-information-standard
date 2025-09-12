@@ -9834,17 +9834,24 @@
               "valueSets": []
             },
             {
-              "name": "",
-              "mro": "",
-              "description": "",
-              "valueSets": "",
-              "implementationGuidance": "",
-              "informationType": "",
-              "minimumMultiplicity": "",
-              "maximumMultiplicity": "",
+              "name": "Emergency care attendance ",
+              "mro": "R",
+              "description": "<p>The details of the person's emergency care attendance. </p>",
+              "valueSets": [],
+              "implementationGuidance": "<p><br></p>",
+              "informationType": "Event.Record",
+              "minimumMultiplicity": "0",
+              "maximumMultiplicity": "1",
               "derivedFrom": "",
               "isComponent": false,
-              "concept": []
+              "concept": [],
+              "type": "group",
+              "valueDomain": [
+                {
+                  "type": ""
+                }
+              ],
+              "relationshipType": "specialisation"
             },
             {
               "name": "Epileptic seizure episode record entry",
