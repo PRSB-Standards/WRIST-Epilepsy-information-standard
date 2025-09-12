@@ -13001,7 +13001,7 @@
                           "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Care and support plan/Strengths/Free text@2-build.2.1"
                         }
                       ],
-                      "description": "<p>Any strengths and assets the person has relating to their goals and hopes about their health and well-being. This could be derived from the assessment of the person e.g.&nbsp;300738008 |Able to participate in leisure activities (finding)| </p>",
+                      "description": "<p>Any strengths and assets the person has relating to their goals and hopes about their health and well-being. This could be derived from the assessment of the person e.g.&nbsp;300738008 |Able to participate in leisure activities (finding)|</p>",
                       "maximumMultiplicity": "*",
                       "minimumMultiplicity": "0",
                       "mro": "R",
@@ -13016,7 +13016,15 @@
                       ],
                       "relationshipType": "specialisation",
                       "isComponent": false,
-                      "valueSets": [],
+                      "valueSets": [
+                        {
+                          "prefix": "SNOMED_CT",
+                          "use": "",
+                          "text": "1127601000000107 |Healthcare matters simple reference set|",
+                          "expression": "",
+                          "popUpText": "<p><br></p>"
+                        }
+                      ],
                       "implementationGuidance": "<p><br></p>"
                     },
                     {
