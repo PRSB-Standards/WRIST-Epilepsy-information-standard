@@ -13106,7 +13106,7 @@
                       "implementationGuidance": "<p><br></p>"
                     },
                     {
-                      "description": "This is a record of the date that this care and support plan was last updated.",
+                      "description": "<p>This is a record of the date that this care and support plan was last updated.</p>",
                       "maximumMultiplicity": "1",
                       "minimumMultiplicity": "0",
                       "mro": "R",
@@ -13114,16 +13114,15 @@
                       "type": "item",
                       "valueDomain": [
                         {
-                          "property": [
-                            {
-                              "timeStampPrecision": "YMDHM"
-                            }
-                          ],
-                          "type": "datetime"
+                          "type": "PRSB-Standards/WRIST-PRSB-Datatypes/Date and Time@1-build.0.1"
                         }
                       ],
-                      "valueSets": "Date and time",
-                      "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Care and support plan/Date this plan was last updated@2-build.2.1"
+                      "valueSets": [],
+                      "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Care and support plan/Date this plan was last updated@2-build.2.1",
+                      "informationType": "",
+                      "relationshipType": "specialisation",
+                      "isComponent": false,
+                      "implementationGuidance": "<p><br></p>"
                     },
                     {
                       "description": "Reference other care planning documents, including the type, location and date.  <br clear=\"none\"/> \n                     <br clear=\"none\"/> This may include condition-specific plans, advance care plans, end of life care plan, etc.",
