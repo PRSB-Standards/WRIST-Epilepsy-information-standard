@@ -9834,6 +9834,19 @@
               "valueSets": []
             },
             {
+              "name": "",
+              "mro": "",
+              "description": "",
+              "valueSets": "",
+              "implementationGuidance": "",
+              "informationType": "",
+              "minimumMultiplicity": "",
+              "maximumMultiplicity": "",
+              "derivedFrom": "",
+              "isComponent": false,
+              "concept": []
+            },
+            {
               "name": "Epileptic seizure episode record entry",
               "mro": "R",
               "description": "<p>This is an epileptic seizure episode record entry. There may be 0 to many record entries under a section. Each record entry is made up of a number of elements or data items. This applies only when the seizure is identified as epileptic (using the ILAE classification).</p>",
