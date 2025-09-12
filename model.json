@@ -13256,7 +13256,7 @@
                     },
                     {
                       "derivedFrom": "PRSB-Standards/WRIST-Epilepsy-information-standard/Assessments/Assessments record entry/Comment@None",
-                      "description": "Supporting text may be given regarding the assessment.",
+                      "description": "<p>Supporting text may be given regarding the assessment.</p>",
                       "maximumMultiplicity": "1",
                       "minimumMultiplicity": "0",
                       "mro": "R",
@@ -13264,10 +13264,14 @@
                       "type": "item",
                       "valueDomain": [
                         {
-                          "type": "string"
+                          "type": "PRSB-Standards/WRIST-IPS-Datatypes/Text@1-build.0.1"
                         }
                       ],
-                      "valueSets": "Free text"
+                      "valueSets": [],
+                      "informationType": "",
+                      "relationshipType": "specialisation",
+                      "isComponent": false,
+                      "implementationGuidance": "<p><br></p>"
                     }
                   ],
                   "derivedFrom": "PRSB-Standards/WRIST-Epilepsy-information-standard/Assessments/Assessments record entry@None",
