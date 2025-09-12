@@ -13144,7 +13144,7 @@
                       "implementationGuidance": "<p><br></p>"
                     },
                     {
-                      "description": "This is the date/interval when this information will next be reviewed. SNOMED CT tag : -\u00a0425268008 | Review of care plan (procedure) |",
+                      "description": "<p>This is the date/interval when this information will next be reviewed. SNOMED CT tag : -&nbsp;425268008 | Review of care plan (procedure) |</p>",
                       "maximumMultiplicity": "1",
                       "minimumMultiplicity": "0",
                       "mro": "R",
@@ -13152,11 +13152,15 @@
                       "type": "item",
                       "valueDomain": [
                         {
-                          "type": "datetime"
+                          "type": "PRSB-Standards/WRIST-PRSB-Datatypes/Date and Time@1-build.0.1"
                         }
                       ],
-                      "valueSets": "Date and time",
-                      "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Care and support plan/Planned review date/interval@2-build.2.1"
+                      "valueSets": [],
+                      "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Care and support plan/Planned review date/interval@2-build.2.1",
+                      "informationType": "",
+                      "relationshipType": "specialisation",
+                      "isComponent": false,
+                      "implementationGuidance": "<p><br></p>"
                     },
                     {
                       "concept": [
