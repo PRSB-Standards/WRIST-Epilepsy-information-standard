@@ -11643,17 +11643,24 @@
           ]
         },
         {
-          "name": "",
-          "mro": "",
-          "description": "",
-          "valueSets": "",
-          "implementationGuidance": "",
+          "name": "Sudden unexpected death in epilepsy record entry",
+          "mro": "M",
+          "description": "<p>This is an sudden unexpected death in epilepsy record entry. There may be 0 to many record entry/entries under a section. Each record entry is made up of a number of elements or data items.</p><p>This section records the assessment, monitoring, and management of sudden unexpected death in epilepsy (SUDEP( risk for patients with epilepsy. SUDEP is defined as the sudden, unexpected, non-traumatic, and non-drowning death of a person with epilepsy, with or without evidence of a seizure, in which post-mortem examination does not reveal a structural or toxicological cause of death.  </p>",
+          "valueSets": [],
+          "implementationGuidance": "<p><br></p>",
           "informationType": "",
-          "minimumMultiplicity": "",
-          "maximumMultiplicity": "",
+          "minimumMultiplicity": "0",
+          "maximumMultiplicity": "*",
           "derivedFrom": "",
           "isComponent": false,
-          "concept": []
+          "concept": [],
+          "type": "",
+          "valueDomain": [
+            {
+              "type": ""
+            }
+          ],
+          "relationshipType": "specialisation"
         }
       ],
       "derivedFrom": "PRSB-Standards/WRIST-Problem-list/Problem list@1-build.0.3",
