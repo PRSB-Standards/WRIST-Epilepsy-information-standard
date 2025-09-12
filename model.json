@@ -13105,13 +13105,31 @@
                           "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Care and support plan/Care funding source/Free text @2-build.2.1"
                         }
                       ],
-                      "description": "A reference to the funding source and any conditions or limitations associated.",
+                      "description": "<p>A reference to the funding source and any conditions or limitations associated.</p>",
                       "maximumMultiplicity": "1",
                       "minimumMultiplicity": "0",
                       "mro": "R",
                       "name": "Care funding source",
                       "type": "group",
-                      "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Care and support plan/Care funding source@2-build.2.1"
+                      "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Care and support plan/Care funding source@2-build.2.1",
+                      "informationType": "",
+                      "valueDomain": [
+                        {
+                          "type": "PRSB-Standards/WRIST-IPS-Datatypes/Organisation Name@1-build.0.1"
+                        }
+                      ],
+                      "relationshipType": "specialisation",
+                      "isComponent": false,
+                      "valueSets": [
+                        {
+                          "prefix": "NHS_DD",
+                          "use": "",
+                          "text": "Organisation code",
+                          "expression": "https://www.datadictionary.nhs.uk/attributes/organisation_code.html?hl=organisation%2Cdata%2Cservice",
+                          "popUpText": "<p><br></p>"
+                        }
+                      ],
+                      "implementationGuidance": "<p><br></p>"
                     },
                     {
                       "description": "This is a record of the date that this care and support plan was last updated.",
