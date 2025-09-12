@@ -13228,7 +13228,7 @@
                         },
                         {
                           "derivedFrom": "PRSB-Standards/WRIST-Epilepsy-information-standard/Assessments/Assessments record entry/Structured assessment/Subscale value@None",
-                          "description": "The subscale value of the structured assessment.",
+                          "description": "<p>The subscale value of the structured assessment.</p>",
                           "maximumMultiplicity": "*",
                           "minimumMultiplicity": "0",
                           "mro": "R",
@@ -13236,10 +13236,14 @@
                           "type": "item",
                           "valueDomain": [
                             {
-                              "type": "quantity"
+                              "type": "PRSB-Standards/WRIST-IPS-Datatypes/String@1-build.0.1"
                             }
                           ],
-                          "valueSets": "Numeric"
+                          "valueSets": [],
+                          "informationType": "",
+                          "relationshipType": "specialisation",
+                          "isComponent": false,
+                          "implementationGuidance": "<p><br></p>"
                         }
                       ],
                       "derivedFrom": "PRSB-Standards/WRIST-Epilepsy-information-standard/Assessments/Assessments record entry/Structured assessment@None",
