@@ -11472,17 +11472,32 @@
           "isComponent": false,
           "concept": [
             {
-              "name": "",
-              "mro": "",
-              "description": "",
-              "valueSets": "",
-              "implementationGuidance": "",
+              "name": "Seizure frequency change",
+              "mro": "R",
+              "description": "<p>The change in seizure frequency since last review.</p>",
+              "valueSets": [
+                {
+                  "prefix": "PPPP",
+                  "use": "",
+                  "text": "This could be numeric (episodes per period) or coded (increase/stable/decrease)",
+                  "expression": "",
+                  "popUpText": "<p><br></p>"
+                }
+              ],
+              "implementationGuidance": "<p><br></p>",
               "informationType": "",
-              "minimumMultiplicity": "",
-              "maximumMultiplicity": "",
+              "minimumMultiplicity": "0",
+              "maximumMultiplicity": "1",
               "derivedFrom": "",
               "isComponent": false,
-              "concept": []
+              "concept": [],
+              "type": "",
+              "valueDomain": [
+                {
+                  "type": "PRSB-Standards/WRIST-IPS-Datatypes/Coded Element@1-build.0.1"
+                }
+              ],
+              "relationshipType": "specialisation"
             }
           ],
           "type": "",
