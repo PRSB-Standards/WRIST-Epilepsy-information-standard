@@ -13105,7 +13105,7 @@
                           "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Care and support plan/Care funding source/Free text @2-build.2.1"
                         }
                       ],
-                      "description": "<p>A reference to the funding source and any conditions or limitations associated.</p>",
+                      "description": "<p>A reference to the funding source and any conditions or limitations associated. This can also record any further information for the person's care funding source e.g. self funded</p>",
                       "maximumMultiplicity": "1",
                       "minimumMultiplicity": "0",
                       "mro": "R",
