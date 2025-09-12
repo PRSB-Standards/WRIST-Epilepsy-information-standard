@@ -9962,17 +9962,32 @@
                       "relationshipType": "specialisation"
                     },
                     {
-                      "name": "",
-                      "mro": "",
-                      "description": "",
-                      "valueSets": "",
-                      "implementationGuidance": "",
+                      "name": "Discharge status ",
+                      "mro": "R",
+                      "description": "<p>This is the status of the discharge. </p>",
+                      "valueSets": [
+                        {
+                          "prefix": "SNOMED_CT",
+                          "use": "",
+                          "text": "^999003021000000104 |\u00a0Emergency care discharge status simple reference set (foundation metadata concept)|",
+                          "expression": "",
+                          "popUpText": "<p><br></p>"
+                        }
+                      ],
+                      "implementationGuidance": "<p><br></p>",
                       "informationType": "",
-                      "minimumMultiplicity": "",
-                      "maximumMultiplicity": "",
+                      "minimumMultiplicity": "0",
+                      "maximumMultiplicity": "1",
                       "derivedFrom": "",
                       "isComponent": false,
-                      "concept": []
+                      "concept": [],
+                      "type": "",
+                      "valueDomain": [
+                        {
+                          "type": "PRSB-Standards/WRIST-IPS-Datatypes/Coded Element@1-build.0.1"
+                        }
+                      ],
+                      "relationshipType": "specialisation"
                     }
                   ],
                   "type": "",
