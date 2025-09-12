@@ -13078,23 +13078,7 @@
                       "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Care and support plan/Agreed with person or legitimate representative@2-build.2.1"
                     },
                     {
-                      "concept": [
-                        {
-                          "description": "Any further information for the person's care funding source e.g. self funded",
-                          "maximumMultiplicity": "1",
-                          "minimumMultiplicity": "0",
-                          "mro": "R",
-                          "name": "Free text ",
-                          "type": "item",
-                          "valueDomain": [
-                            {
-                              "type": "text"
-                            }
-                          ],
-                          "valueSets": "Free text\u00a0",
-                          "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Care and support plan/Care funding source/Free text @2-build.2.1"
-                        }
-                      ],
+                      "concept": [],
                       "description": "<p>A reference to the funding source and any conditions or limitations associated. This can also record any further information for the person's care funding source e.g. self funded</p>",
                       "maximumMultiplicity": "1",
                       "minimumMultiplicity": "0",
