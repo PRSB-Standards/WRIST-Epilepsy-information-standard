@@ -13104,7 +13104,7 @@
                     },
                     {
                       "derivedFrom": "PRSB-Standards/WRIST-Epilepsy-information-standard/Assessments/Assessments record entry/Assessment type@None",
-                      "description": "The type of the assessment e.g. social care needs assessment.",
+                      "description": "<p>The type of the assessment e.g. social care needs assessment.</p>",
                       "maximumMultiplicity": "1",
                       "minimumMultiplicity": "0",
                       "mro": "R",
@@ -13112,15 +13112,14 @@
                       "type": "item",
                       "valueDomain": [
                         {
-                          "property": [
-                            {
-                              "maxLength": "150"
-                            }
-                          ],
-                          "type": "text"
+                          "type": "PRSB-Standards/WRIST-IPS-Datatypes/Text@1-build.0.1"
                         }
                       ],
-                      "valueSets": "Free text"
+                      "valueSets": [],
+                      "informationType": "",
+                      "relationshipType": "specialisation",
+                      "isComponent": false,
+                      "implementationGuidance": "<p><br></p>"
                     },
                     {
                       "derivedFrom": "PRSB-Standards/WRIST-Epilepsy-information-standard/Assessments/Assessments record entry/Assessment summary@None",
