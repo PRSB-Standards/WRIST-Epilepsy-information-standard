@@ -13123,7 +13123,7 @@
                     },
                     {
                       "derivedFrom": "PRSB-Standards/WRIST-Epilepsy-information-standard/Assessments/Assessments record entry/Assessment summary@None",
-                      "description": "The summary of the assessment",
+                      "description": "<p>The summary of the assessment</p>",
                       "maximumMultiplicity": "1",
                       "minimumMultiplicity": "0",
                       "mro": "R",
@@ -13131,15 +13131,14 @@
                       "type": "item",
                       "valueDomain": [
                         {
-                          "property": [
-                            {
-                              "maxLength": "250"
-                            }
-                          ],
-                          "type": "text"
+                          "type": "PRSB-Standards/WRIST-IPS-Datatypes/Text@1-build.0.1"
                         }
                       ],
-                      "valueSets": "Free text"
+                      "valueSets": [],
+                      "informationType": "",
+                      "relationshipType": "specialisation",
+                      "isComponent": false,
+                      "implementationGuidance": "<p><br></p>"
                     },
                     {
                       "concept": [
