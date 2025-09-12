@@ -14972,17 +14972,32 @@
                   "isComponent": false,
                   "concept": [
                     {
-                      "name": "",
-                      "mro": "",
-                      "description": "",
-                      "valueSets": "",
-                      "implementationGuidance": "",
+                      "name": "Contraception method ",
+                      "mro": "R",
+                      "description": "<p>This is a record of the contraception used by the individual. </p>",
+                      "valueSets": [
+                        {
+                          "prefix": "SNOMED_CT",
+                          "use": "",
+                          "text": "^13197004 | Uses contraception|",
+                          "expression": "",
+                          "popUpText": "<p><br></p>"
+                        }
+                      ],
+                      "implementationGuidance": "<p><br></p>",
                       "informationType": "",
-                      "minimumMultiplicity": "",
-                      "maximumMultiplicity": "",
+                      "minimumMultiplicity": "0",
+                      "maximumMultiplicity": "1",
                       "derivedFrom": "",
                       "isComponent": false,
-                      "concept": []
+                      "concept": [],
+                      "type": "",
+                      "valueDomain": [
+                        {
+                          "type": "PRSB-Standards/WRIST-IPS-Datatypes/Coded Element@1-build.0.1"
+                        }
+                      ],
+                      "relationshipType": "specialisation"
                     }
                   ],
                   "type": "",
