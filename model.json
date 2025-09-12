@@ -9288,7 +9288,7 @@
             {
               "name": "Episode definition",
               "mro": "R",
-              "description": "<p>This is a definition of the type of episode, in regards to how many the person has had in the space of 24 hours. This could be described as a single episode, single cluster within 24 hours, 2 or more episodes more than 24 hours apart. </p>",
+              "description": "<p>This is a definition of the type of episode, in regards to how many the person has had in the space of 24 hours. This could be described as a single episode, single cluster within 24 hours, 2 or more episodes more than 24 hours apart.</p>",
               "valueSets": [],
               "implementationGuidance": "<p><br></p>",
               "informationType": "",
@@ -9300,7 +9300,7 @@
               "type": "item",
               "valueDomain": [
                 {
-                  "type": ""
+                  "type": "PRSB-Standards/WRIST-IPS-Datatypes/Coded Element@1-build.0.1"
                 }
               ],
               "relationshipType": "specialisation"
