@@ -13080,16 +13080,6 @@
                     {
                       "concept": [
                         {
-                          "description": "The organisation code of the care funding source",
-                          "maximumMultiplicity": "1",
-                          "minimumMultiplicity": "0",
-                          "mro": "R",
-                          "name": "Coded value",
-                          "type": "item",
-                          "valueSets": "NHS data dictionary : -  <a href=\"https://www.datadictionary.nhs.uk/attributes/organisation_code.html?hl=organisation%2Cdata%2Cservice\" target=\"\" title=\"\">organisation data service</a> \n                    ",
-                          "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Care and support plan/Care funding source/Coded value@2-build.2.1"
-                        },
-                        {
                           "description": "Any further information for the person's care funding source e.g. self funded",
                           "maximumMultiplicity": "1",
                           "minimumMultiplicity": "0",
