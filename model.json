@@ -10068,17 +10068,24 @@
                   "relationshipType": "specialisation"
                 },
                 {
-                  "name": "",
-                  "mro": "",
-                  "description": "",
-                  "valueSets": "",
-                  "implementationGuidance": "",
+                  "name": "Typical epileptic seizure duration",
+                  "mro": "R",
+                  "description": "<p>The typical duration of the person's seizures. </p>",
+                  "valueSets": [],
+                  "implementationGuidance": "<p><span style=\"color: rgb(0, 0, 0);\">May be ascertained from multiple sources (incl. seizure diary)</span></p>",
                   "informationType": "",
-                  "minimumMultiplicity": "",
-                  "maximumMultiplicity": "",
+                  "minimumMultiplicity": "0",
+                  "maximumMultiplicity": "1",
                   "derivedFrom": "",
                   "isComponent": false,
-                  "concept": []
+                  "concept": [],
+                  "type": "item",
+                  "valueDomain": [
+                    {
+                      "type": "PRSB-Standards/WRIST-IPS-Datatypes/Period@1-build.0.1"
+                    }
+                  ],
+                  "relationshipType": "specialisation"
                 },
                 {
                   "concept": [
