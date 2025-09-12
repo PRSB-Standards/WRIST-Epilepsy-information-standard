@@ -13144,13 +13144,30 @@
                       "concept": [
                         {
                           "derivedFrom": "PRSB-Standards/WRIST-Epilepsy-information-standard/Assessments/Assessments record entry/Structured assessment/Structured assessment name@None",
-                          "description": "Structured assessment name e.g. New York Heart Failure, Glasgow Coma scale, Activities of Daily Living (ADL) etc.",
+                          "description": "<p>Structured assessment name e.g. New York Heart Failure, Glasgow Coma scale, Activities of Daily Living (ADL) etc.</p>",
                           "maximumMultiplicity": "1",
                           "minimumMultiplicity": "0",
                           "mro": "R",
                           "name": "Structured assessment name",
                           "type": "item",
-                          "valueSets": "SNOMED CT"
+                          "valueSets": [
+                            {
+                              "prefix": "SNOMED_CT",
+                              "use": "",
+                              "text": "",
+                              "expression": "",
+                              "popUpText": "<p><br></p>"
+                            }
+                          ],
+                          "informationType": "",
+                          "valueDomain": [
+                            {
+                              "type": "PRSB-Standards/WRIST-IPS-Datatypes/Coded Element@1-build.0.1"
+                            }
+                          ],
+                          "relationshipType": "specialisation",
+                          "isComponent": false,
+                          "implementationGuidance": "<p><br></p>"
                         },
                         {
                           "derivedFrom": "PRSB-Standards/WRIST-Epilepsy-information-standard/Assessments/Assessments record entry/Structured assessment/Assessment score@None",
