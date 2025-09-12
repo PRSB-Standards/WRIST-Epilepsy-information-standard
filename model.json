@@ -14755,7 +14755,7 @@
                     },
                     {
                       "derivedFrom": "PRSB-Standards/WRIST-Epilepsy-information-standard/Assessments/Assessments record entry/Assessment type@None",
-                      "description": "<p>The type of the assessment e.g. social care needs assessment.</p>",
+                      "description": "<p>The type of the assessment. For example, to assess epilepsy specific health-related quality of life, sleep, and psychological outcomes, the patient-reported outcome measures (PROM) can be applied. This is a 4-item subjective assessment of cognitive function in the past 7 days and is varied for the impact of epilepsy on education/ work and daily life activities, global epilepsy-specific health0related quality of life, depression symptoms, anxiety symptoms, suicidality, sleep adequacy and quality.</p>",
                       "maximumMultiplicity": "1",
                       "minimumMultiplicity": "0",
                       "mro": "R",
