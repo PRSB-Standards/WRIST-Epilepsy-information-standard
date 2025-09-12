@@ -11448,17 +11448,24 @@
       ]
     },
     {
-      "name": "",
-      "mro": "",
-      "description": "",
-      "valueSets": "",
-      "implementationGuidance": "",
+      "name": "Outcomes",
+      "mro": "R",
+      "description": "<p>The details about the clinical, functional, and quality-of-life impact of epilepsy and its management. This section complements the Epilepsy formulation.</p>",
+      "valueSets": [],
+      "implementationGuidance": "<p><br></p>",
       "informationType": "",
-      "minimumMultiplicity": "",
-      "maximumMultiplicity": "",
+      "minimumMultiplicity": "0",
+      "maximumMultiplicity": "*",
       "derivedFrom": "",
       "isComponent": false,
-      "concept": []
+      "concept": [],
+      "type": "",
+      "valueDomain": [
+        {
+          "type": ""
+        }
+      ],
+      "relationshipType": "specialisation"
     },
     {
       "concept": [
