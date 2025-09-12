@@ -13077,7 +13077,7 @@
                   "concept": [
                     {
                       "derivedFrom": "PRSB-Standards/WRIST-Epilepsy-information-standard/Assessments/Assessments record entry/Date@None",
-                      "description": "The date the assessment was done.",
+                      "description": "<p>The date the assessment was done.</p>",
                       "maximumMultiplicity": "1",
                       "minimumMultiplicity": "0",
                       "mro": "R",
@@ -13085,15 +13085,22 @@
                       "type": "item",
                       "valueDomain": [
                         {
-                          "property": [
-                            {
-                              "timeStampPrecision": "YMDHM"
-                            }
-                          ],
-                          "type": "datetime"
+                          "type": "PRSB-Standards/WRIST-PRSB-Datatypes/Date and Time@1-build.0.1"
                         }
                       ],
-                      "valueSets": "Date and time."
+                      "valueSets": [
+                        {
+                          "prefix": "",
+                          "use": "",
+                          "text": "",
+                          "expression": "",
+                          "popUpText": "<p><br></p>"
+                        }
+                      ],
+                      "informationType": "",
+                      "relationshipType": "specialisation",
+                      "isComponent": false,
+                      "implementationGuidance": "<p><br></p>"
                     },
                     {
                       "derivedFrom": "PRSB-Standards/WRIST-Epilepsy-information-standard/Assessments/Assessments record entry/Assessment type@None",
