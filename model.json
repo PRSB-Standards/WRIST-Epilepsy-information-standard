@@ -13194,7 +13194,7 @@
                           "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Care and support plan/Responsibility for review/Role@2-build.2.1"
                         },
                         {
-                          "description": "Contact details of the professional (e.g. telephone number, email address etc.).",
+                          "description": "<p>Contact details of the professional (e.g. telephone number, email address etc.).</p>",
                           "maximumMultiplicity": "1",
                           "minimumMultiplicity": "0",
                           "mro": "R",
@@ -13202,16 +13202,15 @@
                           "type": "item",
                           "valueDomain": [
                             {
-                              "property": [
-                                {
-                                  "maxLength": "35"
-                                }
-                              ],
-                              "type": "string"
+                              "type": "PRSB-Standards/WRIST-IPS-Datatypes/String@1-build.0.1"
                             }
                           ],
-                          "valueSets": "Free text",
-                          "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Care and support plan/Responsibility for review/Contact details@2-build.2.1"
+                          "valueSets": [],
+                          "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Care and support plan/Responsibility for review/Contact details@2-build.2.1",
+                          "informationType": "",
+                          "relationshipType": "specialisation",
+                          "isComponent": false,
+                          "implementationGuidance": "<p><br></p>"
                         }
                       ],
                       "description": "This is a record of who has responsibility for arranging review of this information. <br clear=\"none\"/> \n                ",
