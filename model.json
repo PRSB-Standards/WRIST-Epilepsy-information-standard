@@ -9906,17 +9906,32 @@
                       "relationshipType": "specialisation"
                     },
                     {
-                      "name": "",
-                      "mro": "",
-                      "description": "",
-                      "valueSets": "",
-                      "implementationGuidance": "",
+                      "name": "Procedure ",
+                      "mro": "R",
+                      "description": "<p>The details of any procedure performed. </p>",
+                      "valueSets": [
+                        {
+                          "prefix": "SNOMED_CT",
+                          "use": "",
+                          "text": "^991261000000107 |Emergency care investigations simple reference set (foundation metadata concept)| OR\n\n^991271000000100 |Emergency care treatments simple reference set (foundation metadata concept)|",
+                          "expression": "",
+                          "popUpText": "<p><br></p>"
+                        }
+                      ],
+                      "implementationGuidance": "<p><br></p>",
                       "informationType": "",
-                      "minimumMultiplicity": "",
-                      "maximumMultiplicity": "",
+                      "minimumMultiplicity": "0",
+                      "maximumMultiplicity": "1",
                       "derivedFrom": "",
                       "isComponent": false,
-                      "concept": []
+                      "concept": [],
+                      "type": "",
+                      "valueDomain": [
+                        {
+                          "type": "PRSB-Standards/WRIST-IPS-Datatypes/Coded Element@1-build.0.1"
+                        }
+                      ],
+                      "relationshipType": "specialisation"
                     }
                   ],
                   "type": "",
