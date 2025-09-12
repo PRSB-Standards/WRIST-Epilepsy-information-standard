@@ -11592,17 +11592,24 @@
                   "relationshipType": "specialisation"
                 },
                 {
-                  "name": "",
-                  "mro": "",
-                  "description": "",
-                  "valueSets": "",
-                  "implementationGuidance": "",
+                  "name": "Anti-seizure medication side effects",
+                  "mro": "R",
+                  "description": "<p>This records any adverse effects experienced that are tolerated. For example, the person experiences some side effects, such as nausea, but the medication is effectively managing their seizures. </p>",
+                  "valueSets": [],
+                  "implementationGuidance": "<p><br></p>",
                   "informationType": "",
-                  "minimumMultiplicity": "",
-                  "maximumMultiplicity": "",
+                  "minimumMultiplicity": "0",
+                  "maximumMultiplicity": "*",
                   "derivedFrom": "",
                   "isComponent": false,
-                  "concept": []
+                  "concept": [],
+                  "type": "item",
+                  "valueDomain": [
+                    {
+                      "type": "PRSB-Standards/WRIST-IPS-Datatypes/Coded Element@1-build.0.1"
+                    }
+                  ],
+                  "relationshipType": "specialisation"
                 }
               ],
               "type": "",
