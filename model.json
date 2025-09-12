@@ -10626,6 +10626,19 @@
               "relationshipType": "specialisation"
             },
             {
+              "name": "",
+              "mro": "",
+              "description": "",
+              "valueSets": "",
+              "implementationGuidance": "",
+              "informationType": "",
+              "minimumMultiplicity": "",
+              "maximumMultiplicity": "",
+              "derivedFrom": "",
+              "isComponent": false,
+              "concept": []
+            },
+            {
               "name": "Epilepsy syndrome type",
               "mro": "",
               "description": "<p>The type of epilepsy syndrome the person has been diagnosed with.</p>",
