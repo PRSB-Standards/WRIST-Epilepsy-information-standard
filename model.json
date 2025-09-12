@@ -13209,13 +13209,22 @@
                         },
                         {
                           "derivedFrom": "PRSB-Standards/WRIST-Epilepsy-information-standard/Assessments/Assessments record entry/Structured assessment/Subscale score@None",
-                          "description": "The subscale score of the structured assessment.",
+                          "description": "<p>The subscale score of the structured assessment.</p>",
                           "maximumMultiplicity": "*",
                           "minimumMultiplicity": "0",
                           "mro": "R",
                           "name": "Subscale score",
                           "type": "item",
-                          "valueSets": "Free text."
+                          "valueSets": [],
+                          "informationType": "",
+                          "valueDomain": [
+                            {
+                              "type": "PRSB-Standards/WRIST-IPS-Datatypes/Text@1-build.0.1"
+                            }
+                          ],
+                          "relationshipType": "specialisation",
+                          "isComponent": false,
+                          "implementationGuidance": "<p><br></p>"
                         },
                         {
                           "derivedFrom": "PRSB-Standards/WRIST-Epilepsy-information-standard/Assessments/Assessments record entry/Structured assessment/Subscale value@None",
