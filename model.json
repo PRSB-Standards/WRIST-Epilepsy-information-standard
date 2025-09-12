@@ -11572,17 +11572,24 @@
                   "relationshipType": "specialisation"
                 },
                 {
-                  "name": "",
-                  "mro": "",
-                  "description": "",
-                  "valueSets": "",
-                  "implementationGuidance": "",
+                  "name": "Anti-seizure medication effectiveness",
+                  "mro": "R",
+                  "description": "<p>This records the effectiveness in controlling seizures. </p>",
+                  "valueSets": [],
+                  "implementationGuidance": "<p><br></p>",
                   "informationType": "",
-                  "minimumMultiplicity": "",
-                  "maximumMultiplicity": "",
+                  "minimumMultiplicity": "0",
+                  "maximumMultiplicity": "*",
                   "derivedFrom": "",
                   "isComponent": false,
-                  "concept": []
+                  "concept": [],
+                  "type": "",
+                  "valueDomain": [
+                    {
+                      "type": "PRSB-Standards/WRIST-IPS-Datatypes/Coded Element@1-build.0.1"
+                    }
+                  ],
+                  "relationshipType": "specialisation"
                 }
               ],
               "type": "",
