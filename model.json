@@ -13012,16 +13012,6 @@
                     {
                       "concept": [
                         {
-                          "description": "The coded value associated with the person's needs, concerns or problems.",
-                          "maximumMultiplicity": "1",
-                          "minimumMultiplicity": "0",
-                          "mro": "R",
-                          "name": "Coded value",
-                          "type": "item",
-                          "valueSets": "SNOMED CT : -\u00a0 <a class=\"\" href=\"https://termbrowser.nhs.uk/?perspective=full&conceptId1=1127581000000103&edition=uk-edition&release=&server=https://termbrowser.nhs.uk/sct-browser-api/snomed&langRefset=999001261000000100,999000691000001104\" target=\"\" title=\"\" style=\"\">^1127581000000103 |Health issues simple reference set|</a> \n                    ",
-                          "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Care and support plan/Needs, concerns or problems/Coded value@2-build.2.1"
-                        },
-                        {
                           "description": "\n                         <table class=\"detail spaced\" width=\"100%\" style=\"font-family: Arial, Helvetica, Geneva, sans-serif; font-size: 12px; max-width: 100%; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial; color: rgb(51, 51, 51);\">\n                            <tbody>\n                                <tr>\n                                    <td colspan=\"3\" rowspan=\"1\" style=\"vertical-align: top;\">\n                                        <div class=\"xforms-control xforms-output xforms-mediatype-text-html xforms-mediatype-text\" id=\"xf-895\u2261xf-1189\" style=\"display: inline; zoom: 1;\">\n                                            <div class=\"xforms-output-output\" id=\"xf-895\u2261xf-1189\u2261\u2261c\" style=\"zoom: 1;\">Any supplementary or personalised information that relates to the person's needs, concerns and problems.</div>\n                                        </div>\n                                    </td>\n                                </tr>\n                            </tbody>\n                        </table> \n                    ",
                           "maximumMultiplicity": "1",
                           "minimumMultiplicity": "0",
