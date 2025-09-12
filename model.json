@@ -11147,6 +11147,1283 @@
               "relationshipType": "neither",
               "type": "group",
               "valueSets": []
+            },
+            {
+              "concept": [
+                {
+                  "concept": [
+                    {
+                      "concept": [
+                        {
+                          "description": "The date on which the medication or medical device was prescribed.",
+                          "maximumMultiplicity": "1",
+                          "minimumMultiplicity": "0",
+                          "mro": "R",
+                          "name": "Date",
+                          "type": "item",
+                          "valueDomain": [
+                            {
+                              "property": [
+                                {
+                                  "timeStampPrecision": "YMDHM"
+                                }
+                              ],
+                              "type": "datetime"
+                            }
+                          ],
+                          "valueSets": "Date and time",
+                          "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Medications and medical devices/Medication item entry/Medication item cluster/Date@2-build.2.1"
+                        },
+                        {
+                          "concept": [
+                            {
+                              "description": "The coded value for location",
+                              "maximumMultiplicity": "1",
+                              "minimumMultiplicity": "0",
+                              "mro": "R",
+                              "name": "Coded value",
+                              "type": "item",
+                              "valueDomain": [
+                                {
+                                  "property": [
+                                    {
+                                      "maxLength": "5",
+                                      "minLength": "3"
+                                    }
+                                  ],
+                                  "type": "string"
+                                }
+                              ],
+                              "valueSets": "NHS data dictionary : -  <a href=\"https://www.datadictionary.nhs.uk/data_dictionary/attributes/o/org/organisation_code_de.asp?shownav=1\" target=\"\" title=\"\">Organisation data service</a> \n                            ",
+                              "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Medications and medical devices/Medication item entry/Medication item cluster/Location/Coded value@2-build.2.1"
+                            },
+                            {
+                              "description": "Free text field to be used if no code is available",
+                              "maximumMultiplicity": "1",
+                              "minimumMultiplicity": "0",
+                              "mro": "R",
+                              "name": "Free text",
+                              "type": "item",
+                              "valueDomain": [
+                                {
+                                  "property": [
+                                    {
+                                      "maxLength": "150"
+                                    }
+                                  ],
+                                  "type": "text"
+                                }
+                              ],
+                              "valueSets": "Free text",
+                              "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Medications and medical devices/Medication item entry/Medication item cluster/Location/Free text@2-build.2.1"
+                            }
+                          ],
+                          "description": "The location where the medication or the medical device was prescribed.",
+                          "maximumMultiplicity": "1",
+                          "minimumMultiplicity": "0",
+                          "mro": "R",
+                          "name": "Location",
+                          "type": "group",
+                          "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Medications and medical devices/Medication item entry/Medication item cluster/Location@2-build.2.1"
+                        },
+                        {
+                          "concept": [
+                            {
+                              "description": "The name of the professional.",
+                              "maximumMultiplicity": "1",
+                              "minimumMultiplicity": "0",
+                              "mro": "R",
+                              "name": "Name",
+                              "type": "item",
+                              "valueDomain": [
+                                {
+                                  "property": [
+                                    {
+                                      "maxLength": "70"
+                                    }
+                                  ],
+                                  "type": "string"
+                                }
+                              ],
+                              "valueSets": "Free text.",
+                              "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Medications and medical devices/Medication item entry/Medication item cluster/Performing professional/Name@2-build.2.1"
+                            },
+                            {
+                              "description": "The role the professional has in relation to the person e.g. GP, physiotherapist, community nurse, social worker etc",
+                              "maximumMultiplicity": "1",
+                              "minimumMultiplicity": "0",
+                              "mro": "R",
+                              "name": "Role",
+                              "type": "item",
+                              "valueSets": "FHIR value set :-  <a class=\"\" href=\"https://simplifier.net/ukcore/codesystem-ukcore-sdsjobrolename\" target=\"\" title=\"\">SDSjobroletype</a> \n                            ",
+                              "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Medications and medical devices/Medication item entry/Medication item cluster/Performing professional/Role@2-build.2.1"
+                            },
+                            {
+                              "description": "The grade of the professional.",
+                              "maximumMultiplicity": "1",
+                              "minimumMultiplicity": "0",
+                              "mro": "R",
+                              "name": "Grade",
+                              "type": "item",
+                              "valueDomain": [
+                                {
+                                  "property": [
+                                    {
+                                      "maxLength": "150"
+                                    }
+                                  ],
+                                  "type": "text"
+                                }
+                              ],
+                              "valueSets": "Free text",
+                              "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Medications and medical devices/Medication item entry/Medication item cluster/Performing professional/Grade@2-build.2.1"
+                            },
+                            {
+                              "description": "The specialty of the professional e.g. physiotherapy, oncology, mental health etc",
+                              "maximumMultiplicity": "1",
+                              "minimumMultiplicity": "0",
+                              "mro": "R",
+                              "name": "Speciality",
+                              "type": "item",
+                              "valueDomain": [
+                                {
+                                  "property": [
+                                    {
+                                      "maxLength": "3"
+                                    }
+                                  ],
+                                  "type": "string"
+                                }
+                              ],
+                              "valueSets": "NHS data dictionary -  <a href=\"https://datadictionary.nhs.uk/data_elements/activity_treatment_function_code.html?hl=activity%2Ctreatment%2Cfunction%2Ccode\" target=\"\" title=\"\">Activity treatment function code</a> \n                            ",
+                              "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Medications and medical devices/Medication item entry/Medication item cluster/Performing professional/Speciality@2-build.2.1"
+                            },
+                            {
+                              "description": "Professional identifier for the professional e.g. GMC number, HCPC number etc or the personal identifier used by the local organisation.",
+                              "maximumMultiplicity": "1",
+                              "minimumMultiplicity": "0",
+                              "mro": "R",
+                              "name": "Professional identifier",
+                              "type": "item",
+                              "valueDomain": [
+                                {
+                                  "property": [
+                                    {
+                                      "maxLength": "32"
+                                    }
+                                  ],
+                                  "type": "string"
+                                }
+                              ],
+                              "valueSets": "NHS data dictionary : -  <a href=\"https://datadictionary.nhs.uk/data_elements/professional_registration_entry_identifier.html\" target=\"\" title=\"\">Professional registration identifier</a> \n                            ",
+                              "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Medications and medical devices/Medication item entry/Medication item cluster/Performing professional/Professional identifier@2-build.2.1"
+                            },
+                            {
+                              "description": "The name of the organisation the professional works for.",
+                              "maximumMultiplicity": "1",
+                              "minimumMultiplicity": "0",
+                              "mro": "R",
+                              "name": "Organisation",
+                              "type": "group",
+                              "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Medications and medical devices/Medication item entry/Medication item cluster/Performing professional/Organisation@2-build.2.1"
+                            },
+                            {
+                              "description": "Contact details of the professional",
+                              "maximumMultiplicity": "1",
+                              "minimumMultiplicity": "0",
+                              "mro": "R",
+                              "name": "Contact details",
+                              "type": "item",
+                              "valueDomain": [
+                                {
+                                  "property": [
+                                    {
+                                      "maxLength": "35"
+                                    }
+                                  ],
+                                  "type": "string"
+                                }
+                              ],
+                              "valueSets": "NHS data dictionary -  <a href=\"https://datadictionary.nhs.uk/data_elements/uk_telephone_number.html?hl=number\" target=\"\" title=\"\">UK phone number</a> \n                            ",
+                              "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Medications and medical devices/Medication item entry/Medication item cluster/Performing professional/Contact details@2-build.2.1"
+                            }
+                          ],
+                          "description": "The professional who prescribed the medication or medical device.",
+                          "maximumMultiplicity": "1",
+                          "minimumMultiplicity": "0",
+                          "mro": "R",
+                          "name": "Performing professional",
+                          "type": "group",
+                          "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Medications and medical devices/Medication item entry/Medication item cluster/Performing professional@2-build.2.1"
+                        },
+                        {
+                          "description": "The type of organisation responsible for authorising and issuing the medication e.g. GP <br clear=\"none\"/> \n                        ",
+                          "maximumMultiplicity": "1",
+                          "minimumMultiplicity": "0",
+                          "mro": "R",
+                          "name": "Medication prescribed by",
+                          "type": "item",
+                          "valueSets": "FHIR value set : - <a href=\"https://simplifier.net/hl7fhirukcoreprofiler4-dstu/ukcore-medicationprescribingagency\" target=\"\" title=\"\"> Medication prescribing agency</a> \n                        ",
+                          "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Medications and medical devices/Medication item entry/Medication item cluster/Medication prescribed by@2-build.2.1"
+                        },
+                        {
+                          "concept": [
+                            {
+                              "description": "The coded value for medication name",
+                              "maximumMultiplicity": "1",
+                              "minimumMultiplicity": "0",
+                              "mro": "R",
+                              "name": "Coded value",
+                              "type": "item",
+                              "valueSets": "dm+d:- any code from the VTM, VMP, AMP, VMPP and AMPP concept classes",
+                              "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Medications and medical devices/Medication item entry/Medication item cluster/Medication name/Coded value@2-build.2.1"
+                            },
+                            {
+                              "description": "Free text field to be used if no code is available",
+                              "maximumMultiplicity": "1",
+                              "minimumMultiplicity": "0",
+                              "mro": "R",
+                              "name": "Free text",
+                              "type": "item",
+                              "valueDomain": [
+                                {
+                                  "property": [
+                                    {
+                                      "maxLength": "150"
+                                    }
+                                  ],
+                                  "type": "text"
+                                }
+                              ],
+                              "valueSets": "Free text",
+                              "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Medications and medical devices/Medication item entry/Medication item cluster/Medication name/Free text@2-build.2.1"
+                            }
+                          ],
+                          "description": "May be generic name or brand name.",
+                          "maximumMultiplicity": "1",
+                          "minimumMultiplicity": "1",
+                          "mro": "M",
+                          "name": "Medication name",
+                          "type": "group",
+                          "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Medications and medical devices/Medication item entry/Medication item cluster/Medication name@2-build.2.1"
+                        },
+                        {
+                          "concept": [
+                            {
+                              "description": "The coded value for medication trade family or brand.",
+                              "maximumMultiplicity": "1",
+                              "minimumMultiplicity": "0",
+                              "mro": "R",
+                              "name": "Coded value",
+                              "type": "item",
+                              "valueSets": "SNOMED CT: - 999000641000001107 | National Health Service dictionary of medicines and devices trade family group simple reference set (foundation metadata concept) |",
+                              "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Medications and medical devices/Medication item entry/Medication item cluster/Medication trade family/Coded value@2-build.2.1"
+                            },
+                            {
+                              "description": "Free text field to be used if no code is available",
+                              "maximumMultiplicity": "1",
+                              "minimumMultiplicity": "0",
+                              "mro": "R",
+                              "name": "Free text",
+                              "type": "item",
+                              "valueDomain": [
+                                {
+                                  "property": [
+                                    {
+                                      "maxLength": "150"
+                                    }
+                                  ],
+                                  "type": "text"
+                                }
+                              ],
+                              "valueSets": "Free text",
+                              "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Medications and medical devices/Medication item entry/Medication item cluster/Medication trade family/Free text@2-build.2.1"
+                            }
+                          ],
+                          "description": "The trade family or brand of the medication prescribed.",
+                          "maximumMultiplicity": "1",
+                          "minimumMultiplicity": "0",
+                          "mro": "R",
+                          "name": "Medication trade family",
+                          "type": "group",
+                          "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Medications and medical devices/Medication item entry/Medication item cluster/Medication trade family@2-build.2.1"
+                        },
+                        {
+                          "concept": [
+                            {
+                              "description": "The coded value for form.",
+                              "maximumMultiplicity": "1",
+                              "minimumMultiplicity": "0",
+                              "mro": "R",
+                              "name": "Coded value",
+                              "type": "item",
+                              "valueSets": "SNOMED CT: - ^999000781000001107 | National Health Service dictionary of medicines and devices dose form simple reference set (foundation metadata concept) | <br clear=\"none\"/> \n                            ",
+                              "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Medications and medical devices/Medication item entry/Medication item cluster/Form/Coded value@2-build.2.1"
+                            },
+                            {
+                              "description": "Free text field to be used if no code is available",
+                              "maximumMultiplicity": "1",
+                              "minimumMultiplicity": "0",
+                              "mro": "R",
+                              "name": "Free text",
+                              "type": "item",
+                              "valueDomain": [
+                                {
+                                  "property": [
+                                    {
+                                      "maxLength": "150"
+                                    }
+                                  ],
+                                  "type": "text"
+                                }
+                              ],
+                              "valueSets": "Free text",
+                              "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Medications and medical devices/Medication item entry/Medication item cluster/Form/Free text@2-build.2.1"
+                            }
+                          ],
+                          "description": "The form of the medication e.g. capsule, drops, tablet, lotion etc.",
+                          "maximumMultiplicity": "1",
+                          "minimumMultiplicity": "0",
+                          "mro": "R",
+                          "name": "Form",
+                          "type": "group",
+                          "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Medications and medical devices/Medication item entry/Medication item cluster/Form@2-build.2.1"
+                        },
+                        {
+                          "concept": [
+                            {
+                              "description": "The value of the quantity supplied",
+                              "maximumMultiplicity": "1",
+                              "minimumMultiplicity": "0",
+                              "mro": "R",
+                              "name": "Value",
+                              "type": "item",
+                              "valueDomain": [
+                                {
+                                  "type": "quantity"
+                                }
+                              ],
+                              "valueSets": "Enumerated value",
+                              "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Medications and medical devices/Medication item entry/Medication item cluster/Quantity supplied/Value@2-build.2.1"
+                            },
+                            {
+                              "description": "Unit of measure of quantity supplied",
+                              "maximumMultiplicity": "1",
+                              "minimumMultiplicity": "0",
+                              "mro": "R",
+                              "name": "Unit of measure",
+                              "type": "item",
+                              "valueSets": "UCUM code",
+                              "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Medications and medical devices/Medication item entry/Medication item cluster/Quantity supplied/Unit of measure@2-build.2.1"
+                            }
+                          ],
+                          "description": "The quantity of the medication (e.g. tablets, inhalers, etc.) provided to the person. This may be dispensed by the pharmacy or on the ward. Record in a structured format i.e. value and a unit",
+                          "maximumMultiplicity": "1",
+                          "minimumMultiplicity": "0",
+                          "mro": "R",
+                          "name": "Quantity supplied",
+                          "type": "group",
+                          "valueSets": "Free text",
+                          "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Medications and medical devices/Medication item entry/Medication item cluster/Quantity supplied@2-build.2.1"
+                        },
+                        {
+                          "description": "The date/time the medication was supplied.",
+                          "maximumMultiplicity": "1",
+                          "minimumMultiplicity": "0",
+                          "mro": "R",
+                          "name": "Date supplied",
+                          "type": "item",
+                          "valueDomain": [
+                            {
+                              "property": [
+                                {
+                                  "timeStampPrecision": "YMDHM"
+                                }
+                              ],
+                              "type": "datetime"
+                            }
+                          ],
+                          "valueSets": "Date and time",
+                          "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Medications and medical devices/Medication item entry/Medication item cluster/Date supplied@2-build.2.1"
+                        },
+                        {
+                          "concept": [
+                            {
+                              "description": "The coded value for route",
+                              "maximumMultiplicity": "1",
+                              "minimumMultiplicity": "0",
+                              "mro": "R",
+                              "name": "Coded value",
+                              "type": "item",
+                              "valueSets": "SNOMED CT: - ^999000051000001100 |ePrescribing route of administration simple reference set (foundation metadata concept)|",
+                              "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Medications and medical devices/Medication item entry/Medication item cluster/Route/Coded value@2-build.2.1"
+                            },
+                            {
+                              "description": "Free text field to be used if no code is available",
+                              "maximumMultiplicity": "1",
+                              "minimumMultiplicity": "0",
+                              "mro": "R",
+                              "name": "Free text",
+                              "type": "item",
+                              "valueDomain": [
+                                {
+                                  "property": [
+                                    {
+                                      "maxLength": "150"
+                                    }
+                                  ],
+                                  "type": "text"
+                                }
+                              ],
+                              "valueSets": "Free text",
+                              "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Medications and medical devices/Medication item entry/Medication item cluster/Route/Free text@2-build.2.1"
+                            }
+                          ],
+                          "description": "The route by which the medication is administered e.g. oral, IM, IV",
+                          "maximumMultiplicity": "1",
+                          "minimumMultiplicity": "0",
+                          "mro": "R",
+                          "name": "Route",
+                          "type": "group",
+                          "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Medications and medical devices/Medication item entry/Medication item cluster/Route@2-build.2.1"
+                        },
+                        {
+                          "concept": [
+                            {
+                              "description": "The coded value for site",
+                              "maximumMultiplicity": "1",
+                              "minimumMultiplicity": "0",
+                              "mro": "R",
+                              "name": "Coded value",
+                              "type": "item",
+                              "valueSets": "SNOMED CT: - &lt;442083009 | Anatomical or acquired body structure (body structure) | <br clear=\"none\"/> \n                            ",
+                              "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Medications and medical devices/Medication item entry/Medication item cluster/Site/Coded value@2-build.2.1"
+                            },
+                            {
+                              "description": "Free text field to be used when code is not available",
+                              "maximumMultiplicity": "1",
+                              "minimumMultiplicity": "0",
+                              "mro": "R",
+                              "name": "Free text",
+                              "type": "item",
+                              "valueDomain": [
+                                {
+                                  "property": [
+                                    {
+                                      "maxLength": "150"
+                                    }
+                                  ],
+                                  "type": "string"
+                                }
+                              ],
+                              "valueSets": "Free text",
+                              "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Medications and medical devices/Medication item entry/Medication item cluster/Site/Free text@2-build.2.1"
+                            }
+                          ],
+                          "description": "The anatomical site at which the medication is to be administered.",
+                          "maximumMultiplicity": "1",
+                          "minimumMultiplicity": "0",
+                          "mro": "R",
+                          "name": "Site",
+                          "type": "group",
+                          "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Medications and medical devices/Medication item entry/Medication item cluster/Site@2-build.2.1"
+                        },
+                        {
+                          "concept": [
+                            {
+                              "description": "The coded value for method",
+                              "maximumMultiplicity": "1",
+                              "minimumMultiplicity": "0",
+                              "mro": "R",
+                              "name": "Coded value",
+                              "type": "item",
+                              "valueSets": "SNOMED CT : - ^999000041000001103 | ePrescribing method simple reference set (foundation metadata concept) |",
+                              "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Medications and medical devices/Medication item entry/Medication item cluster/Method/Coded value@2-build.2.1"
+                            },
+                            {
+                              "description": "Free text field to be used if no coded text available",
+                              "maximumMultiplicity": "1",
+                              "minimumMultiplicity": "0",
+                              "mro": "R",
+                              "name": "Free text",
+                              "type": "item",
+                              "valueDomain": [
+                                {
+                                  "property": [
+                                    {
+                                      "maxLength": "150"
+                                    }
+                                  ],
+                                  "type": "text"
+                                }
+                              ],
+                              "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Medications and medical devices/Medication item entry/Medication item cluster/Method/Free text@2-build.2.1"
+                            }
+                          ],
+                          "description": "The technique or method by which the medication is to be administered.",
+                          "maximumMultiplicity": "1",
+                          "minimumMultiplicity": "0",
+                          "mro": "R",
+                          "name": "Method",
+                          "type": "group",
+                          "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Medications and medical devices/Medication item entry/Medication item cluster/Method@2-build.2.1"
+                        },
+                        {
+                          "description": "Indicates if the medication or device is acquired without a prescription i.e. got by the person over the counter",
+                          "maximumMultiplicity": "1",
+                          "minimumMultiplicity": "0",
+                          "mro": "R",
+                          "name": "Over the counter medication flag",
+                          "type": "item",
+                          "valueDomain": [
+                            {
+                              "type": "boolean"
+                            }
+                          ],
+                          "valueSets": "Flag : - Yes or No",
+                          "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Medications and medical devices/Medication item entry/Medication item cluster/Over the counter medication flag@2-build.2.1"
+                        },
+                        {
+                          "concept": [
+                            {
+                              "description": "The kind of rate or dose specified\u00a0",
+                              "maximumMultiplicity": "1",
+                              "minimumMultiplicity": "0",
+                              "mro": "R",
+                              "name": "Dose type",
+                              "type": "item",
+                              "valueDomain": [
+                                {
+                                  "type": "boolean"
+                                }
+                              ],
+                              "valueSets": "Calculated or ordered",
+                              "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Medications and medical devices/Medication item entry/Medication item cluster/Structured dose direction cluster/Dose type@2-build.2.1"
+                            },
+                            {
+                              "concept": [
+                                {
+                                  "description": "Amount of dose medication .Note that this specifies the quantity of the specified medication, not the quantity for each active ingredient(s). Each ingredient amount can be communicated in the Medication resource. For example, if one wants to communicate that a tablet was 375 mg, where the dose was one tablet, you can use the Medication resource to document that the tablet was comprised of 375 mg of drug XYZ. Alternatively if the dose was 375 mg, then you may only need to use the Medication resource to indicate this was a tablet. If the example were an IV such as dopamine and you wanted to communicate that 400mg of dopamine was mixed in 500 ml of some IV solution, then this would all be communicated in the Medication resource. If the administration is not intended to be instantaneous (rate is present or timing has a duration), this can be specified to convey the total amount to be administered over the period of time as indicated by the schedule e.g. 500 ml in dose, with timing used to convey that this should be done over 4 hours.",
+                                  "maximumMultiplicity": "1",
+                                  "minimumMultiplicity": "0",
+                                  "mro": "R",
+                                  "name": "Dose",
+                                  "type": "item",
+                                  "valueDomain": [
+                                    {
+                                      "type": "quantity"
+                                    }
+                                  ],
+                                  "valueSets": "Numeric",
+                                  "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Medications and medical devices/Medication item entry/Medication item cluster/Structured dose direction cluster/Structured dose amount/Dose@2-build.2.1"
+                                },
+                                {
+                                  "description": "Amount of medication per unit of time.\u00a0Identifies the speed with which the medication was or will be introduced into the patient. Typically the rate for an infusion e.g. 100 ml per 1 hour or 100 ml/hr. May also be expressed as a rate per unit of time e.g. 500 ml per 2 hours. Other examples: 200 mcg/min or 200 mcg/1 minute; 1 liter/8 hours. Sometimes, a rate can imply duration when expressed as total volume / duration (e.g. 500mL/2 hours implies a duration of 2 hours). However, when rate doesn't imply duration (e.g. 250mL/hour), then the timing.repeat.duration is needed to convey the infuse over time period.",
+                                  "maximumMultiplicity": "1",
+                                  "minimumMultiplicity": "0",
+                                  "mro": "R",
+                                  "name": "Rate",
+                                  "type": "item",
+                                  "valueDomain": [
+                                    {
+                                      "type": "decimal"
+                                    }
+                                  ],
+                                  "valueSets": "Numeric",
+                                  "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Medications and medical devices/Medication item entry/Medication item cluster/Structured dose direction cluster/Structured dose amount/Rate@2-build.2.1"
+                                }
+                              ],
+                              "description": "A structural representation of dose amount, e.g. 20mg or 2 tablets. This element will generally only be used when persisting data within systems with 'parsable dose directions' being used to exchange the same information between systems. As per FHIR Dose Syntax Implementation Guidance (NHS Digital):\u00a0 <a class=\"\" href=\"https://simplifier.net/guide/DoseSyntaxImplementationGuidanceforFHIRR4/Home\" target=\"\" title=\"\">https://simplifier.net/guide/DoseSyntaxImplementationGuidanceforFHIRR4/Home</a> \n                            ",
+                              "maximumMultiplicity": "1",
+                              "minimumMultiplicity": "0",
+                              "mro": "R",
+                              "name": "Structured dose amount",
+                              "type": "group",
+                              "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Medications and medical devices/Medication item entry/Medication item cluster/Structured dose direction cluster/Structured dose amount@2-build.2.1"
+                            },
+                            {
+                              "description": "A slot containing a structural, computable representation of dose timing and maximum dose. This element will generally only be used when persisting data within systems with 'parsable dose directions' being used to exchange the same information between systems. As per FHIR Dose Syntax Implementation Guidance (NHS Digital):\u00a0 <a class=\"\" href=\"https://simplifier.net/guide/DoseSyntaxImplementationGuidanceforFHIRR4/Home\" target=\"\" title=\"\">https://simplifier.net/guide/DoseSyntaxImplementationGuidanceforFHIRR4/Home</a> \n                            ",
+                              "maximumMultiplicity": "1",
+                              "minimumMultiplicity": "0",
+                              "mro": "R",
+                              "name": "Structured dose timing",
+                              "type": "item",
+                              "valueDomain": [
+                                {
+                                  "type": "quantity"
+                                }
+                              ],
+                              "valueSets": "Numeric",
+                              "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Medications and medical devices/Medication item entry/Medication item cluster/Structured dose direction cluster/Structured dose timing@2-build.2.1"
+                            },
+                            {
+                              "description": "Recommendation of the time period for which the medication should be continued, including direction not to discontinue. As per FHIR Dose Syntax Implementation Guidance (NHS Digital):\u00a0 <a class=\"\" href=\"https://simplifier.net/guide/DoseSyntaxImplementationGuidanceforFHIRR4/Home\" target=\"\" title=\"\">https://simplifier.net/guide/DoseSyntaxImplementationGuidanceforFHIRR4/Home</a> \n                            ",
+                              "maximumMultiplicity": "1",
+                              "minimumMultiplicity": "0",
+                              "mro": "R",
+                              "name": "Dose direction duration",
+                              "type": "item",
+                              "valueDomain": [
+                                {
+                                  "type": "quantity"
+                                }
+                              ],
+                              "valueSets": "Numeric",
+                              "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Medications and medical devices/Medication item entry/Medication item cluster/Structured dose direction cluster/Dose direction duration@2-build.2.1"
+                            },
+                            {
+                              "description": "Describes the entire medication dosage and administration directions including dose quantity and medication frequency and optionally duration e.g. \u201c1 tablet at night\" or \u201c2mg at 10pm\u201d.",
+                              "maximumMultiplicity": "1",
+                              "minimumMultiplicity": "0",
+                              "mro": "R",
+                              "name": "Dose directions description",
+                              "type": "item",
+                              "valueDomain": [
+                                {
+                                  "property": [
+                                    {
+                                      "maxLength": "150"
+                                    }
+                                  ],
+                                  "type": "text"
+                                }
+                              ],
+                              "valueSets": "Free text",
+                              "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Medications and medical devices/Medication item entry/Medication item cluster/Structured dose direction cluster/Dose directions description@2-build.2.1"
+                            },
+                            {
+                              "description": "The maximum total quantity of a therapeutic substance that may be administered to a subject over the period of time. For example, 1000mg in 24 hours.",
+                              "maximumMultiplicity": "1",
+                              "minimumMultiplicity": "0",
+                              "mro": "R",
+                              "name": "Maxdoseperperiod",
+                              "type": "item",
+                              "valueDomain": [
+                                {
+                                  "type": "quantity"
+                                }
+                              ],
+                              "valueSets": "Numeric",
+                              "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Medications and medical devices/Medication item entry/Medication item cluster/Structured dose direction cluster/Maxdoseperperiod@2-build.2.1"
+                            },
+                            {
+                              "description": "The maximum total quantity of a therapeutic substance that may be administered to a subject per administration.",
+                              "maximumMultiplicity": "1",
+                              "minimumMultiplicity": "0",
+                              "mro": "R",
+                              "name": "Maxdoseperadministration",
+                              "type": "item",
+                              "valueDomain": [
+                                {
+                                  "type": "quantity"
+                                }
+                              ],
+                              "valueSets": "Numeric",
+                              "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Medications and medical devices/Medication item entry/Medication item cluster/Structured dose direction cluster/Maxdoseperadministration@2-build.2.1"
+                            }
+                          ],
+                          "description": "A structural representation of the elements carried by the dose syntax in 'parsable dose strength / timing' i.e. dose strength, dose timing, dose duration and maximum dose.",
+                          "maximumMultiplicity": "1",
+                          "minimumMultiplicity": "0",
+                          "mro": "R",
+                          "name": "Structured dose direction cluster",
+                          "type": "group",
+                          "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Medications and medical devices/Medication item entry/Medication item cluster/Structured dose direction cluster@2-build.2.1"
+                        },
+                        {
+                          "concept": [
+                            {
+                              "description": "The number of repeated prescriptions",
+                              "maximumMultiplicity": "1",
+                              "minimumMultiplicity": "0",
+                              "mro": "R",
+                              "name": "Number of repeat prescriptions",
+                              "type": "item",
+                              "valueDomain": [
+                                {
+                                  "type": "decimal"
+                                }
+                              ],
+                              "valueSets": "Numeric",
+                              "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Medications and medical devices/Medication item entry/Medication item cluster/Repeat medication/Number of repeat prescriptions@2-build.2.1"
+                            },
+                            {
+                              "description": "Date to review the repeat medication prescribed to the person",
+                              "maximumMultiplicity": "1",
+                              "minimumMultiplicity": "0",
+                              "mro": "R",
+                              "name": "Review date",
+                              "type": "item",
+                              "valueDomain": [
+                                {
+                                  "property": [
+                                    {
+                                      "timeStampPrecision": "YMD"
+                                    }
+                                  ],
+                                  "type": "datetime"
+                                }
+                              ],
+                              "valueSets": "Date and time",
+                              "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Medications and medical devices/Medication item entry/Medication item cluster/Repeat medication/Review date@2-build.2.1"
+                            }
+                          ],
+                          "description": "Is the medication prescribed to be repeated",
+                          "maximumMultiplicity": "1",
+                          "minimumMultiplicity": "0",
+                          "mro": "R",
+                          "name": "Repeat medication",
+                          "type": "group",
+                          "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Medications and medical devices/Medication item entry/Medication item cluster/Repeat medication@2-build.2.1"
+                        },
+                        {
+                          "description": "Allows for: requirements for adherence support, e.g. compliance aids, prompts and packaging requirements, additional information about specific medicines e.g. where specific brand required, person requirements, e.g. unable to swallow tablets.",
+                          "maximumMultiplicity": "1",
+                          "minimumMultiplicity": "0",
+                          "mro": "R",
+                          "name": "Additional instructions",
+                          "type": "item",
+                          "valueSets": "FHIR value set : -  <a href=\"http://hl7.org/fhir/stu3/valueset-additional-instruction-codes.html\" target=\"\" title=\"\">Additional instruction</a> \n                        ",
+                          "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Medications and medical devices/Medication item entry/Medication item cluster/Additional instructions@2-build.2.1"
+                        },
+                        {
+                          "concept": [
+                            {
+                              "description": "The status of this prescription.",
+                              "maximumMultiplicity": "1",
+                              "minimumMultiplicity": "0",
+                              "mro": "R",
+                              "name": "Course status",
+                              "type": "item",
+                              "valueSets": "FHIR value set : -  <a class=\"\" href=\"https://www.hl7.org/fhir/valueset-medication-statement-status.html\" target=\"\" title=\"\">Medication status</a> \n                                 <ul/> \n                            ",
+                              "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Medications and medical devices/Medication item entry/Medication item cluster/Course details cluster/Course status@2-build.2.1"
+                            },
+                            {
+                              "description": "Reason for medication being prescribed, where known.",
+                              "maximumMultiplicity": "1",
+                              "minimumMultiplicity": "0",
+                              "mro": "R",
+                              "name": "Indication",
+                              "type": "item",
+                              "valueDomain": [
+                                {
+                                  "property": [
+                                    {
+                                      "maxLength": "150"
+                                    }
+                                  ],
+                                  "type": "text"
+                                }
+                              ],
+                              "valueSets": "Free text",
+                              "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Medications and medical devices/Medication item entry/Medication item cluster/Course details cluster/Indication@2-build.2.1"
+                            },
+                            {
+                              "description": "The date and/or time that the medication course should begin.",
+                              "maximumMultiplicity": "1",
+                              "minimumMultiplicity": "0",
+                              "mro": "R",
+                              "name": "Start date/time",
+                              "type": "item",
+                              "valueDomain": [
+                                {
+                                  "property": [
+                                    {
+                                      "timeStampPrecision": "YMDHM"
+                                    }
+                                  ],
+                                  "type": "datetime"
+                                }
+                              ],
+                              "valueSets": "Date and time",
+                              "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Medications and medical devices/Medication item entry/Medication item cluster/Course details cluster/Start date/time@2-build.2.1"
+                            },
+                            {
+                              "description": "The date and/or time that the medication course should finish.",
+                              "maximumMultiplicity": "1",
+                              "minimumMultiplicity": "0",
+                              "mro": "R",
+                              "name": "End date/time",
+                              "type": "item",
+                              "valueDomain": [
+                                {
+                                  "property": [
+                                    {
+                                      "timeStampPrecision": "YMDHM"
+                                    }
+                                  ],
+                                  "type": "datetime"
+                                }
+                              ],
+                              "valueSets": "Date and time",
+                              "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Medications and medical devices/Medication item entry/Medication item cluster/Course details cluster/End date/time@2-build.2.1"
+                            },
+                            {
+                              "description": "A link to the record which contains the indication for this medication order.",
+                              "maximumMultiplicity": "1",
+                              "minimumMultiplicity": "0",
+                              "mro": "R",
+                              "name": "Link to indication record",
+                              "type": "item",
+                              "valueDomain": [
+                                {
+                                  "property": [
+                                    {
+                                      "maxLength": "150"
+                                    }
+                                  ],
+                                  "type": "text"
+                                }
+                              ],
+                              "valueSets": "Free text with URL",
+                              "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Medications and medical devices/Medication item entry/Medication item cluster/Course details cluster/Link to indication record@2-build.2.1"
+                            },
+                            {
+                              "description": "Suggestions about duration and/or review, ongoing monitoring requirements, advice on starting, discontinuing or changing medication. Additional comment or recommendation about the medication course e.g. 'Patient named supply', 'unlicensed medication', 'Foreign brand' or monitoring recommendations",
+                              "maximumMultiplicity": "1",
+                              "minimumMultiplicity": "0",
+                              "mro": "R",
+                              "name": "Comment/recommendation",
+                              "type": "item",
+                              "valueDomain": [
+                                {
+                                  "property": [
+                                    {
+                                      "maxLength": "150"
+                                    }
+                                  ],
+                                  "type": "text"
+                                }
+                              ],
+                              "valueSets": "Free text",
+                              "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Medications and medical devices/Medication item entry/Medication item cluster/Course details cluster/Comment/recommendation@2-build.2.1"
+                            }
+                          ],
+                          "description": "Details of the overall course of medication.",
+                          "maximumMultiplicity": "1",
+                          "minimumMultiplicity": "0",
+                          "mro": "R",
+                          "name": "Course details cluster",
+                          "type": "group",
+                          "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Medications and medical devices/Medication item entry/Medication item cluster/Course details cluster@2-build.2.1"
+                        },
+                        {
+                          "concept": [
+                            {
+                              "description": "The nature of any change made to the medication.",
+                              "maximumMultiplicity": "1",
+                              "minimumMultiplicity": "0",
+                              "mro": "R",
+                              "name": "Status",
+                              "type": "item",
+                              "valueSets": "FHIR value set :  <a href=\"https://www.hl7.org/fhir/valueset-medication-statement-status.html\" target=\"\" title=\"\">Medication status</a> \n                                 <ul/> \n                            ",
+                              "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Medications and medical devices/Medication item entry/Medication item cluster/Medication change summary cluster/Status@2-build.2.1"
+                            },
+                            {
+                              "description": "Reason for change in medication, e.g. sub-therapeutic dose, person intolerant.",
+                              "maximumMultiplicity": "1",
+                              "minimumMultiplicity": "0",
+                              "mro": "R",
+                              "name": "Indication",
+                              "type": "item",
+                              "valueSets": "\n                                 <table class=\"detail spaced\" width=\"100%\" style=\"font-family: Arial, Helvetica, Geneva, sans-serif; font-size: 12px; max-width: 100%; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial; color: rgb(51, 51, 51);\">\n                                    <tbody>\n                                        <tr>\n                                            <td colspan=\"3\" rowspan=\"1\" style=\"vertical-align: top;\">\n                                                <div class=\"xforms-control xforms-output xforms-mediatype-text-html xforms-mediatype-text\" id=\"xf-895\u2261xf-1239\" style=\"display: inline; zoom: 1;\">\n                                                    <div class=\"xforms-output-output\" id=\"xf-895\u2261xf-1239\u2261\u2261c\" style=\"zoom: 1;\">SNOMED CT:- ^1127601000000107 | Healthcare matters simple reference set (foundation metadata concept) |</div>\n                                                </div>\n                                            </td>\n                                        </tr>\n                                    </tbody>\n                                </table> \n                            ",
+                              "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Medications and medical devices/Medication item entry/Medication item cluster/Medication change summary cluster/Indication@2-build.2.1"
+                            },
+                            {
+                              "description": "The date of the change - addition, or amendment",
+                              "maximumMultiplicity": "1",
+                              "minimumMultiplicity": "0",
+                              "mro": "R",
+                              "name": "Date of change",
+                              "type": "item",
+                              "valueDomain": [
+                                {
+                                  "property": [
+                                    {
+                                      "timeStampPrecision": "YMDHM"
+                                    }
+                                  ],
+                                  "type": "datetime"
+                                }
+                              ],
+                              "valueSets": "Date and time",
+                              "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Medications and medical devices/Medication item entry/Medication item cluster/Medication change summary cluster/Date of change@2-build.2.1"
+                            },
+                            {
+                              "description": "Where a change is made to the medication i.e. one drug stopped and another started or eg dose, frequency or route is changed.",
+                              "maximumMultiplicity": "1",
+                              "minimumMultiplicity": "0",
+                              "mro": "R",
+                              "name": "Description of amendment",
+                              "type": "item",
+                              "valueDomain": [
+                                {
+                                  "property": [
+                                    {
+                                      "maxLength": "150"
+                                    }
+                                  ],
+                                  "type": "text"
+                                }
+                              ],
+                              "valueSets": "Free text",
+                              "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Medications and medical devices/Medication item entry/Medication item cluster/Medication change summary cluster/Description of amendment@2-build.2.1"
+                            }
+                          ],
+                          "description": "Records the changes made to medication.",
+                          "maximumMultiplicity": "1",
+                          "minimumMultiplicity": "0",
+                          "mro": "R",
+                          "name": "Medication change summary cluster",
+                          "type": "group",
+                          "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Medications and medical devices/Medication item entry/Medication item cluster/Medication change summary cluster@2-build.2.1"
+                        },
+                        {
+                          "concept": [
+                            {
+                              "description": "The name of the person completing the record.",
+                              "maximumMultiplicity": "1",
+                              "minimumMultiplicity": "0",
+                              "mro": "R",
+                              "name": "Name",
+                              "type": "item",
+                              "valueDomain": [
+                                {
+                                  "property": [
+                                    {
+                                      "maxLength": "70"
+                                    }
+                                  ],
+                                  "type": "string"
+                                }
+                              ],
+                              "valueSets": "Free text.",
+                              "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Medications and medical devices/Medication item entry/Medication item cluster/Person completing record/Name@2-build.2.1"
+                            },
+                            {
+                              "description": "The organisational role of the person completing record.",
+                              "maximumMultiplicity": "1",
+                              "minimumMultiplicity": "0",
+                              "mro": "R",
+                              "name": "Role",
+                              "type": "item",
+                              "valueSets": "FHIR value set :-  <a href=\"https://simplifier.net/ukcore/codesystem-ukcore-sdsjobrolename\" target=\"\" title=\"\">SDSjobrole</a> \n                            ",
+                              "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Medications and medical devices/Medication item entry/Medication item cluster/Person completing record/Role@2-build.2.1"
+                            },
+                            {
+                              "description": "The grade of the person completing the record.",
+                              "maximumMultiplicity": "1",
+                              "minimumMultiplicity": "0",
+                              "mro": "R",
+                              "name": "Grade",
+                              "type": "item",
+                              "valueDomain": [
+                                {
+                                  "property": [
+                                    {
+                                      "maxLength": "150"
+                                    }
+                                  ],
+                                  "type": "text"
+                                }
+                              ],
+                              "valueSets": "Free text.",
+                              "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Medications and medical devices/Medication item entry/Medication item cluster/Person completing record/Grade@2-build.2.1"
+                            },
+                            {
+                              "description": "The main specialty of the person completing the record.",
+                              "maximumMultiplicity": "1",
+                              "minimumMultiplicity": "0",
+                              "mro": "R",
+                              "name": "Specialty",
+                              "type": "item",
+                              "valueDomain": [
+                                {
+                                  "property": [
+                                    {
+                                      "maxLength": "3"
+                                    }
+                                  ],
+                                  "type": "string"
+                                }
+                              ],
+                              "valueSets": "NHS data dictionary :-  <a href=\"https://datadictionary.nhs.uk/data_elements/activity_treatment_function_code.html?hl=activity%2Ctreatment%2Cfunction%2Ccode\" target=\"\" title=\"\">Activity treatment function code</a> \n                            ",
+                              "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Medications and medical devices/Medication item entry/Medication item cluster/Person completing record/Specialty@2-build.2.1"
+                            },
+                            {
+                              "description": "The organisation the person completing the record works for.",
+                              "maximumMultiplicity": "1",
+                              "minimumMultiplicity": "0",
+                              "mro": "R",
+                              "name": "Organisation",
+                              "type": "group",
+                              "valueSets": "\n                                 <span style=\"color: rgb(51, 51, 51); font-family: Arial, Helvetica, Geneva, sans-serif; font-size: 12px;\">NHS data dictionary : - </span> \n                                 <a href=\"https://www.datadictionary.nhs.uk/supporting_information/organisation_data_service.html\" target=\"\" title=\"\">Organisation data service</a> \n                            ",
+                              "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Medications and medical devices/Medication item entry/Medication item cluster/Person completing record/Organisation@2-build.2.1"
+                            },
+                            {
+                              "description": "Professional identifier for the person completing the record e.g. GMC number, HCPC number etc, or the personal identifier used by the local organisation.",
+                              "maximumMultiplicity": "1",
+                              "minimumMultiplicity": "0",
+                              "mro": "R",
+                              "name": "Professional identifier",
+                              "type": "item",
+                              "valueDomain": [
+                                {
+                                  "property": [
+                                    {
+                                      "maxLength": "32"
+                                    }
+                                  ],
+                                  "type": "string"
+                                }
+                              ],
+                              "valueSets": "NHS data dictionary :-  <a href=\"https://datadictionary.nhs.uk/data_elements/professional_registration_entry_identifier.html\" target=\"\" title=\"\">Professional registration identifier</a> \n                            ",
+                              "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Medications and medical devices/Medication item entry/Medication item cluster/Person completing record/Professional identifier@2-build.2.1"
+                            },
+                            {
+                              "description": "The date and time the record was completed.",
+                              "maximumMultiplicity": "1",
+                              "minimumMultiplicity": "0",
+                              "mro": "R",
+                              "name": "Date completed",
+                              "type": "item",
+                              "valueDomain": [
+                                {
+                                  "property": [
+                                    {
+                                      "timeStampPrecision": "YMDHM"
+                                    }
+                                  ],
+                                  "type": "datetime"
+                                }
+                              ],
+                              "valueSets": "Date and time.",
+                              "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Medications and medical devices/Medication item entry/Medication item cluster/Person completing record/Date completed@2-build.2.1"
+                            },
+                            {
+                              "description": "Contact details of the person completing the record. <br clear=\"none\"/> \n                            ",
+                              "maximumMultiplicity": "1",
+                              "minimumMultiplicity": "0",
+                              "mro": "R",
+                              "name": "Contact details",
+                              "type": "item",
+                              "valueDomain": [
+                                {
+                                  "property": [
+                                    {
+                                      "maxLength": "35"
+                                    }
+                                  ],
+                                  "type": "string"
+                                }
+                              ],
+                              "valueSets": "NHS data dictionary : -  <a href=\"https://datadictionary.nhs.uk/data_elements/uk_telephone_number.html?hl=number\" target=\"\" title=\"\">UK telephone number</a> \n                            ",
+                              "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Medications and medical devices/Medication item entry/Medication item cluster/Person completing record/Contact details@2-build.2.1"
+                            }
+                          ],
+                          "description": "Details of the person completing the record.",
+                          "maximumMultiplicity": "1",
+                          "minimumMultiplicity": "0",
+                          "mro": "R",
+                          "name": "Person completing record",
+                          "type": "group",
+                          "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Medications and medical devices/Medication item entry/Medication item cluster/Person completing record@2-build.2.1"
+                        }
+                      ],
+                      "description": "Medication item cluster",
+                      "maximumMultiplicity": "1",
+                      "minimumMultiplicity": "0",
+                      "mro": "R",
+                      "name": "Medication item cluster",
+                      "type": "group",
+                      "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Medications and medical devices/Medication item entry/Medication item cluster@2-build.2.1"
+                    },
+                    {
+                      "concept": [
+                        {
+                          "description": "Any medical device that isn't prescribed.",
+                          "maximumMultiplicity": "1",
+                          "minimumMultiplicity": "0",
+                          "mro": "R",
+                          "name": "Medical device",
+                          "type": "item",
+                          "valueDomain": [
+                            {
+                              "property": [
+                                {
+                                  "maxLength": "150"
+                                }
+                              ],
+                              "type": "text"
+                            }
+                          ],
+                          "valueSets": "Free text",
+                          "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Medications and medical devices/Medication item entry/Medical devices entry/Medical device@2-build.2.1"
+                        },
+                        {
+                          "description": "Any information regarding the medical device.",
+                          "implementationGuidance": "Implementation guidance",
+                          "maximumMultiplicity": "1",
+                          "minimumMultiplicity": "0",
+                          "mro": "R",
+                          "name": "Comments",
+                          "type": "item",
+                          "valueDomain": [
+                            {
+                              "property": [
+                                {
+                                  "maxLength": "150"
+                                }
+                              ],
+                              "type": "text"
+                            }
+                          ],
+                          "valueSets": "Free text",
+                          "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Medications and medical devices/Medication item entry/Medical devices entry/Comments@2-build.2.1"
+                        }
+                      ],
+                      "description": "Medical devices",
+                      "maximumMultiplicity": "*",
+                      "minimumMultiplicity": "0",
+                      "mro": "R",
+                      "name": "Medical devices entry",
+                      "type": "group",
+                      "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Medications and medical devices/Medication item entry/Medical devices entry@2-build.2.1"
+                    },
+                    {
+                      "concept": [
+                        {
+                          "concept": [
+                            {
+                              "description": "The coded value for medication name",
+                              "maximumMultiplicity": "1",
+                              "minimumMultiplicity": "0",
+                              "mro": "R",
+                              "name": "Coded value",
+                              "type": "item",
+                              "valueSets": "\n                                 <div>\n                                    <table class=\"detail spaced\" width=\"100%\" style=\"font-family: Arial, Helvetica, Geneva, sans-serif; font-size: 12px; max-width: 100%; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial; color: rgb(51, 51, 51);\">\n                                        <tbody>\n                                            <tr>\n                                                <td colspan=\"3\" rowspan=\"1\" style=\"vertical-align: top;\">\n                                                    <div class=\"xforms-control xforms-output xforms-mediatype-text-html xforms-mediatype-text\" id=\"xf-895\u2261xf-1239\" style=\"display: inline; zoom: 1;\">\n                                                        <div class=\"xforms-output-output\" id=\"xf-895\u2261xf-1239\u2261\u2261c\" style=\"zoom: 1;\">dm+d:- any code from the VTM, VMP, AMP, VMPP and AMPP concept classes</div>\n                                                    </div>\n                                                </td>\n                                            </tr>\n                                        </tbody>\n                                    </table>\n                                </div> \n                                 <div/> \n                            ",
+                              "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Medications and medical devices/Medication item entry/Medication discontinued entry/Name of discontinued medication/Coded value@2-build.2.1"
+                            },
+                            {
+                              "description": "Amount of vaccine administered.",
+                              "maximumMultiplicity": "1",
+                              "minimumMultiplicity": "0",
+                              "mro": "R",
+                              "name": "Free text",
+                              "type": "item",
+                              "valueDomain": [
+                                {
+                                  "property": [
+                                    {
+                                      "maxLength": "150"
+                                    }
+                                  ],
+                                  "type": "string"
+                                }
+                              ],
+                              "valueSets": "Free text",
+                              "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Medications and medical devices/Medication item entry/Medication discontinued entry/Name of discontinued medication/Free text@2-build.2.1"
+                            }
+                          ],
+                          "description": "The name of the medication or medical device being discontinued",
+                          "maximumMultiplicity": "1",
+                          "minimumMultiplicity": "0",
+                          "mro": "R",
+                          "name": "Name of discontinued medication",
+                          "type": "group",
+                          "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Medications and medical devices/Medication item entry/Medication discontinued entry/Name of discontinued medication@2-build.2.1"
+                        },
+                        {
+                          "description": "The status of any change made to the medication. MUST CONTAIN STOPPED.",
+                          "maximumMultiplicity": "1",
+                          "minimumMultiplicity": "0",
+                          "mro": "R",
+                          "name": "Status",
+                          "type": "item",
+                          "valueSets": "FHIR value set: -  <a href=\"https://www.hl7.org/fhir/valueset-medication-statement-status.html\" target=\"\" title=\"\">Medication status</a> \n                        ",
+                          "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Medications and medical devices/Medication item entry/Medication discontinued entry/Status@2-build.2.1"
+                        },
+                        {
+                          "description": "The clinical indication for any changes in medication status",
+                          "maximumMultiplicity": "1",
+                          "minimumMultiplicity": "0",
+                          "mro": "R",
+                          "name": "Indication",
+                          "type": "item",
+                          "valueSets": "\n                             <table class=\"detail spaced\" width=\"100%\" style=\"font-family: Arial, Helvetica, Geneva, sans-serif; font-size: 12px; max-width: 100%; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial; color: rgb(51, 51, 51);\">\n                                <tbody>\n                                    <tr>\n                                        <td colspan=\"3\" rowspan=\"1\" style=\"vertical-align: top;\">\n                                            <div class=\"xforms-control xforms-output xforms-mediatype-text-html xforms-mediatype-text\" id=\"xf-895\u2261xf-1239\" style=\"display: inline; zoom: 1;\">\n                                                <div class=\"xforms-output-output\" id=\"xf-895\u2261xf-1239\u2261\u2261c\" style=\"zoom: 1;\">SNOMED CT:- ^1127601000000107 | Healthcare matters simple reference set (foundation metadata concept) |</div>\n                                            </div>\n                                        </td>\n                                    </tr>\n                                </tbody>\n                            </table> \n                        ",
+                          "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Medications and medical devices/Medication item entry/Medication discontinued entry/Indication@2-build.2.1"
+                        },
+                        {
+                          "description": "The date of the discontinuation",
+                          "maximumMultiplicity": "1",
+                          "minimumMultiplicity": "0",
+                          "mro": "R",
+                          "name": "Date of change",
+                          "type": "item",
+                          "valueDomain": [
+                            {
+                              "property": [
+                                {
+                                  "timeStampPrecision": "YMDHM"
+                                }
+                              ],
+                              "type": "datetime"
+                            }
+                          ],
+                          "valueSets": "Date and time",
+                          "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Medications and medical devices/Medication item entry/Medication discontinued entry/Date of change@2-build.2.1"
+                        },
+                        {
+                          "description": "Any additional comment about the discontinuation or amendment.",
+                          "maximumMultiplicity": "1",
+                          "minimumMultiplicity": "0",
+                          "mro": "R",
+                          "name": "Comment",
+                          "type": "item",
+                          "valueDomain": [
+                            {
+                              "property": [
+                                {
+                                  "maxLength": "150"
+                                }
+                              ],
+                              "type": "text"
+                            }
+                          ],
+                          "valueSets": "Free text",
+                          "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Medications and medical devices/Medication item entry/Medication discontinued entry/Comment@2-build.2.1"
+                        }
+                      ],
+                      "description": "Medication discontinued entry",
+                      "maximumMultiplicity": "*",
+                      "minimumMultiplicity": "0",
+                      "mro": "R",
+                      "name": "Medication discontinued entry",
+                      "type": "group",
+                      "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Medications and medical devices/Medication item entry/Medication discontinued entry@2-build.2.1"
+                    }
+                  ],
+                  "description": "All medications and devices that can be prescribed to be entered via this Medication item entry. Handles details of continuation / addition / amendment of admission medications.",
+                  "maximumMultiplicity": "*",
+                  "minimumMultiplicity": "0",
+                  "mro": "R",
+                  "name": "Medication item entry",
+                  "type": "group",
+                  "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Medications and medical devices/Medication item entry@2-build.2.1"
+                }
+              ],
+              "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Medications and medical devices@2-build.2.1",
+              "description": "<p>Medications and medical devices</p>",
+              "implementationGuidance": "<p><br></p>",
+              "informationType": "",
+              "isComponent": true,
+              "maximumMultiplicity": "1",
+              "minimumMultiplicity": "0",
+              "mro": "R",
+              "name": "Medications and medical devices",
+              "relationshipType": "neither",
+              "type": "group",
+              "valueSets": ""
             }
           ],
           "type": "group",
