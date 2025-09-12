@@ -13165,7 +13165,7 @@
                     {
                       "concept": [
                         {
-                          "description": "The name of the professional with responsibility for the care of the person.",
+                          "description": "<p>The name of the professional with responsibility for the care of the person.</p>",
                           "maximumMultiplicity": "1",
                           "minimumMultiplicity": "0",
                           "mro": "R",
@@ -13173,16 +13173,15 @@
                           "type": "item",
                           "valueDomain": [
                             {
-                              "property": [
-                                {
-                                  "maxLength": "70"
-                                }
-                              ],
-                              "type": "text"
+                              "type": "PRSB-Standards/WRIST-IPS-Datatypes/Person Name@1-build.0.1"
                             }
                           ],
-                          "valueSets": "Free text",
-                          "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Care and support plan/Responsibility for review/Name@2-build.2.1"
+                          "valueSets": [],
+                          "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Care and support plan/Responsibility for review/Name@2-build.2.1",
+                          "informationType": "",
+                          "relationshipType": "specialisation",
+                          "isComponent": false,
+                          "implementationGuidance": "<p><br></p>"
                         },
                         {
                           "description": "The role the professional has in relation to the person e.g. GP, physiotherapist, community nurse, social worker, key worker, care home manager, care coordinator, LA hospital liaison person, care home contact, hospital clinician, Independent Mental Capacity Advocate (IMCA) etc",
