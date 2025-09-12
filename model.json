@@ -9329,8 +9329,16 @@
               "name": "Episode type",
               "mro": "R",
               "description": "<p>The type of episode being record. This could be epileptic, non-epileptic, or uncertain.</p>",
-              "valueSets": [],
-              "implementationGuidance": "<p>The episode type value sets must align with the International League Against Epilepsy. </p><p>This should allow mapping to legacy codes (e.g. Read v2, ICD-10) where still required, but store SNOMED-CT as the reference.</p><p>The system must update terminology content in line with national release and updates.  </p><p>The system must ensure that when 'epileptic' is recorded as an episode type, the information flows automatically to the diagnoses/ problem list section. </p><p>The system must link the recorded seizure/ episode type to an appropriate SNOMED CT diagnosis code (e.g., epilepsy or specific syndromes) when confirmed. </p><p>This must allow clinicians to review, validate, and confirm the diagnosis before it is added permanently to the patient's record. </p><p>The system must retain audit trails showing when seizure/ episode data triggered an update in the diagnoses section. </p><p>The system should prompt the clinicians to complete related fields (e.g., epilepsy type, epilepsy syndrome, risk assessment, care plan) when epilepsy is first recorded. </p><p><br></p>",
+              "valueSets": [
+                {
+                  "prefix": "SNOMED_CT",
+                  "use": "",
+                  "text": "This must include high level concepts or concepts to specify the exact episode type or when a non-epileptic cause for seizure is found.",
+                  "expression": "",
+                  "popUpText": "<p>For example</p><p>398665005 |Vasovagal syncope| OR 440443001 |Reflex anoxic seizure| OR 713013008 |Breath holding spell| OR 68978004 |Hyperventilation|</p>"
+                }
+              ],
+              "implementationGuidance": "<p>The episode type value sets must align with the International League Against Epilepsy.</p><p>This should allow mapping to legacy codes (e.g. Read v2, ICD-10) where still required, but store SNOMED-CT as the reference.</p><p>The system must update terminology content in line with national release and updates.</p><p>The system must ensure that when 'epileptic' is recorded as an episode type, the information flows automatically to the diagnoses/ problem list section.</p><p>The system must link the recorded seizure/ episode type to an appropriate SNOMED CT diagnosis code (e.g., epilepsy or specific syndromes) when confirmed.</p><p>This must allow clinicians to review, validate, and confirm the diagnosis before it is added permanently to the patient's record.</p><p>The system must retain audit trails showing when seizure/ episode data triggered an update in the diagnoses section.</p><p>The system should prompt the clinicians to complete related fields (e.g., epilepsy type, epilepsy syndrome, risk assessment, care plan) when epilepsy is first recorded.</p>",
               "informationType": "",
               "minimumMultiplicity": "0",
               "maximumMultiplicity": "*",
