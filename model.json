@@ -13125,7 +13125,7 @@
                       "implementationGuidance": "<p><br></p>"
                     },
                     {
-                      "description": "Reference other care planning documents, including the type, location and date.  <br clear=\"none\"/> \n                     <br clear=\"none\"/> This may include condition-specific plans, advance care plans, end of life care plan, etc.",
+                      "description": "<p>Reference other care planning documents, including the type, location and date. </p><p><br></p><p> This may include condition-specific plans, advance care plans, end of life care plan, etc.</p>",
                       "maximumMultiplicity": "*",
                       "minimumMultiplicity": "0",
                       "mro": "R",
@@ -13133,11 +13133,15 @@
                       "type": "item",
                       "valueDomain": [
                         {
-                          "type": "text"
+                          "type": "PRSB-Standards/WRIST-IPS-Datatypes/Text@1-build.0.1"
                         }
                       ],
-                      "valueSets": "Free text.",
-                      "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Care and support plan/Other care planning documents@2-build.2.1"
+                      "valueSets": [],
+                      "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Care and support plan/Other care planning documents@2-build.2.1",
+                      "informationType": "",
+                      "relationshipType": "specialisation",
+                      "isComponent": false,
+                      "implementationGuidance": "<p><br></p>"
                     },
                     {
                       "description": "This is the date/interval when this information will next be reviewed. SNOMED CT tag : -\u00a0425268008 | Review of care plan (procedure) |",
