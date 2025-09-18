@@ -11509,17 +11509,24 @@
           "isComponent": false,
           "concept": [
             {
-              "name": "",
-              "mro": "",
-              "description": "",
-              "valueSets": "",
-              "implementationGuidance": "",
+              "name": "Epileptic seizure frequency ",
+              "mro": "R",
+              "description": "<p>This is how often the person experiences seizures, such as the episodes per time period.</p>",
+              "valueSets": [],
+              "implementationGuidance": "<p>May be ascertained from multiple sources (incl. patient or proxy seizure diary)</p><p><br></p><p>To be captured for each of the following seizure types:</p><p><br></p><p>(A) Motor predominant seizure of generalized, focal, or undetermined onset that involves impairment or loss of awareness (any combination of tonic &amp; clonic and atonic).</p><p><br></p><p>(B) Motor predominant seizure of generalized, focal, or undetermined onset that does not involve loss of awareness (focal motor, myoclonic, spasms)</p><p><br></p><p>(C) Other seizures of generalized, focal, or undetermined onset that involve impairment of awareness as their primary manifestations (e.g. absence)</p><p><br></p><p>(D) Other (e.g. pure sensory seizures)</p><p><br></p><p>(E) Unclassifiable seizures (e.g. if unclear or no eyewitness account)</p><p><br></p><p>1= Multiple per day but not quantified&nbsp;&nbsp;</p><p>2= Multiple per day with more than 50 seizures (i.e. \u226550 most days)</p><p>3= Multiple per day with more than 10 seizures (i.e., \u226510 but &lt;50 per day most days)</p><p>4= Multiple per day but less than 10 seizures(i.e., 4 days per week with \u22652 seizures)</p><p>5= Daily (i.e., 4 or more days per week)</p><p>6= Weekly but not daily (i.e., 1\u20133 per week)</p><p>7= Monthly but not weekly (i.e., 1\u20133 per month)</p><p>8= At least once per year, but not every month (i.e., 10 or fewer in past 12 months)</p><p>9= Less than once per year</p><p>10= Frequency not well defined but less than daily</p><p>999= Unknown</p>",
               "informationType": "",
-              "minimumMultiplicity": "",
-              "maximumMultiplicity": "",
+              "minimumMultiplicity": "0",
+              "maximumMultiplicity": "*",
               "derivedFrom": "",
               "isComponent": false,
-              "concept": []
+              "concept": [],
+              "type": "",
+              "valueDomain": [
+                {
+                  "type": "PRSB-Standards/WRIST-IPS-Datatypes/Coded Element@1-build.0.1"
+                }
+              ],
+              "relationshipType": "specialisation"
             }
           ],
           "type": "group",
