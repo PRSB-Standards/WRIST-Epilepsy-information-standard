@@ -11188,26 +11188,6 @@
                     },
                     {
                       "concept": [],
-                      "derivedFrom": "PRSB-Standards/WRIST-Problem-list/Problem list/Problem list record entry/Awareness of diagnosis@1-build.0.4",
-                      "description": "<p>Description of the level of awareness the person and or their carer/family has regarding their diagnosis.</p>",
-                      "implementationGuidance": "<p><br></p>",
-                      "informationType": "",
-                      "isComponent": false,
-                      "maximumMultiplicity": "1",
-                      "minimumMultiplicity": "0",
-                      "mro": "O",
-                      "name": "Awareness of diagnosis",
-                      "relationshipType": "specialisation",
-                      "type": "item",
-                      "valueDomain": [
-                        {
-                          "type": "PRSB-Standards/WRIST-IPS-Datatypes/Text@1-build.0.1"
-                        }
-                      ],
-                      "valueSets": []
-                    },
-                    {
-                      "concept": [],
                       "derivedFrom": "PRSB-Standards/WRIST-Problem-list/Problem list/Problem list record entry/Comment@1-build.0.4",
                       "description": "<p>Supporting text may be given covering the problem.</p>",
                       "implementationGuidance": "<p><br></p>",
