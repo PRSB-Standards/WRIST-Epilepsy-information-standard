@@ -11090,28 +11090,6 @@
                     },
                     {
                       "concept": [],
-                      "derivedFrom": "PRSB-Standards/WRIST-Problem-list/Problem list/Problem list record entry/Date diagnosis made@1-build.0.4",
-                      "description": "<p>The date a diagnosis was made.</p>",
-                      "implementationGuidance": "<p><br></p>",
-                      "informationType": "",
-                      "isComponent": false,
-                      "maximumMultiplicity": "1",
-                      "minimumMultiplicity": "0",
-                      "mro": "",
-                      "name": "Date diagnosis made",
-                      "relationshipType": "specialisation",
-                      "type": "",
-                      "valueDomain": [
-                        {
-                          "type": "PRSB-Standards/WRIST-IPS-Datatypes/Date Time@1-build.0.1"
-                        }
-                      ],
-                      "valueSets": [],
-                      "vs_label": "",
-                      "vs_text": ""
-                    },
-                    {
-                      "concept": [],
                       "derivedFrom": "PRSB-Standards/WRIST-Problem-list/Problem list/Problem list record entry/Onset date@1-build.0.4",
                       "description": "<p>A date or estimated date that the problem began, recurred or relapsed.<span class=\"ql-cursor\">\ufeff</span></p>",
                       "implementationGuidance": "<p><br></p>",
