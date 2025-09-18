@@ -11188,35 +11188,6 @@
                     },
                     {
                       "concept": [],
-                      "derivedFrom": "PRSB-Standards/WRIST-Problem-list/Problem list/Problem list record entry/Problem status@1-build.0.4",
-                      "description": "<p>The status of the problem. This can be either active or inactive.</p>",
-                      "implementationGuidance": "<p><br></p>",
-                      "informationType": "",
-                      "isComponent": false,
-                      "maximumMultiplicity": "1",
-                      "minimumMultiplicity": "0",
-                      "mro": "O",
-                      "name": "Problem status",
-                      "relationshipType": "specialisation",
-                      "type": "item",
-                      "valueDomain": [
-                        {
-                          "type": "PRSB-Standards/WRIST-IPS-Datatypes/Coded Element@1-build.0.1"
-                        }
-                      ],
-                      "valueSets": [
-                        {
-                          "prefix": "SNOMED_CT",
-                          "use": "",
-                          "text": "<394731006 |Problem statuses|",
-                          "expression": "",
-                          "popUpText": "<p><br></p>",
-                          "prefixDisplay": "SNOMED CT"
-                        }
-                      ]
-                    },
-                    {
-                      "concept": [],
                       "derivedFrom": "PRSB-Standards/WRIST-Problem-list/Problem list/Problem list record entry/Problem priority@1-build.0.4",
                       "description": "<p>The problem priority level. This can be either significant or minor.&nbsp;</p>",
                       "implementationGuidance": "<p><br></p>",
