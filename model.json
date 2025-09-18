@@ -11061,35 +11061,6 @@
                   "concept": [
                     {
                       "concept": [],
-                      "derivedFrom": "PRSB-Standards/WRIST-Problem-list/Problem list/Problem list record entry/Problem@1-build.0.4",
-                      "description": "<p>A condition that needs addressing and so is important for every professional to know about when seeing the person.&nbsp;Problems may include diagnoses, symptoms, and social or behavioural issues.</p>",
-                      "implementationGuidance": "<p><br></p>",
-                      "informationType": "",
-                      "isComponent": false,
-                      "maximumMultiplicity": "1",
-                      "minimumMultiplicity": "1",
-                      "mro": "M",
-                      "name": "Problem",
-                      "relationshipType": "specialisation",
-                      "type": "",
-                      "valueDomain": [
-                        {
-                          "type": "PRSB-Standards/WRIST-IPS-Datatypes/Coded Element@1-build.0.1"
-                        }
-                      ],
-                      "valueSets": [
-                        {
-                          "prefix": "SNOMED_CT",
-                          "use": "",
-                          "text": "1127601000000107 |Healthcare matters simple reference set|",
-                          "expression": "",
-                          "popUpText": "<p><br></p>",
-                          "prefixDisplay": "SNOMED CT"
-                        }
-                      ]
-                    },
-                    {
-                      "concept": [],
                       "derivedFrom": "PRSB-Standards/WRIST-Problem-list/Problem list/Problem list record entry/Problem verification status@1-build.0.4",
                       "description": "<p>Provides an indication of the degree to which a condition has been verified by clinical evidence i.e. confirmed, unconfirmed (including provisional or differential), refuted or entered-in-error.</p>",
                       "implementationGuidance": "<p><br></p>",
