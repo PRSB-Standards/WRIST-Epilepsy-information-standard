@@ -11497,17 +11497,24 @@
           "relationshipType": "specialisation"
         },
         {
-          "name": "",
-          "mro": "",
-          "description": "",
-          "valueSets": "",
-          "implementationGuidance": "",
+          "name": "Seizure summary record entry",
+          "mro": "R",
+          "description": "<p>This is a seizure summary record entry. There may be 0 to many record entry/entries under a section. Each record entry is made up of a number of elements or data items.</p>",
+          "valueSets": [],
+          "implementationGuidance": "<p><br></p>",
           "informationType": "",
-          "minimumMultiplicity": "",
-          "maximumMultiplicity": "",
+          "minimumMultiplicity": "0",
+          "maximumMultiplicity": "1",
           "derivedFrom": "",
           "isComponent": false,
-          "concept": []
+          "concept": [],
+          "type": "group",
+          "valueDomain": [
+            {
+              "type": ""
+            }
+          ],
+          "relationshipType": "specialisation"
         },
         {
           "name": "Epilepsy record entry",
