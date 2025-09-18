@@ -10987,26 +10987,6 @@
               "relationshipType": "specialisation"
             },
             {
-              "name": "Episode definition",
-              "mro": "R",
-              "description": "<p>This is a definition of the type of episode, in regards to how many the person has had in the space of 24 hours. This could be described as a single episode, single cluster within 24 hours, 2 or more episodes more than 24 hours apart.</p>",
-              "valueSets": [],
-              "implementationGuidance": "<p><br></p>",
-              "informationType": "",
-              "minimumMultiplicity": "0",
-              "maximumMultiplicity": "1",
-              "derivedFrom": "",
-              "isComponent": false,
-              "concept": [],
-              "type": "item",
-              "valueDomain": [
-                {
-                  "type": "PRSB-Standards/WRIST-IPS-Datatypes/Coded Element@1-build.0.1"
-                }
-              ],
-              "relationshipType": "specialisation"
-            },
-            {
               "name": "Source of description ",
               "mro": "",
               "description": "<p>This is a record of the source providing the description of episode. For example, this could be a school teacher, or a parent. </p>",
