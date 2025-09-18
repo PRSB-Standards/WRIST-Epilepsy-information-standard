@@ -11188,35 +11188,6 @@
                     },
                     {
                       "concept": [],
-                      "derivedFrom": "PRSB-Standards/WRIST-Problem-list/Problem list/Problem list record entry/Problem priority@1-build.0.4",
-                      "description": "<p>The problem priority level. This can be either significant or minor.&nbsp;</p>",
-                      "implementationGuidance": "<p><br></p>",
-                      "informationType": "",
-                      "isComponent": false,
-                      "maximumMultiplicity": "1",
-                      "minimumMultiplicity": "0",
-                      "mro": "O",
-                      "name": "Problem priority",
-                      "relationshipType": "specialisation",
-                      "type": "",
-                      "valueDomain": [
-                        {
-                          "type": "PRSB-Standards/WRIST-IPS-Datatypes/Coded Element@1-build.0.1"
-                        }
-                      ],
-                      "valueSets": [
-                        {
-                          "prefix": "SNOMED_CT",
-                          "use": "",
-                          "text": "386134007 \u2502Significant\u2502 OR 255606000 \u2502Minor\u2502",
-                          "expression": "",
-                          "popUpText": "<p><br></p>",
-                          "prefixDisplay": "SNOMED CT"
-                        }
-                      ]
-                    },
-                    {
-                      "concept": [],
                       "derivedFrom": "PRSB-Standards/WRIST-Problem-list/Problem list/Problem list record entry/Awareness of diagnosis@1-build.0.4",
                       "description": "<p>Description of the level of awareness the person and or their carer/family has regarding their diagnosis.</p>",
                       "implementationGuidance": "<p><br></p>",
