@@ -11218,7 +11218,7 @@
                         },
                         {
                           "derivedFrom": "PRSB-Standards/WRIST-Epilepsy-information-standard/Professional contacts/Professional contacts record entry/Team@None",
-                          "description": "The name of the team.",
+                          "description": "<p>The name of the team.</p>",
                           "maximumMultiplicity": "1",
                           "minimumMultiplicity": "0",
                           "mro": "R",
@@ -11226,15 +11226,14 @@
                           "type": "item",
                           "valueDomain": [
                             {
-                              "property": [
-                                {
-                                  "maxLength": "35"
-                                }
-                              ],
-                              "type": "text"
+                              "type": "PRSB-Standards/WRIST-IPS-Datatypes/String@1-build.0.1"
                             }
                           ],
-                          "valueSets": []
+                          "valueSets": [],
+                          "informationType": "",
+                          "relationshipType": "specialisation",
+                          "isComponent": false,
+                          "implementationGuidance": "<p><br></p>"
                         },
                         {
                           "concept": [],
