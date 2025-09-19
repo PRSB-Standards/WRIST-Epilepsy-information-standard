@@ -11271,7 +11271,7 @@
                           "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Documents (including correspondence, audio and images)/Documents/Additional information required for images./Image procedure@2-build.2.1"
                         },
                         {
-                          "description": "The date and time the image procedure was performed.",
+                          "description": "<p>The date and time the image procedure was performed.</p>",
                           "maximumMultiplicity": "1",
                           "minimumMultiplicity": "0",
                           "mro": "R",
@@ -11279,16 +11279,15 @@
                           "type": "item",
                           "valueDomain": [
                             {
-                              "property": [
-                                {
-                                  "timeStampPrecision": "YMDHM"
-                                }
-                              ],
-                              "type": "datetime"
+                              "type": "PRSB-Standards/WRIST-PRSB-Datatypes/Date and Time@1-build.0.1"
                             }
                           ],
-                          "valueSets": "Date and time",
-                          "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Documents (including correspondence, audio and images)/Documents/Additional information required for images./Image procedure date@2-build.2.1"
+                          "valueSets": [],
+                          "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Documents (including correspondence, audio and images)/Documents/Additional information required for images./Image procedure date@2-build.2.1",
+                          "informationType": "",
+                          "relationshipType": "specialisation",
+                          "isComponent": false,
+                          "implementationGuidance": "<p><br></p>"
                         },
                         {
                           "concept": [
