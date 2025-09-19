@@ -11011,7 +11011,7 @@
                 {
                   "concept": [
                     {
-                      "description": "The date and time the document was created.",
+                      "description": "<p>The date and time the document was created.</p>",
                       "maximumMultiplicity": "1",
                       "minimumMultiplicity": "0",
                       "mro": "R",
@@ -11019,16 +11019,15 @@
                       "type": "item",
                       "valueDomain": [
                         {
-                          "property": [
-                            {
-                              "timeStampPrecision": "YMDHM"
-                            }
-                          ],
-                          "type": "datetime"
+                          "type": "PRSB-Standards/WRIST-PRSB-Datatypes/Date and Time@1-build.0.1"
                         }
                       ],
-                      "valueSets": "Date and time",
-                      "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Documents (including correspondence, audio and images)/Documents/Date@2-build.2.1"
+                      "valueSets": [],
+                      "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Documents (including correspondence, audio and images)/Documents/Date@2-build.2.1",
+                      "informationType": "",
+                      "relationshipType": "specialisation",
+                      "isComponent": false,
+                      "implementationGuidance": "<p><br></p>"
                     },
                     {
                       "description": "The location of the document",
