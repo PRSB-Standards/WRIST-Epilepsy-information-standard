@@ -13461,6 +13461,19 @@
           "isComponent": false,
           "concept": [
             {
+              "name": "",
+              "mro": "",
+              "description": "",
+              "valueSets": "",
+              "implementationGuidance": "",
+              "informationType": "",
+              "minimumMultiplicity": "",
+              "maximumMultiplicity": "",
+              "derivedFrom": "",
+              "isComponent": false,
+              "concept": []
+            },
+            {
               "name": "Epileptic seizure frequency ",
               "mro": "R",
               "description": "<p>This is how often the person experiences seizures, such as the episodes per time period.</p>",
