@@ -13529,17 +13529,32 @@
               "relationshipType": "specialisation"
             },
             {
-              "name": "",
-              "mro": "",
-              "description": "",
-              "valueSets": "",
-              "implementationGuidance": "",
-              "informationType": "",
-              "minimumMultiplicity": "",
-              "maximumMultiplicity": "",
+              "name": "Known triggers",
+              "mro": "R",
+              "description": "<p>This is the factors reported to precipitate seizures. Precipitating factors are specific circumstances that trigger a seizure in a person with epilepsy, and they can include lifestyle factors like sleep deprivation, stress, missed medication, and alcohol or recreational drug use. Other triggers can be illness, flashing lights (photosensitivity), hormonal changes like the menstrual cycle, and even certain foods or dehydration.</p>",
+              "valueSets": [
+                {
+                  "prefix": "SNOMED_CT",
+                  "use": "",
+                  "text": "",
+                  "expression": "",
+                  "popUpText": "<p><br></p>"
+                }
+              ],
+              "implementationGuidance": "<p><br></p>",
+              "informationType": "Event.Record",
+              "minimumMultiplicity": "0",
+              "maximumMultiplicity": "*",
               "derivedFrom": "",
               "isComponent": false,
-              "concept": []
+              "concept": [],
+              "type": "item",
+              "valueDomain": [
+                {
+                  "type": "PRSB-Standards/WRIST-IPS-Datatypes/Coded Element@1-build.0.1"
+                }
+              ],
+              "relationshipType": "specialisation"
             }
           ],
           "type": "group",
