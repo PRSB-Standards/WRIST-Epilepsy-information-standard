@@ -11266,7 +11266,7 @@
                         },
                         {
                           "derivedFrom": "PRSB-Standards/WRIST-Epilepsy-information-standard/Professional contacts/Professional contacts record entry/Contact details@None",
-                          "description": "Contact details of the professional (e.g. telephone number, email address etc.).",
+                          "description": "<p>Contact details of the professional (e.g. telephone number, email address etc.).</p>",
                           "maximumMultiplicity": "*",
                           "minimumMultiplicity": "0",
                           "mro": "R",
@@ -11274,15 +11274,14 @@
                           "type": "item",
                           "valueDomain": [
                             {
-                              "property": [
-                                {
-                                  "maxLength": "35"
-                                }
-                              ],
-                              "type": "string"
+                              "type": "PRSB-Standards/WRIST-IPS-Datatypes/String@1-build.0.1"
                             }
                           ],
-                          "valueSets": []
+                          "valueSets": [],
+                          "informationType": "",
+                          "relationshipType": "specialisation",
+                          "isComponent": false,
+                          "implementationGuidance": "<p><br></p>"
                         },
                         {
                           "derivedFrom": "PRSB-Standards/WRIST-Epilepsy-information-standard/Professional contacts/Professional contacts record entry/Start date@None",
