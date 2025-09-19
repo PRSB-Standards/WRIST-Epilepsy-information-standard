@@ -11384,26 +11384,6 @@
                           "type": "item",
                           "valueSets": "DICOM code",
                           "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Documents (including correspondence, audio and images)/Documents/Additional information required for images./Event code list@2-build.2.1"
-                        },
-                        {
-                          "description": "Comments associated with the imaging",
-                          "maximumMultiplicity": "1",
-                          "minimumMultiplicity": "0",
-                          "mro": "R",
-                          "name": "Comments",
-                          "type": "item",
-                          "valueDomain": [
-                            {
-                              "property": [
-                                {
-                                  "maxLength": "150"
-                                }
-                              ],
-                              "type": "text"
-                            }
-                          ],
-                          "valueSets": "Free text",
-                          "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Documents (including correspondence, audio and images)/Documents/Additional information required for images./Comments@2-build.2.1"
                         }
                       ],
                       "description": "Additional information required for images.",
