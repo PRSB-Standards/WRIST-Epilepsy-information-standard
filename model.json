@@ -11051,7 +11051,7 @@
                         },
                         {
                           "derivedFrom": "PRSB-Standards/WRIST-Epilepsy-information-standard/Personal contacts/Personal contacts record entry/Relationship type@None",
-                          "description": "Additional roles the person performs on behalf of the other (e.g. Carer, Next of Kin, Emergency Contact, Dependent, etc.)",
+                          "description": "<p>Additional roles the person performs on behalf of the other (e.g. Carer, Next of Kin, Emergency Contact, Dependent, etc.)</p>",
                           "maximumMultiplicity": "1",
                           "minimumMultiplicity": "0",
                           "mro": "R",
@@ -11059,15 +11059,14 @@
                           "type": "item",
                           "valueDomain": [
                             {
-                              "property": [
-                                {
-                                  "maxLength": "150"
-                                }
-                              ],
-                              "type": "text"
+                              "type": "PRSB-Standards/WRIST-IPS-Datatypes/Coded Element@1-build.0.1"
                             }
                           ],
-                          "valueSets": []
+                          "valueSets": [],
+                          "informationType": "",
+                          "relationshipType": "specialisation",
+                          "isComponent": false,
+                          "implementationGuidance": "<p><br></p>"
                         },
                         {
                           "derivedFrom": "PRSB-Standards/WRIST-Epilepsy-information-standard/Personal contacts/Personal contacts record entry/Contact details@None",
