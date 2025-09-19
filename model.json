@@ -11007,19 +11007,6 @@
               "relationshipType": "specialisation"
             },
             {
-              "name": "",
-              "mro": "",
-              "description": "",
-              "valueSets": "",
-              "implementationGuidance": "",
-              "informationType": "",
-              "minimumMultiplicity": "",
-              "maximumMultiplicity": "",
-              "derivedFrom": "",
-              "isComponent": false,
-              "concept": []
-            },
-            {
               "name": "Episode type",
               "mro": "R",
               "description": "<p>The type of episode being record. This could be epileptic, non-epileptic, or uncertain.</p>",
