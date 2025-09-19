@@ -11189,7 +11189,7 @@
                         },
                         {
                           "derivedFrom": "PRSB-Standards/WRIST-Epilepsy-information-standard/Professional contacts/Professional contacts record entry/Speciality@None",
-                          "description": "The specialty of the professional e.g. physiotherapy, oncology, mental health etc",
+                          "description": "<p>The specialty of the professional e.g. physiotherapy, oncology, mental health etc</p>",
                           "maximumMultiplicity": "1",
                           "minimumMultiplicity": "0",
                           "mro": "R",
@@ -11197,24 +11197,22 @@
                           "type": "item",
                           "valueDomain": [
                             {
-                              "property": [
-                                {
-                                  "maxLength": "3"
-                                }
-                              ],
-                              "type": "string"
+                              "type": "PRSB-Standards/WRIST-IPS-Datatypes/Coded Element@1-build.0.1"
                             }
                           ],
                           "valueSets": [
                             {
-                              "expression": "https://datadictionary.nhs.uk/data_elements/activity_treatment_function_code.html?hl=activity%2Ctreatment%2Cfunction%2Ccode",
-                              "popUpText": "",
                               "prefix": "NHS_DD",
-                              "prefixDisplay": "NHS Data Dictionary",
+                              "use": "",
                               "text": "Activity treatment function code",
-                              "use": ""
+                              "expression": "https://datadictionary.nhs.uk/data_elements/activity_treatment_function_code.html?hl=activity%2Ctreatment%2Cfunction%2Ccode",
+                              "popUpText": ""
                             }
-                          ]
+                          ],
+                          "informationType": "",
+                          "relationshipType": "specialisation",
+                          "isComponent": false,
+                          "implementationGuidance": "<p><br></p>"
                         },
                         {
                           "derivedFrom": "PRSB-Standards/WRIST-Epilepsy-information-standard/Professional contacts/Professional contacts record entry/Team@None",
