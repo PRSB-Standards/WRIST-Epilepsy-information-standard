@@ -11331,7 +11331,7 @@
                               "implementationGuidance": "<p><br></p>"
                             },
                             {
-                              "description": "The URL for the image",
+                              "description": "<p>The URL for the image</p>",
                               "maximumMultiplicity": "1",
                               "minimumMultiplicity": "0",
                               "mro": "R",
@@ -11339,16 +11339,15 @@
                               "type": "item",
                               "valueDomain": [
                                 {
-                                  "property": [
-                                    {
-                                      "maxLength": "150"
-                                    }
-                                  ],
-                                  "type": "text"
+                                  "type": "PRSB-Standards/WRIST-IPS-Datatypes/Text@1-build.0.1"
                                 }
                               ],
-                              "valueSets": "Free text",
-                              "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Documents (including correspondence, audio and images)/Documents/Additional information required for images./Images/Image location@2-build.2.1"
+                              "valueSets": [],
+                              "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Documents (including correspondence, audio and images)/Documents/Additional information required for images./Images/Image location@2-build.2.1",
+                              "informationType": "",
+                              "relationshipType": "specialisation",
+                              "isComponent": false,
+                              "implementationGuidance": "<p><br></p>"
                             }
                           ],
                           "maximumMultiplicity": "1",
