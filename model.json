@@ -11256,7 +11256,7 @@
                     {
                       "concept": [
                         {
-                          "description": "The procedure used to capture the image",
+                          "description": "<p>The procedure used to capture the image</p>",
                           "maximumMultiplicity": "1",
                           "minimumMultiplicity": "0",
                           "mro": "R",
@@ -11264,11 +11264,23 @@
                           "type": "item",
                           "valueDomain": [
                             {
-                              "type": "text"
+                              "type": "PRSB-Standards/WRIST-IPS-Datatypes/Text@1-build.0.1"
                             }
                           ],
-                          "valueSets": "Free text  <br clear=\"none\"/>  Using DICOM code set  <a class=\"\" href=\"https://dicom.innolitics.com/ciods\">https://dicom.innolitics.com/ciods</a> \n                        ",
-                          "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Documents (including correspondence, audio and images)/Documents/Additional information required for images./Image procedure@2-build.2.1"
+                          "valueSets": [
+                            {
+                              "prefix": "DICOM",
+                              "use": "",
+                              "text": "",
+                              "expression": "https://dicom.innolitics.com/ciods",
+                              "popUpText": "<p><br></p>"
+                            }
+                          ],
+                          "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Documents (including correspondence, audio and images)/Documents/Additional information required for images./Image procedure@2-build.2.1",
+                          "informationType": "",
+                          "relationshipType": "specialisation",
+                          "isComponent": false,
+                          "implementationGuidance": "<p><br></p>"
                         },
                         {
                           "description": "<p>The date and time the image procedure was performed.</p>",
