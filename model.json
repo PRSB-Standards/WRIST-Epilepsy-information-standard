@@ -11030,7 +11030,7 @@
                       "implementationGuidance": "<p><br></p>"
                     },
                     {
-                      "description": "The location of the document",
+                      "description": "<p>The location of the document</p>",
                       "maximumMultiplicity": "1",
                       "minimumMultiplicity": "0",
                       "mro": "R",
@@ -11038,16 +11038,15 @@
                       "type": "item",
                       "valueDomain": [
                         {
-                          "property": [
-                            {
-                              "maxLength": "150"
-                            }
-                          ],
-                          "type": "text"
+                          "type": "PRSB-Standards/WRIST-IPS-Datatypes/Text@1-build.0.1"
                         }
                       ],
-                      "valueSets": "Free text or URL",
-                      "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Documents (including correspondence, audio and images)/Documents/Documentation location@2-build.2.1"
+                      "valueSets": [],
+                      "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Documents (including correspondence, audio and images)/Documents/Documentation location@2-build.2.1",
+                      "informationType": "",
+                      "relationshipType": "specialisation",
+                      "isComponent": false,
+                      "implementationGuidance": "<p><br></p>"
                     },
                     {
                       "description": "The code specifying the level of confidentiality of the document.",
