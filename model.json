@@ -11308,7 +11308,7 @@
                             {
                               "prefix": "NHS_DD",
                               "use": "",
-                              "text": "Organisation name",
+                              "text": "Organisation data service",
                               "expression": "https://www.datadictionary.nhs.uk/data_dictionary/attributes/o/org/organisation_code_de.asp?shownav=1",
                               "popUpText": "<p><br></p>"
                             }
