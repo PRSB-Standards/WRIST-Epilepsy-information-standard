@@ -11059,7 +11059,7 @@
                       "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Documents (including correspondence, audio and images)/Documents/Confidentiality@2-build.2.1"
                     },
                     {
-                      "description": "The title of the document.",
+                      "description": "<p>The title of the document.</p>",
                       "maximumMultiplicity": "1",
                       "minimumMultiplicity": "0",
                       "mro": "R",
@@ -11067,16 +11067,15 @@
                       "type": "item",
                       "valueDomain": [
                         {
-                          "property": [
-                            {
-                              "maxLength": "150"
-                            }
-                          ],
-                          "type": "text"
+                          "type": "PRSB-Standards/WRIST-IPS-Datatypes/Text@1-build.0.1"
                         }
                       ],
-                      "valueSets": "Free text",
-                      "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Documents (including correspondence, audio and images)/Documents/Document title@2-build.2.1"
+                      "valueSets": [],
+                      "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Documents (including correspondence, audio and images)/Documents/Document title@2-build.2.1",
+                      "informationType": "",
+                      "relationshipType": "specialisation",
+                      "isComponent": false,
+                      "implementationGuidance": "<p><br></p>"
                     },
                     {
                       "description": "The name of the document. This should align to the PRSB document naming standard. Where the document is a KOS document this field (designated typeCode) is used to carry the DICOM Imaging procedure: This attribute shall be populated by the XDS-I Imaging Document Source from a code in the Procedure Code Sequence (0008,1032) of the performed procedure with which the document is associated. Values may be found in a suitable DICOM browser",
