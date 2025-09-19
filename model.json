@@ -11078,14 +11078,31 @@
                       "implementationGuidance": "<p><br></p>"
                     },
                     {
-                      "description": "The name of the document. This should align to the PRSB document naming standard. Where the document is a KOS document this field (designated typeCode) is used to carry the DICOM Imaging procedure: This attribute shall be populated by the XDS-I Imaging Document Source from a code in the Procedure Code Sequence (0008,1032) of the performed procedure with which the document is associated. Values may be found in a suitable DICOM browser",
+                      "description": "<p>The name of the document. This should align to the PRSB document naming standard. Where the document is a KOS document this field (designated typeCode) is used to carry the DICOM Imaging procedure: This attribute shall be populated by the XDS-I Imaging Document Source from a code in the Procedure Code Sequence (0008,1032) of the performed procedure with which the document is associated. Values may be found in a suitable DICOM browser</p>",
                       "maximumMultiplicity": "1",
                       "minimumMultiplicity": "0",
                       "mro": "R",
                       "name": "Document name",
                       "type": "item",
-                      "valueSets": "SNOMED CT: - As per the  <a class=\"\" href=\"https://theprsb.org/wp-content/uploads/2018/11/Clinical-document-indexing-standards_NHS-Scotland.pdf\">https://theprsb.org/wp-content/uploads/2018/11/Clinical-document-indexing-standards_NHS-Scotland.pdf</a> \n                    ",
-                      "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Documents (including correspondence, audio and images)/Documents/Document name@2-build.2.1"
+                      "valueSets": [
+                        {
+                          "prefix": "SNOMED_CT",
+                          "use": "",
+                          "text": "",
+                          "expression": "https://theprsb.org/wp-content/uploads/2018/11/Clinical-document-indexing-standards_NHS-Scotland.pdf",
+                          "popUpText": "<p><br></p>"
+                        }
+                      ],
+                      "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Documents (including correspondence, audio and images)/Documents/Document name@2-build.2.1",
+                      "informationType": "",
+                      "valueDomain": [
+                        {
+                          "type": "PRSB-Standards/WRIST-IPS-Datatypes/Coded Element@1-build.0.1"
+                        }
+                      ],
+                      "relationshipType": "specialisation",
+                      "isComponent": false,
+                      "implementationGuidance": "<p><br></p>"
                     },
                     {
                       "description": "<p>MIME type of the document e.g. application, pdf, audio, jpeg</p>",
