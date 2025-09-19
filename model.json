@@ -11254,26 +11254,6 @@
                       "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Documents (including correspondence, audio and images)/Documents/Person completing record@2-build.2.1"
                     },
                     {
-                      "description": "Comments associated with the document.",
-                      "maximumMultiplicity": "1",
-                      "minimumMultiplicity": "0",
-                      "mro": "R",
-                      "name": "Comments",
-                      "type": "item",
-                      "valueDomain": [
-                        {
-                          "property": [
-                            {
-                              "maxLength": "150"
-                            }
-                          ],
-                          "type": "text"
-                        }
-                      ],
-                      "valueSets": "Free text",
-                      "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Documents (including correspondence, audio and images)/Documents/Comments@2-build.2.1"
-                    },
-                    {
                       "concept": [
                         {
                           "description": "The procedure used to capture the image",
