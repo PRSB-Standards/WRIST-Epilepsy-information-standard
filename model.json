@@ -11036,17 +11036,32 @@
               "relationshipType": "specialisation"
             },
             {
-              "name": "",
-              "mro": "",
-              "description": "",
-              "valueSets": "",
-              "implementationGuidance": "",
+              "name": "Epileptic seizure type",
+              "mro": "R",
+              "description": "<p>This is the type of seizure experienced the person.</p>",
+              "valueSets": [
+                {
+                  "prefix": "SNOMED_CT",
+                  "use": "",
+                  "text": "",
+                  "expression": "",
+                  "popUpText": "<p><br></p>"
+                }
+              ],
+              "implementationGuidance": "<p>The epileptic seizure type value sets must align with the International League Against Epilepsy.</p><p><br></p><p>This should allow mapping to legacy codes (e.g. Read v2, ICD-10) where still required, but store SNOMED-CT as the reference.</p><p><br></p><p>The system must update terminology content in line with national release and updates.</p><p><br></p><p>The system must ensure that when 'epileptic' is recorded as an episode type, the information flows automatically to the diagnoses/ problem list section.</p><p><br></p><p>The system must link the recorded seizure/ episode type to an appropriate SNOMED CT diagnosis code (e.g., epilepsy or specific syndromes) when confirmed.</p><p><br></p><p>This must allow clinicians to review, validate, and confirm the diagnosis before it is added permanently to the patient's record.</p><p><br></p><p>The system must retain audit trails showing when seizure/ episode data triggered an update in the diagnoses section.</p><p><br></p><p>The system should prompt the clinicians to complete related fields (e.g., epilepsy type, epilepsy syndrome, risk assessment, care plan) when epilepsy is first recorded.</p>",
               "informationType": "",
-              "minimumMultiplicity": "",
-              "maximumMultiplicity": "",
+              "minimumMultiplicity": "0",
+              "maximumMultiplicity": "1",
               "derivedFrom": "",
               "isComponent": false,
-              "concept": []
+              "concept": [],
+              "type": "",
+              "valueDomain": [
+                {
+                  "type": "PRSB-Standards/WRIST-IPS-Datatypes/Coded Element@1-build.0.1"
+                }
+              ],
+              "relationshipType": "specialisation"
             },
             {
               "concept": [
