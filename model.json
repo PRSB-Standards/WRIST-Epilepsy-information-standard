@@ -11290,12 +11290,30 @@
                             }
                           ],
                           "derivedFrom": "PRSB-Standards/WRIST-Epilepsy-information-standard/Professional contacts/Professional contacts record entry/Organisation@None",
-                          "description": "The name of the organisation.",
+                          "description": "<p>The name of the organisation.</p>",
                           "maximumMultiplicity": "1",
                           "minimumMultiplicity": "0",
                           "mro": "R",
                           "name": "Organisation",
-                          "type": "group"
+                          "type": "group",
+                          "informationType": "",
+                          "valueDomain": [
+                            {
+                              "type": "PRSB-Standards/WRIST-IPS-Datatypes/Coded Element@1-build.0.1"
+                            }
+                          ],
+                          "relationshipType": "specialisation",
+                          "isComponent": false,
+                          "valueSets": [
+                            {
+                              "prefix": "NHS_DD",
+                              "use": "",
+                              "text": "Organisation name",
+                              "expression": "https://www.datadictionary.nhs.uk/data_dictionary/attributes/o/org/organisation_code_de.asp?shownav=1",
+                              "popUpText": "<p><br></p>"
+                            }
+                          ],
+                          "implementationGuidance": "<p><br></p>"
                         },
                         {
                           "derivedFrom": "PRSB-Standards/WRIST-Epilepsy-information-standard/Professional contacts/Professional contacts record entry/Contact details@None",
