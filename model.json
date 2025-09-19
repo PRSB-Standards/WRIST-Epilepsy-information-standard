@@ -15189,7 +15189,7 @@
           "description": "<p>This is an sudden unexpected death in epilepsy record entry. There may be 0 to many record entry/entries under a section. Each record entry is made up of a number of elements or data items.</p><p>This section records the assessment, monitoring, and management of sudden unexpected death in epilepsy (SUDEP( risk for patients with epilepsy. SUDEP is defined as the sudden, unexpected, non-traumatic, and non-drowning death of a person with epilepsy, with or without evidence of a seizure, in which post-mortem examination does not reveal a structural or toxicological cause of death.</p>",
           "valueSets": [],
           "implementationGuidance": "<p>The value sets must be coded where possible (SNOMED CT) for interoperability.</p><p><br></p><p>The system must support multiple comorbidities and updateable SUDEP risk entries.</p><p><br></p><p>The system must link SUDEP, comorbidity, and epilepsy diagnosis to care plans and seizure episodes.</p><p><br></p><p>The system should date-stamp all assessments and updates for longitudinal tracking.</p><p><br></p><p>The system should allow patient/carer contributions (e.g., comorbidity, SUDEP discussions) with clinician validation.</p><p><br></p><p>The system may generate alerts or reminders if high-risk SUDEP factors or uncontrolled seizures are recorded.</p>",
-          "informationType": "",
+          "informationType": "Event.Record",
           "minimumMultiplicity": "0",
           "maximumMultiplicity": "*",
           "derivedFrom": "",
