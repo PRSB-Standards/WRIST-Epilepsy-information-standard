@@ -11007,6 +11007,653 @@
               "relationshipType": "specialisation"
             },
             {
+              "concept": [
+                {
+                  "concept": [
+                    {
+                      "description": "The date and time the document was created.",
+                      "maximumMultiplicity": "1",
+                      "minimumMultiplicity": "0",
+                      "mro": "R",
+                      "name": "Date",
+                      "type": "item",
+                      "valueDomain": [
+                        {
+                          "property": [
+                            {
+                              "timeStampPrecision": "YMDHM"
+                            }
+                          ],
+                          "type": "datetime"
+                        }
+                      ],
+                      "valueSets": "Date and time",
+                      "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Documents (including correspondence, audio and images)/Documents/Date@2-build.2.1"
+                    },
+                    {
+                      "concept": [
+                        {
+                          "description": "The name of the professional.",
+                          "maximumMultiplicity": "1",
+                          "minimumMultiplicity": "0",
+                          "mro": "R",
+                          "name": "Name",
+                          "type": "item",
+                          "valueDomain": [
+                            {
+                              "property": [
+                                {
+                                  "maxLength": "70"
+                                }
+                              ],
+                              "type": "string"
+                            }
+                          ],
+                          "valueSets": "Free text.",
+                          "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Documents (including correspondence, audio and images)/Documents/Performing professional/Name@2-build.2.1"
+                        },
+                        {
+                          "description": "The role the professional has in relation to the person e.g. GP, physiotherapist, community nurse, social worker etc",
+                          "maximumMultiplicity": "1",
+                          "minimumMultiplicity": "0",
+                          "mro": "R",
+                          "name": "Role",
+                          "type": "item",
+                          "valueSets": "FHIR value set :-  <a class=\"\" href=\"https://simplifier.net/ukcore/codesystem-ukcore-sdsjobrolename\" target=\"\" title=\"\">SDSjobroletype</a> \n                        ",
+                          "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Documents (including correspondence, audio and images)/Documents/Performing professional/Role@2-build.2.1"
+                        },
+                        {
+                          "description": "The grade of the professional.",
+                          "maximumMultiplicity": "1",
+                          "minimumMultiplicity": "0",
+                          "mro": "R",
+                          "name": "Grade",
+                          "type": "item",
+                          "valueDomain": [
+                            {
+                              "property": [
+                                {
+                                  "maxLength": "150"
+                                }
+                              ],
+                              "type": "text"
+                            }
+                          ],
+                          "valueSets": "Free text",
+                          "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Documents (including correspondence, audio and images)/Documents/Performing professional/Grade@2-build.2.1"
+                        },
+                        {
+                          "description": "The specialty of the professional e.g. physiotherapy, oncology, mental health etc",
+                          "maximumMultiplicity": "1",
+                          "minimumMultiplicity": "0",
+                          "mro": "R",
+                          "name": "Speciality",
+                          "type": "item",
+                          "valueDomain": [
+                            {
+                              "property": [
+                                {
+                                  "maxLength": "3"
+                                }
+                              ],
+                              "type": "string"
+                            }
+                          ],
+                          "valueSets": "NHS data dictionary -  <a href=\"https://datadictionary.nhs.uk/data_elements/activity_treatment_function_code.html?hl=activity%2Ctreatment%2Cfunction%2Ccode\" target=\"\" title=\"\">Activity treatment function code</a> \n                        ",
+                          "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Documents (including correspondence, audio and images)/Documents/Performing professional/Speciality@2-build.2.1"
+                        },
+                        {
+                          "description": "Professional identifier for the professional e.g. GMC number, HCPC number etc or the personal identifier used by the local organisation.",
+                          "maximumMultiplicity": "1",
+                          "minimumMultiplicity": "0",
+                          "mro": "R",
+                          "name": "Professional identifier",
+                          "type": "item",
+                          "valueDomain": [
+                            {
+                              "property": [
+                                {
+                                  "maxLength": "32"
+                                }
+                              ],
+                              "type": "string"
+                            }
+                          ],
+                          "valueSets": "NHS data dictionary : -  <a href=\"https://datadictionary.nhs.uk/data_elements/professional_registration_entry_identifier.html\" target=\"\" title=\"\">Professional registration identifier</a> \n                        ",
+                          "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Documents (including correspondence, audio and images)/Documents/Performing professional/Professional identifier@2-build.2.1"
+                        },
+                        {
+                          "description": "The name of the organisation the professional works for.",
+                          "maximumMultiplicity": "1",
+                          "minimumMultiplicity": "0",
+                          "mro": "R",
+                          "name": "Organisation",
+                          "type": "group",
+                          "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Documents (including correspondence, audio and images)/Documents/Performing professional/Organisation@2-build.2.1"
+                        },
+                        {
+                          "description": "Contact details of the professional",
+                          "maximumMultiplicity": "1",
+                          "minimumMultiplicity": "0",
+                          "mro": "R",
+                          "name": "Contact details",
+                          "type": "item",
+                          "valueDomain": [
+                            {
+                              "property": [
+                                {
+                                  "maxLength": "35"
+                                }
+                              ],
+                              "type": "string"
+                            }
+                          ],
+                          "valueSets": "NHS data dictionary -  <a href=\"https://datadictionary.nhs.uk/data_elements/uk_telephone_number.html?hl=number\" target=\"\" title=\"\">UK phone number</a> \n                        ",
+                          "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Documents (including correspondence, audio and images)/Documents/Performing professional/Contact details@2-build.2.1"
+                        }
+                      ],
+                      "description": "The professional who authored the document.",
+                      "maximumMultiplicity": "1",
+                      "minimumMultiplicity": "0",
+                      "mro": "R",
+                      "name": "Performing professional",
+                      "type": "group",
+                      "valueSets": "Free text.",
+                      "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Documents (including correspondence, audio and images)/Documents/Performing professional@2-build.2.1"
+                    },
+                    {
+                      "description": "The location of the document",
+                      "maximumMultiplicity": "1",
+                      "minimumMultiplicity": "0",
+                      "mro": "R",
+                      "name": "Documentation location",
+                      "type": "item",
+                      "valueDomain": [
+                        {
+                          "property": [
+                            {
+                              "maxLength": "150"
+                            }
+                          ],
+                          "type": "text"
+                        }
+                      ],
+                      "valueSets": "Free text or URL",
+                      "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Documents (including correspondence, audio and images)/Documents/Documentation location@2-build.2.1"
+                    },
+                    {
+                      "description": "The code specifying the level of confidentiality of the document.",
+                      "maximumMultiplicity": "1",
+                      "minimumMultiplicity": "0",
+                      "mro": "R",
+                      "name": "Confidentiality",
+                      "type": "item",
+                      "valueSets": "\n                         <p>FHIR value set : - <a class=\"\" href=\"https://www.hl7.org/fhir/v3/ConfidentialityClassification/vs.html\" target=\"\" title=\"\">Confidentiality</a>\n                        </p> \n                    ",
+                      "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Documents (including correspondence, audio and images)/Documents/Confidentiality@2-build.2.1"
+                    },
+                    {
+                      "description": "The document type e.g. report, summary, images, treatment plan, patient preferences, workflow",
+                      "maximumMultiplicity": "1",
+                      "minimumMultiplicity": "0",
+                      "mro": "R",
+                      "name": "Class",
+                      "type": "item",
+                      "valueDomain": [
+                        {
+                          "property": [
+                            {
+                              "maxLength": "150"
+                            }
+                          ],
+                          "type": "text"
+                        }
+                      ],
+                      "valueSets": "Free text.",
+                      "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Documents (including correspondence, audio and images)/Documents/Class@2-build.2.1"
+                    },
+                    {
+                      "description": "The title of the document.",
+                      "maximumMultiplicity": "1",
+                      "minimumMultiplicity": "0",
+                      "mro": "R",
+                      "name": "Document title",
+                      "type": "item",
+                      "valueDomain": [
+                        {
+                          "property": [
+                            {
+                              "maxLength": "150"
+                            }
+                          ],
+                          "type": "text"
+                        }
+                      ],
+                      "valueSets": "Free text",
+                      "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Documents (including correspondence, audio and images)/Documents/Document title@2-build.2.1"
+                    },
+                    {
+                      "description": "The name of the document. This should align to the PRSB document naming standard. Where the document is a KOS document this field (designated typeCode) is used to carry the DICOM Imaging procedure: This attribute shall be populated by the XDS-I Imaging Document Source from a code in the Procedure Code Sequence (0008,1032) of the performed procedure with which the document is associated. Values may be found in a suitable DICOM browser",
+                      "maximumMultiplicity": "1",
+                      "minimumMultiplicity": "0",
+                      "mro": "R",
+                      "name": "Document name",
+                      "type": "item",
+                      "valueSets": "SNOMED CT: - As per the  <a class=\"\" href=\"https://theprsb.org/wp-content/uploads/2018/11/Clinical-document-indexing-standards_NHS-Scotland.pdf\">https://theprsb.org/wp-content/uploads/2018/11/Clinical-document-indexing-standards_NHS-Scotland.pdf</a> \n                    ",
+                      "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Documents (including correspondence, audio and images)/Documents/Document name@2-build.2.1"
+                    },
+                    {
+                      "description": "MIME type of the document e.g. application, pdf, audio, jpeg",
+                      "maximumMultiplicity": "1",
+                      "minimumMultiplicity": "0",
+                      "mro": "R",
+                      "name": "Document MIME type",
+                      "type": "item",
+                      "valueDomain": [
+                        {
+                          "type": "text"
+                        }
+                      ],
+                      "valueSets": "Free text",
+                      "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Documents (including correspondence, audio and images)/Documents/Document MIME type@2-build.2.1"
+                    },
+                    {
+                      "concept": [
+                        {
+                          "description": "The name of the person completing the record.",
+                          "maximumMultiplicity": "1",
+                          "minimumMultiplicity": "0",
+                          "mro": "R",
+                          "name": "Name",
+                          "type": "item",
+                          "valueDomain": [
+                            {
+                              "property": [
+                                {
+                                  "maxLength": "70"
+                                }
+                              ],
+                              "type": "string"
+                            }
+                          ],
+                          "valueSets": "Free text.",
+                          "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Documents (including correspondence, audio and images)/Documents/Person completing record/Name@2-build.2.1"
+                        },
+                        {
+                          "description": "The organisational role of the person completing record.",
+                          "maximumMultiplicity": "1",
+                          "minimumMultiplicity": "0",
+                          "mro": "R",
+                          "name": "Role",
+                          "type": "item",
+                          "valueSets": "FHIR value set :-  <a href=\"https://simplifier.net/ukcore/codesystem-ukcore-sdsjobrolename\" target=\"\" title=\"\">SDSjobrole</a> \n                        ",
+                          "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Documents (including correspondence, audio and images)/Documents/Person completing record/Role@2-build.2.1"
+                        },
+                        {
+                          "description": "The grade of the person completing the record.",
+                          "maximumMultiplicity": "1",
+                          "minimumMultiplicity": "0",
+                          "mro": "R",
+                          "name": "Grade",
+                          "type": "item",
+                          "valueDomain": [
+                            {
+                              "property": [
+                                {
+                                  "maxLength": "150"
+                                }
+                              ],
+                              "type": "text"
+                            }
+                          ],
+                          "valueSets": "Free text.",
+                          "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Documents (including correspondence, audio and images)/Documents/Person completing record/Grade@2-build.2.1"
+                        },
+                        {
+                          "description": "The main specialty of the person completing the record.",
+                          "maximumMultiplicity": "1",
+                          "minimumMultiplicity": "0",
+                          "mro": "R",
+                          "name": "Specialty",
+                          "type": "item",
+                          "valueDomain": [
+                            {
+                              "property": [
+                                {
+                                  "maxLength": "3"
+                                }
+                              ],
+                              "type": "string"
+                            }
+                          ],
+                          "valueSets": "NHS data dictionary :-  <a href=\"https://datadictionary.nhs.uk/data_elements/activity_treatment_function_code.html?hl=activity%2Ctreatment%2Cfunction%2Ccode\" target=\"\" title=\"\">Activity treatment function code</a> \n                        ",
+                          "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Documents (including correspondence, audio and images)/Documents/Person completing record/Specialty@2-build.2.1"
+                        },
+                        {
+                          "description": "The organisation the person completing the record works for.",
+                          "maximumMultiplicity": "1",
+                          "minimumMultiplicity": "0",
+                          "mro": "R",
+                          "name": "Organisation",
+                          "type": "group",
+                          "valueSets": "\n                             <span style=\"color: rgb(51, 51, 51); font-family: Arial, Helvetica, Geneva, sans-serif; font-size: 12px;\">NHS data dictionary : - </span> \n                             <a href=\"https://www.datadictionary.nhs.uk/supporting_information/organisation_data_service.html\" target=\"\" title=\"\">Organisation data service</a> \n                        ",
+                          "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Documents (including correspondence, audio and images)/Documents/Person completing record/Organisation@2-build.2.1"
+                        },
+                        {
+                          "description": "Professional identifier for the person completing the record e.g. GMC number, HCPC number etc, or the personal identifier used by the local organisation.",
+                          "maximumMultiplicity": "1",
+                          "minimumMultiplicity": "0",
+                          "mro": "R",
+                          "name": "Professional identifier",
+                          "type": "item",
+                          "valueDomain": [
+                            {
+                              "property": [
+                                {
+                                  "maxLength": "32"
+                                }
+                              ],
+                              "type": "string"
+                            }
+                          ],
+                          "valueSets": "NHS data dictionary :-  <a href=\"https://datadictionary.nhs.uk/data_elements/professional_registration_entry_identifier.html\" target=\"\" title=\"\">Professional registration identifier</a> \n                        ",
+                          "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Documents (including correspondence, audio and images)/Documents/Person completing record/Professional identifier@2-build.2.1"
+                        },
+                        {
+                          "description": "The date and time the record was completed.",
+                          "maximumMultiplicity": "1",
+                          "minimumMultiplicity": "0",
+                          "mro": "R",
+                          "name": "Date completed",
+                          "type": "item",
+                          "valueDomain": [
+                            {
+                              "property": [
+                                {
+                                  "timeStampPrecision": "YMDHM"
+                                }
+                              ],
+                              "type": "datetime"
+                            }
+                          ],
+                          "valueSets": "Date and time.",
+                          "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Documents (including correspondence, audio and images)/Documents/Person completing record/Date completed@2-build.2.1"
+                        },
+                        {
+                          "description": "Contact details of the person completing the record. <br clear=\"none\"/> \n                        ",
+                          "maximumMultiplicity": "1",
+                          "minimumMultiplicity": "0",
+                          "mro": "R",
+                          "name": "Contact details",
+                          "type": "item",
+                          "valueDomain": [
+                            {
+                              "property": [
+                                {
+                                  "maxLength": "35"
+                                }
+                              ],
+                              "type": "string"
+                            }
+                          ],
+                          "valueSets": "NHS data dictionary : -  <a href=\"https://datadictionary.nhs.uk/data_elements/uk_telephone_number.html?hl=number\" target=\"\" title=\"\">UK telephone number</a> \n                        ",
+                          "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Documents (including correspondence, audio and images)/Documents/Person completing record/Contact details@2-build.2.1"
+                        }
+                      ],
+                      "description": "Details of the person completing the record.",
+                      "maximumMultiplicity": "1",
+                      "minimumMultiplicity": "0",
+                      "mro": "R",
+                      "name": "Person completing record",
+                      "type": "group",
+                      "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Documents (including correspondence, audio and images)/Documents/Person completing record@2-build.2.1"
+                    },
+                    {
+                      "concept": [
+                        {
+                          "description": "The coded value for service",
+                          "maximumMultiplicity": "1",
+                          "minimumMultiplicity": "0",
+                          "mro": "R",
+                          "name": "Coded value",
+                          "type": "item",
+                          "valueSets": "SNOMED CT :-\u00a01127531000000102 |Services simple reference set (foundation metadata concept)|",
+                          "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Documents (including correspondence, audio and images)/Documents/Service/Coded value@2-build.2.1"
+                        },
+                        {
+                          "description": "Free text field to be used if no code is available",
+                          "maximumMultiplicity": "1",
+                          "minimumMultiplicity": "0",
+                          "mro": "R",
+                          "name": "Free text",
+                          "type": "item",
+                          "valueDomain": [
+                            {
+                              "property": [
+                                {
+                                  "maxLength": "150"
+                                }
+                              ],
+                              "type": "text"
+                            }
+                          ],
+                          "valueSets": "Free text",
+                          "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Documents (including correspondence, audio and images)/Documents/Service/Free text@2-build.2.1"
+                        }
+                      ],
+                      "description": "The high level imaging speciality code e.g. (R-3027B, SRT, \u201cRadiology\u201d)",
+                      "maximumMultiplicity": "1",
+                      "minimumMultiplicity": "0",
+                      "mro": "R",
+                      "name": "Service",
+                      "type": "group",
+                      "valueSets": "SNOMED CT or free text 999000381000000107 |Correspondence care setting type simple reference set (foundation metadata concept)|",
+                      "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Documents (including correspondence, audio and images)/Documents/Service@2-build.2.1"
+                    },
+                    {
+                      "description": "Comments associated with the document.",
+                      "maximumMultiplicity": "1",
+                      "minimumMultiplicity": "0",
+                      "mro": "R",
+                      "name": "Comments",
+                      "type": "item",
+                      "valueDomain": [
+                        {
+                          "property": [
+                            {
+                              "maxLength": "150"
+                            }
+                          ],
+                          "type": "text"
+                        }
+                      ],
+                      "valueSets": "Free text",
+                      "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Documents (including correspondence, audio and images)/Documents/Comments@2-build.2.1"
+                    },
+                    {
+                      "concept": [
+                        {
+                          "description": "The procedure used to capture the image",
+                          "maximumMultiplicity": "1",
+                          "minimumMultiplicity": "0",
+                          "mro": "R",
+                          "name": "Image procedure",
+                          "type": "item",
+                          "valueDomain": [
+                            {
+                              "type": "text"
+                            }
+                          ],
+                          "valueSets": "Free text  <br clear=\"none\"/>  Using DICOM code set  <a class=\"\" href=\"https://dicom.innolitics.com/ciods\">https://dicom.innolitics.com/ciods</a> \n                        ",
+                          "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Documents (including correspondence, audio and images)/Documents/Additional information required for images./Image procedure@2-build.2.1"
+                        },
+                        {
+                          "description": "The date and time the image procedure was performed.",
+                          "maximumMultiplicity": "1",
+                          "minimumMultiplicity": "0",
+                          "mro": "R",
+                          "name": "Image procedure date",
+                          "type": "item",
+                          "valueDomain": [
+                            {
+                              "property": [
+                                {
+                                  "timeStampPrecision": "YMDHM"
+                                }
+                              ],
+                              "type": "datetime"
+                            }
+                          ],
+                          "valueSets": "Date and time",
+                          "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Documents (including correspondence, audio and images)/Documents/Additional information required for images./Image procedure date@2-build.2.1"
+                        },
+                        {
+                          "concept": [
+                            {
+                              "description": "The date and time when the image was captured.",
+                              "maximumMultiplicity": "1",
+                              "minimumMultiplicity": "0",
+                              "mro": "R",
+                              "name": "Image capture date",
+                              "type": "item",
+                              "valueDomain": [
+                                {
+                                  "property": [
+                                    {
+                                      "timeStampPrecision": "YMDHM"
+                                    }
+                                  ],
+                                  "type": "datetime"
+                                }
+                              ],
+                              "valueSets": "Date and time",
+                              "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Documents (including correspondence, audio and images)/Documents/Additional information required for images./Images/Image capture date@2-build.2.1"
+                            },
+                            {
+                              "description": "A unique image identifier generated by the system.",
+                              "maximumMultiplicity": "1",
+                              "minimumMultiplicity": "0",
+                              "mro": "R",
+                              "name": "Image ID",
+                              "type": "item",
+                              "valueDomain": [
+                                {
+                                  "type": "identifier"
+                                }
+                              ],
+                              "valueSets": "Free text",
+                              "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Documents (including correspondence, audio and images)/Documents/Additional information required for images./Images/Image ID@2-build.2.1"
+                            },
+                            {
+                              "description": "The URL for the image",
+                              "maximumMultiplicity": "1",
+                              "minimumMultiplicity": "0",
+                              "mro": "R",
+                              "name": "Image location",
+                              "type": "item",
+                              "valueDomain": [
+                                {
+                                  "property": [
+                                    {
+                                      "maxLength": "150"
+                                    }
+                                  ],
+                                  "type": "text"
+                                }
+                              ],
+                              "valueSets": "Free text",
+                              "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Documents (including correspondence, audio and images)/Documents/Additional information required for images./Images/Image location@2-build.2.1"
+                            }
+                          ],
+                          "maximumMultiplicity": "1",
+                          "minimumMultiplicity": "0",
+                          "mro": "R",
+                          "name": "Images",
+                          "type": "group",
+                          "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Documents (including correspondence, audio and images)/Documents/Additional information required for images./Images@2-build.2.1"
+                        },
+                        {
+                          "description": "The format code of the document which provides information on how to display the document.",
+                          "maximumMultiplicity": "1",
+                          "minimumMultiplicity": "0",
+                          "mro": "R",
+                          "name": "Format code",
+                          "type": "item",
+                          "valueDomain": [
+                            {
+                              "property": [
+                                {
+                                  "maxLength": "150"
+                                }
+                              ],
+                              "type": "text"
+                            }
+                          ],
+                          "valueSets": "Free text",
+                          "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Documents (including correspondence, audio and images)/Documents/Additional information required for images./Format code@2-build.2.1"
+                        },
+                        {
+                          "description": "The type of image (acquisition modality) and the anatomical site imaged.",
+                          "maximumMultiplicity": "1",
+                          "minimumMultiplicity": "0",
+                          "mro": "R",
+                          "name": "Event code list",
+                          "type": "item",
+                          "valueSets": "DICOM code",
+                          "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Documents (including correspondence, audio and images)/Documents/Additional information required for images./Event code list@2-build.2.1"
+                        },
+                        {
+                          "description": "Comments associated with the imaging",
+                          "maximumMultiplicity": "1",
+                          "minimumMultiplicity": "0",
+                          "mro": "R",
+                          "name": "Comments",
+                          "type": "item",
+                          "valueDomain": [
+                            {
+                              "property": [
+                                {
+                                  "maxLength": "150"
+                                }
+                              ],
+                              "type": "text"
+                            }
+                          ],
+                          "valueSets": "Free text",
+                          "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Documents (including correspondence, audio and images)/Documents/Additional information required for images./Comments@2-build.2.1"
+                        }
+                      ],
+                      "description": "Additional information required for images.",
+                      "maximumMultiplicity": "1",
+                      "minimumMultiplicity": "0",
+                      "mro": "R",
+                      "name": "Additional information required for images.",
+                      "type": "group",
+                      "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Documents (including correspondence, audio and images)/Documents/Additional information required for images.@2-build.2.1"
+                    }
+                  ],
+                  "description": "This is the documents record entry. There may be 0 to many record entries under a section. Each record entry is made up of a number of elements or data items.",
+                  "maximumMultiplicity": "*",
+                  "minimumMultiplicity": "0",
+                  "mro": "R",
+                  "name": "Documents",
+                  "type": "group",
+                  "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Documents (including correspondence, audio and images)/Documents@2-build.2.1"
+                }
+              ],
+              "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Documents (including correspondence, audio and images)@2-build.2.1",
+              "description": "<p>Details about documents related to the person.</p>",
+              "implementationGuidance": "<p><br></p>",
+              "informationType": "",
+              "isComponent": true,
+              "maximumMultiplicity": "1",
+              "minimumMultiplicity": "0",
+              "mro": "R",
+              "name": "Documents (including correspondence, audio and images)",
+              "relationshipType": "specialisation",
+              "type": "group",
+              "valueSets": ""
+            },
+            {
               "name": "Episode type",
               "mro": "R",
               "description": "<p>The type of episode being record. This could be epileptic, non-epileptic, or uncertain.</p>",
