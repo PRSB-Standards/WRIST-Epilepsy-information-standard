@@ -11155,7 +11155,7 @@
                         },
                         {
                           "derivedFrom": "PRSB-Standards/WRIST-Epilepsy-information-standard/Professional contacts/Professional contacts record entry/Role@None",
-                          "description": "The role the professional has in relation to the person e.g. GP, physiotherapist, community nurse, social worker, key worker, care home manager, care coordinator, LA hospital liaison person, care home contact, hospital clinician, Independent Mental Capacity Advocate (IMCA) etc",
+                          "description": "<p>The role the professional has in relation to the person e.g. GP, physiotherapist, community nurse, social worker, key worker, care home manager, care coordinator, LA hospital liaison person, care home contact, hospital clinician, Independent Mental Capacity Advocate (IMCA) etc</p>",
                           "maximumMultiplicity": "1",
                           "minimumMultiplicity": "0",
                           "mro": "R",
@@ -11163,14 +11163,22 @@
                           "type": "item",
                           "valueSets": [
                             {
-                              "expression": "https://simplifier.net/ukcore/codesystem-ukcore-sdsjobrolename",
-                              "popUpText": "",
                               "prefix": "FHIR",
-                              "prefixDisplay": "FHIR",
+                              "use": "",
                               "text": "SDSjobrole",
-                              "use": ""
+                              "expression": "https://simplifier.net/ukcore/codesystem-ukcore-sdsjobrolename",
+                              "popUpText": ""
                             }
-                          ]
+                          ],
+                          "informationType": "",
+                          "valueDomain": [
+                            {
+                              "type": "PRSB-Standards/WRIST-IPS-Datatypes/Coded Element@1-build.0.1"
+                            }
+                          ],
+                          "relationshipType": "specialisation",
+                          "isComponent": false,
+                          "implementationGuidance": "<p><br></p>"
                         },
                         {
                           "derivedFrom": "PRSB-Standards/WRIST-Epilepsy-information-standard/Professional contacts/Professional contacts record entry/Key worker@None",
