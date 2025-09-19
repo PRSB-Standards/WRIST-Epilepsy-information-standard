@@ -11059,26 +11059,6 @@
                       "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Documents (including correspondence, audio and images)/Documents/Confidentiality@2-build.2.1"
                     },
                     {
-                      "description": "The document type e.g. report, summary, images, treatment plan, patient preferences, workflow",
-                      "maximumMultiplicity": "1",
-                      "minimumMultiplicity": "0",
-                      "mro": "R",
-                      "name": "Class",
-                      "type": "item",
-                      "valueDomain": [
-                        {
-                          "property": [
-                            {
-                              "maxLength": "150"
-                            }
-                          ],
-                          "type": "text"
-                        }
-                      ],
-                      "valueSets": "Free text.",
-                      "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Documents (including correspondence, audio and images)/Documents/Class@2-build.2.1"
-                    },
-                    {
                       "description": "The title of the document.",
                       "maximumMultiplicity": "1",
                       "minimumMultiplicity": "0",
