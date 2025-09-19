@@ -11338,7 +11338,7 @@
                         },
                         {
                           "derivedFrom": "PRSB-Standards/WRIST-Epilepsy-information-standard/Professional contacts/Professional contacts record entry/End date@None",
-                          "description": "The end date of the professional relationship with the person.",
+                          "description": "<p>The end date of the professional relationship with the person.</p>",
                           "maximumMultiplicity": "1",
                           "minimumMultiplicity": "0",
                           "mro": "R",
@@ -11346,15 +11346,14 @@
                           "type": "item",
                           "valueDomain": [
                             {
-                              "property": [
-                                {
-                                  "timeStampPrecision": "YMDHM"
-                                }
-                              ],
-                              "type": "datetime"
+                              "type": "PRSB-Standards/WRIST-PRSB-Datatypes/Date and Time@1-build.0.1"
                             }
                           ],
-                          "valueSets": []
+                          "valueSets": [],
+                          "informationType": "",
+                          "relationshipType": "specialisation",
+                          "isComponent": false,
+                          "implementationGuidance": "<p><br></p>"
                         }
                       ],
                       "derivedFrom": "PRSB-Standards/WRIST-Epilepsy-information-standard/Professional contacts/Professional contacts record entry@None",
