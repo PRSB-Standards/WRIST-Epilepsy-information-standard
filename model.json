@@ -11510,17 +11510,22 @@
                 }
               ],
               "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Documents (including correspondence, audio and images)@2-build.2.1",
-              "description": "<p>Details about documents related to the person.</p>",
+              "description": "<p>Additional material linked to the seizure episode record that provides objective or corroborating information about the seizure event. </p><p>This could include video recording, audio recording, wearable device data, clinical documentation or patient/ carer diary entry. </p>",
               "implementationGuidance": "<p><br></p>",
               "informationType": "",
               "isComponent": true,
               "maximumMultiplicity": "1",
               "minimumMultiplicity": "0",
               "mro": "R",
-              "name": "Documents (including correspondence, audio and images)",
+              "name": "Supporting evidence ",
               "relationshipType": "specialisation",
               "type": "group",
-              "valueSets": ""
+              "valueSets": [],
+              "valueDomain": [
+                {
+                  "type": ""
+                }
+              ]
             },
             {
               "name": "Episode type",
