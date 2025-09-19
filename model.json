@@ -11004,7 +11004,7 @@
                       "concept": [
                         {
                           "derivedFrom": "PRSB-Standards/WRIST-Epilepsy-information-standard/Personal contacts/Personal contacts record entry/Name@None",
-                          "description": "The name of the personal contact.",
+                          "description": "<p>The name of the personal contact.</p>",
                           "maximumMultiplicity": "1",
                           "minimumMultiplicity": "1",
                           "mro": "M",
@@ -11012,15 +11012,14 @@
                           "type": "item",
                           "valueDomain": [
                             {
-                              "property": [
-                                {
-                                  "maxLength": "70"
-                                }
-                              ],
-                              "type": "string"
+                              "type": "PRSB-Standards/WRIST-IPS-Datatypes/String@1-build.0.1"
                             }
                           ],
-                          "valueSets": []
+                          "valueSets": [],
+                          "informationType": "",
+                          "relationshipType": "specialisation",
+                          "isComponent": false,
+                          "implementationGuidance": "<p><br></p>"
                         },
                         {
                           "derivedFrom": "PRSB-Standards/WRIST-Epilepsy-information-standard/Personal contacts/Personal contacts record entry/Relationship@None",
