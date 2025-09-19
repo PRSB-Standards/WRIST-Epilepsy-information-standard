@@ -11035,7 +11035,8 @@
                               "use": "",
                               "text": "Related person",
                               "expression": "https://www.hl7.org/fhir/valueset-relatedperson-relationshiptype.html",
-                              "popUpText": "<p><br></p>"
+                              "popUpText": "<p><br></p>",
+                              "prefixDisplay": "FHIR"
                             }
                           ],
                           "informationType": "",
@@ -11165,7 +11166,8 @@
                               "use": "",
                               "text": "SDSjobrole",
                               "expression": "https://simplifier.net/ukcore/codesystem-ukcore-sdsjobrolename",
-                              "popUpText": ""
+                              "popUpText": "",
+                              "prefixDisplay": "FHIR"
                             }
                           ],
                           "informationType": "",
@@ -11212,7 +11214,8 @@
                               "use": "",
                               "text": "Activity treatment function code",
                               "expression": "https://datadictionary.nhs.uk/data_elements/activity_treatment_function_code.html?hl=activity%2Ctreatment%2Cfunction%2Ccode",
-                              "popUpText": ""
+                              "popUpText": "",
+                              "prefixDisplay": "NHS Data Dictionary"
                             }
                           ],
                           "informationType": "",
@@ -11262,7 +11265,8 @@
                               "use": "",
                               "text": "Organisation data service",
                               "expression": "https://www.datadictionary.nhs.uk/data_dictionary/attributes/o/org/organisation_code_de.asp?shownav=1",
-                              "popUpText": "<p><br></p>"
+                              "popUpText": "<p><br></p>",
+                              "prefixDisplay": "NHS Data Dictionary"
                             }
                           ],
                           "implementationGuidance": "<p><br></p>"
@@ -11405,7 +11409,16 @@
                       "mro": "R",
                       "name": "Confidentiality",
                       "type": "item",
-                      "valueSets": "\n                         <p>FHIR value set : - <a class=\"\" href=\"https://www.hl7.org/fhir/v3/ConfidentialityClassification/vs.html\" target=\"\" title=\"\">Confidentiality</a>\n                        </p> \n                    ",
+                      "valueSets": [
+                        {
+                          "prefix": "FHIR",
+                          "use": "",
+                          "text": "Confidentiality",
+                          "expression": "https://www.hl7.org/fhir/v3/ConfidentialityClassification/vs.html",
+                          "popUpText": "</p>",
+                          "prefixDisplay": "FHIR"
+                        }
+                      ],
                       "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Documents (including correspondence, audio and images)/Documents/Confidentiality@2-build.2.1"
                     },
                     {
@@ -11440,7 +11453,8 @@
                           "use": "",
                           "text": "",
                           "expression": "https://theprsb.org/wp-content/uploads/2018/11/Clinical-document-indexing-standards_NHS-Scotland.pdf",
-                          "popUpText": "<p><br></p>"
+                          "popUpText": "<p><br></p>",
+                          "prefixDisplay": "SNOMED CT"
                         }
                       ],
                       "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Documents (including correspondence, audio and images)/Documents/Document name@2-build.2.1",
@@ -11492,7 +11506,7 @@
                               "type": "string"
                             }
                           ],
-                          "valueSets": "Free text.",
+                          "valueSets": [],
                           "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Documents (including correspondence, audio and images)/Documents/Person completing record/Name@2-build.2.1"
                         },
                         {
@@ -11502,7 +11516,16 @@
                           "mro": "R",
                           "name": "Role",
                           "type": "item",
-                          "valueSets": "FHIR value set :-  <a href=\"https://simplifier.net/ukcore/codesystem-ukcore-sdsjobrolename\" target=\"\" title=\"\">SDSjobrole</a> \n                        ",
+                          "valueSets": [
+                            {
+                              "prefix": "FHIR",
+                              "use": "",
+                              "text": "SDSjobrole",
+                              "expression": "https://simplifier.net/ukcore/codesystem-ukcore-sdsjobrolename",
+                              "popUpText": "",
+                              "prefixDisplay": "FHIR"
+                            }
+                          ],
                           "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Documents (including correspondence, audio and images)/Documents/Person completing record/Role@2-build.2.1"
                         },
                         {
@@ -11522,7 +11545,7 @@
                               "type": "text"
                             }
                           ],
-                          "valueSets": "Free text.",
+                          "valueSets": [],
                           "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Documents (including correspondence, audio and images)/Documents/Person completing record/Grade@2-build.2.1"
                         },
                         {
@@ -11542,7 +11565,16 @@
                               "type": "string"
                             }
                           ],
-                          "valueSets": "NHS data dictionary :-  <a href=\"https://datadictionary.nhs.uk/data_elements/activity_treatment_function_code.html?hl=activity%2Ctreatment%2Cfunction%2Ccode\" target=\"\" title=\"\">Activity treatment function code</a> \n                        ",
+                          "valueSets": [
+                            {
+                              "prefix": "NHS_DD",
+                              "use": "",
+                              "text": "Activity treatment function code",
+                              "expression": "https://datadictionary.nhs.uk/data_elements/activity_treatment_function_code.html?hl=activity%2Ctreatment%2Cfunction%2Ccode",
+                              "popUpText": "",
+                              "prefixDisplay": "NHS Data Dictionary"
+                            }
+                          ],
                           "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Documents (including correspondence, audio and images)/Documents/Person completing record/Specialty@2-build.2.1"
                         },
                         {
@@ -11552,7 +11584,16 @@
                           "mro": "R",
                           "name": "Organisation",
                           "type": "group",
-                          "valueSets": "\n                             <span style=\"color: rgb(51, 51, 51); font-family: Arial, Helvetica, Geneva, sans-serif; font-size: 12px;\">NHS data dictionary : - </span> \n                             <a href=\"https://www.datadictionary.nhs.uk/supporting_information/organisation_data_service.html\" target=\"\" title=\"\">Organisation data service</a> \n                        ",
+                          "valueSets": [
+                            {
+                              "prefix": "NHS_DD",
+                              "use": "",
+                              "text": "Organisation data service",
+                              "expression": "https://www.datadictionary.nhs.uk/supporting_information/organisation_data_service.html",
+                              "popUpText": "",
+                              "prefixDisplay": "NHS Data Dictionary"
+                            }
+                          ],
                           "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Documents (including correspondence, audio and images)/Documents/Person completing record/Organisation@2-build.2.1"
                         },
                         {
@@ -11572,7 +11613,16 @@
                               "type": "string"
                             }
                           ],
-                          "valueSets": "NHS data dictionary :-  <a href=\"https://datadictionary.nhs.uk/data_elements/professional_registration_entry_identifier.html\" target=\"\" title=\"\">Professional registration identifier</a> \n                        ",
+                          "valueSets": [
+                            {
+                              "prefix": "NHS_DD",
+                              "use": "",
+                              "text": "Professional registration identifier",
+                              "expression": "https://datadictionary.nhs.uk/data_elements/professional_registration_entry_identifier.html",
+                              "popUpText": "",
+                              "prefixDisplay": "NHS Data Dictionary"
+                            }
+                          ],
                           "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Documents (including correspondence, audio and images)/Documents/Person completing record/Professional identifier@2-build.2.1"
                         },
                         {
@@ -11592,7 +11642,7 @@
                               "type": "datetime"
                             }
                           ],
-                          "valueSets": "Date and time.",
+                          "valueSets": [],
                           "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Documents (including correspondence, audio and images)/Documents/Person completing record/Date completed@2-build.2.1"
                         },
                         {
@@ -11612,7 +11662,16 @@
                               "type": "string"
                             }
                           ],
-                          "valueSets": "NHS data dictionary : -  <a href=\"https://datadictionary.nhs.uk/data_elements/uk_telephone_number.html?hl=number\" target=\"\" title=\"\">UK telephone number</a> \n                        ",
+                          "valueSets": [
+                            {
+                              "prefix": "NHS_DD",
+                              "use": "",
+                              "text": "UK telephone number",
+                              "expression": "https://datadictionary.nhs.uk/data_elements/uk_telephone_number.html?hl=number",
+                              "popUpText": "",
+                              "prefixDisplay": "NHS Data Dictionary"
+                            }
+                          ],
                           "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Documents (including correspondence, audio and images)/Documents/Person completing record/Contact details@2-build.2.1"
                         }
                       ],
@@ -11644,7 +11703,8 @@
                               "use": "",
                               "text": "",
                               "expression": "https://dicom.innolitics.com/ciods",
-                              "popUpText": "<p><br></p>"
+                              "popUpText": "<p><br></p>",
+                              "prefixDisplay": "DICOM"
                             }
                           ],
                           "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Documents (including correspondence, audio and images)/Documents/Additional information required for images./Image procedure@2-build.2.1",
@@ -11752,7 +11812,8 @@
                               "use": "",
                               "text": "",
                               "expression": "",
-                              "popUpText": "<p><br></p>"
+                              "popUpText": "<p><br></p>",
+                              "prefixDisplay": "DICOM"
                             }
                           ],
                           "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Documents (including correspondence, audio and images)/Documents/Additional information required for images./Event code list@2-build.2.1",
@@ -11842,7 +11903,8 @@
                   "use": "",
                   "text": "",
                   "expression": "",
-                  "popUpText": "<p><br></p>"
+                  "popUpText": "<p><br></p>",
+                  "prefixDisplay": "SNOMED CT"
                 }
               ],
               "implementationGuidance": "<p>The epileptic seizure type value sets must align with the International League Against Epilepsy.</p><p><br></p><p>This should allow mapping to legacy codes (e.g. Read v2, ICD-10) where still required, but store SNOMED-CT as the reference.</p><p><br></p><p>The system must update terminology content in line with national release and updates.</p><p><br></p><p>The system must ensure that when 'epileptic' is recorded as an episode type, the information flows automatically to the diagnoses/ problem list section.</p><p><br></p><p>The system must link the recorded seizure/ episode type to an appropriate SNOMED CT diagnosis code (e.g., epilepsy or specific syndromes) when confirmed.</p><p><br></p><p>This must allow clinicians to review, validate, and confirm the diagnosis before it is added permanently to the patient's record.</p><p><br></p><p>The system must retain audit trails showing when seizure/ episode data triggered an update in the diagnoses section.</p><p><br></p><p>The system should prompt the clinicians to complete related fields (e.g., epilepsy type, epilepsy syndrome, risk assessment, care plan) when epilepsy is first recorded.</p>",
@@ -11870,7 +11932,8 @@
                   "use": "",
                   "text": "https://hl7.org/fhir/R4/valueset-condition-ver-status.html",
                   "expression": "https://hl7.org/fhir/R4/valueset-condition-ver-status.html",
-                  "popUpText": "<p><br></p>"
+                  "popUpText": "<p><br></p>",
+                  "prefixDisplay": "FHIR"
                 }
               ],
               "implementationGuidance": "<p><br></p>",
@@ -11938,7 +12001,8 @@
                   "use": "",
                   "text": "<123037004 |Body structure|",
                   "expression": "",
-                  "popUpText": "<p><br></p>"
+                  "popUpText": "<p><br></p>",
+                  "prefixDisplay": "SNOMED CT"
                 }
               ],
               "implementationGuidance": "<p><br></p>",
@@ -11966,7 +12030,8 @@
                   "use": "",
                   "text": "^999000821000000100 |Laterality simple reference set|",
                   "expression": "",
-                  "popUpText": "<p><br></p>"
+                  "popUpText": "<p><br></p>",
+                  "prefixDisplay": "SNOMED CT"
                 }
               ],
               "implementationGuidance": "<p><br></p>",
@@ -12185,7 +12250,7 @@
                               "type": "datetime"
                             }
                           ],
-                          "valueSets": "Date and time",
+                          "valueSets": [],
                           "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Medications and medical devices/Medication item entry/Medication item cluster/Date@2-build.2.1"
                         },
                         {
@@ -12208,7 +12273,16 @@
                                   "type": "string"
                                 }
                               ],
-                              "valueSets": "NHS data dictionary : -  <a href=\"https://www.datadictionary.nhs.uk/data_dictionary/attributes/o/org/organisation_code_de.asp?shownav=1\" target=\"\" title=\"\">Organisation data service</a> \n                            ",
+                              "valueSets": [
+                                {
+                                  "prefix": "NHS_DD",
+                                  "use": "",
+                                  "text": "Organisation data service",
+                                  "expression": "https://www.datadictionary.nhs.uk/data_dictionary/attributes/o/org/organisation_code_de.asp?shownav=1",
+                                  "popUpText": "",
+                                  "prefixDisplay": "NHS Data Dictionary"
+                                }
+                              ],
                               "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Medications and medical devices/Medication item entry/Medication item cluster/Location/Coded value@2-build.2.1"
                             },
                             {
@@ -12228,7 +12302,7 @@
                                   "type": "text"
                                 }
                               ],
-                              "valueSets": "Free text",
+                              "valueSets": [],
                               "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Medications and medical devices/Medication item entry/Medication item cluster/Location/Free text@2-build.2.1"
                             }
                           ],
@@ -12259,7 +12333,7 @@
                                   "type": "string"
                                 }
                               ],
-                              "valueSets": "Free text.",
+                              "valueSets": [],
                               "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Medications and medical devices/Medication item entry/Medication item cluster/Performing professional/Name@2-build.2.1"
                             },
                             {
@@ -12269,7 +12343,16 @@
                               "mro": "R",
                               "name": "Role",
                               "type": "item",
-                              "valueSets": "FHIR value set :-  <a class=\"\" href=\"https://simplifier.net/ukcore/codesystem-ukcore-sdsjobrolename\" target=\"\" title=\"\">SDSjobroletype</a> \n                            ",
+                              "valueSets": [
+                                {
+                                  "prefix": "FHIR",
+                                  "use": "",
+                                  "text": "SDSjobroletype",
+                                  "expression": "https://simplifier.net/ukcore/codesystem-ukcore-sdsjobrolename",
+                                  "popUpText": "",
+                                  "prefixDisplay": "FHIR"
+                                }
+                              ],
                               "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Medications and medical devices/Medication item entry/Medication item cluster/Performing professional/Role@2-build.2.1"
                             },
                             {
@@ -12289,7 +12372,7 @@
                                   "type": "text"
                                 }
                               ],
-                              "valueSets": "Free text",
+                              "valueSets": [],
                               "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Medications and medical devices/Medication item entry/Medication item cluster/Performing professional/Grade@2-build.2.1"
                             },
                             {
@@ -12309,7 +12392,16 @@
                                   "type": "string"
                                 }
                               ],
-                              "valueSets": "NHS data dictionary -  <a href=\"https://datadictionary.nhs.uk/data_elements/activity_treatment_function_code.html?hl=activity%2Ctreatment%2Cfunction%2Ccode\" target=\"\" title=\"\">Activity treatment function code</a> \n                            ",
+                              "valueSets": [
+                                {
+                                  "prefix": "NHS_DD",
+                                  "use": "",
+                                  "text": "Activity treatment function code",
+                                  "expression": "https://datadictionary.nhs.uk/data_elements/activity_treatment_function_code.html?hl=activity%2Ctreatment%2Cfunction%2Ccode",
+                                  "popUpText": "",
+                                  "prefixDisplay": "NHS Data Dictionary"
+                                }
+                              ],
                               "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Medications and medical devices/Medication item entry/Medication item cluster/Performing professional/Speciality@2-build.2.1"
                             },
                             {
@@ -12329,7 +12421,16 @@
                                   "type": "string"
                                 }
                               ],
-                              "valueSets": "NHS data dictionary : -  <a href=\"https://datadictionary.nhs.uk/data_elements/professional_registration_entry_identifier.html\" target=\"\" title=\"\">Professional registration identifier</a> \n                            ",
+                              "valueSets": [
+                                {
+                                  "prefix": "NHS_DD",
+                                  "use": "",
+                                  "text": "Professional registration identifier",
+                                  "expression": "https://datadictionary.nhs.uk/data_elements/professional_registration_entry_identifier.html",
+                                  "popUpText": "",
+                                  "prefixDisplay": "NHS Data Dictionary"
+                                }
+                              ],
                               "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Medications and medical devices/Medication item entry/Medication item cluster/Performing professional/Professional identifier@2-build.2.1"
                             },
                             {
@@ -12358,7 +12459,16 @@
                                   "type": "string"
                                 }
                               ],
-                              "valueSets": "NHS data dictionary -  <a href=\"https://datadictionary.nhs.uk/data_elements/uk_telephone_number.html?hl=number\" target=\"\" title=\"\">UK phone number</a> \n                            ",
+                              "valueSets": [
+                                {
+                                  "prefix": "NHS_DD",
+                                  "use": "",
+                                  "text": "UK phone number",
+                                  "expression": "https://datadictionary.nhs.uk/data_elements/uk_telephone_number.html?hl=number",
+                                  "popUpText": "",
+                                  "prefixDisplay": "NHS Data Dictionary"
+                                }
+                              ],
                               "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Medications and medical devices/Medication item entry/Medication item cluster/Performing professional/Contact details@2-build.2.1"
                             }
                           ],
@@ -12377,7 +12487,16 @@
                           "mro": "R",
                           "name": "Medication prescribed by",
                           "type": "item",
-                          "valueSets": "FHIR value set : - <a href=\"https://simplifier.net/hl7fhirukcoreprofiler4-dstu/ukcore-medicationprescribingagency\" target=\"\" title=\"\"> Medication prescribing agency</a> \n                        ",
+                          "valueSets": [
+                            {
+                              "prefix": "FHIR",
+                              "use": "",
+                              "text": "Medication prescribing agency",
+                              "expression": "https://simplifier.net/hl7fhirukcoreprofiler4-dstu/ukcore-medicationprescribingagency",
+                              "popUpText": "",
+                              "prefixDisplay": "FHIR"
+                            }
+                          ],
                           "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Medications and medical devices/Medication item entry/Medication item cluster/Medication prescribed by@2-build.2.1"
                         },
                         {
@@ -12389,7 +12508,7 @@
                               "mro": "R",
                               "name": "Coded value",
                               "type": "item",
-                              "valueSets": "dm+d:- any code from the VTM, VMP, AMP, VMPP and AMPP concept classes",
+                              "valueSets": [],
                               "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Medications and medical devices/Medication item entry/Medication item cluster/Medication name/Coded value@2-build.2.1"
                             },
                             {
@@ -12409,7 +12528,7 @@
                                   "type": "text"
                                 }
                               ],
-                              "valueSets": "Free text",
+                              "valueSets": [],
                               "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Medications and medical devices/Medication item entry/Medication item cluster/Medication name/Free text@2-build.2.1"
                             }
                           ],
@@ -12430,7 +12549,7 @@
                               "mro": "R",
                               "name": "Coded value",
                               "type": "item",
-                              "valueSets": "SNOMED CT: - 999000641000001107 | National Health Service dictionary of medicines and devices trade family group simple reference set (foundation metadata concept) |",
+                              "valueSets": [],
                               "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Medications and medical devices/Medication item entry/Medication item cluster/Medication trade family/Coded value@2-build.2.1"
                             },
                             {
@@ -12450,7 +12569,7 @@
                                   "type": "text"
                                 }
                               ],
-                              "valueSets": "Free text",
+                              "valueSets": [],
                               "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Medications and medical devices/Medication item entry/Medication item cluster/Medication trade family/Free text@2-build.2.1"
                             }
                           ],
@@ -12471,7 +12590,7 @@
                               "mro": "R",
                               "name": "Coded value",
                               "type": "item",
-                              "valueSets": "SNOMED CT: - ^999000781000001107 | National Health Service dictionary of medicines and devices dose form simple reference set (foundation metadata concept) | <br clear=\"none\"/> \n                            ",
+                              "valueSets": [],
                               "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Medications and medical devices/Medication item entry/Medication item cluster/Form/Coded value@2-build.2.1"
                             },
                             {
@@ -12491,7 +12610,7 @@
                                   "type": "text"
                                 }
                               ],
-                              "valueSets": "Free text",
+                              "valueSets": [],
                               "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Medications and medical devices/Medication item entry/Medication item cluster/Form/Free text@2-build.2.1"
                             }
                           ],
@@ -12517,7 +12636,7 @@
                                   "type": "quantity"
                                 }
                               ],
-                              "valueSets": "Enumerated value",
+                              "valueSets": [],
                               "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Medications and medical devices/Medication item entry/Medication item cluster/Quantity supplied/Value@2-build.2.1"
                             },
                             {
@@ -12527,7 +12646,7 @@
                               "mro": "R",
                               "name": "Unit of measure",
                               "type": "item",
-                              "valueSets": "UCUM code",
+                              "valueSets": [],
                               "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Medications and medical devices/Medication item entry/Medication item cluster/Quantity supplied/Unit of measure@2-build.2.1"
                             }
                           ],
@@ -12537,7 +12656,7 @@
                           "mro": "R",
                           "name": "Quantity supplied",
                           "type": "group",
-                          "valueSets": "Free text",
+                          "valueSets": [],
                           "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Medications and medical devices/Medication item entry/Medication item cluster/Quantity supplied@2-build.2.1"
                         },
                         {
@@ -12557,7 +12676,7 @@
                               "type": "datetime"
                             }
                           ],
-                          "valueSets": "Date and time",
+                          "valueSets": [],
                           "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Medications and medical devices/Medication item entry/Medication item cluster/Date supplied@2-build.2.1"
                         },
                         {
@@ -12569,7 +12688,7 @@
                               "mro": "R",
                               "name": "Coded value",
                               "type": "item",
-                              "valueSets": "SNOMED CT: - ^999000051000001100 |ePrescribing route of administration simple reference set (foundation metadata concept)|",
+                              "valueSets": [],
                               "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Medications and medical devices/Medication item entry/Medication item cluster/Route/Coded value@2-build.2.1"
                             },
                             {
@@ -12589,7 +12708,7 @@
                                   "type": "text"
                                 }
                               ],
-                              "valueSets": "Free text",
+                              "valueSets": [],
                               "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Medications and medical devices/Medication item entry/Medication item cluster/Route/Free text@2-build.2.1"
                             }
                           ],
@@ -12610,7 +12729,7 @@
                               "mro": "R",
                               "name": "Coded value",
                               "type": "item",
-                              "valueSets": "SNOMED CT: - &lt;442083009 | Anatomical or acquired body structure (body structure) | <br clear=\"none\"/> \n                            ",
+                              "valueSets": [],
                               "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Medications and medical devices/Medication item entry/Medication item cluster/Site/Coded value@2-build.2.1"
                             },
                             {
@@ -12630,7 +12749,7 @@
                                   "type": "string"
                                 }
                               ],
-                              "valueSets": "Free text",
+                              "valueSets": [],
                               "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Medications and medical devices/Medication item entry/Medication item cluster/Site/Free text@2-build.2.1"
                             }
                           ],
@@ -12651,7 +12770,7 @@
                               "mro": "R",
                               "name": "Coded value",
                               "type": "item",
-                              "valueSets": "SNOMED CT : - ^999000041000001103 | ePrescribing method simple reference set (foundation metadata concept) |",
+                              "valueSets": [],
                               "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Medications and medical devices/Medication item entry/Medication item cluster/Method/Coded value@2-build.2.1"
                             },
                             {
@@ -12694,7 +12813,7 @@
                               "type": "boolean"
                             }
                           ],
-                          "valueSets": "Flag : - Yes or No",
+                          "valueSets": [],
                           "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Medications and medical devices/Medication item entry/Medication item cluster/Over the counter medication flag@2-build.2.1"
                         },
                         {
@@ -12711,7 +12830,7 @@
                                   "type": "boolean"
                                 }
                               ],
-                              "valueSets": "Calculated or ordered",
+                              "valueSets": [],
                               "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Medications and medical devices/Medication item entry/Medication item cluster/Structured dose direction cluster/Dose type@2-build.2.1"
                             },
                             {
@@ -12728,7 +12847,7 @@
                                       "type": "quantity"
                                     }
                                   ],
-                                  "valueSets": "Numeric",
+                                  "valueSets": [],
                                   "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Medications and medical devices/Medication item entry/Medication item cluster/Structured dose direction cluster/Structured dose amount/Dose@2-build.2.1"
                                 },
                                 {
@@ -12743,7 +12862,7 @@
                                       "type": "decimal"
                                     }
                                   ],
-                                  "valueSets": "Numeric",
+                                  "valueSets": [],
                                   "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Medications and medical devices/Medication item entry/Medication item cluster/Structured dose direction cluster/Structured dose amount/Rate@2-build.2.1"
                                 }
                               ],
@@ -12767,7 +12886,7 @@
                                   "type": "quantity"
                                 }
                               ],
-                              "valueSets": "Numeric",
+                              "valueSets": [],
                               "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Medications and medical devices/Medication item entry/Medication item cluster/Structured dose direction cluster/Structured dose timing@2-build.2.1"
                             },
                             {
@@ -12782,7 +12901,7 @@
                                   "type": "quantity"
                                 }
                               ],
-                              "valueSets": "Numeric",
+                              "valueSets": [],
                               "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Medications and medical devices/Medication item entry/Medication item cluster/Structured dose direction cluster/Dose direction duration@2-build.2.1"
                             },
                             {
@@ -12802,7 +12921,7 @@
                                   "type": "text"
                                 }
                               ],
-                              "valueSets": "Free text",
+                              "valueSets": [],
                               "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Medications and medical devices/Medication item entry/Medication item cluster/Structured dose direction cluster/Dose directions description@2-build.2.1"
                             },
                             {
@@ -12817,7 +12936,7 @@
                                   "type": "quantity"
                                 }
                               ],
-                              "valueSets": "Numeric",
+                              "valueSets": [],
                               "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Medications and medical devices/Medication item entry/Medication item cluster/Structured dose direction cluster/Maxdoseperperiod@2-build.2.1"
                             },
                             {
@@ -12832,7 +12951,7 @@
                                   "type": "quantity"
                                 }
                               ],
-                              "valueSets": "Numeric",
+                              "valueSets": [],
                               "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Medications and medical devices/Medication item entry/Medication item cluster/Structured dose direction cluster/Maxdoseperadministration@2-build.2.1"
                             }
                           ],
@@ -12858,7 +12977,7 @@
                                   "type": "decimal"
                                 }
                               ],
-                              "valueSets": "Numeric",
+                              "valueSets": [],
                               "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Medications and medical devices/Medication item entry/Medication item cluster/Repeat medication/Number of repeat prescriptions@2-build.2.1"
                             },
                             {
@@ -12878,7 +12997,7 @@
                                   "type": "datetime"
                                 }
                               ],
-                              "valueSets": "Date and time",
+                              "valueSets": [],
                               "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Medications and medical devices/Medication item entry/Medication item cluster/Repeat medication/Review date@2-build.2.1"
                             }
                           ],
@@ -12897,7 +13016,16 @@
                           "mro": "R",
                           "name": "Additional instructions",
                           "type": "item",
-                          "valueSets": "FHIR value set : -  <a href=\"http://hl7.org/fhir/stu3/valueset-additional-instruction-codes.html\" target=\"\" title=\"\">Additional instruction</a> \n                        ",
+                          "valueSets": [
+                            {
+                              "prefix": "FHIR",
+                              "use": "",
+                              "text": "Additional instruction",
+                              "expression": "http://hl7.org/fhir/stu3/valueset-additional-instruction-codes.html",
+                              "popUpText": "",
+                              "prefixDisplay": "FHIR"
+                            }
+                          ],
                           "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Medications and medical devices/Medication item entry/Medication item cluster/Additional instructions@2-build.2.1"
                         },
                         {
@@ -12909,7 +13037,16 @@
                               "mro": "R",
                               "name": "Course status",
                               "type": "item",
-                              "valueSets": "FHIR value set : -  <a class=\"\" href=\"https://www.hl7.org/fhir/valueset-medication-statement-status.html\" target=\"\" title=\"\">Medication status</a> \n                                 <ul/> \n                            ",
+                              "valueSets": [
+                                {
+                                  "prefix": "FHIR",
+                                  "use": "",
+                                  "text": "Medication status",
+                                  "expression": "https://www.hl7.org/fhir/valueset-medication-statement-status.html",
+                                  "popUpText": "<ul/>",
+                                  "prefixDisplay": "FHIR"
+                                }
+                              ],
                               "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Medications and medical devices/Medication item entry/Medication item cluster/Course details cluster/Course status@2-build.2.1"
                             },
                             {
@@ -12929,7 +13066,7 @@
                                   "type": "text"
                                 }
                               ],
-                              "valueSets": "Free text",
+                              "valueSets": [],
                               "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Medications and medical devices/Medication item entry/Medication item cluster/Course details cluster/Indication@2-build.2.1"
                             },
                             {
@@ -12949,7 +13086,7 @@
                                   "type": "datetime"
                                 }
                               ],
-                              "valueSets": "Date and time",
+                              "valueSets": [],
                               "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Medications and medical devices/Medication item entry/Medication item cluster/Course details cluster/Start date/time@2-build.2.1"
                             },
                             {
@@ -12969,7 +13106,7 @@
                                   "type": "datetime"
                                 }
                               ],
-                              "valueSets": "Date and time",
+                              "valueSets": [],
                               "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Medications and medical devices/Medication item entry/Medication item cluster/Course details cluster/End date/time@2-build.2.1"
                             },
                             {
@@ -12989,7 +13126,7 @@
                                   "type": "text"
                                 }
                               ],
-                              "valueSets": "Free text with URL",
+                              "valueSets": [],
                               "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Medications and medical devices/Medication item entry/Medication item cluster/Course details cluster/Link to indication record@2-build.2.1"
                             },
                             {
@@ -13009,7 +13146,7 @@
                                   "type": "text"
                                 }
                               ],
-                              "valueSets": "Free text",
+                              "valueSets": [],
                               "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Medications and medical devices/Medication item entry/Medication item cluster/Course details cluster/Comment/recommendation@2-build.2.1"
                             }
                           ],
@@ -13030,7 +13167,16 @@
                               "mro": "R",
                               "name": "Status",
                               "type": "item",
-                              "valueSets": "FHIR value set :  <a href=\"https://www.hl7.org/fhir/valueset-medication-statement-status.html\" target=\"\" title=\"\">Medication status</a> \n                                 <ul/> \n                            ",
+                              "valueSets": [
+                                {
+                                  "prefix": "FHIR",
+                                  "use": "",
+                                  "text": "Medication status",
+                                  "expression": "https://www.hl7.org/fhir/valueset-medication-statement-status.html",
+                                  "popUpText": "<ul/>",
+                                  "prefixDisplay": "FHIR"
+                                }
+                              ],
                               "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Medications and medical devices/Medication item entry/Medication item cluster/Medication change summary cluster/Status@2-build.2.1"
                             },
                             {
@@ -13040,7 +13186,7 @@
                               "mro": "R",
                               "name": "Indication",
                               "type": "item",
-                              "valueSets": "\n                                 <table class=\"detail spaced\" width=\"100%\" style=\"font-family: Arial, Helvetica, Geneva, sans-serif; font-size: 12px; max-width: 100%; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial; color: rgb(51, 51, 51);\">\n                                    <tbody>\n                                        <tr>\n                                            <td colspan=\"3\" rowspan=\"1\" style=\"vertical-align: top;\">\n                                                <div class=\"xforms-control xforms-output xforms-mediatype-text-html xforms-mediatype-text\" id=\"xf-895\u2261xf-1239\" style=\"display: inline; zoom: 1;\">\n                                                    <div class=\"xforms-output-output\" id=\"xf-895\u2261xf-1239\u2261\u2261c\" style=\"zoom: 1;\">SNOMED CT:- ^1127601000000107 | Healthcare matters simple reference set (foundation metadata concept) |</div>\n                                                </div>\n                                            </td>\n                                        </tr>\n                                    </tbody>\n                                </table> \n                            ",
+                              "valueSets": [],
                               "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Medications and medical devices/Medication item entry/Medication item cluster/Medication change summary cluster/Indication@2-build.2.1"
                             },
                             {
@@ -13060,7 +13206,7 @@
                                   "type": "datetime"
                                 }
                               ],
-                              "valueSets": "Date and time",
+                              "valueSets": [],
                               "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Medications and medical devices/Medication item entry/Medication item cluster/Medication change summary cluster/Date of change@2-build.2.1"
                             },
                             {
@@ -13080,7 +13226,7 @@
                                   "type": "text"
                                 }
                               ],
-                              "valueSets": "Free text",
+                              "valueSets": [],
                               "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Medications and medical devices/Medication item entry/Medication item cluster/Medication change summary cluster/Description of amendment@2-build.2.1"
                             }
                           ],
@@ -13111,7 +13257,7 @@
                                   "type": "string"
                                 }
                               ],
-                              "valueSets": "Free text.",
+                              "valueSets": [],
                               "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Medications and medical devices/Medication item entry/Medication item cluster/Person completing record/Name@2-build.2.1"
                             },
                             {
@@ -13121,7 +13267,16 @@
                               "mro": "R",
                               "name": "Role",
                               "type": "item",
-                              "valueSets": "FHIR value set :-  <a href=\"https://simplifier.net/ukcore/codesystem-ukcore-sdsjobrolename\" target=\"\" title=\"\">SDSjobrole</a> \n                            ",
+                              "valueSets": [
+                                {
+                                  "prefix": "FHIR",
+                                  "use": "",
+                                  "text": "SDSjobrole",
+                                  "expression": "https://simplifier.net/ukcore/codesystem-ukcore-sdsjobrolename",
+                                  "popUpText": "",
+                                  "prefixDisplay": "FHIR"
+                                }
+                              ],
                               "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Medications and medical devices/Medication item entry/Medication item cluster/Person completing record/Role@2-build.2.1"
                             },
                             {
@@ -13141,7 +13296,7 @@
                                   "type": "text"
                                 }
                               ],
-                              "valueSets": "Free text.",
+                              "valueSets": [],
                               "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Medications and medical devices/Medication item entry/Medication item cluster/Person completing record/Grade@2-build.2.1"
                             },
                             {
@@ -13161,7 +13316,16 @@
                                   "type": "string"
                                 }
                               ],
-                              "valueSets": "NHS data dictionary :-  <a href=\"https://datadictionary.nhs.uk/data_elements/activity_treatment_function_code.html?hl=activity%2Ctreatment%2Cfunction%2Ccode\" target=\"\" title=\"\">Activity treatment function code</a> \n                            ",
+                              "valueSets": [
+                                {
+                                  "prefix": "NHS_DD",
+                                  "use": "",
+                                  "text": "Activity treatment function code",
+                                  "expression": "https://datadictionary.nhs.uk/data_elements/activity_treatment_function_code.html?hl=activity%2Ctreatment%2Cfunction%2Ccode",
+                                  "popUpText": "",
+                                  "prefixDisplay": "NHS Data Dictionary"
+                                }
+                              ],
                               "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Medications and medical devices/Medication item entry/Medication item cluster/Person completing record/Specialty@2-build.2.1"
                             },
                             {
@@ -13171,7 +13335,16 @@
                               "mro": "R",
                               "name": "Organisation",
                               "type": "group",
-                              "valueSets": "\n                                 <span style=\"color: rgb(51, 51, 51); font-family: Arial, Helvetica, Geneva, sans-serif; font-size: 12px;\">NHS data dictionary : - </span> \n                                 <a href=\"https://www.datadictionary.nhs.uk/supporting_information/organisation_data_service.html\" target=\"\" title=\"\">Organisation data service</a> \n                            ",
+                              "valueSets": [
+                                {
+                                  "prefix": "NHS_DD",
+                                  "use": "",
+                                  "text": "Organisation data service",
+                                  "expression": "https://www.datadictionary.nhs.uk/supporting_information/organisation_data_service.html",
+                                  "popUpText": "",
+                                  "prefixDisplay": "NHS Data Dictionary"
+                                }
+                              ],
                               "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Medications and medical devices/Medication item entry/Medication item cluster/Person completing record/Organisation@2-build.2.1"
                             },
                             {
@@ -13191,7 +13364,16 @@
                                   "type": "string"
                                 }
                               ],
-                              "valueSets": "NHS data dictionary :-  <a href=\"https://datadictionary.nhs.uk/data_elements/professional_registration_entry_identifier.html\" target=\"\" title=\"\">Professional registration identifier</a> \n                            ",
+                              "valueSets": [
+                                {
+                                  "prefix": "NHS_DD",
+                                  "use": "",
+                                  "text": "Professional registration identifier",
+                                  "expression": "https://datadictionary.nhs.uk/data_elements/professional_registration_entry_identifier.html",
+                                  "popUpText": "",
+                                  "prefixDisplay": "NHS Data Dictionary"
+                                }
+                              ],
                               "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Medications and medical devices/Medication item entry/Medication item cluster/Person completing record/Professional identifier@2-build.2.1"
                             },
                             {
@@ -13211,7 +13393,7 @@
                                   "type": "datetime"
                                 }
                               ],
-                              "valueSets": "Date and time.",
+                              "valueSets": [],
                               "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Medications and medical devices/Medication item entry/Medication item cluster/Person completing record/Date completed@2-build.2.1"
                             },
                             {
@@ -13231,7 +13413,16 @@
                                   "type": "string"
                                 }
                               ],
-                              "valueSets": "NHS data dictionary : -  <a href=\"https://datadictionary.nhs.uk/data_elements/uk_telephone_number.html?hl=number\" target=\"\" title=\"\">UK telephone number</a> \n                            ",
+                              "valueSets": [
+                                {
+                                  "prefix": "NHS_DD",
+                                  "use": "",
+                                  "text": "UK telephone number",
+                                  "expression": "https://datadictionary.nhs.uk/data_elements/uk_telephone_number.html?hl=number",
+                                  "popUpText": "",
+                                  "prefixDisplay": "NHS Data Dictionary"
+                                }
+                              ],
                               "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Medications and medical devices/Medication item entry/Medication item cluster/Person completing record/Contact details@2-build.2.1"
                             }
                           ],
@@ -13271,7 +13462,7 @@
                               "type": "text"
                             }
                           ],
-                          "valueSets": "Free text",
+                          "valueSets": [],
                           "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Medications and medical devices/Medication item entry/Medical devices entry/Medical device@2-build.2.1"
                         },
                         {
@@ -13292,7 +13483,7 @@
                               "type": "text"
                             }
                           ],
-                          "valueSets": "Free text",
+                          "valueSets": [],
                           "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Medications and medical devices/Medication item entry/Medical devices entry/Comments@2-build.2.1"
                         }
                       ],
@@ -13315,7 +13506,7 @@
                               "mro": "R",
                               "name": "Coded value",
                               "type": "item",
-                              "valueSets": "\n                                 <div>\n                                    <table class=\"detail spaced\" width=\"100%\" style=\"font-family: Arial, Helvetica, Geneva, sans-serif; font-size: 12px; max-width: 100%; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial; color: rgb(51, 51, 51);\">\n                                        <tbody>\n                                            <tr>\n                                                <td colspan=\"3\" rowspan=\"1\" style=\"vertical-align: top;\">\n                                                    <div class=\"xforms-control xforms-output xforms-mediatype-text-html xforms-mediatype-text\" id=\"xf-895\u2261xf-1239\" style=\"display: inline; zoom: 1;\">\n                                                        <div class=\"xforms-output-output\" id=\"xf-895\u2261xf-1239\u2261\u2261c\" style=\"zoom: 1;\">dm+d:- any code from the VTM, VMP, AMP, VMPP and AMPP concept classes</div>\n                                                    </div>\n                                                </td>\n                                            </tr>\n                                        </tbody>\n                                    </table>\n                                </div> \n                                 <div/> \n                            ",
+                              "valueSets": [],
                               "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Medications and medical devices/Medication item entry/Medication discontinued entry/Name of discontinued medication/Coded value@2-build.2.1"
                             },
                             {
@@ -13335,7 +13526,7 @@
                                   "type": "string"
                                 }
                               ],
-                              "valueSets": "Free text",
+                              "valueSets": [],
                               "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Medications and medical devices/Medication item entry/Medication discontinued entry/Name of discontinued medication/Free text@2-build.2.1"
                             }
                           ],
@@ -13354,7 +13545,16 @@
                           "mro": "R",
                           "name": "Status",
                           "type": "item",
-                          "valueSets": "FHIR value set: -  <a href=\"https://www.hl7.org/fhir/valueset-medication-statement-status.html\" target=\"\" title=\"\">Medication status</a> \n                        ",
+                          "valueSets": [
+                            {
+                              "prefix": "FHIR",
+                              "use": "",
+                              "text": "Medication status",
+                              "expression": "https://www.hl7.org/fhir/valueset-medication-statement-status.html",
+                              "popUpText": "",
+                              "prefixDisplay": "FHIR"
+                            }
+                          ],
                           "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Medications and medical devices/Medication item entry/Medication discontinued entry/Status@2-build.2.1"
                         },
                         {
@@ -13364,7 +13564,7 @@
                           "mro": "R",
                           "name": "Indication",
                           "type": "item",
-                          "valueSets": "\n                             <table class=\"detail spaced\" width=\"100%\" style=\"font-family: Arial, Helvetica, Geneva, sans-serif; font-size: 12px; max-width: 100%; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial; color: rgb(51, 51, 51);\">\n                                <tbody>\n                                    <tr>\n                                        <td colspan=\"3\" rowspan=\"1\" style=\"vertical-align: top;\">\n                                            <div class=\"xforms-control xforms-output xforms-mediatype-text-html xforms-mediatype-text\" id=\"xf-895\u2261xf-1239\" style=\"display: inline; zoom: 1;\">\n                                                <div class=\"xforms-output-output\" id=\"xf-895\u2261xf-1239\u2261\u2261c\" style=\"zoom: 1;\">SNOMED CT:- ^1127601000000107 | Healthcare matters simple reference set (foundation metadata concept) |</div>\n                                            </div>\n                                        </td>\n                                    </tr>\n                                </tbody>\n                            </table> \n                        ",
+                          "valueSets": [],
                           "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Medications and medical devices/Medication item entry/Medication discontinued entry/Indication@2-build.2.1"
                         },
                         {
@@ -13384,7 +13584,7 @@
                               "type": "datetime"
                             }
                           ],
-                          "valueSets": "Date and time",
+                          "valueSets": [],
                           "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Medications and medical devices/Medication item entry/Medication discontinued entry/Date of change@2-build.2.1"
                         },
                         {
@@ -13404,7 +13604,7 @@
                               "type": "text"
                             }
                           ],
-                          "valueSets": "Free text",
+                          "valueSets": [],
                           "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Medications and medical devices/Medication item entry/Medication discontinued entry/Comment@2-build.2.1"
                         }
                       ],
@@ -13437,7 +13637,7 @@
               "name": "Medications and medical devices",
               "relationshipType": "neither",
               "type": "group",
-              "valueSets": ""
+              "valueSets": []
             }
           ],
           "type": "group",
@@ -13470,7 +13670,8 @@
                   "use": "",
                   "text": "",
                   "expression": "",
-                  "popUpText": "<p>The most common seizure type(s) experienced by the person, using ILAE classification where possible.</p>"
+                  "popUpText": "<p>The most common seizure type(s) experienced by the person, using ILAE classification where possible.</p>",
+                  "prefixDisplay": "SNOMED CT"
                 }
               ],
               "implementationGuidance": "<p><br></p>",
@@ -13538,7 +13739,8 @@
                   "use": "",
                   "text": "",
                   "expression": "",
-                  "popUpText": "<p><br></p>"
+                  "popUpText": "<p><br></p>",
+                  "prefixDisplay": "SNOMED CT"
                 }
               ],
               "implementationGuidance": "<p><br></p>",
