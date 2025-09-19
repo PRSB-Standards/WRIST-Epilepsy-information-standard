@@ -11135,7 +11135,7 @@
                       "concept": [
                         {
                           "derivedFrom": "PRSB-Standards/WRIST-Epilepsy-information-standard/Professional contacts/Professional contacts record entry/Name@None",
-                          "description": "The name of the professional with responsibility for the care of the person.",
+                          "description": "<p>The name of the professional with responsibility for the care of the person.</p>",
                           "maximumMultiplicity": "1",
                           "minimumMultiplicity": "0",
                           "mro": "R",
@@ -11143,15 +11143,14 @@
                           "type": "item",
                           "valueDomain": [
                             {
-                              "property": [
-                                {
-                                  "maxLength": "70"
-                                }
-                              ],
-                              "type": "text"
+                              "type": "PRSB-Standards/WRIST-IPS-Datatypes/String@1-build.0.1"
                             }
                           ],
-                          "valueSets": []
+                          "valueSets": [],
+                          "informationType": "",
+                          "relationshipType": "specialisation",
+                          "isComponent": false,
+                          "implementationGuidance": "<p><br></p>"
                         },
                         {
                           "derivedFrom": "PRSB-Standards/WRIST-Epilepsy-information-standard/Professional contacts/Professional contacts record entry/Role@None",
