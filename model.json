@@ -11024,7 +11024,7 @@
                         },
                         {
                           "derivedFrom": "PRSB-Standards/WRIST-Epilepsy-information-standard/Personal contacts/Personal contacts record entry/Relationship@None",
-                          "description": "The relationship the personal contact has to the person, e.g. father, grandmother, family friend etc.",
+                          "description": "<p>The relationship the personal contact has to the person, e.g. father, grandmother, family friend etc.</p>",
                           "maximumMultiplicity": "1",
                           "minimumMultiplicity": "0",
                           "mro": "R",
@@ -11032,14 +11032,22 @@
                           "type": "item",
                           "valueSets": [
                             {
-                              "expression": "https://www.hl7.org/fhir/valueset-relatedperson-relationshiptype.html",
-                              "popUpText": "",
                               "prefix": "FHIR",
-                              "prefixDisplay": "FHIR",
+                              "use": "",
                               "text": "Related person",
-                              "use": ""
+                              "expression": "https://www.hl7.org/fhir/valueset-relatedperson-relationshiptype.html",
+                              "popUpText": "<p><br></p>"
                             }
-                          ]
+                          ],
+                          "informationType": "",
+                          "valueDomain": [
+                            {
+                              "type": "PRSB-Standards/WRIST-IPS-Datatypes/Coded Element@1-build.0.1"
+                            }
+                          ],
+                          "relationshipType": "specialisation",
+                          "isComponent": false,
+                          "implementationGuidance": "<p><br></p>"
                         },
                         {
                           "derivedFrom": "PRSB-Standards/WRIST-Epilepsy-information-standard/Personal contacts/Personal contacts record entry/Relationship type@None",
