@@ -11064,17 +11064,32 @@
               "relationshipType": "specialisation"
             },
             {
-              "name": "",
-              "mro": "",
-              "description": "",
-              "valueSets": "",
-              "implementationGuidance": "",
+              "name": "Problem verification status",
+              "mro": "R",
+              "description": "<p>Provides an indication of the degree to which a condition has been verified by clinical evidence i.e. confirmed, unconfirmed (including provisional or differential), refuted or entered-in-error.</p>",
+              "valueSets": [
+                {
+                  "prefix": "FHIR",
+                  "use": "",
+                  "text": "https://hl7.org/fhir/R4/valueset-condition-ver-status.html",
+                  "expression": "https://hl7.org/fhir/R4/valueset-condition-ver-status.html",
+                  "popUpText": "<p><br></p>"
+                }
+              ],
+              "implementationGuidance": "<p><br></p>",
               "informationType": "",
-              "minimumMultiplicity": "",
-              "maximumMultiplicity": "",
-              "derivedFrom": "",
+              "minimumMultiplicity": "0",
+              "maximumMultiplicity": "1",
+              "derivedFrom": "PRSB-Standards/WRIST-Problem-list/Problem list/Problem list record entry/Problem@1-build.0.4",
               "isComponent": false,
-              "concept": []
+              "concept": [],
+              "type": "",
+              "valueDomain": [
+                {
+                  "type": "PRSB-Standards/WRIST-IPS-Datatypes/Coded Element@1-build.0.1"
+                }
+              ],
+              "relationshipType": "specialisation"
             },
             {
               "concept": [
