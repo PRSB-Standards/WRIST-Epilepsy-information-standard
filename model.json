@@ -11160,17 +11160,32 @@
               "relationshipType": "specialisation"
             },
             {
-              "name": "",
-              "mro": "",
-              "description": "",
-              "valueSets": "",
-              "implementationGuidance": "",
+              "name": "Laterality",
+              "mro": "R",
+              "description": "<p>The laterality of the problem (left or right or bilateral).</p>",
+              "valueSets": [
+                {
+                  "prefix": "SNOMED_CT",
+                  "use": "",
+                  "text": "^999000821000000100 |Laterality simple reference set|",
+                  "expression": "",
+                  "popUpText": "<p><br></p>"
+                }
+              ],
+              "implementationGuidance": "<p><br></p>",
               "informationType": "",
-              "minimumMultiplicity": "",
-              "maximumMultiplicity": "",
-              "derivedFrom": "",
+              "minimumMultiplicity": "0",
+              "maximumMultiplicity": "1",
+              "derivedFrom": "PRSB-Standards/WRIST-Problem-list/Problem list/Problem list record entry/Problem@1-build.0.4",
               "isComponent": false,
-              "concept": []
+              "concept": [],
+              "type": "",
+              "valueDomain": [
+                {
+                  "type": "PRSB-Standards/WRIST-IPS-Datatypes/Coded Element@1-build.0.1"
+                }
+              ],
+              "relationshipType": "specialisation"
             },
             {
               "concept": [
