@@ -11356,26 +11356,6 @@
                           "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Documents (including correspondence, audio and images)/Documents/Additional information required for images./Images@2-build.2.1"
                         },
                         {
-                          "description": "The format code of the document which provides information on how to display the document.",
-                          "maximumMultiplicity": "1",
-                          "minimumMultiplicity": "0",
-                          "mro": "R",
-                          "name": "Format code",
-                          "type": "item",
-                          "valueDomain": [
-                            {
-                              "property": [
-                                {
-                                  "maxLength": "150"
-                                }
-                              ],
-                              "type": "text"
-                            }
-                          ],
-                          "valueSets": "Free text",
-                          "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Documents (including correspondence, audio and images)/Documents/Additional information required for images./Format code@2-build.2.1"
-                        },
-                        {
                           "description": "The type of image (acquisition modality) and the anatomical site imaged.",
                           "maximumMultiplicity": "1",
                           "minimumMultiplicity": "0",
