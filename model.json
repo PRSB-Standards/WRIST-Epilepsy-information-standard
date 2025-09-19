@@ -13461,17 +13461,32 @@
           "isComponent": false,
           "concept": [
             {
-              "name": "",
-              "mro": "",
-              "description": "",
-              "valueSets": "",
-              "implementationGuidance": "",
+              "name": "Typical seizure type(s)",
+              "mro": "R",
+              "description": "<p>The type of onset of the seizure. </p>",
+              "valueSets": [
+                {
+                  "prefix": "SNOMED_CT",
+                  "use": "",
+                  "text": "",
+                  "expression": "",
+                  "popUpText": "<p>The most common seizure type(s) experienced by the person, using ILAE classification where possible.</p>"
+                }
+              ],
+              "implementationGuidance": "<p><br></p>",
               "informationType": "",
-              "minimumMultiplicity": "",
-              "maximumMultiplicity": "",
+              "minimumMultiplicity": "0",
+              "maximumMultiplicity": "*",
               "derivedFrom": "",
               "isComponent": false,
-              "concept": []
+              "concept": [],
+              "type": "item",
+              "valueDomain": [
+                {
+                  "type": "PRSB-Standards/WRIST-IPS-Datatypes/Coded Element@1-build.0.1"
+                }
+              ],
+              "relationshipType": "specialisation"
             },
             {
               "name": "Epileptic seizure frequency ",
