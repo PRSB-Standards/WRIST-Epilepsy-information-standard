@@ -11356,14 +11356,31 @@
                           "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Documents (including correspondence, audio and images)/Documents/Additional information required for images./Images@2-build.2.1"
                         },
                         {
-                          "description": "The type of image (acquisition modality) and the anatomical site imaged.",
+                          "description": "<p>The type of image (acquisition modality) and the anatomical site imaged.</p>",
                           "maximumMultiplicity": "1",
                           "minimumMultiplicity": "0",
                           "mro": "R",
                           "name": "Event code list",
                           "type": "item",
-                          "valueSets": "DICOM code",
-                          "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Documents (including correspondence, audio and images)/Documents/Additional information required for images./Event code list@2-build.2.1"
+                          "valueSets": [
+                            {
+                              "prefix": "DICOM",
+                              "use": "",
+                              "text": "",
+                              "expression": "",
+                              "popUpText": "<p><br></p>"
+                            }
+                          ],
+                          "derivedFrom": "PRSB-Standards/WRIST-core-information-standard/Documents (including correspondence, audio and images)/Documents/Additional information required for images./Event code list@2-build.2.1",
+                          "informationType": "",
+                          "valueDomain": [
+                            {
+                              "type": "PRSB-Standards/WRIST-PRSB-Datatypes/MultiMedia@1-build.0.1"
+                            }
+                          ],
+                          "relationshipType": "specialisation",
+                          "isComponent": false,
+                          "implementationGuidance": "<p><br></p>"
                         }
                       ],
                       "description": "Additional information required for images.",
